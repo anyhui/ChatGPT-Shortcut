@@ -1,17 +1,20 @@
+---
+sidebar_label: Chrome CRX 安装指南
+title: AI Short Chrome CRX 安装 | 开发者模式手动安装
+description: 通过 CRX 文件手动安装 AI Short 插件，开启开发者模式后拖拽安装。含常见问题解决方案。
+---
+
 # Chrome CRX 插件本地安装指南
 
-## 下载 CRX 安装包
-
-下载 ChatGPT Shortcut crx 安装包（ChatGPT_Shortcut-crx-3.x.x.zip），并解压（crx 文件在解压的文件夹里)。
-
-- **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
-- **国内下载**: [Alist 云盘](https://alist.newzone.top:9003/apps/ChatGPT%20Shortcut%20Extension)；[蓝奏云](https://wwva.lanzouq.com/b01lsc9vi),密码:1qow
-
-![](https://img.newzone.top/2024-08-12-21-47-10.png?imageMogr2/format/webp)
+> 本教程假设你已从[安装入口](./README.md)下载并解压了 CRX 安装包（.crx 文件在解压出的文件夹里）。
+>
+> ⚠️ **两个常见踩坑**：
+> 1. 必须把 **`.crx` 文件**（解压出来的）拖入扩展页，不是 zip 安装包本身
+> 2. 必须**拖入**——别点「加载已解压的扩展程序」按钮（那是给 zip 版用的）
 
 ## 开启开发者模式
 
-打开 chrome 的「管理扩展程序」页面，并打开「开发者模式」。
+打开 Chrome 的「管理扩展程序」页面，并开启「开发者模式」。
 
 复制以下地址粘贴到浏览器地址栏，按回车打开。在页面右上角开启「开发者模式」。
 
@@ -23,11 +26,11 @@ chrome://extensions
 
 ## 安装插件
 
-安装 ChatGPT Shortcut 插件（注意⚠️：需要拖入 .crx 文件，不要点击【加载已解压的扩展程序】）
+安装 ChatGPT Shortcut 插件（注意 ⚠️：需要拖入 .crx 文件，请勿点击「加载已解压的扩展程序」）
 
 ![](https://img.newzone.top/2024-08-12-22-16-38.png?imageMogr2/format/webp)
 
-安装成功后，可查看[插件使用教程](./usage.md)。
+安装成功后，可查看[插件使用教程](./usage)。
 
 ## 安装遇到了问题？
 
@@ -35,6 +38,6 @@ chrome://extensions
 
 2. 是否已经开启了「开发者模式」？如果没有，请参考第二步的操作。
 
-3. 是否是将 crx 文件拖入到「扩展程序」页面？注意⚠️：不要点击【加载已解压的扩展程序】，必须要拖入 crx 文件。
+3. 是否是将 crx 文件拖入到「扩展程序」页面？注意 ⚠️：不要点击「加载已解压的扩展程序」，必须要拖入 crx 文件。
 
-4. 浏览器不允许安装 crx 文件？尝试安装 zip 文件吧！[点击此处查看 zip 安装教程](./manual-chrome-extension-zip.md)。
+4. 浏览器不允许安装 crx 文件？尝试安装 zip 文件吧！[点击此处查看 zip 安装教程](./manual-chrome-extension-zip)。

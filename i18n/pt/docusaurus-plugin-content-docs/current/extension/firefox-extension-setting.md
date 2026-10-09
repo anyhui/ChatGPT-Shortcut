@@ -1,17 +1,26 @@
-# Configurações do Firefox
+---
+sidebar_label: Configuração da Extensão Firefox
+title: Configuração AI Short no Firefox | Barra Lateral Nativa e Atalhos
+description: "Configure o AI Short no Firefox: desde a v4.4.0 é igual à versão Chrome, com barra lateral nativa sem permissão por site e Alt+Shift+D para alternar."
+---
 
-Antes de usar o plug-in do Firefox, é recomendável configurá-lo nas duas etapas a seguir.
+# Configuração da Extensão Firefox
 
-## 1. Configurações de fixação e acesso de extensão
+Desde a v4.4.0, a versão para Firefox está alinhada com a do Chrome: os mesmos três modos de exibição — **barra lateral, pop-up e janela independente** — com a biblioteca de prompts empacotada dentro da extensão.
 
-Primeiro, selecione "Fixar extensão de atalho ChatGPT" na barra de ferramentas do Firefox e, em seguida, entre no centro de extensões. No item de extensão de atalho ChatGPT, selecione "Opções" para entrar na interface de configurações da extensão. As etapas específicas são mostradas na imagem a seguir:
+A extensão solicita apenas a permissão `storage`: não lê nem modifica as páginas que você visita, portanto **não é preciso autorizá-la site a site**.
 
-![Configurações do Firefox](https://img.newzone.top/2023-12-25-05-51-47.png?imageMogr2/format/webp)
+> As versões antigas (v4.3 e anteriores) injetavam a barra lateral na página do ChatGPT com um content script, exigindo clicar com o botão direito no ícone e escolher "Sempre permitir em \*\*\*". Esse mecanismo foi removido; após atualizar, pule esta etapa.
 
-## 2. Autorizar operação de extensão
+## Atalhos
 
-Em segundo lugar, para garantir que a extensão funcione normalmente em sites como ChatGPT e Bard, você precisa clicar com o botão direito do mouse no ícone da extensão nesses sites e selecionar "Sempre permitir neste site". Esta ação concede à extensão permissão para modificar o conteúdo e adicionar barras laterais em sites designados.
+- `Alt + Shift + S`: abre a extensão no modo de exibição atual
+- `Alt + Shift + D`: alterna a barra lateral nativa do Firefox
 
-![Permissão de extensão do Firefox](https://img.newzone.top/2023-12-25-05-59-48.png?imageMogr2/format/webp)
+Personalize em `about:addons` → ícone de engrenagem → "Gerenciar atalhos de extensões".
 
-Após a instalação bem-sucedida, você pode visualizar o [tutorial de uso do plugin](./usage.md).
+## Página de configurações
+
+Fixe o AI Short na barra de ferramentas do Firefox e abra as "Opções" na página de extensões para alternar idioma, modo de exibição e modo escuro.
+
+Veja o [guia de uso](./usage) para entender cada opção.

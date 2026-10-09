@@ -1,0 +1,1346 @@
+{
+  "action.add": {
+    "message": "Thêm"
+  },
+  "action.addPrompt": {
+    "message": "Tạo prompt"
+  },
+  "action.backToLogin": {
+    "message": "Quay lại Đăng nhập"
+  },
+  "action.cancel": {
+    "message": "Hủy"
+  },
+  "action.changePassword": {
+    "message": "Đổi mật khẩu"
+  },
+  "action.clearFilters": {
+    "message": "Xóa bộ lọc ({count})"
+  },
+  "action.close": {
+    "message": "Đóng"
+  },
+  "action.convertToPrivate": {
+    "message": "Chuyển thành Riêng tư"
+  },
+  "action.copy": {
+    "message": "Sao chép"
+  },
+  "action.copyPrompt": {
+    "message": "Sao chép Prompt"
+  },
+  "action.delete": {
+    "message": "Xóa"
+  },
+  "action.downvote": {
+    "message": "Không thích"
+  },
+  "action.edit": {
+    "message": "Chỉnh sửa"
+  },
+  "action.forgotPassword": {
+    "message": "Quên mật khẩu"
+  },
+  "action.hideTags": {
+    "message": "Ẩn thẻ"
+  },
+  "action.login": {
+    "message": "Đăng nhập"
+  },
+  "action.loginInstead": {
+    "message": "Đăng nhập trực tiếp"
+  },
+  "action.register": {
+    "message": "Đăng ký"
+  },
+  "action.registerNow": {
+    "message": "Đăng ký ngay"
+  },
+  "action.removeFavorite": {
+    "message": "Bỏ khỏi yêu thích"
+  },
+  "action.reply": {
+    "message": "Trả lời"
+  },
+  "action.save": {
+    "message": "Lưu"
+  },
+  "action.sendLink": {
+    "message": "Nhận Liên kết Đăng nhập"
+  },
+  "action.sendResetEmail": {
+    "message": "Gửi Email Đặt lại"
+  },
+  "action.share": {
+    "message": "Chia sẻ"
+  },
+  "action.showTags": {
+    "message": "Hiện thẻ"
+  },
+  "action.updatePrompt": {
+    "message": "Lưu"
+  },
+  "action.upvote": {
+    "message": "Thích"
+  },
+  "action.viewDetails": {
+    "message": "Xem chi tiết"
+  },
+  "button.clearAllCache": {
+    "message": "Xóa Tất cả Cache"
+  },
+  "button.clearCache": {
+    "message": "Xóa Cache"
+  },
+  "button.confirm": {
+    "message": "Xác nhận"
+  },
+  "button.confirmClear": {
+    "message": "Xác nhận xóa"
+  },
+  "button.export": {
+    "message": "Xuất dữ liệu"
+  },
+  "button.exportPrompts": {
+    "message": "Xuất Prompt"
+  },
+  "button.import": {
+    "message": "Nhập dữ liệu"
+  },
+  "button.importPrompts": {
+    "message": "Nhập Prompt"
+  },
+  "button.login": {
+    "message": "Đăng nhập"
+  },
+  "button.logout": {
+    "message": "Đăng xuất"
+  },
+  "button.resetPassword": {
+    "message": "Đặt lại mật khẩu"
+  },
+  "button.signInFree": {
+    "message": "Đăng nhập miễn phí"
+  },
+  "comment.add": {
+    "message": "Gửi bình luận"
+  },
+  "comments.aiReplying": {
+    "message": "AI đang trả lời"
+  },
+  "comments.emoji.label": {
+    "message": "Chèn biểu tượng cảm xúc"
+  },
+  "comments.empty": {
+    "message": "Chưa có bình luận"
+  },
+  "comments.gif.label": {
+    "message": "Chèn GIF"
+  },
+  "comments.heading": {
+    "message": "Thảo luận"
+  },
+  "common.favorites": {
+    "message": "Yêu thích"
+  },
+  "community.backToList": {
+    "message": "Quay lại danh sách"
+  },
+  "community.description": {
+    "message": "Khám phá prompt AI do cộng đồng AiShort chia sẻ. Duyệt mẫu của người dùng, trao đổi kỹ thuật tối ưu và đóng góp prompt của riêng bạn."
+  },
+  "community.fetchError": {
+    "message": "Không thể tải dữ liệu"
+  },
+  "community.heading": {
+    "message": "Cộng đồng Prompt AI"
+  },
+  "community.loading": {
+    "message": "Đang tải..."
+  },
+  "community.notFound": {
+    "message": "Không tìm thấy Prompt"
+  },
+  "community.notFoundDesc": {
+    "message": "Prompt này có thể đã bị xóa hoặc được đặt thành riêng tư"
+  },
+  "community.seoSuffix": {
+    "message": "Prompt cộng đồng"
+  },
+  "community.tagline": {
+    "message": "Các prompt AI do người dùng đóng góp và chia sẻ. Sắp xếp theo mới nhất hoặc nhiều lượt thích nhất, hỗ trợ tìm kiếm và lọc. Đăng nhập để thích và lưu."
+  },
+  "community.title": {
+    "message": "Cộng đồng Prompt AI"
+  },
+  "description.clearCache.short": {
+    "message": "Làm mới dữ liệu cache cục bộ"
+  },
+  "description.exportPrompts.short": {
+    "message": "Xuất dưới dạng tệp JSON để sao lưu"
+  },
+  "description.importPrompts.short": {
+    "message": "Nhập prompt và yêu thích từ tệp JSON"
+  },
+  "faq.heading": {
+    "message": "Câu hỏi thường gặp"
+  },
+  "faq.scenario.a": {
+    "message": "Phù hợp với các tác vụ liên quan đến tiêu đề và mô tả của trang này. Nếu lần thử đầu chưa lý tưởng, hãy bổ sung thêm ngữ cảnh vào chỗ giữ chỗ, hoặc thêm ràng buộc như “trả lời từng bước” hay “cho ví dụ”."
+  },
+  "faq.scenario.q": {
+    "message": "Prompt này phù hợp với tình huống nào?"
+  },
+  "faq.tips.a": {
+    "message": "Thứ nhất, viết [chỗ giữ chỗ] cụ thể hơn (thêm phong cách, độ dài, lĩnh vực). Thứ hai, mô tả lại kết quả chưa ưng ý bằng “chỉnh theo hướng X hơn”. Thứ ba, so sánh giữa Claude / ChatGPT / Gemini và các mô hình khác."
+  },
+  "faq.tips.q": {
+    "message": "Làm sao để cải thiện chất lượng đầu ra?"
+  },
+  "faq.usage.a": {
+    "message": "Sao chép prompt, thay thế [chỗ giữ chỗ] trong dấu ngoặc vuông bằng nội dung của bạn, rồi dán vào ChatGPT, Claude, Gemini, DeepSeek, Qwen hoặc bất kỳ AI hội thoại nào hỗ trợ ngôn ngữ tự nhiên và gửi đi."
+  },
+  "faq.usage.q": {
+    "message": "Cách sử dụng prompt này?"
+  },
+  "feedback.description": {
+    "message": "Phản hồi của bạn rất quan trọng với chúng tôi!"
+  },
+  "feedback.newIssue": {
+    "message": "Issue mới"
+  },
+  "feedback.responseTime": {
+    "message": "Thường trả lời trong vòng 24 giờ"
+  },
+  "feedback.spec_label": {
+    "message": "Kênh mở"
+  },
+  "feedback.subtitle": {
+    "message": "Báo lỗi, đề xuất tính năng, câu hỏi sử dụng — mọi ý kiến đều được chào đón"
+  },
+  "feedback.title": {
+    "message": "Phản hồi & Góp ý"
+  },
+  "feedback.type.bug": {
+    "message": "Báo lỗi"
+  },
+  "feedback.type.help": {
+    "message": "Câu hỏi sử dụng"
+  },
+  "feedback.type.suggestion": {
+    "message": "Đề xuất tính năng"
+  },
+  "feedback.welcome": {
+    "message": "Phản hồi & Góp ý"
+  },
+  "filter.operator.all.tip": {
+    "message": "Hiển thị prompt khớp với tất cả tag được chọn"
+  },
+  "filter.operator.any.tip": {
+    "message": "Hiển thị prompt khớp với bất kỳ tag nào được chọn"
+  },
+  "hero.supportedAiTools": {
+    "message": "{tools} và hơn thế nữa"
+  },
+  "homepage.description": {
+    "message": "Các mẫu prompt AI tuyển chọn cho viết, lập trình và dịch thuật. Sao chép chỉ với một cú nhấp để dán vào ChatGPT, Claude hoặc Gemini để có đầu ra chính xác."
+  },
+  "homepage.slogan": {
+    "message": "Prompt AI chọn lọc, sẵn sàng sử dụng chỉ với một cú nhấp"
+  },
+  "homepage.title": {
+    "message": "Thư viện Prompt AI cho ChatGPT, Claude và Gemini"
+  },
+  "howto.step1.name": {
+    "message": "Sao chép prompt"
+  },
+  "howto.step1.text": {
+    "message": "Sao chép mẫu prompt vào clipboard."
+  },
+  "howto.step2.name": {
+    "message": "Tùy chỉnh chỗ giữ chỗ"
+  },
+  "howto.step2.text": {
+    "message": "Thay các đoạn [chỗ giữ chỗ] bằng nội dung cụ thể của bạn."
+  },
+  "howto.step3.name": {
+    "message": "Gửi tới AI"
+  },
+  "howto.step3.text": {
+    "message": "Dán vào ChatGPT, Claude, Gemini, DeepSeek hoặc giao diện AI hội thoại khác và chạy."
+  },
+  "input.newPassword": {
+    "message": "Vui lòng nhập mật khẩu mới"
+  },
+  "input.resetPassword.code": {
+    "message": "Vui lòng nhập mã đặt lại"
+  },
+  "input.search.placeholder": {
+    "message": "viết, dịch…"
+  },
+  "label.agree": {
+    "message": "Đồng ý"
+  },
+  "label.promptContent": {
+    "message": "Nội dung Prompt"
+  },
+  "label.promptNotes": {
+    "message": "Ghi chú"
+  },
+  "label.promptRemark": {
+    "message": "Cách sử dụng"
+  },
+  "label.promptTitle": {
+    "message": "Tên Prompt"
+  },
+  "label.sharePrompt": {
+    "message": "Chia sẻ lên trang cộng đồng — người khác có thể xem và lưu"
+  },
+  "level.bronze": {
+    "message": "Đồng"
+  },
+  "level.diamond": {
+    "message": "Kim cương"
+  },
+  "level.emerald": {
+    "message": "Ngọc lục bảo"
+  },
+  "level.gold": {
+    "message": "Vàng"
+  },
+  "level.newcomer": {
+    "message": "Người mới khám phá"
+  },
+  "level.platinum": {
+    "message": "Bạch kim"
+  },
+  "level.ruby": {
+    "message": "Hồng ngọc"
+  },
+  "level.sapphire": {
+    "message": "Lam ngọc"
+  },
+  "level.silver": {
+    "message": "Bạc"
+  },
+  "level.stardust": {
+    "message": "Bụi sao"
+  },
+  "link.addprompt": {
+    "message": "Tạo prompt"
+  },
+  "link.communityPrompts": {
+    "message": "Prompt Cộng đồng"
+  },
+  "link.home": {
+    "message": "Trang chủ"
+  },
+  "link.myAccount": {
+    "message": "Tài khoản của tôi"
+  },
+  "link.privacy": {
+    "message": "Chính sách bảo mật"
+  },
+  "link.terms": {
+    "message": "Điều khoản dịch vụ"
+  },
+  "login.google.button": {
+    "message": "Đăng nhập bằng Google"
+  },
+  "login.google.error": {
+    "message": "Lỗi khi đăng nhập Google, vui lòng thử lại sau ({error})"
+  },
+  "login.google.failed": {
+    "message": "Đăng nhập Google thất bại"
+  },
+  "login.google.redirecting": {
+    "message": "Đang chuyển hướng đến đăng nhập Google..."
+  },
+  "login.login.prompt": {
+    "message": "Đã có tài khoản?"
+  },
+  "login.method.code": {
+    "message": "Đăng nhập không cần mật khẩu"
+  },
+  "login.method.password": {
+    "message": "Đăng nhập bằng mật khẩu"
+  },
+  "login.passwordless.info": {
+    "message": "Liên kết đăng nhập sẽ được gửi đến email của bạn, nhấp để đăng nhập"
+  },
+  "login.register.prompt": {
+    "message": "Chưa có tài khoản?"
+  },
+  "login.subtitle.forgotPassword": {
+    "message": "Liên kết đặt lại sẽ được gửi đến email của bạn"
+  },
+  "login.subtitle.register": {
+    "message": "Khám phá, chia sẻ và tạo các prompt tuyệt vời"
+  },
+  "login.subtitle.welcome": {
+    "message": "Đăng nhập để khám phá thêm prompt cao cấp"
+  },
+  "login.title.forgotPassword": {
+    "message": "Lấy lại Mật khẩu"
+  },
+  "login.title.register": {
+    "message": "Tham gia cộng đồng"
+  },
+  "login.title.welcome": {
+    "message": "Chào mừng bạn quay lại"
+  },
+  "message.addFavorite.error": {
+    "message": "Không thể thêm vào yêu thích, vui lòng thử lại sau"
+  },
+  "message.addFavorite.success": {
+    "message": "Đã thêm vào yêu thích"
+  },
+  "message.addPrompt.error": {
+    "message": "Không thể gửi prompt, vui lòng thử lại sau"
+  },
+  "message.addPrompt.success": {
+    "message": "Đã gửi prompt"
+  },
+  "message.cache.cleared": {
+    "message": "Đã xóa bộ nhớ cache"
+  },
+  "message.cache.clearError": {
+    "message": "Không thể xóa cache, vui lòng thử lại sau"
+  },
+  "message.cannotFavorOwn": {
+    "message": "Không thể yêu thích prompt của chính bạn"
+  },
+  "message.convertToPrivate.error": {
+    "message": "Không thể chuyển đổi, vui lòng thử lại sau"
+  },
+  "message.convertToPrivate.favoriteKept": {
+    "message": "Đã tạo prompt riêng tư, nhưng không thể xóa mục yêu thích gốc. Vui lòng xóa thủ công để tránh trùng lặp."
+  },
+  "message.convertToPrivate.success": {
+    "message": "Đã chuyển thành prompt riêng tư"
+  },
+  "message.copied": {
+    "message": "Đã sao chép"
+  },
+  "message.deletePrompt.confirm.content": {
+    "message": "Bạn có chắc muốn xóa prompt này?"
+  },
+  "message.deletePrompt.confirm.title": {
+    "message": "Xác nhận xóa"
+  },
+  "message.deletePrompt.error": {
+    "message": "Không thể xóa prompt, vui lòng thử lại sau"
+  },
+  "message.deletePrompt.success": {
+    "message": "Đã xóa prompt"
+  },
+  "message.error": {
+    "message": "Đã xảy ra lỗi khi xử lý"
+  },
+  "message.error.forgotPassword": {
+    "message": "Không thể gửi email đặt lại mật khẩu, vui lòng thử lại sau"
+  },
+  "message.error.passwordChangeFailed": {
+    "message": "Không thể đổi mật khẩu, vui lòng thử lại sau"
+  },
+  "message.error.passwordlessLink": {
+    "message": "Gửi không thành công, vui lòng kiểm tra email hoặc tên người dùng"
+  },
+  "message.export.error": {
+    "message": "Xuất thất bại, vui lòng thử lại sau"
+  },
+  "message.export.noPrompts": {
+    "message": "Không có prompt để xuất. Hãy tạo prompt mới hoặc thêm vào yêu thích trước."
+  },
+  "message.export.success": {
+    "message": "Đã xuất prompt"
+  },
+  "message.forgotPassword.info": {
+    "message": "Nếu bạn quên mật khẩu hiện tại, bạn có thể đặt lại qua email. Chúng tôi sẽ gửi email có liên kết đặt lại đến địa chỉ email đã đăng ký của bạn."
+  },
+  "message.import.failed": {
+    "message": "Nhập thất bại"
+  },
+  "message.import.invalid": {
+    "message": "Định dạng dữ liệu không hợp lệ"
+  },
+  "message.import.nothing": {
+    "message": "Mọi thứ trong tệp đã có sẵn, không có gì để nhập"
+  },
+  "message.import.parseError": {
+    "message": "Lỗi phân tích JSON"
+  },
+  "message.import.partial": {
+    "message": "Đã nhập một số prompt"
+  },
+  "message.import.success": {
+    "message": "Đã nhập"
+  },
+  "message.loadFailed": {
+    "message": "Không thể tải dữ liệu, vui lòng thử lại sau"
+  },
+  "message.loginRequired": {
+    "message": "Vui lòng đăng nhập trước"
+  },
+  "message.logout.confirm.content": {
+    "message": "Bạn có chắc muốn đăng xuất?"
+  },
+  "message.logout.confirm.title": {
+    "message": "Xác nhận đăng xuất"
+  },
+  "message.noComments": {
+    "message": "Chưa có bình luận nào, hãy là người đầu tiên bình luận"
+  },
+  "message.noFavorites": {
+    "message": "Chưa có mục yêu thích, hãy khám phá prompt bạn thích"
+  },
+  "message.noPrompts": {
+    "message": "Chưa có prompt nào, hãy tạo một prompt"
+  },
+  "message.noSpaceItems": {
+    "message": "Chưa có gì — tạo prompt hoặc đánh dấu yêu thích"
+  },
+  "message.orderSaved": {
+    "message": "Đã lưu bố cục"
+  },
+  "message.orderSaveFailed": {
+    "message": "Không thể lưu bố cục, vui lòng thử lại sau"
+  },
+  "message.postComment.error": {
+    "message": "Gửi bình luận thất bại. Vui lòng thử lại sau."
+  },
+  "message.removeFavorite.confirm.content": {
+    "message": "Bạn có chắc muốn xóa prompt này khỏi yêu thích?"
+  },
+  "message.removeFavorite.confirm.title": {
+    "message": "Xóa yêu thích"
+  },
+  "message.removeFavorite.error": {
+    "message": "Không thể xóa khỏi yêu thích, vui lòng thử lại sau"
+  },
+  "message.removeFavorite.success": {
+    "message": "Đã xóa khỏi yêu thích"
+  },
+  "message.resetPassword.error": {
+    "message": "Không thể đặt lại mật khẩu, vui lòng thử lại sau"
+  },
+  "message.resetPassword.success": {
+    "message": "Đã đặt lại mật khẩu"
+  },
+  "message.success.forgotPassword": {
+    "message": "Email đặt lại mật khẩu đã được gửi"
+  },
+  "message.success.login": {
+    "message": "Đã đăng nhập"
+  },
+  "message.success.passwordChanged": {
+    "message": "Đã đổi mật khẩu"
+  },
+  "message.success.passwordlessLink": {
+    "message": "Liên kết đăng nhập không mật khẩu đã được gửi đến email của bạn"
+  },
+  "message.success.register": {
+    "message": "Đã tạo tài khoản"
+  },
+  "message.tagsUpdated": {
+    "message": "Đã cập nhật thẻ"
+  },
+  "message.tagsUpdateFailed": {
+    "message": "Không thể cập nhật thẻ, vui lòng thử lại sau"
+  },
+  "message.updatePrompt.error": {
+    "message": "Không thể cập nhật prompt, vui lòng thử lại sau"
+  },
+  "message.updatePrompt.success": {
+    "message": "Đã cập nhật prompt"
+  },
+  "modal.clearCache.title": {
+    "message": "Xóa Cache?"
+  },
+  "modal.clearCache.warning": {
+    "message": "Việc xóa sẽ tải lại tất cả dữ liệu."
+  },
+  "modal.editPrompt.title": {
+    "message": "Chỉnh sửa Prompt"
+  },
+  "modal.forgotPassword.title": {
+    "message": "Quên mật khẩu"
+  },
+  "myCollection.header.subtitle": {
+    "message": "Quản lý các prompt bạn tạo, yêu thích và thẻ tùy chỉnh"
+  },
+  "myCollection.header.title": {
+    "message": "Bộ sưu tập của tôi"
+  },
+  "myCollection.stats.favorites": {
+    "message": "Yêu thích"
+  },
+  "myCollection.stats.prompts": {
+    "message": "Prompt của tôi"
+  },
+  "myCollection.stats.tags": {
+    "message": "Thẻ tùy chỉnh"
+  },
+  "myCollection.stats.total": {
+    "message": "Tổng"
+  },
+  "myspace.assignTag": {
+    "message": "Gán thẻ"
+  },
+  "myspace.fallbackHint": {
+    "message": "Không tìm thấy kết quả phù hợp. Gợi ý cho bạn:"
+  },
+  "myspace.filter.all": {
+    "message": "Tất cả"
+  },
+  "myspace.filter.favorites": {
+    "message": "Yêu thích"
+  },
+  "myspace.filter.prompts": {
+    "message": "Prompt"
+  },
+  "myspace.manageTags": {
+    "message": "Quản lý thẻ"
+  },
+  "myspace.tagManager.empty": {
+    "message": "Không có thẻ tùy chỉnh"
+  },
+  "myspace.tagManager.namePlaceholder": {
+    "message": "Tên thẻ"
+  },
+  "myspace.tagManager.title": {
+    "message": "Quản lý thẻ tùy chỉnh"
+  },
+  "nav.explore": {
+    "message": "Khám phá"
+  },
+  "nav.myCollection": {
+    "message": "Bộ sưu tập của tôi"
+  },
+  "noResults.description": {
+    "message": "Thử từ khóa khác, hoặc xóa bộ lọc thẻ"
+  },
+  "noResults.title": {
+    "message": "Không tìm thấy prompt phù hợp"
+  },
+  "placeholder.comment": {
+    "message": "Nhập bình luận tại đây... Hỗ trợ cú pháp Markdown và HTML"
+  },
+  "placeholder.confirmPassword": {
+    "message": "Xác nhận Mật khẩu mới"
+  },
+  "placeholder.currentPassword": {
+    "message": "Mật khẩu hiện tại"
+  },
+  "placeholder.email": {
+    "message": "Email"
+  },
+  "placeholder.newPassword": {
+    "message": "Mật khẩu mới"
+  },
+  "placeholder.password": {
+    "message": "Mật khẩu"
+  },
+  "placeholder.promptContent": {
+    "message": "Nhập nội dung prompt chi tiết tại đây..."
+  },
+  "placeholder.promptNotes": {
+    "message": "Nguồn prompt, phiên bản ở ngôn ngữ khác hoặc ghi chú bổ sung (tùy chọn)"
+  },
+  "placeholder.promptRemark": {
+    "message": "Mô tả ngắn gọn cách sử dụng prompt này (tùy chọn)"
+  },
+  "placeholder.promptTitle": {
+    "message": "Đặt tên cho prompt của bạn"
+  },
+  "placeholder.resetPassword.code": {
+    "message": "Mã đặt lại"
+  },
+  "placeholder.username": {
+    "message": "Tên người dùng"
+  },
+  "placeholder.usernameOrEmail": {
+    "message": "Tên người dùng/Email"
+  },
+  "prompt.authorNote": {
+    "message": "Ghi chú của tác giả"
+  },
+  "prompt.charsLabel": {
+    "message": "ký tự"
+  },
+  "prompt.content": {
+    "message": "Nội dung Prompt"
+  },
+  "prompt.private": {
+    "message": "Riêng tư"
+  },
+  "prompt.source": {
+    "message": "Nguồn"
+  },
+  "prompt.tokenDanger": {
+    "message": "Prompt rất dài, có thể khó chia sẻ và tái sử dụng. Hãy cân nhắc chia nhỏ."
+  },
+  "prompt.tokenWarning": {
+    "message": "Prompt khá dài, hãy cân nhắc rút ngắn hoặc chia nhỏ."
+  },
+  "prompt.translation": {
+    "message": "Bản dịch"
+  },
+  "search.submit": {
+    "message": "Tìm kiếm"
+  },
+  "share.copy": {
+    "message": "Sao chép"
+  },
+  "share.native": {
+    "message": "Hệ thống"
+  },
+  "share.shareTo": {
+    "message": "Chia sẻ lên"
+  },
+  "share.shareOn": {
+    "message": "Chia sẻ lên {channel}"
+  },
+  "showcase.header.button": {
+    "message": "Khám phá cộng đồng"
+  },
+  "showcase.tag.academic.description": {
+    "message": "Nghiên cứu học thuật, thiết kế giảng dạy, lập kế hoạch chương trình và hỗ trợ giáo viên khác"
+  },
+  "showcase.tag.academic.label": {
+    "message": "Học thuật/Giáo viên"
+  },
+  "showcase.tag.ai.description": {
+    "message": "Prompt và kịch bản ứng dụng liên quan đến AI"
+  },
+  "showcase.tag.ai.label": {
+    "message": "AI"
+  },
+  "showcase.tag.article.description": {
+    "message": "Tạo tiểu thuyết, luận văn, thông cáo báo chí, kịch bản, báo cáo nghiên cứu và các bài viết khác"
+  },
+  "showcase.tag.article.label": {
+    "message": "Bài viết/Báo cáo"
+  },
+  "showcase.tag.code.description": {
+    "message": "Cung cấp đề xuất lập trình, ví dụ mã, giải pháp gỡ lỗi và hướng dẫn kỹ thuật"
+  },
+  "showcase.tag.code.label": {
+    "message": "CNTT/Lập trình"
+  },
+  "showcase.tag.comments.description": {
+    "message": "Đánh giá chuyên nghiệp, thẩm định tác phẩm và phân tích cảm thụ"
+  },
+  "showcase.tag.comments.label": {
+    "message": "Đánh giá/Thẩm định"
+  },
+  "showcase.tag.company.description": {
+    "message": "Quản lý doanh nghiệp, nhân sự, marketing và các vai trò chức năng khác"
+  },
+  "showcase.tag.company.label": {
+    "message": "Chức năng Doanh nghiệp"
+  },
+  "showcase.tag.contribute.description": {
+    "message": "Prompt cao cấp được chia sẻ bởi người dùng cộng đồng"
+  },
+  "showcase.tag.contribute.label": {
+    "message": "Người dùng chia sẻ"
+  },
+  "showcase.tag.doctor.description": {
+    "message": "Tư vấn sức khỏe, kiến thức phòng chống bệnh tật và lời khuyên y tế"
+  },
+  "showcase.tag.doctor.label": {
+    "message": "Y tế Sức khỏe"
+  },
+  "showcase.tag.finance.description": {
+    "message": "Quản lý đầu tư, phân tích tài chính và lời khuyên lập kế hoạch tài chính"
+  },
+  "showcase.tag.finance.label": {
+    "message": "Cố vấn Tài chính"
+  },
+  "showcase.tag.games.description": {
+    "message": "Trò chơi văn bản, nhập vai và giải trí tương tác"
+  },
+  "showcase.tag.games.label": {
+    "message": "Trò chơi/Giải trí"
+  },
+  "showcase.tag.interesting.description": {
+    "message": "Kiến thức thú vị, nội dung khoa học phổ cập và hỏi đáp vui"
+  },
+  "showcase.tag.interesting.label": {
+    "message": "Kiến thức Thú vị"
+  },
+  "showcase.tag.interpreter.description": {
+    "message": "Mô phỏng terminal dòng lệnh và các trình thông dịch ngôn ngữ lập trình khác nhau"
+  },
+  "showcase.tag.interpreter.label": {
+    "message": "Terminal/Trình thông dịch"
+  },
+  "showcase.tag.language.description": {
+    "message": "Dịch đa ngôn ngữ, học ngôn ngữ, chuyển đổi văn bản và nhận dạng ngôn ngữ"
+  },
+  "showcase.tag.language.label": {
+    "message": "Ngôn ngữ/Dịch thuật"
+  },
+  "showcase.tag.life.description": {
+    "message": "Kiến thức thực tế và giải quyết vấn đề cho cuộc sống hàng ngày"
+  },
+  "showcase.tag.life.label": {
+    "message": "Bách khoa Cuộc sống"
+  },
+  "showcase.tag.living.description": {
+    "message": "Hướng dẫn thể dục, tư vấn dinh dưỡng, mẹo nấu ăn, tạo kiểu làm đẹp và các dịch vụ phong cách sống khác"
+  },
+  "showcase.tag.living.label": {
+    "message": "Chất lượng Cuộc sống"
+  },
+  "showcase.tag.mind.description": {
+    "message": "Truyền cảm hứng sáng tạo, tư duy phản biện và kỹ năng lập luận logic"
+  },
+  "showcase.tag.mind.label": {
+    "message": "Rèn luyện Tư duy"
+  },
+  "showcase.tag.music.description": {
+    "message": "Sáng tác âm nhạc, học lý thuyết âm nhạc và thưởng thức tác phẩm"
+  },
+  "showcase.tag.music.label": {
+    "message": "Âm nhạc & Nghệ thuật"
+  },
+  "showcase.tag.pedagogy.description": {
+    "message": "Gia sư học tập, hỗ trợ bài tập, chuẩn bị thi và nội dung liên quan đến học sinh khác"
+  },
+  "showcase.tag.pedagogy.label": {
+    "message": "Giáo dục/Học sinh"
+  },
+  "showcase.tag.philosophy.description": {
+    "message": "Tư duy triết học, văn hóa tôn giáo và khám phá trí tuệ cuộc sống"
+  },
+  "showcase.tag.philosophy.label": {
+    "message": "Triết học/Tôn giáo"
+  },
+  "showcase.tag.professional.description": {
+    "message": "Luật sư, kế toán, chuyên gia tư vấn và các cố vấn lĩnh vực chuyên nghiệp khác"
+  },
+  "showcase.tag.professional.label": {
+    "message": "Tư vấn Chuyên nghiệp"
+  },
+  "showcase.tag.seo.description": {
+    "message": "Tối ưu hóa công cụ tìm kiếm, mở rộng từ khóa và tiếp thị nội dung"
+  },
+  "showcase.tag.seo.label": {
+    "message": "SEO"
+  },
+  "showcase.tag.social.description": {
+    "message": "Tư vấn tâm lý, phân tích cảm xúc, kỹ năng xã hội và giao tiếp giữa các cá nhân"
+  },
+  "showcase.tag.social.label": {
+    "message": "Tâm lý/Xã hội"
+  },
+  "showcase.tag.speech.description": {
+    "message": "Kỹ năng tranh luận, viết bài diễn thuyết và rèn luyện khả năng nói"
+  },
+  "showcase.tag.speech.label": {
+    "message": "Tranh luận/Diễn thuyết"
+  },
+  "showcase.tag.text.description": {
+    "message": "Xử lý văn bản, phân tích từ ngữ và các tác vụ liên quan đến ngôn ngữ"
+  },
+  "showcase.tag.text.label": {
+    "message": "Văn bản/Từ ngữ"
+  },
+  "showcase.tag.tool.description": {
+    "message": "Công cụ thực tế để cải thiện hiệu quả công việc"
+  },
+  "showcase.tag.tool.label": {
+    "message": "Công cụ Năng suất"
+  },
+  "showcase.tag.write.description": {
+    "message": "Trau chuốt ngữ pháp bài viết, tối ưu phong cách diễn đạt và nâng cao chất lượng viết"
+  },
+  "showcase.tag.write.label": {
+    "message": "Hỗ trợ Viết"
+  },
+  "showcase.usersList.noResult": {
+    "message": "Không tìm thấy kết quả, hãy thử từ khóa khác"
+  },
+  "sidebar.related": {
+    "message": "Prompt liên quan"
+  },
+  "sort.mostUpvoted": {
+    "message": "Nhiều lượt thích"
+  },
+  "sort.newest": {
+    "message": "Mới nhất"
+  },
+  "theme.admonition.caution": {
+    "message": "cẩn thận",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "nguy hiểm",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "thông tin",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "ghi chú",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "mẹo",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "cảnh báo",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Đóng",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Cuộn lên đầu trang",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.description": {
+    "message": "Lưu trữ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "Lưu trữ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Tác giả này chưa viết bài nào.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Tác giả",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Xem tất cả tác giả",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "Điều hướng trang danh sách blog",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "Bài mới hơn",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "Bài cũ hơn",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "Điều hướng trang bài viết blog",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "Bài viết mới hơn",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "Bài viết cũ hơn",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "Một bài viết|{count} bài viết",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1 phút đọc|{readingTime} phút đọc",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Đọc thêm",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Đọc thêm về {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Điều hướng bài viết gần đây trong blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} được gắn thẻ \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "Đã sao chép",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Sao chép",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Sao chép mã vào clipboard",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Bật/tắt xuống dòng",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Chuyển đổi giữa chế độ tối và sáng (hiện tại {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "chế độ tối",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "chế độ sáng",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "chế độ hệ thống",
+    "description": "The name for the system color mode"
+  },
+  "theme.common.editThisPage": {
+    "message": "Chỉnh sửa trang này",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "Liên kết trực tiếp đến {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Chuyển đến nội dung chính",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Trang này là bản nháp, chỉ hiển thị trong môi trường phát triển và sẽ bị loại trừ khỏi bản build sản xuất.",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Trang nháp",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Trang này không được công khai. Công cụ tìm kiếm sẽ không lập chỉ mục trang này và chỉ người dùng có liên kết trực tiếp mới có thể truy cập.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Trang không công khai",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Trang chủ",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Đường dẫn",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 mục|{count} mục",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Trang tài liệu",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Tiếp",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Trước",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Đóng thanh điều hướng",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Thu gọn thanh bên",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Thu gọn thanh bên",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Mở rộng thanh bên",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Mở rộng thanh bên",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Thanh bên tài liệu",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Bật/tắt thanh điều hướng",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} với \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Một tài liệu được gắn thẻ|{count} tài liệu được gắn thẻ",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Phiên bản: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "phiên bản mới nhất",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Để có tài liệu cập nhật, xem {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Đây là tài liệu cho {siteTitle} {versionLabel}, không còn được bảo trì thường xuyên.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Đây là tài liệu chưa phát hành cho {siteTitle} phiên bản {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Thu gọn danh mục thanh bên '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Mở rộng danh mục thanh bên '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Trang này đã bị lỗi.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Thử lại",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(mở trong tab mới)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "vào {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "bởi {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Cập nhật lần cuối{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Thu gọn dropdown",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Mở rộng dropdown",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Ngôn ngữ",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Quay lại menu chính",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Phiên bản",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Điều hướng chính",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "Chúng tôi không thể tìm thấy những gì bạn đang tìm kiếm.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Vui lòng liên hệ quản trị trang đã dẫn bạn đến đây và báo cho họ biết liên kết đã hỏng.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "Không tìm thấy trang",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Thẻ:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Xem tất cả thẻ",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Thẻ",
+    "description": "The title of the tag list page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "Trên trang này",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "title.dataManagement": {
+    "message": "Quản lý dữ liệu"
+  },
+  "title.security": {
+    "message": "Cài đặt bảo mật"
+  },
+  "title.userInfo": {
+    "message": "Thông tin người dùng"
+  },
+  "unavailable.unshared": {
+    "message": "Tác giả đã ngừng chia sẻ"
+  },
+  "unavailable.unsharedNoCache": {
+    "message": "Tác giả đã ngừng chia sẻ và không có cache cục bộ"
+  },
+  "userPage.level.maxReached": {
+    "message": "MAX REACHED"
+  },
+  "userPage.level.sharedSuffix": {
+    "message": "đã chia sẻ"
+  },
+  "userPage.level.specLabel": {
+    "message": "LEVEL"
+  },
+  "userPage.level.toNext": {
+    "message": "đến {next}"
+  },
+  "validation.agreement.required": {
+    "message": "Bạn phải đồng ý với Điều khoản Dịch vụ và Chính sách Bảo mật trước khi sử dụng"
+  },
+  "validation.comment.maxLength": {
+    "message": "Nội dung bình luận không được vượt quá 2000 ký tự"
+  },
+  "validation.comment.required": {
+    "message": "Vui lòng nhập nội dung bình luận"
+  },
+  "validation.confirmPassword.required": {
+    "message": "Vui lòng xác nhận mật khẩu mới"
+  },
+  "validation.currentPassword.required": {
+    "message": "Vui lòng nhập mật khẩu hiện tại"
+  },
+  "validation.email.invalid": {
+    "message": "Vui lòng nhập địa chỉ email hợp lệ"
+  },
+  "validation.email.required": {
+    "message": "Vui lòng nhập email"
+  },
+  "validation.password.length": {
+    "message": "Mật khẩu phải có ít nhất 6 ký tự"
+  },
+  "validation.password.match": {
+    "message": "Mật khẩu không khớp"
+  },
+  "validation.password.required": {
+    "message": "Vui lòng nhập mật khẩu"
+  },
+  "validation.promptContent.required": {
+    "message": "Vui lòng nhập nội dung prompt"
+  },
+  "validation.promptTitle.required": {
+    "message": "Vui lòng nhập tiêu đề prompt"
+  },
+  "validation.replyRequired": {
+    "message": "Vui lòng nhập nội dung trả lời"
+  },
+  "validation.username.required": {
+    "message": "Vui lòng nhập tên người dùng hoặc email đã đăng ký"
+  },
+  "vote.downvote.alreadyVoted": {
+    "message": "Bạn đã bỏ thích prompt này."
+  },
+  "vote.downvote.failed": {
+    "message": "Không thể bỏ thích. Vui lòng thử lại."
+  },
+  "vote.downvote.success": {
+    "message": "Đã không thích prompt này"
+  },
+  "vote.loginRequired": {
+    "message": "Vui lòng đăng nhập để bỏ phiếu."
+  },
+  "vote.upvote.alreadyVoted": {
+    "message": "Bạn đã thích prompt này trong phiên này."
+  },
+  "vote.upvote.failed": {
+    "message": "Không thể thích. Vui lòng thử lại."
+  },
+  "vote.upvote.success": {
+    "message": "Đã thích prompt này"
+  },
+  "auth.callback.title": {
+    "message": "Hoàn tất đăng nhập"
+  },
+  "auth.callback.working": {
+    "message": "Đang đăng nhập…"
+  },
+  "auth.callback.workingHint": {
+    "message": "Đừng đóng trang này, bạn sẽ quay lại trang chủ ngay."
+  },
+  "auth.callback.failed": {
+    "message": "Đăng nhập chưa hoàn tất"
+  },
+  "auth.callback.failedHint": {
+    "message": "Liên kết đăng nhập có thể đã hết hạn hoặc đã được dùng. Hãy quay lại trang chủ và đăng nhập lại."
+  },
+  "auth.callback.idle": {
+    "message": "Không có đăng nhập nào cần xử lý ở đây"
+  },
+  "auth.callback.idleHint": {
+    "message": "Trang này chỉ dùng để chuyển hướng đăng nhập, không cần lưu trang này."
+  },
+  "auth.callback.backHome": {
+    "message": "Về trang chủ để đăng nhập"
+  },
+  "myspace.tagManager.emptyHint": {
+    "message": "Nhập tên ở trên, chọn một màu là bạn có thẻ đầu tiên."
+  },
+  "validation.username.empty": {
+    "message": "Tên người dùng không được để trống"
+  },
+  "message.username.updated": {
+    "message": "Đã cập nhật tên người dùng"
+  },
+  "message.username.updateError": {
+    "message": "Không cập nhật được tên người dùng. Hãy thử lại sau giây lát."
+  },
+  "message.requestTimeout": {
+    "message": "Yêu cầu đã hết thời gian chờ. Hãy thử lại."
+  },
+  "message.tooManyRequests": {
+    "message": "Bạn thao tác quá nhanh. Hãy thử lại sau giây lát."
+  },
+  "account.signInRequired": {
+    "message": "Đăng nhập để xem tài khoản"
+  },
+  "account.signInRequiredHint": {
+    "message": "Đang đưa bạn về trang chủ, hoặc dùng nút bên dưới."
+  },
+  "myspace.tagManager.color": {
+    "message": "Màu thẻ"
+  },
+  "comments.gif.searchPlaceholder": {
+    "message": "Tìm GIF"
+  }
+}

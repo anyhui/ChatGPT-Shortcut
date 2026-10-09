@@ -1,449 +1,880 @@
 {
-  "field.id": {
-    "message": "Время выхода"
+  "action.add": {
+    "message": "Добавить"
   },
-  "field.upvoteDifference": {
-    "message": "степень поддержки"
+  "action.addPrompt": {
+    "message": "Создать промпт"
   },
-  "order.ascending": {
-    "message": "порядок возрастания"
+  "action.backToLogin": {
+    "message": "Вернуться ко входу"
   },
-  "order.descending": {
-    "message": "порядок убывания"
+  "action.cancel": {
+    "message": "Отмена"
   },
-  "upvote": {
-    "message": "покровительствовать"
+  "action.changePassword": {
+    "message": "Изменить пароль"
   },
-  "downvote": {
-    "message": "педаль (велосипеда)"
+  "action.clearFilters": {
+    "message": "Очистить фильтры ({count})"
   },
-  "info.communityPrompts": {
-    "message": "Мы не можем гарантировать точность, качество и полноту содержания, а также не несем ответственности за любые юридические обязательства, возникающие в связи с этим содержанием. Если вы обнаружите какие-либо нарушения или другие проблемы, вы можете связаться с нами для их решения. Мы примем меры в кратчайшие сроки после получения уведомления."
+  "action.close": {
+    "message": "Закрыть"
+  },
+  "action.convertToPrivate": {
+    "message": "Сделать приватным"
+  },
+  "action.copy": {
+    "message": "Копировать"
+  },
+  "action.copyPrompt": {
+    "message": "Копировать промпт"
+  },
+  "action.delete": {
+    "message": "Удалить"
+  },
+  "action.downvote": {
+    "message": "Не нравится"
+  },
+  "action.edit": {
+    "message": "Изменить"
+  },
+  "action.forgotPassword": {
+    "message": "Забыли пароль?"
+  },
+  "action.hideTags": {
+    "message": "Скрыть теги"
+  },
+  "action.login": {
+    "message": "Войти"
+  },
+  "action.loginInstead": {
+    "message": "Войти напрямую"
+  },
+  "action.register": {
+    "message": "Зарегистрироваться"
+  },
+  "action.registerNow": {
+    "message": "Зарегистрироваться сейчас"
+  },
+  "action.removeFavorite": {
+    "message": "Удалить из избранного"
+  },
+  "action.reply": {
+    "message": "Ответить"
+  },
+  "action.save": {
+    "message": "Сохранить"
+  },
+  "action.sendLink": {
+    "message": "Получить ссылку для входа"
+  },
+  "action.sendResetEmail": {
+    "message": "Отправить письмо для сброса"
+  },
+  "action.share": {
+    "message": "Поделиться"
+  },
+  "action.showTags": {
+    "message": "Показать теги"
+  },
+  "action.updatePrompt": {
+    "message": "Сохранить"
+  },
+  "action.upvote": {
+    "message": "Нравится"
+  },
+  "action.viewDetails": {
+    "message": "Посмотреть детали"
+  },
+  "button.clearAllCache": {
+    "message": "Очистить весь кэш"
+  },
+  "button.clearCache": {
+    "message": "Очистить кэш"
+  },
+  "button.confirm": {
+    "message": "Подтвердить"
+  },
+  "button.confirmClear": {
+    "message": "Подтвердить очистку"
+  },
+  "button.export": {
+    "message": "Экспорт данных"
+  },
+  "button.exportPrompts": {
+    "message": "Экспортировать промпты"
+  },
+  "button.import": {
+    "message": "Импорт данных"
+  },
+  "button.importPrompts": {
+    "message": "Импортировать промпты"
+  },
+  "button.login": {
+    "message": "Войти"
+  },
+  "button.logout": {
+    "message": "Выйти"
+  },
+  "button.resetPassword": {
+    "message": "Сбросить пароль"
+  },
+  "button.signInFree": {
+    "message": "Войти бесплатно"
+  },
+  "comment.add": {
+    "message": "Отправить комментарий"
+  },
+  "comments.aiReplying": {
+    "message": "ИИ отвечает"
+  },
+  "comments.emoji.label": {
+    "message": "Вставить эмодзи"
+  },
+  "comments.empty": {
+    "message": "Пока нет комментариев"
+  },
+  "comments.gif.label": {
+    "message": "Вставить GIF"
+  },
+  "comments.heading": {
+    "message": "Обсуждение"
+  },
+  "common.favorites": {
+    "message": "Избранное"
+  },
+  "community.backToList": {
+    "message": "Вернуться к списку"
+  },
+  "community.description": {
+    "message": "Нужны проверенные ИИ-промпты? Присоединяйтесь к сообществу AiShort, чтобы находить практичные шаблоны и делиться приёмами."
+  },
+  "community.fetchError": {
+    "message": "Не удалось получить данные"
+  },
+  "community.heading": {
+    "message": "Сообщество ИИ-промптов"
+  },
+  "community.loading": {
+    "message": "Загрузка..."
+  },
+  "community.notFound": {
+    "message": "Промпт не найден"
+  },
+  "community.notFoundDesc": {
+    "message": "Этот промпт мог быть удален или сделан приватным"
+  },
+  "community.seoSuffix": {
+    "message": "Промпты сообщества"
+  },
+  "community.tagline": {
+    "message": "Промпты ИИ, которыми делятся пользователи. Сортировка по новизне или популярности, поиск и фильтры; после входа можно ставить лайк и сохранять."
+  },
+  "community.title": {
+    "message": "Сообщество ИИ-промптов | Находите и делитесь ими"
+  },
+  "description.clearCache.short": {
+    "message": "Обновить локальный кэш"
+  },
+  "description.exportPrompts.short": {
+    "message": "Экспорт в JSON для резервного копирования"
+  },
+  "description.importPrompts.short": {
+    "message": "Импорт промптов и избранного из JSON-файла"
+  },
+  "faq.heading": {
+    "message": "Часто задаваемые вопросы"
+  },
+  "faq.scenario.a": {
+    "message": "Подходит для задач, связанных с заголовком и описанием страницы. Если первая попытка неидеальна, добавьте больше контекста в плейсхолдер или уточнения вроде «отвечай пошагово» или «приведи примеры»."
+  },
+  "faq.scenario.q": {
+    "message": "Для каких задач подходит этот промпт?"
+  },
+  "faq.tips.a": {
+    "message": "Во-первых, сделайте [плейсхолдер] более конкретным (стиль, длина, тематика). Во-вторых, на неудачный ответ отвечайте «сделай это более X». В-третьих, сравнивайте результаты разных моделей: Claude / ChatGPT / Gemini."
+  },
+  "faq.tips.q": {
+    "message": "Как повысить качество ответа?"
+  },
+  "faq.usage.a": {
+    "message": "Скопируйте промпт, замените [плейсхолдер] в квадратных скобках своим текстом и вставьте в ChatGPT, Claude, Gemini, DeepSeek, Qwen или любой другой разговорный ИИ с поддержкой естественного языка."
+  },
+  "faq.usage.q": {
+    "message": "Как использовать этот промпт?"
+  },
+  "feedback.description": {
+    "message": "Ваш отзыв важен для нас!"
+  },
+  "feedback.newIssue": {
+    "message": "Новый issue"
+  },
+  "feedback.responseTime": {
+    "message": "Обычно отвечаем в течение 24 часов"
+  },
+  "feedback.spec_label": {
+    "message": "Открытый канал"
+  },
+  "feedback.subtitle": {
+    "message": "Сообщения об ошибках, предложения функций, вопросы использования — любые отзывы приветствуются"
   },
   "feedback.title": {
     "message": "Отзывы и предложения"
   },
-  "feedback.description": {
-    "message": "Ваши отзывы очень важны для нас!"
+  "feedback.type.bug": {
+    "message": "Сообщения об ошибках"
+  },
+  "feedback.type.help": {
+    "message": "Помощь"
+  },
+  "feedback.type.suggestion": {
+    "message": "Предложения"
   },
   "feedback.welcome": {
-    "message": "Отзывы приветствуются!",
-    "description": "The welcome title on the feedback page"
+    "message": "Отзывы и предложения"
   },
-  "feedback.paragraph": {
-    "message": "Приветствуются предложения, идеи и пожелания, направленные на постоянное улучшение ChatGPT Shortcut и повышение личной эффективности и продуктивности. Если вам необходимо оставить отзыв об ошибке, пожалуйста, укажите ссылку на место, где возникла проблема, и обстоятельства, связанные с ней. Что касается содержания подсказок, то вы можете присылать их на нескольких языках или просто описать свою идею подсказки. Мы ищем подсказки, которые развивают мышление или позволяют получить высококачественный результат. Как только представленная вами подсказка будет опубликована, ваш вклад будет добавлен на страницу. Соответствующую запись можно найти по имени автора (username).",
-    "description": "The main paragraph on the feedback page"
+  "filter.operator.all.tip": {
+    "message": "Показать промпты, соответствующие всем выбранным тегам"
   },
-  "toggle_prompt_language": {
-    "message": "Переключение языков подсказок"
+  "filter.operator.any.tip": {
+    "message": "Показать промпты, соответствующие любому выбранному тегу"
   },
-  "showcase.filters.title": {
-    "message": "Фильтры"
+  "hero.supportedAiTools": {
+    "message": "{tools} и другие"
   },
-  "toggle_prompt_language_description": {
-    "message": "Изменение языка, на котором отображаются подсказки, переключение между английским и текущим языком страницы."
+  "homepage.description": {
+    "message": "Надоели нерелевантные ответы ИИ? AiShort предлагает практичные шаблоны для письма, кода и перевода. Копируйте одним кликом и удвойте эффективность!"
   },
-  "showcase.searchBar.placeholder": {
-    "message": "Поиск подсказок..."
+  "homepage.slogan": {
+    "message": "Отборные ИИ-промпты — копируйте и используйте в один клик"
   },
-  "showcase.usersList.noResult": {
-    "message": "😒 Результаты не найдены, пожалуйста, сократите срок поиска"
+  "homepage.title": {
+    "message": "Библиотека ИИ-промптов для ChatGPT, Claude, Gemini"
   },
-  "showcase.favoritesList.title": {
-    "message": "Наши фавориты"
+  "howto.step1.name": {
+    "message": "Скопируйте промпт"
   },
-  "showcase.usersList.allUsers": {
-    "message": "Все подсказки"
+  "howto.step1.text": {
+    "message": "Скопируйте шаблон промпта в буфер обмена."
   },
-  "加载更多": {
-    "message": "Загрузить Подробнее"
+  "howto.step2.name": {
+    "message": "Настройте плейсхолдеры"
   },
-  "message.resetPassword.success": {
-    "message": "Сброс пароля прошел успешно!"
+  "howto.step2.text": {
+    "message": "Замените разделы [плейсхолдер] своим содержимым."
   },
-  "error.resetPassword": {
-    "message": "Ошибка сброса пароля."
+  "howto.step3.name": {
+    "message": "Отправьте в ИИ"
   },
-  "message.resetPassword.error": {
-    "message": "Сброс пароля не удался. Пожалуйста, повторите попытку позже."
-  },
-  "input.resetPassword.code": {
-    "message": "Пожалуйста, введите код сброса!"
-  },
-  "placeholder.resetPassword.code": {
-    "message": "код сброса"
+  "howto.step3.text": {
+    "message": "Вставьте в ChatGPT, Claude, Gemini, DeepSeek или другой разговорный ИИ и запустите."
   },
   "input.newPassword": {
-    "message": "Пожалуйста, введите новый пароль!"
+    "message": "Пожалуйста, введите новый пароль"
   },
-  "placeholder.newPassword": {
-    "message": "новый пароль"
+  "input.resetPassword.code": {
+    "message": "Пожалуйста, введите код сброса"
   },
-  "input.confirmPassword": {
-    "message": "Пожалуйста, подтвердите новый пароль!"
+  "input.search.placeholder": {
+    "message": "письмо, перевод…"
   },
-  "placeholder.confirmPassword": {
-    "message": "Подтверждение нового пароля"
+  "label.agree": {
+    "message": "Согласен"
   },
-  "button.resetPassword": {
-    "message": "Сброс пароля"
+  "label.promptContent": {
+    "message": "Содержание промпта"
   },
-  "收藏": {
-    "message": "Cобирать"
+  "label.promptNotes": {
+    "message": "Примечания"
   },
-  "showcase.tag.favorite.description": {
-    "message": "Cобирать"
+  "label.promptRemark": {
+    "message": "Использование"
   },
-  "写作辅助": {
-    "message": "письменная помощь"
+  "label.promptTitle": {
+    "message": "Название промпта"
   },
-  "showcase.tag.write.description": {
-    "message": "Внесение последних штрихов в грамматику и стиль, которые помогут вам в написании текстов"
+  "label.sharePrompt": {
+    "message": "Опубликовать на странице сообщества — другие смогут увидеть и добавить в избранное"
   },
-  "文章/报告": {
-    "message": "Статьи/отчеты"
+  "level.bronze": {
+    "message": "Бронза"
   },
-  "showcase.tag.article.description": {
-    "message": "Художественная литература, эссе, новости, сценарии, репортажи и т.д. в определенном стиле"
+  "level.diamond": {
+    "message": "Бриллиант"
   },
-  "IT/编程": {
-    "message": "ИТ/программирование"
+  "level.emerald": {
+    "message": "Изумруд"
   },
-  "showcase.tag.code.description": {
-    "message": "Хотя и говорится, что это программирование, ChatGPT дает предложения по шагам программирования или простой пример кода по запросу, который может быть использован только в качестве теста и все равно должен быть изменен программистом."
+  "level.gold": {
+    "message": "Золото"
   },
-  "AI": {
-    "message": "AI"
+  "level.newcomer": {
+    "message": "Юный исследователь"
   },
-  "showcase.tag.ai.description": {
-    "message": "AI"
+  "level.platinum": {
+    "message": "Платина"
   },
-  "生活质量": {
-    "message": "качество жизни"
+  "level.ruby": {
+    "message": "Рубин"
   },
-  "showcase.tag.living.description": {
-    "message": "Фитнес, питание, шеф-повар, макияж, стилистика"
+  "level.sapphire": {
+    "message": "Сапфир"
   },
-  "趣味知识": {
-    "message": "Интересные знания"
+  "level.silver": {
+    "message": "Серебро"
   },
-  "showcase.tag.interesting.description": {
-    "message": "Интересные знания"
+  "level.stardust": {
+    "message": "Звёздная пыль"
   },
-  "自助百科": {
-    "message": "Энциклопедия самопомощи"
+  "link.addprompt": {
+    "message": "Создать промпт"
   },
-  "showcase.tag.life.description": {
-    "message": "Знание энциклопедии жизни/самопомощи"
+  "link.communityPrompts": {
+    "message": "Промпты сообщества"
   },
-  "心理/社交": {
-    "message": "Психологические/социальные"
+  "link.home": {
+    "message": "Главная"
   },
-  "showcase.tag.social.description": {
-    "message": "Психологические/социальные"
+  "link.myAccount": {
+    "message": "Мой аккаунт"
   },
-  "哲学/宗教": {
-    "message": "Философия/религия"
+  "link.privacy": {
+    "message": "Политика конфиденциальности"
   },
-  "showcase.tag.philosophy.description": {
-    "message": "Философия/религия"
+  "link.terms": {
+    "message": "Условия использования"
   },
-  "发散思维": {
-    "message": "дивергентное мышление"
+  "login.google.button": {
+    "message": "Войти через Google"
   },
-  "showcase.tag.mind.description": {
-    "message": "Вопросы, размышления, ассоциации, обобщения"
+  "login.google.error": {
+    "message": "Ошибка при входе через Google, попробуйте позже ({error})"
   },
-  "教育/学生": {
-    "message": "Образование/Студенты"
+  "login.google.failed": {
+    "message": "Не удалось войти через Google"
   },
-  "showcase.tag.pedagogy.description": {
-    "message": "Содержание, связанное с обучением студентов"
+  "login.google.redirecting": {
+    "message": "Перенаправление на вход Google..."
   },
-  "学术/教师": {
-    "message": "Академик/преподаватель"
+  "login.login.prompt": {
+    "message": "Уже есть аккаунт?"
   },
-  "showcase.tag.academic.description": {
-    "message": "Люди и вещи, связанные с учебой или школой"
+  "login.method.code": {
+    "message": "Вход без пароля"
   },
-  "游戏": {
-    "message": "играть"
+  "login.method.password": {
+    "message": "Вход по паролю"
   },
-  "showcase.tag.games.description": {
-    "message": "играть"
+  "login.passwordless.info": {
+    "message": "Ссылка для входа будет отправлена на вашу почту, — откройте её, чтобы войти"
   },
-  "工具": {
-    "message": "артефакт"
+  "login.register.prompt": {
+    "message": "Еще нет аккаунта?"
   },
-  "showcase.tag.tool.description": {
-    "message": "артефакт"
+  "login.subtitle.forgotPassword": {
+    "message": "Ссылка для сброса будет отправлена на вашу почту"
   },
-  "终端/解释器": {
-    "message": "Терминал/интерпретатор"
+  "login.subtitle.register": {
+    "message": "Находите промпты, делитесь ими и создавайте свои"
   },
-  "showcase.tag.interpreter.description": {
-    "message": "Терминал/интерпретатор"
+  "login.subtitle.welcome": {
+    "message": "Войдите, чтобы открыть больше премиум-промптов"
   },
-  "语言/翻译": {
-    "message": "Язык/перевод"
+  "login.title.forgotPassword": {
+    "message": "Восстановить пароль"
   },
-  "showcase.tag.language.description": {
-    "message": "Множество инструментов для генерации, преобразования, перевода, распознавания и т.д. языков."
+  "login.title.register": {
+    "message": "Присоединиться к сообществу"
   },
-  "辩论/演讲": {
-    "message": "Дебаты/выступления"
+  "login.title.welcome": {
+    "message": "С возвращением"
   },
-  "showcase.tag.speech.description": {
-    "message": "Дебаты/выступления"
+  "message.addFavorite.error": {
+    "message": "Не удалось добавить в избранное, попробуйте позже"
   },
-  "点评/评鉴": {
-    "message": "Комментарии/Отзывы"
+  "message.addFavorite.success": {
+    "message": "Добавлено в избранное"
   },
-  "showcase.tag.comments.description": {
-    "message": "Комментарии/Отзывы"
+  "message.addPrompt.error": {
+    "message": "Не удалось отправить промпт, попробуйте позже"
   },
-  "文本/词语": {
-    "message": "Текст/фразы"
+  "message.addPrompt.success": {
+    "message": "Промпт отправлен"
   },
-  "showcase.tag.text.description": {
-    "message": "Текст/фразы"
+  "message.cache.cleared": {
+    "message": "Кэш очищен"
   },
-  "showcase.tag.company.description": {
-    "message": "Позиции в рамках общего бизнеса"
+  "message.cache.clearError": {
+    "message": "Ошибка очистки кэша, попробуйте позже"
   },
-  "SEO": {
-    "message": "SEO"
+  "message.cannotFavorOwn": {
+    "message": "Нельзя добавить собственный промпт в избранное"
   },
-  "showcase.tag.seo.description": {
-    "message": "Генерация расширений текста/ключевых слов"
+  "message.convertToPrivate.error": {
+    "message": "Не удалось сделать промпт приватным, попробуйте позже"
   },
-  "医生": {
-    "message": "хирург"
+  "message.convertToPrivate.favoriteKept": {
+    "message": "Приватный промпт создан, но исходное избранное не удалось удалить. Удалите его вручную, чтобы избежать дублирования."
   },
-  "showcase.tag.doctor.description": {
-    "message": "хирург"
+  "message.convertToPrivate.success": {
+    "message": "Преобразовано в приватный промпт"
   },
-  "金融顾问": {
-    "message": "Финансовый консультант"
-  },
-  "showcase.tag.finance.description": {
-    "message": "Должности в финансовом секторе"
-  },
-  "音乐": {
-    "message": "концерт"
-  },
-  "showcase.tag.music.description": {
-    "message": "концерт"
-  },
-  "行业顾问": {
-    "message": "Отраслевой консалтинг"
-  },
-  "showcase.tag.professional.description": {
-    "message": "Юристы, чайные мастера и другие должности, требующие специальных знаний"
-  },
-  "投稿": {
-    "message": "вносить что-л."
-  },
-  "showcase.tag.contribute.description": {
-    "message": "Вклад каждого из вас может помочь нам в разработке идей"
-  },
-  "input.rules.username": {
-    "message": "Пожалуйста, введите имя пользователя или адрес зарегистрированной электронной почты!"
-  },
-  "input.rules.password": {
-    "message": "Пожалуйста, введите пароль!"
-  },
-  "input.rules.email": {
-    "message": "Пожалуйста, введите свой адрес электронной почты!"
-  },
-  "message.error": {
-    "message": "Не удалось отправить заявку. Пожалуйста, повторите попытку позже."
-  },
-  "message.loginSuccess": {
-    "message": "Вход в систему успешно выполнен!"
-  },
-  "message.registerSuccess": {
-    "message": "Регистрация прошла успешно!"
-  },
-  "message.forgotPassword.success": {
-    "message": "Письмо о восстановлении пароля отправлено!"
-  },
-  "error.forgotPassword": {
-    "message": "Ошибка при отправке письма с забытым паролем."
-  },
-  "message.forgotPassword.error": {
-    "message": "Не удалось отправить письмо для сброса пароля, повторите попытку позже."
-  },
-  "input.username": {
-    "message": "Имя пользователя/электронная почта"
-  },
-  "input.password": {
-    "message": "криптовалюта"
-  },
-  "button.login": {
-    "message": "войти в систему"
-  },
-  "button.forgotPassword": {
-    "message": "забыли пароль?"
-  },
-  "input.register.username": {
-    "message": "идентификатор пользователя"
-  },
-  "input.email": {
-    "message": "Пожалуйста, введите свой адрес электронной почты!"
-  },
-  "agreement.rules": {
-    "message": "Согласитесь с Условиями предоставления услуг и Политикой конфиденциальности перед использованием"
-  },
-  "agreement.text": {
-    "message": "нажмите здесь для согласия"
-  },
-  "agreement.terms": {
-    "message": "условия предоставления услуг"
-  },
-  "agreement.and": {
-    "message": "ответить пением"
-  },
-  "agreement.policy": {
-    "message": "политика конфиденциальности"
-  },
-  "button.register": {
-    "message": "зачисление"
-  },
-  "placeholder.email": {
-    "message": "входящие"
-  },
-  "button.sendResetEmail": {
-    "message": "Отправить сообщение о сбросе по электронной почте"
-  },
-  "tabs.login": {
-    "message": "войти в систему"
-  },
-  "card.welcome": {
-    "message": "wellcome"
-  },
-  "tooltip.switchLang": {
-    "message": "Нажмите для переключения языка отображения"
-  },
-  "comments.info": {
-    "message": "Пожалуйста, откликнитесь ниже с вашими комментариями, мыслями или соображениями по этому поводу."
-  },
-  "message.changePassword.success": {
-    "message": "Пароль успешно изменен!"
-  },
-  "error.changePassword": {
-    "message": "Ошибка при смене пароля."
-  },
-  "message.changePassword.error": {
-    "message": "Смена пароля не удалась, повторите попытку позже"
-  },
-  "message.loading": {
-    "message": "Загрузка..."
-  },
-  "label.changePassword": {
-    "message": "изменить пароль"
-  },
-  "input.currentPassword": {
-    "message": "Пожалуйста, введите текущий пароль!"
-  },
-  "placeholder.currentPassword": {
-    "message": "текущий пароль"
-  },
-  "button.changePassword": {
-    "message": "изменить пароль"
-  },
-  "title.userInfo": {
-    "message": "информация о пользователе"
-  },
-  "userInfo.username": {
-    "message": "Имя пользователя"
-  },
-  "userInfo.email": {
-    "message": "Почтовый ящик"
-  },
-  "message.success": {
-    "message": "Запись отправлена успешно!"
-  },
-  "message.deletePrompt.confirm.title": {
-    "message": "Подтверждение Удалить"
+  "message.copied": {
+    "message": "Скопировано"
   },
   "message.deletePrompt.confirm.content": {
-    "message": "Вы уверены, что хотите удалить этот запрос?"
+    "message": "Вы уверены, что хотите удалить этот промпт?"
   },
-  "message.deletePrompt.success": {
-    "message": "Подсказка успешно удалена!"
+  "message.deletePrompt.confirm.title": {
+    "message": "Подтверждение удаления"
   },
   "message.deletePrompt.error": {
-    "message": "Не удалось удалить запрос, повторите попытку позже."
+    "message": "Не удалось удалить промпт, попробуйте позже"
   },
-  "modal.updateprompt.title": {
-    "message": "Обновление текущей подсказки"
+  "message.deletePrompt.success": {
+    "message": "Промпт удален"
   },
-  "message.addprompt.requiredTitle": {
-    "message": "Пожалуйста, введите название реплики!"
+  "message.error": {
+    "message": "Произошла ошибка при обработке"
   },
-  "input.addprompt.title": {
-    "message": "Название кия"
+  "message.error.forgotPassword": {
+    "message": "Не удалось отправить письмо для сброса пароля, попробуйте позже"
   },
-  "message.addprompt.requiredDescription": {
-    "message": "Пожалуйста, введите содержание слова подсказки!"
+  "message.error.passwordChangeFailed": {
+    "message": "Не удалось изменить пароль, попробуйте позже"
   },
-  "input.addprompt.description": {
-    "message": "Содержание слов подсказки"
+  "message.error.passwordlessLink": {
+    "message": "Не удалось отправить, проверьте почту или имя пользователя"
   },
-  "input.addprompt.remark": {
-    "message": "Роль слова реплики (не обязательно)"
+  "message.export.error": {
+    "message": "Не удалось экспортировать, попробуйте позже"
   },
-  "input.addprompt.notes": {
-    "message": "Примечания (необязательно): Здесь можно привести описание источника подсказки, а также ее версии на других языках. Кроме того, если у вас есть какие-либо идеи или пожелания по расширению подсказки, укажите их здесь."
+  "message.export.noPrompts": {
+    "message": "Нет промптов для экспорта. Сначала создайте промпт или добавьте в избранное."
   },
-  "message.addprompt.submission": {
-    "message": "Хотите поделиться подсказкой на публичной странице?"
+  "message.export.success": {
+    "message": "Промпты экспортированы"
   },
-  "button.updateprompt": {
-    "message": "Обновление подсказки"
+  "message.forgotPassword.info": {
+    "message": "Если вы забыли текущий пароль, вы можете сбросить его по электронной почте. Мы отправим письмо со ссылкой для сброса на ваш зарегистрированный адрес электронной почты."
   },
-  "message.success1": {
-    "message": "Щелкните на ярлыке \"My Prompt\", чтобы просмотреть добавленные пользовательские подсказки."
+  "message.import.failed": {
+    "message": "Ошибка импорта"
   },
-  "button.logout": {
-    "message": "отменить"
+  "message.import.invalid": {
+    "message": "Неверный формат данных"
   },
-  "input.addprompt.share.checked": {
-    "message": "быть"
+  "message.import.nothing": {
+    "message": "Всё из файла уже есть — импортировать нечего"
   },
-  "input.addprompt.share.unchecked": {
-    "message": "засорение"
+  "message.import.parseError": {
+    "message": "Ошибка разбора JSON"
   },
-  "button.addPrompt": {
-    "message": "Добавить подсказку"
+  "message.import.partial": {
+    "message": "Импортированы не все данные"
   },
-  "点击移除收藏": {
-    "message": "Нажмите, чтобы удалить избранное"
+  "message.import.success": {
+    "message": "Импортировано"
   },
-  "theme.ErrorPageContent.title": {
-    "message": "На странице произошёл сбой.",
-    "description": "The title of the fallback page when the page crashed"
+  "message.loadFailed": {
+    "message": "Не удалось загрузить данные, попробуйте позже"
   },
-  "theme.NotFound.title": {
-    "message": "Страница не найдена",
-    "description": "The title of the 404 page"
+  "message.loginRequired": {
+    "message": "Пожалуйста, сначала войдите"
   },
-  "theme.NotFound.p1": {
-    "message": "К сожалению, мы не смогли найти запрашиваемую вами страницу.",
-    "description": "The first paragraph of the 404 page"
+  "message.logout.confirm.content": {
+    "message": "Вы уверены, что хотите выйти?"
   },
-  "theme.NotFound.p2": {
-    "message": "Пожалуйста, обратитесь к владельцу сайта, с которого вы перешли на эту ссылку, чтобы сообщить ему, что ссылка не работает.",
-    "description": "The 2nd paragraph of the 404 page"
+  "message.logout.confirm.title": {
+    "message": "Подтверждение выхода"
   },
-  "theme.admonition.note": {
-    "message": "примечание",
-    "description": "The default label used for the Note admonition (:::note)"
+  "message.noComments": {
+    "message": "Пока нет комментариев, будьте первым"
   },
-  "theme.admonition.tip": {
-    "message": "подсказка",
-    "description": "The default label used for the Tip admonition (:::tip)"
+  "message.noFavorites": {
+    "message": "Избранного пока нет — найдите промпты, которые вам понравятся"
+  },
+  "message.noPrompts": {
+    "message": "Промптов пока нет — создайте первый"
+  },
+  "message.noSpaceItems": {
+    "message": "Пока пусто — создайте промпт или добавьте в избранное"
+  },
+  "message.orderSaved": {
+    "message": "Расположение сохранено"
+  },
+  "message.orderSaveFailed": {
+    "message": "Не удалось сохранить расположение, попробуйте позже"
+  },
+  "message.postComment.error": {
+    "message": "Не удалось отправить комментарий. Повторите попытку позже."
+  },
+  "message.removeFavorite.confirm.content": {
+    "message": "Вы уверены, что хотите удалить этот промпт из избранного?"
+  },
+  "message.removeFavorite.confirm.title": {
+    "message": "Удалить из избранного"
+  },
+  "message.removeFavorite.error": {
+    "message": "Не удалось удалить из избранного, попробуйте позже"
+  },
+  "message.removeFavorite.success": {
+    "message": "Удалено из избранного"
+  },
+  "message.resetPassword.error": {
+    "message": "Не удалось сбросить пароль, попробуйте позже"
+  },
+  "message.resetPassword.success": {
+    "message": "Пароль сброшен"
+  },
+  "message.success.forgotPassword": {
+    "message": "Письмо для сброса пароля отправлено"
+  },
+  "message.success.login": {
+    "message": "Вход выполнен"
+  },
+  "message.success.passwordChanged": {
+    "message": "Пароль изменен"
+  },
+  "message.success.passwordlessLink": {
+    "message": "Ссылка для входа без пароля отправлена на вашу почту"
+  },
+  "message.success.register": {
+    "message": "Аккаунт создан"
+  },
+  "message.tagsUpdated": {
+    "message": "Теги обновлены"
+  },
+  "message.tagsUpdateFailed": {
+    "message": "Не удалось обновить теги, попробуйте позже"
+  },
+  "message.updatePrompt.error": {
+    "message": "Не удалось обновить промпт, попробуйте позже"
+  },
+  "message.updatePrompt.success": {
+    "message": "Промпт обновлен"
+  },
+  "modal.clearCache.title": {
+    "message": "Очистить кэш?"
+  },
+  "modal.clearCache.warning": {
+    "message": "После очистки все данные будут загружены заново."
+  },
+  "modal.editPrompt.title": {
+    "message": "Редактировать промпт"
+  },
+  "modal.forgotPassword.title": {
+    "message": "Забыли пароль"
+  },
+  "myCollection.header.subtitle": {
+    "message": "Управление вашими промптами, избранным и тегами"
+  },
+  "myCollection.header.title": {
+    "message": "Моя коллекция"
+  },
+  "myCollection.stats.favorites": {
+    "message": "Избранное"
+  },
+  "myCollection.stats.prompts": {
+    "message": "Мои промпты"
+  },
+  "myCollection.stats.tags": {
+    "message": "Теги"
+  },
+  "myCollection.stats.total": {
+    "message": "Всего"
+  },
+  "myspace.assignTag": {
+    "message": "Назначить теги"
+  },
+  "myspace.fallbackHint": {
+    "message": "Совпадений не найдено. Рекомендуем:"
+  },
+  "myspace.filter.all": {
+    "message": "Все"
+  },
+  "myspace.filter.favorites": {
+    "message": "Избранное"
+  },
+  "myspace.filter.prompts": {
+    "message": "Промпты"
+  },
+  "myspace.manageTags": {
+    "message": "Управление тегами"
+  },
+  "myspace.tagManager.empty": {
+    "message": "Нет пользовательских тегов"
+  },
+  "myspace.tagManager.namePlaceholder": {
+    "message": "Название тега"
+  },
+  "myspace.tagManager.title": {
+    "message": "Управление пользовательскими тегами"
+  },
+  "nav.explore": {
+    "message": "Обзор"
+  },
+  "nav.myCollection": {
+    "message": "Моя коллекция"
+  },
+  "noResults.description": {
+    "message": "Попробуйте другое ключевое слово или очистите фильтры тегов"
+  },
+  "noResults.title": {
+    "message": "Подходящих промптов не найдено"
+  },
+  "placeholder.comment": {
+    "message": "Введите комментарий здесь... Поддерживается синтаксис Markdown и HTML"
+  },
+  "placeholder.confirmPassword": {
+    "message": "Подтвердите новый пароль"
+  },
+  "placeholder.currentPassword": {
+    "message": "Текущий пароль"
+  },
+  "placeholder.email": {
+    "message": "Электронная почта"
+  },
+  "placeholder.newPassword": {
+    "message": "Новый пароль"
+  },
+  "placeholder.password": {
+    "message": "Пароль"
+  },
+  "placeholder.promptContent": {
+    "message": "Введите подробное содержание промпта здесь..."
+  },
+  "placeholder.promptNotes": {
+    "message": "Источник промпта, версии на других языках или дополнительные пояснения (необязательно)"
+  },
+  "placeholder.promptRemark": {
+    "message": "Кратко опишите использование этого промпта (необязательно)"
+  },
+  "placeholder.promptTitle": {
+    "message": "Дайте название вашему промпту"
+  },
+  "placeholder.resetPassword.code": {
+    "message": "Код сброса"
+  },
+  "placeholder.username": {
+    "message": "Имя пользователя"
+  },
+  "placeholder.usernameOrEmail": {
+    "message": "Имя пользователя или email"
+  },
+  "prompt.authorNote": {
+    "message": "Примечание автора"
+  },
+  "prompt.charsLabel": {
+    "message": "символов"
+  },
+  "prompt.content": {
+    "message": "Содержание промпта"
+  },
+  "prompt.private": {
+    "message": "Приватный"
+  },
+  "prompt.source": {
+    "message": "Источник"
+  },
+  "prompt.tokenDanger": {
+    "message": "Промпт очень длинный, что может затруднить его передачу и повторное использование. Рекомендуется разбить его на части."
+  },
+  "prompt.tokenWarning": {
+    "message": "Промпт довольно длинный; возможно, его стоит сократить или разделить."
+  },
+  "prompt.translation": {
+    "message": "Перевод"
+  },
+  "search.submit": {
+    "message": "Поиск"
+  },
+  "share.copy": {
+    "message": "Копировать"
+  },
+  "share.native": {
+    "message": "Система"
+  },
+  "share.shareTo": {
+    "message": "Поделиться ссылкой"
+  },
+  "share.shareOn": {
+    "message": "Поделиться в {channel}"
+  },
+  "showcase.header.button": {
+    "message": "Обзор сообщества"
+  },
+  "showcase.tag.academic.description": {
+    "message": "Академические исследования, педагогический дизайн, планирование учебных программ и другая поддержка работы учителей"
+  },
+  "showcase.tag.academic.label": {
+    "message": "Наука/Учителя"
+  },
+  "showcase.tag.ai.description": {
+    "message": "Промпты и сценарии применения, связанные с искусственным интеллектом"
+  },
+  "showcase.tag.ai.label": {
+    "message": "ИИ"
+  },
+  "showcase.tag.article.description": {
+    "message": "Генерация романов, статей, пресс-релизов, сценариев, исследовательских отчетов и других типов текстов"
+  },
+  "showcase.tag.article.label": {
+    "message": "Статья/Отчёт"
+  },
+  "showcase.tag.code.description": {
+    "message": "Предложения по программированию, примеры кода, решения для отладки и техническое руководство"
+  },
+  "showcase.tag.code.label": {
+    "message": "IT/Программирование"
+  },
+  "showcase.tag.comments.description": {
+    "message": "Профессиональные обзоры, оценка произведений и анализ"
+  },
+  "showcase.tag.comments.label": {
+    "message": "Критика/Оценка"
+  },
+  "showcase.tag.company.description": {
+    "message": "Корпоративное управление, кадры, маркетинг и другие функциональные роли"
+  },
+  "showcase.tag.company.label": {
+    "message": "Корпоративные функции"
+  },
+  "showcase.tag.contribute.description": {
+    "message": "Качественные промпты, которыми поделились пользователи сообщества"
+  },
+  "showcase.tag.contribute.label": {
+    "message": "Пользовательские публикации"
+  },
+  "showcase.tag.doctor.description": {
+    "message": "Консультации по здоровью, просвещение о болезнях и медицинские советы"
+  },
+  "showcase.tag.doctor.label": {
+    "message": "Медицина и здоровье"
+  },
+  "showcase.tag.finance.description": {
+    "message": "Управление инвестициями, финансовый анализ и советы по финансовому планированию"
+  },
+  "showcase.tag.finance.label": {
+    "message": "Финансовый консультант"
+  },
+  "showcase.tag.games.description": {
+    "message": "Текстовые игры, ролевые игры и интерактивные развлечения"
+  },
+  "showcase.tag.games.label": {
+    "message": "Увлекательные игры"
+  },
+  "showcase.tag.interesting.description": {
+    "message": "Забавные факты, научно-популярный контент и веселые вопросы и ответы"
+  },
+  "showcase.tag.interesting.label": {
+    "message": "Интересные факты"
+  },
+  "showcase.tag.interpreter.description": {
+    "message": "Симуляция терминалов командной строки и интерпретаторов различных языков программирования"
+  },
+  "showcase.tag.interpreter.label": {
+    "message": "Терминал/Интерпретатор"
+  },
+  "showcase.tag.language.description": {
+    "message": "Многоязычный перевод, изучение языков, преобразование текста и распознавание языков"
+  },
+  "showcase.tag.language.label": {
+    "message": "Язык/Перевод"
+  },
+  "showcase.tag.life.description": {
+    "message": "Практические знания и решения проблем в повседневной жизни"
+  },
+  "showcase.tag.life.label": {
+    "message": "Энциклопедия жизни"
+  },
+  "showcase.tag.living.description": {
+    "message": "Фитнес-программы, советы по питанию, кулинарные приёмы, макияж и стиль и другие бытовые темы"
+  },
+  "showcase.tag.living.label": {
+    "message": "Качество жизни"
+  },
+  "showcase.tag.mind.description": {
+    "message": "Стимулирование креативности, критического мышления и способности к логическому рассуждению"
+  },
+  "showcase.tag.mind.label": {
+    "message": "Тренировка мышления"
+  },
+  "showcase.tag.music.description": {
+    "message": "Создание музыки, изучение теории музыки и оценка произведений"
+  },
+  "showcase.tag.music.label": {
+    "message": "Музыка и искусство"
+  },
+  "showcase.tag.pedagogy.description": {
+    "message": "Репетиторство, помощь с домашним заданием, подготовка к экзаменам и другой контент для студентов"
+  },
+  "showcase.tag.pedagogy.label": {
+    "message": "Образование/Студенты"
+  },
+  "showcase.tag.philosophy.description": {
+    "message": "Философское мышление, религиозная культура и исследование жизненной мудрости"
+  },
+  "showcase.tag.philosophy.label": {
+    "message": "Философия/Религия"
+  },
+  "showcase.tag.professional.description": {
+    "message": "Юристы, бухгалтеры, консультанты и другие советники в профессиональных областях"
+  },
+  "showcase.tag.professional.label": {
+    "message": "Профессиональный консультант"
+  },
+  "showcase.tag.seo.description": {
+    "message": "Поисковая оптимизация, расширение ключевых слов и контент-маркетинг"
+  },
+  "showcase.tag.seo.label": {
+    "message": "SEO"
+  },
+  "showcase.tag.social.description": {
+    "message": "Психологическое консультирование, анализ эмоций, социальные навыки и межличностное общение"
+  },
+  "showcase.tag.social.label": {
+    "message": "Психология/Общение"
+  },
+  "showcase.tag.speech.description": {
+    "message": "Навыки дебатов, написание речей и риторика"
+  },
+  "showcase.tag.speech.label": {
+    "message": "Дебаты/Речь"
+  },
+  "showcase.tag.text.description": {
+    "message": "Обработка текста, анализ слов и задачи, связанные с языком"
+  },
+  "showcase.tag.text.label": {
+    "message": "Текст/Слова"
+  },
+  "showcase.tag.tool.description": {
+    "message": "Практичные инструменты для повышения эффективности работы"
+  },
+  "showcase.tag.tool.label": {
+    "message": "Инструменты продуктивности"
+  },
+  "showcase.tag.write.description": {
+    "message": "Исправление грамматики, оптимизация стиля, повышение качества текста"
+  },
+  "showcase.tag.write.label": {
+    "message": "Помощь с текстами"
+  },
+  "showcase.usersList.noResult": {
+    "message": "Результатов не найдено, попробуйте другие ключевые слова"
+  },
+  "sidebar.related": {
+    "message": "Похожие промпты"
+  },
+  "sort.mostUpvoted": {
+    "message": "Популярные"
+  },
+  "sort.newest": {
+    "message": "Новые"
+  },
+  "theme.admonition.caution": {
+    "message": "предупреждение",
+    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
     "message": "осторожно",
@@ -453,32 +884,60 @@
     "message": "к сведению",
     "description": "The default label used for the Info admonition (:::info)"
   },
-  "theme.admonition.caution": {
+  "theme.admonition.note": {
+    "message": "примечание",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "подсказка",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
     "message": "предупреждение",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Закрыть",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Прокрутка к началу",
     "description": "The ARIA label for the back to top button"
   },
+  "theme.blog.archive.description": {
+    "message": "Архив",
+    "description": "The page & hero description of the blog archive page"
+  },
   "theme.blog.archive.title": {
     "message": "Архив",
     "description": "The page & hero title of the blog archive page"
   },
-  "theme.blog.archive.description": {
-    "message": "Архив",
-    "description": "The page & hero description of the blog archive page"
+  "theme.blog.author.noPosts": {
+    "message": "Этот автор ещё не написал ни одной публикации.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Авторы",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Показать всех авторов",
+    "description": "The label of the link targeting the blog authors page"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Навигация по странице списка блогов",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Следующие записи",
+    "message": "Записи новее",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Предыдущие записи",
+    "message": "Записи старше",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.paginator.navAriaLabel": {
@@ -486,27 +945,55 @@
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Следующий пост",
+    "message": "Пост новее",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Предыдущий пост",
+    "message": "Пост старше",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.post.plurals": {
-    "message": "{count} запись|{count} записи|{count} записей",
+    "message": "Один пост|{count} поста|{count} постов",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "Одна минута чтения|{readingTime} минуты чтения|{readingTime} минут чтения",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Читать далее",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Подробнее о «{title}»",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Навигация по последним записям блога",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} с тегом \"{tagName}\"",
+    "message": "{nPosts} с тегом «{tagName}»",
     "description": "The title of the page for a blog tag"
   },
-  "theme.tags.tagsPageLink": {
-    "message": "Посмотреть все теги",
-    "description": "The label of the link targeting the tag list page"
+  "theme.CodeBlock.copied": {
+    "message": "Скопировано",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "Копировать",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Копировать код в буфер обмена",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Включить/выключить перенос слов",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Переключение между темным и светлым режимом (сейчас используется {mode})",
+    "message": "Переключение между тёмным и светлым режимом (сейчас используется {mode})",
     "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
@@ -517,48 +1004,9 @@
     "message": "Светлый режим",
     "description": "The name for the light color mode"
   },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Навигационная цепочка текущей страницы",
-    "description": "The ARIA label for the breadcrumbs"
-  },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Страница документа",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Предыдущая страница",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Следующая страница",
-    "description": "The label used to navigate to the next doc"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Одна страница|{count} страницы|{count} страниц",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} с тегом \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "Версия: {versionLabel}"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Это документация для будущей версии {siteTitle} {versionLabel}.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Это документация {siteTitle} для версии {versionLabel}, которая уже не поддерживается.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Актуальная документация находится на странице {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "последней версии",
-    "description": "The label used for the latest version suggestion link label"
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "системный режим",
+    "description": "The name for the system color mode"
   },
   "theme.common.editThisPage": {
     "message": "Отредактировать эту страницу",
@@ -568,318 +1016,331 @@
     "message": "Прямая ссылка на {heading}",
     "description": "Title for link to heading"
   },
-  "theme.lastUpdated.atDate": {
-    "message": " {date}",
-    "description": "The words used to describe on which date a page has been last updated"
+  "theme.common.skipToMainContent": {
+    "message": "Перейти к основному содержанию",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
-  "theme.lastUpdated.byUser": {
-    "message": " от {user}",
-    "description": "The words used to describe by who the page has been last updated"
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Эта страница является черновиком. Она будет видна только в среде разработки и не войдет в финальную версию.",
+    "description": "The draft content banner message"
   },
-  "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Последнее обновление{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Черновая страница",
+    "description": "The draft content banner title"
   },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Версии",
-    "description": "The label for the navbar versions dropdown on mobile view"
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Эта страница скрыта из общего списка. Поисковые системы не будут её индексировать, и доступ к ней будут иметь только пользователи, у которых есть прямая ссылка.",
+    "description": "The unlisted content banner message"
   },
-  "theme.tags.tagsListLabel": {
-    "message": "Теги:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Закрыть",
-    "description": "The ARIA label for close button of announcement bar"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Навигация по последним постам в блоге",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "Скопировано",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Скопировать в буфер обмена",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "Скопировать",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "Переключить перенос по строкам",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "Main",
-    "description": "The ARIA label for the main navigation"
-  },
-  "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Языки",
-    "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "Содержание этой страницы",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Читать дальше",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "Подробнее о {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "{readingTime} мин. чтения",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Непубличная страница",
+    "description": "The unlisted content banner title"
   },
   "theme.docs.breadcrumbs.home": {
     "message": "Главная страница",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Свернуть сайдбар",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Свернуть сайдбар",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Закрыть панель навигации",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
-    "description": "The ARIA label for the sidebar navigation"
-  },
-  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Перейти к главному меню",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
-  },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Развернуть сайдбар",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Развернуть сайдбар",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Переключить навигационную панель",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
-  },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "Попробуйте ещё раз",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
-  },
-  "theme.common.skipToMainContent": {
-    "message": "Перейти к основному содержимому",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
-  },
-  "theme.tags.tagsPageTitle": {
-    "message": "Теги",
-    "description": "The title of the tag list page"
-  },
-  "link.myfavorite": {
-    "message": "Мои любимые"
-  },
-  "comment.reply": {
-    "message": "Ответить"
-  },
-  "edit": {
-    "message": "Редактировать"
-  },
-  "delete": {
-    "message": "Удалить"
-  },
-  "cancel": {
-    "message": "Отмена"
-  },
-  "comment.required": {
-    "message": "Пожалуйста, введите свой комментарий"
-  },
-  "comment.maxLength": {
-    "message": "Комментарий не должен превышать 2000 знаков"
-  },
-  "comment.placeholder": {
-    "message": "Введите свой комментарий здесь... Поддержка синтаксиса Markdown и HTML."
-  },
-  "reply.required": {
-    "message": "Пожалуйста, введите содержание ответа"
-  },
-  "reply.submit": {
-    "message": "Ответить Комментарий"
-  },
-  "comment.add": {
-    "message": "Добавить комментарий"
-  },
-  "comment.comments": {
-    "message": "комментарии"
-  },
-  "myprompt": {
-    "message": "Мои рекомендации"
-  },
-  "theme.admonition.warning": {
-    "message": "warning",
-    "description": "The default label used for the Warning admonition (:::warning)"
-  },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
-  },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
-  },
-  "企业职能": {
-    "message": "Функции предприятия"
-  },
-  "myprompt.tooltip": {
-    "message": "Подсказки, которые я добавил или сделал, которые можно использовать для хранения подсказок, отличных от AiShort."
-  },
-  "myfavorite.tooltip": {
-    "message": "Моя коллекция подсказок, включая подсказки сообщества."
-  },
-  "community.tag.tooltip": {
-    "message": "Подсказки, предоставленные сообществом"
-  },
-  "community.tag": {
-    "message": "Сообщество"
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Навигационная цепочка текущей страницы",
+    "description": "The ARIA label for the breadcrumbs"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
     "message": "{count} элемент|{count} элемента|{count} элементов",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
-  "message.passwordlessLinkSent": {
-    "message": "Ссылка для входа без пароля отправлена!"
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Навигация по страницам документации",
+    "description": "The ARIA label for the docs pagination"
   },
-  "message.errorSendingPasswordlessLink": {
-    "message": "Не удалось отправить. Пожалуйста, проверьте свой адрес электронной почты или имя пользователя."
+  "theme.docs.paginator.next": {
+    "message": "Следующая страница",
+    "description": "The label used to navigate to the next doc"
   },
-  "button.sendPasswordlessLink": {
-    "message": "Получить ссылку для входа без пароля"
+  "theme.docs.paginator.previous": {
+    "message": "Предыдущая страница",
+    "description": "The label used to navigate to the previous doc"
   },
-  "tabs.passwordlessLogin": {
-    "message": "Вход в систему без пароля"
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Закрыть панель навигации",
+    "description": "The ARIA label for close button of mobile sidebar"
   },
-  "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
-    "description": "The title of the page for a blog author"
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Свернуть боковую панель",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
-  "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
-    "description": "The title of the authors page"
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Свернуть боковую панель",
+    "description": "The title attribute for collapse button of doc sidebar"
   },
-  "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
-    "description": "The label of the link targeting the blog authors page"
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Развернуть боковую панель",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Unlisted page",
-    "description": "The unlisted content banner title"
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Развернуть боковую панель",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
-  "theme.contentVisibility.unlistedBanner.message": {
-    "message": "This page is unlisted. Search engines will not index it, and only users having a direct link can access it.",
-    "description": "The unlisted content banner message"
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Боковая панель «Документация»",
+    "description": "The ARIA label for the sidebar navigation"
   },
-  "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
-    "description": "The draft content banner title"
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Переключить панель навигации",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
-  "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
-    "description": "The draft content banner message"
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} с тегом «{tagName}»",
+    "description": "The title of the page for a docs tag"
   },
-  "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Одна страница|{count} страницы|{count} страниц",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
-  "link.user": {
-    "message": "Мои запросы"
+  "theme.docs.versionBadge.label": {
+    "message": "Версия: {versionLabel}"
   },
-  "link.myaccount": {
-    "message": "Настройки аккаунта"
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "последней версии",
+    "description": "The label used for the latest version suggestion link label"
   },
-  "link.addprompt": {
-    "message": "Добавить запрос"
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Актуальная документация находится на странице {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
   },
-  "modal.addprompt.title": {
-    "message": "Поделиться запросом (Этот запрос появится на вкладке 'Мои запросы')"
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Это документация {siteTitle} для версии {versionLabel}, которая уже не поддерживается.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
-  "showcase.header.button": {
-    "message": "🙏 Поделитесь своими запросами"
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Это ещё не опубликованная документация {siteTitle} версии {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
-  "label.forgotPassword": {
-    "message": "Забыли пароль"
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Свернуть категорию боковой панели «{label}»",
+    "description": "The ARIA label to collapse the sidebar category"
   },
-  "link.home": {
-    "message": "Главная"
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Развернуть категорию боковой панели «{label}»",
+    "description": "The ARIA label to expand the sidebar category"
   },
-  "input.password.match": {
-    "message": "Пароли не совпадают!"
+  "theme.ErrorPageContent.title": {
+    "message": "На странице произошёл сбой.",
+    "description": "The title of the fallback page when the page crashed"
   },
-  "input.password.valid": {
-    "message": "Пароль должен состоять не менее чем из 6 символов."
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Попробовать ещё раз",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
-  "message.forgotPassword.info": {
-    "message": "На вашу электронную почту будет отправлена ссылка для сброса пароля."
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(откроется в новой вкладке)",
+    "description": "The ARIA label for the external link icon"
   },
-  "input.email.valid": {
-    "message": "Пожалуйста, введите действительный адрес электронной почты!"
+  "theme.lastUpdated.atDate": {
+    "message": "{date}",
+    "description": "The words used to describe on which date a page has been last updated"
   },
-  "message.passwordlessLogin.info": {
-    "message": "На вашу электронную почту будет отправлена ссылка для входа в систему. Нажмите на нее, чтобы войти в систему без пароля."
+  "theme.lastUpdated.byUser": {
+    "message": "от {user}",
+    "description": "The words used to describe by who the page has been last updated"
   },
-  "message.fetchError": {
-    "message": "Не удалось получить подсказки. Пожалуйста, повторите попытку позже."
-  },
-  "message.noPrompts": {
-    "message": "Еще нет представленных подсказок. Пожалуйста, добавьте свои подсказки."
-  },
-  "message.cache.cleared": {
-    "message": "Кэш был очищен."
-  },
-  "tooltip.clearCache": {
-    "message": "Если вы обновили услугу или подсказки на другом устройстве, нажмите, чтобы очистить кэш и синхронизировать последнее содержимое."
-  },
-  "button.clearCache": {
-    "message": "Очистить кэш"
-  },
-  "hideTags": {
-    "message": "Скрыть теги"
-  },
-  "showTags": {
-    "message": "Показать теги"
-  },
-  "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
-    "description": "The name for the system color mode"
-  },
-  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
-    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Последнее обновление: {atDate} {byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
+    "message": "Свернуть выпадающее меню",
     "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
-  "homepage.slogan": {
-    "message": "Освойте ИИ-агентов, раскройте 10-кратную продуктивность"
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Развернуть выпадающее меню",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
-  "homepage.title": {
-    "message": "AiShort - Продвинутая платформа ИИ-агентов и промптов | Создавайте, делитесь и умножайте продуктивность в один клик"
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Языки",
+    "description": "The label for the mobile language switcher dropdown"
   },
-  "homepage.description": {
-    "message": "AiShort(ChatGPT Shortcut) — это ведущая платформа ИИ-агентов и промптов, призванная коренным образом изменить ваши методы работы и обучения. Здесь вы можете не только открыть для себя обширную библиотеку высококачественных промптов, но и без труда создавать, управлять и запускать мощных ИИ-агентов одним щелчком мыши для автоматизации сложных задач. AiShort поддерживает несколько языков, способствуя более эффективному взаимодействию с ИИ. Присоединяйтесь к нашему сообществу создателей прямо сейчас, чтобы исследовать и делиться безграничным потенциалом ИИ-агентов и начать свою эру сверхпродуктивности!"
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← Вернуться в главное меню",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
-  "community.title": {
-    "message": "Сообщество создателей AiShort - Совместно создавайте и делитесь ИИ-агентами и промптами, исследуйте будущие рабочие процессы"
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Версии",
+    "description": "The label for the navbar versions dropdown on mobile view"
   },
-  "community.description": {
-    "message": "Добро пожаловать в сообщество создателей AiShort! Это центр для энтузиастов и практиков в области ИИ-агентов и промптов. Здесь вы можете находить, делиться и импортировать мощных ИИ-агентов, созданных участниками сообщества, и применять их в своей работе — написании текстов, программировании, анализе рынка и других рабочих процессах — всего одним щелчком мыши. Участвуйте в обсуждениях, оптимизируйте решения для агентов и сотрудничайте с другими создателями, чтобы превращать смелые идеи в эффективные автоматизированные решения. Присоединяйтесь сейчас и поделитесь своим первым ИИ-агентом!"
+  "theme.NavBar.navAriaLabel": {
+    "message": "Главная",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "Мы не смогли найти то, что вы искали.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Пожалуйста, свяжитесь с владельцем сайта, который перенаправил вас по исходному URL, и сообщите ему, что ссылка не работает.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "Страница не найдена",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Теги:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Посмотреть все теги",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "Теги",
+    "description": "The title of the tag list page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "На этой странице",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "title.dataManagement": {
+    "message": "Управление данными"
+  },
+  "title.security": {
+    "message": "Настройки безопасности"
+  },
+  "title.userInfo": {
+    "message": "Информация о пользователе"
+  },
+  "unavailable.unshared": {
+    "message": "Автор отменил публикацию"
+  },
+  "unavailable.unsharedNoCache": {
+    "message": "Автор отменил публикацию, а локального кэша нет"
+  },
+  "userPage.level.maxReached": {
+    "message": "MAX REACHED"
+  },
+  "userPage.level.sharedSuffix": {
+    "message": "опубликовано"
+  },
+  "userPage.level.specLabel": {
+    "message": "LEVEL"
+  },
+  "userPage.level.toNext": {
+    "message": "до {next}"
+  },
+  "validation.agreement.required": {
+    "message": "Перед использованием необходимо принять условия использования и политику конфиденциальности"
+  },
+  "validation.comment.maxLength": {
+    "message": "Содержание комментария не должно превышать 2000 символов"
+  },
+  "validation.comment.required": {
+    "message": "Пожалуйста, введите содержание комментария"
+  },
+  "validation.confirmPassword.required": {
+    "message": "Пожалуйста, подтвердите новый пароль"
+  },
+  "validation.currentPassword.required": {
+    "message": "Пожалуйста, введите текущий пароль"
+  },
+  "validation.email.invalid": {
+    "message": "Пожалуйста, введите корректный адрес электронной почты"
+  },
+  "validation.email.required": {
+    "message": "Пожалуйста, введите электронную почту"
+  },
+  "validation.password.length": {
+    "message": "Пароль должен содержать не менее 6 символов"
+  },
+  "validation.password.match": {
+    "message": "Пароли не совпадают"
+  },
+  "validation.password.required": {
+    "message": "Пожалуйста, введите пароль"
+  },
+  "validation.promptContent.required": {
+    "message": "Пожалуйста, введите содержание промпта"
+  },
+  "validation.promptTitle.required": {
+    "message": "Пожалуйста, введите название промпта"
+  },
+  "validation.replyRequired": {
+    "message": "Пожалуйста, введите содержание ответа"
+  },
+  "validation.username.required": {
+    "message": "Пожалуйста, введите имя пользователя или зарегистрированный email"
+  },
+  "vote.downvote.alreadyVoted": {
+    "message": "Вы уже отметили этот промпт как «Не нравится» в этой сессии."
+  },
+  "vote.downvote.failed": {
+    "message": "Не удалось сохранить отметку «Не нравится». Попробуйте снова."
+  },
+  "vote.downvote.success": {
+    "message": "Отметка «Не нравится» сохранена"
+  },
+  "vote.loginRequired": {
+    "message": "Войдите, чтобы проголосовать."
+  },
+  "vote.upvote.alreadyVoted": {
+    "message": "Вы уже отметили этот промпт как «Нравится» в этой сессии."
+  },
+  "vote.upvote.failed": {
+    "message": "Не удалось сохранить отметку «Нравится». Попробуйте снова."
+  },
+  "vote.upvote.success": {
+    "message": "Отметка «Нравится» сохранена"
+  },
+  "auth.callback.title": {
+    "message": "Завершение входа"
+  },
+  "auth.callback.working": {
+    "message": "Выполняется вход…"
+  },
+  "auth.callback.workingHint": {
+    "message": "Не закрывайте эту страницу — скоро вы вернётесь на главную."
+  },
+  "auth.callback.failed": {
+    "message": "Вход не завершён"
+  },
+  "auth.callback.failedHint": {
+    "message": "Ссылка для входа могла истечь или уже была использована. Вернитесь на главную и войдите снова."
+  },
+  "auth.callback.idle": {
+    "message": "Здесь нет незавершённого входа"
+  },
+  "auth.callback.idleHint": {
+    "message": "Эта страница нужна только для перенаправления при входе — добавлять её в закладки не нужно."
+  },
+  "auth.callback.backHome": {
+    "message": "На главную, чтобы войти"
+  },
+  "myspace.tagManager.emptyHint": {
+    "message": "Введите название выше, выберите цвет — и первый тег готов."
+  },
+  "validation.username.empty": {
+    "message": "Имя пользователя не может быть пустым"
+  },
+  "message.username.updated": {
+    "message": "Имя пользователя обновлено"
+  },
+  "message.username.updateError": {
+    "message": "Не удалось обновить имя пользователя. Повторите попытку чуть позже."
+  },
+  "message.requestTimeout": {
+    "message": "Превышено время ожидания запроса. Повторите попытку."
+  },
+  "message.tooManyRequests": {
+    "message": "Слишком много попыток. Повторите чуть позже."
+  },
+  "account.signInRequired": {
+    "message": "Войдите, чтобы перейти в аккаунт"
+  },
+  "account.signInRequiredHint": {
+    "message": "Возвращаем вас на главную — или нажмите кнопку ниже."
+  },
+  "myspace.tagManager.color": {
+    "message": "Цвет тега"
+  },
+  "comments.gif.searchPlaceholder": {
+    "message": "Поиск GIF"
   }
 }

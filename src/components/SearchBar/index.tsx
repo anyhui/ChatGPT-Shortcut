@@ -1,0 +1,318 @@
+import React, { useContext, useState, useEffect, useCallback, startTransition } from "react";
+
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { useHistory, useLocation } from "@docusaurus/router";
+import { translate } from "@docusaurus/Translate";
+
+import { Input, Button } from "antd";
+import { SearchOutlined } from "@ant-design/icons";
+
+import { AuthContext } from "@site/src/components/AuthContext";
+
+import { type Operator } from "@site/src/components/ShowcaseFilterToggle";
+import { type TagType, TagList } from "@site/src/data/tags";
+import { getPrompts } from "@site/src/api";
+import { getCommPrompts } from "@site/src/api/prompts";
+import { searchCardsLocally } from "@site/src/api/homepage";
+
+import styles from "./styles.module.css";
+
+type UserState = {
+  scrollTopPosition: number;
+  focusedElementId: string | undefined;
+};
+
+export function prepareUserState(): UserState | undefined {
+  if (ExecutionEnvironment.canUseDOM) {
+    return {
+      scrollTopPosition: window.scrollY,
+      focusedElementId: document.activeElement?.id,
+    };
+  }
+
+  return undefined;
+}
+
+const SearchNameQueryKey = "name";
+
+function readSearchName(search: string) {
+  return new URLSearchParams(search).get(SearchNameQueryKey);
+}
+
+/** Check if a prompt matches a search term across text fields */
+// title/description 用可选链：getPrompts 对「已收藏但作者取消分享且本地无缓存」的社区提示词
+// 会返回 {id,_unavailable,_noCache} 占位对象（无 title/description）。裸 .toLowerCase() 会抛错，
+// 而该调用在 [...userprompts,...commus].filter 里——一个占位对象就会中断整组过滤，
+// 导致用户自有/收藏提示词的搜索结果被整体吞空。占位对象无可搜索内容，应安静地不匹配。
+const matchesSearch = (prompt: any, searchLower: string): boolean =>
+  prompt.title?.toLowerCase().includes(searchLower) ||
+  prompt.description?.toLowerCase().includes(searchLower) ||
+  (prompt.remark && prompt.remark.toLowerCase().includes(searchLower)) ||
+  (prompt.notes && prompt.notes.toLowerCase().includes(searchLower));
+
+export function useFilteredPrompts(searchMode: "default" | "myfavor" | "myprompts" = "default") {
+  const location = useLocation<UserState>();
+  const { i18n } = useDocusaurusContext();
+  const currentLanguage = i18n.currentLocale;
+  const [operator, setOperator] = useState<Operator>("OR");
+  const [selectedTags, setSelectedTags] = useState<TagType[]>([]);
+  const [searchName, setSearchName] = useState<string | null>(null);
+  const [filteredCards, setFilteredCards] = useState([]);
+  const [filteredCommus, setFilteredCommus] = useState<any[]>([]);
+  const { userAuth } = useContext(AuthContext);
+
+  useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const tags = queryParams.getAll("tags");
+    const search = queryParams.get("name");
+    const operatorParam = queryParams.get("operator") || "OR";
+    // 将多次初始 setState 合并到一次低优更新，避免 hydration 尚未完全时触发高优刷新
+    startTransition(() => {
+      const validTags = tags.filter((tag) => TagList.includes(tag as TagType)) as TagType[];
+      setSelectedTags(validTags);
+      setSearchName(search);
+      setOperator(operatorParam as Operator);
+    });
+  }, [location.search]);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function fetchAndFilterUsers() {
+      if (selectedTags.length === 0 && !searchName) {
+        // 保持引用：非筛选态下这些数组必须是空，但**不能每次都写新的 []**。
+        // 依赖里有 favorites.loves/commLoves，而收藏乐观更新（applyOptimistic）每次都
+        // 构造新数组 → 未开筛选时点一次 ❤️ 也会走到这里。写新引用会让 filteredCommus
+        // 换掉，HomePage 里依赖它的 setVoteDeltas({}) 再引一次渲染（对象字面量，
+        // Object.is 恒不成立）——一次点击白白多两轮渲染 + 整表协调。
+        // 返回 prev 本身即可让 React 按引用相等跳过这次更新。
+        startTransition(() => {
+          if (!cancelled) {
+            setFilteredCards((prev) => (prev.length === 0 ? prev : []));
+            setFilteredCommus((prev) => (prev.length === 0 ? prev : []));
+          }
+        });
+        return;
+      }
+      const searchLower = searchName ? searchName.toLowerCase() : "";
+      try {
+        if (searchMode === "default") {
+          // 精选搜索和本地收藏搜索并行，互不依赖
+          const cardsPromise = searchCardsLocally(selectedTags, searchName, currentLanguage, operator);
+          const commusPromise =
+            userAuth?.data && selectedTags.length === 0
+              ? Promise.all([
+                  userAuth.data.userprompts ? getPrompts("userprompts", userAuth.data.userprompts) : Promise.resolve([]),
+                  userAuth.data.favorites && userAuth.data.favorites.commLoves ? getPrompts("commus", userAuth.data.favorites.commLoves) : Promise.resolve([]),
+                ]).then(([userprompts, commus]) => [...userprompts, ...commus].filter((prompt) => matchesSearch(prompt, searchLower)))
+              : Promise.resolve([]);
+
+          const [data, localCommus] = await Promise.all([cardsPromise, commusPromise.catch(() => [] as any[])]);
+          if (cancelled) return;
+
+          startTransition(() => {
+            setFilteredCards(data);
+            setFilteredCommus(localCommus);
+          });
+
+          // 降级搜索：精选和本地收藏都无结果时，搜索全量社区提示词（无需登录）
+          if (localCommus.length === 0 && data.length === 0 && searchName) {
+            try {
+              const result = await getCommPrompts(1, 12, "upvoteDifference", "desc", searchName);
+              if (cancelled) return;
+              const communityPrompts = Array.isArray(result) ? result[0] : [];
+              if (communityPrompts.length > 0) {
+                startTransition(() => setFilteredCommus(communityPrompts));
+              }
+            } catch {
+              // 社区搜索失败不影响已有结果
+            }
+          }
+        } else if (searchMode === "myfavor") {
+          if (userAuth?.data?.favorites) {
+            const data = await searchCardsLocally(selectedTags, searchName, currentLanguage, operator);
+            if (cancelled) return;
+            const favoriteCards = userAuth.data.favorites.loves ? data.filter((card) => userAuth.data.favorites.loves.includes(card.id)) : [];
+            startTransition(() => setFilteredCards(favoriteCards));
+
+            let commus: any[] = [];
+            if (userAuth.data.favorites.commLoves) {
+              commus = await getPrompts("commus", userAuth.data.favorites.commLoves);
+              if (cancelled) return;
+            }
+            const filtered = commus.filter((prompt) => matchesSearch(prompt, searchLower));
+            startTransition(() => setFilteredCommus(filtered));
+          } else {
+            startTransition(() => {
+              if (!cancelled) {
+                setFilteredCards([]);
+                setFilteredCommus([]);
+              }
+            });
+          }
+        } else if (searchMode === "myprompts") {
+          if (userAuth?.data?.userprompts) {
+            const userprompts = await getPrompts("userprompts", userAuth.data.userprompts);
+            if (cancelled) return;
+            const filtered = userprompts.filter((prompt) => matchesSearch(prompt, searchLower));
+            startTransition(() => setFilteredCommus(filtered));
+          } else {
+            startTransition(() => {
+              if (!cancelled) setFilteredCommus([]);
+            });
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching and filtering prompts:", error);
+        if (!cancelled) {
+          startTransition(() => {
+            setFilteredCards([]);
+            setFilteredCommus([]);
+          });
+        }
+      }
+    }
+    fetchAndFilterUsers();
+    return () => {
+      cancelled = true;
+    };
+  }, [selectedTags, searchName, operator, currentLanguage, searchMode, userAuth?.data?.userprompts, userAuth?.data?.favorites?.loves, userAuth?.data?.favorites?.commLoves]);
+
+  const isFiltered = selectedTags.length > 0 || searchName !== null;
+
+  return { filteredCommus, filteredCards, isFiltered };
+}
+
+/**
+ * 「清除筛选」的唯一定义，供筛选栏与无结果空状态共用。
+ * 两处曾各算各的：筛选栏只数标签、空状态数标签+关键词，同屏出现两个同名按钮却显示不同数字。
+ * 计数与清除范围必须是同一件事，所以合并到这里。
+ */
+export function useClearFilters() {
+  const location = useLocation();
+  const history = useHistory();
+
+  const activeFilterCount = React.useMemo(() => {
+    const params = new URLSearchParams(location.search);
+    return params.getAll("tags").length + (params.get(SearchNameQueryKey) ? 1 : 0);
+  }, [location.search]);
+
+  const clearFilters = useCallback(() => {
+    const params = new URLSearchParams(location.search);
+    params.delete("tags");
+    params.delete(SearchNameQueryKey);
+    params.delete("operator");
+    history.push({ ...location, search: params.toString() });
+  }, [location, history]);
+
+  return { activeFilterCount, clearFilters };
+}
+
+interface SearchBarProps {
+  beforeSearch?: (value: string | null) => boolean | void;
+}
+
+function SearchBar({ beforeSearch }: SearchBarProps) {
+  const history = useHistory();
+  const location = useLocation<UserState>();
+  const [value, setValue] = useState<string | null>(null);
+  const inputRef = React.useRef<any>(null);
+
+  useEffect(() => {
+    setValue(readSearchName(location.search));
+  }, [location]);
+
+  useEffect(() => {
+    if (location.state?.focusedElementId === "searchbar" && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [location.state]);
+
+  // Ctrl+K / ⌘K 聚焦搜索框（终端 command palette 惯例，与 suffix 键帽提示对应）
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        inputRef.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  const handleSearch = useCallback(() => {
+    if (beforeSearch && beforeSearch(value) === false) {
+      return;
+    }
+    // 避免重复 push：清空搜索时 effect 会因 handleSearch 重建而二次触发，
+    // 若搜索词没变就跳过，防止产生重复历史记录（用户按返回键需按两次）。
+    //
+    // 只比对 name 参数本身，不比对整个 query 串——handleSearch 唯一改动的就是它，
+    // 而 delete + set 会把 name 挪到参数列表末尾，串比较在 URL 还带 tags 等参数时
+    // 必然不等（"name=a&tags=b" vs "tags=b&name=a"），守卫会静默失效。
+    const nextName = value || null;
+    if (readSearchName(location.search) === nextName) {
+      return;
+    }
+
+    const newSearch = new URLSearchParams(location.search);
+    newSearch.delete(SearchNameQueryKey);
+    if (nextName) {
+      newSearch.set(SearchNameQueryKey, nextName);
+    }
+    history.push({
+      ...location,
+      search: newSearch.toString(),
+      state: prepareUserState(),
+    });
+  }, [value, location, history, beforeSearch]);
+
+  useEffect(() => {
+    if (value === "") {
+      handleSearch();
+    }
+  }, [value, handleSearch]);
+
+  const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setValue(e.target.value);
+  };
+
+  return (
+    <div className={styles.searchInput}>
+      <Input
+        ref={inputRef}
+        id="searchbar"
+        // 只留示例词：`>` 和放大镜已说明是搜索框，加前缀后任何语言都会被截断
+        placeholder={translate({
+          message: "写作、翻译…",
+          id: "input.search.placeholder",
+        })}
+        value={value ?? undefined}
+        onChange={handleInput}
+        onPressEnter={handleSearch}
+        onKeyDown={(e) => {
+          // Esc 退出聚焦（终端惯例，与 Ctrl+K 进入对应）。
+          // isComposing 守卫：拼音输入中按 Esc 是取消 IME 候选词，焦点必须留在框内
+          if (e.key === "Escape" && !e.nativeEvent.isComposing) (e.target as HTMLInputElement).blur();
+        }}
+        allowClear
+        prefix={
+          <span className={styles.promptChar} aria-hidden>
+            &gt;
+            <span className={styles.fakeCaret} />
+          </span>
+        }
+        suffix={
+          <>
+            <kbd className={`${styles.kbdHint} hideOnSmallScreen`} aria-hidden>
+              CTRL K
+            </kbd>
+            <Button icon={<SearchOutlined />} onClick={handleSearch} type="text" aria-label={translate({ id: "search.submit", message: "搜索" })} />
+          </>
+        }
+      />
+    </div>
+  );
+}
+
+export default SearchBar;

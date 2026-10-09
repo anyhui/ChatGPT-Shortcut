@@ -1,11 +1,41 @@
-# 安装插件
+---
+sidebar_label: 安装浏览器插件
+title: AI Short 插件 | ChatGPT/Gemini/Claude 侧边栏 · Chrome/Edge/Firefox 安装
+description: 在浏览器侧边栏直接调用 AiShort 提示词，与 ChatGPT、Gemini、Claude 对话页并排，不用切换标签页复制粘贴。Chrome、Edge、Firefox 一键安装。
+---
 
-AiShort（ChatGPT Shortcut）扩展兼容 Chrome、Edge、Firefox 及其他基于 Chromium 的浏览器。这款扩展不仅具备网页版 ChatGPT Shortcut 的功能，还增添了如侧边栏和自动激活窗口等独特特性。该扩展能够随 ChatGPT 或自定义页面自动启动，同时支持通过 `Alt+Shift+S` 快捷键手动激活。以下为下载渠道：
+# 安装浏览器插件
 
-- **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/addon/chatgpt-shortcut/)
+AI Short (ChatGPT Shortcut) 扩展把 5000+ 提示词随扩展本地打包，以**侧边栏、弹窗、独立窗口**三种形式贴着 ChatGPT、Gemini、Claude、DeepSeek 等对话页使用，不用再切回 aishort.top 复制粘贴。支持 Chrome、Edge、Firefox，按 `Alt + Shift + S` 快速唤出。
+
+## 安装方式
+
+### 1. 应用商店（推荐，一键安装）
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/aishort/)（自 v4.4.0 起与 Chrome 版对齐，差异见 [Firefox 插件设置](./firefox-extension-setting)）
+
+### 2. 商店打不开？本地安装包
+
+从以下渠道下载，再按对应教程安装：
+
 - **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
-- **国内下载**: [Alist 云盘](https://alist.newzone.top:9003/apps/ChatGPT%20Shortcut%20Extension)；[蓝奏云](https://wwva.lanzouq.com/b01lsc9vi),密码:1qow
+- **国内镜像**: [Alist 云盘](https://alist.newzone.top:9003/apps/ChatGPT%20Shortcut%20Extension)；[蓝奏云（密码: 1qow）](https://wwva.lanzouq.com/b01lsc9vi)
 
-此外，我们还提供了油猴脚本——[**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere)，该脚本允许用户自定义匹配域名，在任意网站上使用 AiShort 侧边栏。但需注意，由于 ChatGPT 页面的脚本内容注入限制，脚本的侧边栏功能在 ChatGPT 页面上是通过弹窗来激活的。
+> 📖 安装教程：[CRX 文件](./manual-chrome-extension) · [ZIP 文件](./manual-chrome-extension-zip)
+
+## 装好后
+
+按 `Alt + Shift + S` 唤出，或点击工具栏图标。详细用法见[使用教程](./usage)。
+
+## 油猴脚本（Tampermonkey）
+
+除了插件形式，我们还提供了 [**ChatGPT Shortcut Anywhere 油猴脚本**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere)。
+油猴（Tampermonkey）是一款浏览器扩展，可以让用户运行自定义脚本来增强网页功能。
+
+通过该脚本，你可以在任意网站调出 AiShort 侧边栏。但需注意，由于 ChatGPT 官方页面限制脚本注入，在该页面中，脚本将通过**弹窗**而非侧边栏的形式运行。
+
+启用 AiShort 侧边栏后，你会在支持网页的右下角看到一个绿色图标开关。点击此图标，便可开启或关闭侧边栏。目前默认支持 ChatGPT、Gemini、Claude、豆包等。
+
+![](/img/docs/extension-sidebar.webp)

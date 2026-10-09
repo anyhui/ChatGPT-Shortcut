@@ -1,17 +1,47 @@
+---
+sidebar_label: Community Prompts
+title: AI Short Community | Discover & Share Quality AI Prompts
+description: Discover top-rated AI prompts in the community! Voting helps quality content surface — share your best ideas for exposure, or set yours to private.
+---
+
 # Community Prompts
 
-The community prompt section will showcase custom prompts shared and uploaded by users. You can share prompts on a public page and also view prompts shared by others for inspiration.
+Community Prompts come from other users — browse for inspiration, then share what you've made. **Voting** keeps the good stuff on top: useful prompts climb, and weaker ones quietly fall away.
 
-## Sorting and Voting
+![](/img/docs/community-page.png)
 
-The community prompt page offers options for sorting by publication time, upvotes/downvotes, and keyword search. You are free to filter community prompts according to your preferences.
+## Sorting and Filtering
 
-![](https://img.newzone.top/2023-07-13-14-50-15.png?imageMogr2/format/webp/thumbnail/500x)
+- **Latest published**: See the latest shares (default)
+- **Most upvoted**: See the most upvoted prompts
+- **Keyword Search**: Search for specific topics
 
-Upvotes/downvotes will determine the prompts included on the main page. Currently, only logged-in users can vote, and only the most recent vote for the same prompt will be recorded.
+## How Voting Works
+
+Upvotes and downvotes decide how visible a prompt becomes:
+
+- **Upvote**: Pushes good content in front of more people
+- **Downvote**: Once a prompt collects enough downvotes, it's hidden from the feed
+
+**Collect = Upvote**: Adding a community prompt to your collection automatically casts an upvote for it.
+
+![Voting Button Status](/img/docs/community-vote.png)
+
+> Voting is only open to logged-in users; for each prompt, only your most recent vote counts.
 
 ## Private Prompts
 
-If you desire to keep your prompts private, you can choose whether or not to share them with the community when submitting or updating your prompts.
+Ideas you'd rather keep to yourself can be set to private:
 
-![](https://img.newzone.top/2023-07-13-09-13-00.gif?imageMogr2/format/webp/thumbnail/500x)
+- Turn off "Share to Community" when creating or editing
+- Private prompts are visible only to you
+- You can switch between public and private at any time
+
+## Discussion
+
+Open any community prompt's detail page and, alongside the full content, log in to comment and join the discussion (emoji and GIF supported).
+
+## Related Documentation
+
+- [Custom Prompts](./user-prompts) - Create and manage prompts
+- [My Collection](./my-collection) - Collection management

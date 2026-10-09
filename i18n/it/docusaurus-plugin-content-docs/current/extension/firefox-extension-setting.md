@@ -1,17 +1,26 @@
-# Impostazioni di Firefox
+---
+sidebar_label: Impostazioni Estensione Firefox
+title: Estensione Firefox AI Short - Barra laterale nativa e scorciatoie
+description: Configura AI Short su Firefox - dalla v4.4.0 è allineata alla versione Chrome, con barra laterale nativa senza permessi per sito e Alt+Shift+D per attivarla.
+---
 
-Prima di utilizzare il plug-in di Firefox, si consiglia di configurarlo nei due passaggi seguenti.
+# Impostazioni Estensione Firefox
 
-## 1. Impostazioni di accesso e di blocco dell'estensione
+Dalla v4.4.0 la versione Firefox è allineata a quella Chrome: le stesse tre modalità di visualizzazione — **barra laterale, popup e finestra indipendente** — con la libreria di prompt inclusa nell'estensione.
 
-Innanzitutto, seleziona "Blocca estensione collegamento ChatGPT" nella barra degli strumenti di Firefox, quindi accedi al centro estensioni. Nella voce estensione collegamento ChatGPT, seleziona "Opzioni" per accedere all'interfaccia delle impostazioni dell'estensione. I passaggi specifici sono mostrati nell'immagine seguente:
+L'estensione richiede solo il permesso `storage`: non legge né modifica le pagine che visiti, quindi **non serve più autorizzarla sito per sito**.
 
-![Impostazioni di Firefox](https://img.newzone.top/2023-12-25-05-51-47.png?imageMogr2/format/webp)
+> Le versioni precedenti (v4.3 e anteriori) iniettavano la barra laterale nella pagina di ChatGPT tramite un content script, per cui bisognava fare clic destro sull'icona e scegliere «Consenti sempre su \*\*\*». Quel meccanismo è stato rimosso: dopo l'aggiornamento puoi saltare questo passaggio.
 
-## 2. Autorizza il funzionamento dell'estensione
+## Scorciatoie
 
-In secondo luogo, per garantire che l'estensione funzioni normalmente su siti Web come ChatGPT e Bard, devi fare clic con il pulsante destro del mouse sull'icona dell'estensione su questi siti Web e selezionare "Consenti sempre su questo sito". Questa azione concede all'estensione l'autorizzazione a modificare il contenuto e aggiungere barre laterali sui siti Web designati.
+- `Alt + Shift + S`: apre l'estensione nella modalità di visualizzazione attuale
+- `Alt + Shift + D`: mostra o nasconde la barra laterale nativa di Firefox
 
-![Permesso estensione Firefox](https://img.newzone.top/2023-12-25-05-59-48.png?imageMogr2/format/webp)
+Puoi personalizzarle in `about:addons` → icona dell'ingranaggio → «Gestisci scorciatoie delle estensioni».
 
-Dopo l'installazione riuscita, puoi visualizzare il [tutorial sull'uso del plugin](./usage.md).
+## Pagina delle impostazioni
+
+Appunta AI Short alla barra degli strumenti di Firefox, poi apri le «Opzioni» dalla pagina delle estensioni per cambiare lingua, modalità di visualizzazione e tema scuro.
+
+Il significato di ogni impostazione è spiegato nella [guida all'uso](./usage).

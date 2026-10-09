@@ -1,0 +1,1346 @@
+{
+  "action.add": {
+    "message": "เพิ่ม"
+  },
+  "action.addPrompt": {
+    "message": "สร้างพรอมต์"
+  },
+  "action.backToLogin": {
+    "message": "กลับไปเข้าสู่ระบบ"
+  },
+  "action.cancel": {
+    "message": "ยกเลิก"
+  },
+  "action.changePassword": {
+    "message": "เปลี่ยนรหัสผ่าน"
+  },
+  "action.clearFilters": {
+    "message": "ล้างตัวกรอง ({count})"
+  },
+  "action.close": {
+    "message": "ปิด"
+  },
+  "action.convertToPrivate": {
+    "message": "แปลงเป็นส่วนตัว"
+  },
+  "action.copy": {
+    "message": "คัดลอก"
+  },
+  "action.copyPrompt": {
+    "message": "คัดลอกพรอมต์"
+  },
+  "action.delete": {
+    "message": "ลบ"
+  },
+  "action.downvote": {
+    "message": "ไม่ชอบ"
+  },
+  "action.edit": {
+    "message": "แก้ไข"
+  },
+  "action.forgotPassword": {
+    "message": "ลืมรหัสผ่าน?"
+  },
+  "action.hideTags": {
+    "message": "ซ่อนแท็ก"
+  },
+  "action.login": {
+    "message": "เข้าสู่ระบบ"
+  },
+  "action.loginInstead": {
+    "message": "เข้าสู่ระบบโดยตรง"
+  },
+  "action.register": {
+    "message": "ลงทะเบียน"
+  },
+  "action.registerNow": {
+    "message": "ลงทะเบียนทันที"
+  },
+  "action.removeFavorite": {
+    "message": "ลบจากรายการโปรด"
+  },
+  "action.reply": {
+    "message": "ตอบกลับ"
+  },
+  "action.save": {
+    "message": "บันทึก"
+  },
+  "action.sendLink": {
+    "message": "รับลิงก์เข้าสู่ระบบ"
+  },
+  "action.sendResetEmail": {
+    "message": "ส่งอีเมลรีเซ็ต"
+  },
+  "action.share": {
+    "message": "แชร์"
+  },
+  "action.showTags": {
+    "message": "แสดงแท็ก"
+  },
+  "action.updatePrompt": {
+    "message": "บันทึก"
+  },
+  "action.upvote": {
+    "message": "ชอบ"
+  },
+  "action.viewDetails": {
+    "message": "ดูรายละเอียด"
+  },
+  "button.clearAllCache": {
+    "message": "ล้างแคชทั้งหมด"
+  },
+  "button.clearCache": {
+    "message": "ล้างแคช"
+  },
+  "button.confirm": {
+    "message": "ยืนยัน"
+  },
+  "button.confirmClear": {
+    "message": "ยืนยันการล้าง"
+  },
+  "button.export": {
+    "message": "ส่งออกข้อมูล"
+  },
+  "button.exportPrompts": {
+    "message": "ส่งออกพรอมต์"
+  },
+  "button.import": {
+    "message": "นำเข้าข้อมูล"
+  },
+  "button.importPrompts": {
+    "message": "นำเข้าพรอมต์"
+  },
+  "button.login": {
+    "message": "เข้าสู่ระบบ"
+  },
+  "button.logout": {
+    "message": "ออกจากระบบ"
+  },
+  "button.resetPassword": {
+    "message": "รีเซ็ตรหัสผ่าน"
+  },
+  "button.signInFree": {
+    "message": "เข้าสู่ระบบฟรี"
+  },
+  "comment.add": {
+    "message": "ส่งความคิดเห็น"
+  },
+  "comments.aiReplying": {
+    "message": "AI กำลังตอบ"
+  },
+  "comments.emoji.label": {
+    "message": "แทรกอิโมจิ"
+  },
+  "comments.empty": {
+    "message": "ยังไม่มีความคิดเห็น"
+  },
+  "comments.gif.label": {
+    "message": "แทรก GIF"
+  },
+  "comments.heading": {
+    "message": "การสนทนา"
+  },
+  "common.favorites": {
+    "message": "รายการโปรด"
+  },
+  "community.backToList": {
+    "message": "กลับไปยังรายการ"
+  },
+  "community.description": {
+    "message": "ต้องการพรอมต์ AI ที่ผ่านการทดสอบแล้ว? เข้าร่วมชุมชน AiShort เพื่อค้นพบเทมเพลตพรอมต์ที่ใช้งานได้จริง"
+  },
+  "community.fetchError": {
+    "message": "ดึงข้อมูลไม่สำเร็จ"
+  },
+  "community.heading": {
+    "message": "ชุมชนพรอมต์ AI"
+  },
+  "community.loading": {
+    "message": "กำลังโหลด..."
+  },
+  "community.notFound": {
+    "message": "ไม่พบพรอมต์"
+  },
+  "community.notFoundDesc": {
+    "message": "พรอมต์นี้อาจถูกลบหรือตั้งค่าเป็นส่วนตัว"
+  },
+  "community.seoSuffix": {
+    "message": "พรอมต์ชุมชน"
+  },
+  "community.tagline": {
+    "message": "พรอมต์ AI ที่ผู้ใช้แบ่งปัน เรียงตามล่าสุดหรือยอดถูกใจสูงสุด รองรับการค้นหาและกรอง เข้าสู่ระบบเพื่อกดถูกใจและบันทึก"
+  },
+  "community.title": {
+    "message": "ชุมชนพรอมต์ AI | ค้นพบและแบ่งปันพรอมต์พรีเมียม"
+  },
+  "description.clearCache.short": {
+    "message": "รีเฟรชข้อมูลแคชในเครื่อง"
+  },
+  "description.exportPrompts.short": {
+    "message": "ส่งออกเป็นไฟล์ JSON สำหรับสำรองข้อมูล"
+  },
+  "description.importPrompts.short": {
+    "message": "นำเข้าพรอมต์และรายการโปรดจากไฟล์ JSON"
+  },
+  "faq.heading": {
+    "message": "คำถามที่พบบ่อย"
+  },
+  "faq.scenario.a": {
+    "message": "เหมาะกับงานที่เกี่ยวข้องกับหัวข้อและคำอธิบายในหน้านี้ หากลองครั้งแรกแล้วผลยังไม่ดีพอ ให้เพิ่มบริบทในช่องพรอมต์ หรือเพิ่มคำกำกับอย่าง “ตอบทีละขั้นตอน” “ยกตัวอย่างประกอบ” เข้าไป"
+  },
+  "faq.scenario.q": {
+    "message": "พรอมต์นี้เหมาะกับสถานการณ์แบบไหน?"
+  },
+  "faq.tips.a": {
+    "message": "หนึ่ง ทำให้ [พรอมต์แทน] จำเพาะมากขึ้น (ใส่สไตล์ ความยาว สาขา); สอง ถ้าผลลัพธ์ไม่ถูกใจ ให้พิมพ์ต่อว่า “ทำให้ X มากกว่าเดิม”; สาม ลองเปรียบเทียบกับโมเดลอื่น ๆ เช่น Claude / ChatGPT / Gemini"
+  },
+  "faq.tips.q": {
+    "message": "จะปรับปรุงคุณภาพผลลัพธ์ได้อย่างไร?"
+  },
+  "faq.usage.a": {
+    "message": "คัดลอกพรอมต์ เปลี่ยน [พรอมต์แทน] ในวงเล็บเหลี่ยมเป็นข้อความของคุณ จากนั้นวางลงใน ChatGPT, Claude, Gemini, DeepSeek, Qwen หรือ AI สนทนาอื่นที่รองรับภาษาธรรมชาติแล้วส่ง"
+  },
+  "faq.usage.q": {
+    "message": "ใช้พรอมต์นี้อย่างไร?"
+  },
+  "feedback.description": {
+    "message": "ข้อเสนอแนะของคุณสำคัญมากสำหรับเรา!"
+  },
+  "feedback.newIssue": {
+    "message": "Issue ใหม่"
+  },
+  "feedback.responseTime": {
+    "message": "มักตอบภายใน 24 ชั่วโมง"
+  },
+  "feedback.spec_label": {
+    "message": "ข้อเสนอแนะสาธารณะ"
+  },
+  "feedback.subtitle": {
+    "message": "รายงานบั๊ก ข้อเสนอแนะฟีเจอร์ คำถามการใช้งาน—ยินดีต้อนรับทุกข้อความ"
+  },
+  "feedback.title": {
+    "message": "ข้อเสนอแนะและคำแนะนำ"
+  },
+  "feedback.type.bug": {
+    "message": "รายงานบั๊ก"
+  },
+  "feedback.type.help": {
+    "message": "ความช่วยเหลือ"
+  },
+  "feedback.type.suggestion": {
+    "message": "ข้อเสนอแนะ"
+  },
+  "feedback.welcome": {
+    "message": "คำติชมและข้อเสนอแนะ"
+  },
+  "filter.operator.all.tip": {
+    "message": "แสดงพรอมต์ที่ตรงกับแท็กทั้งหมดที่เลือก"
+  },
+  "filter.operator.any.tip": {
+    "message": "แสดงพรอมต์ที่ตรงกับแท็กที่เลือกอย่างน้อยหนึ่งรายการ"
+  },
+  "hero.supportedAiTools": {
+    "message": "{tools} และอื่น ๆ"
+  },
+  "homepage.description": {
+    "message": "หงุดหงิดกับคำตอบ AI ที่ไม่เกี่ยวข้อง? AiShort มีเทมเพลตพรอมต์สำหรับการเขียน การเขียนโค้ด และการแปล!"
+  },
+  "homepage.slogan": {
+    "message": "พรอมต์ AI ที่คัดสรรแล้ว พร้อมใช้ในคลิกเดียว"
+  },
+  "homepage.title": {
+    "message": "ไลบรารีพรอมต์ AI สำหรับ ChatGPT, Claude, Gemini"
+  },
+  "howto.step1.name": {
+    "message": "คัดลอกพรอมต์"
+  },
+  "howto.step1.text": {
+    "message": "คัดลอกเทมเพลตพรอมต์ไปยังคลิปบอร์ด"
+  },
+  "howto.step2.name": {
+    "message": "ปรับแต่งพรอมต์แทน"
+  },
+  "howto.step2.text": {
+    "message": "แทนที่ส่วน [พรอมต์แทน] ด้วยเนื้อหาของคุณ"
+  },
+  "howto.step3.name": {
+    "message": "ส่งให้ AI"
+  },
+  "howto.step3.text": {
+    "message": "วางลงใน ChatGPT, Claude, Gemini, DeepSeek หรือ AI สนทนาอื่นแล้วสั่งรัน"
+  },
+  "input.newPassword": {
+    "message": "กรุณากรอกรหัสผ่านใหม่"
+  },
+  "input.resetPassword.code": {
+    "message": "กรุณากรอกรหัสรีเซ็ต"
+  },
+  "input.search.placeholder": {
+    "message": "การเขียน การแปล…"
+  },
+  "label.agree": {
+    "message": "ยอมรับ"
+  },
+  "label.promptContent": {
+    "message": "เนื้อหาพรอมต์"
+  },
+  "label.promptNotes": {
+    "message": "หมายเหตุ"
+  },
+  "label.promptRemark": {
+    "message": "หน้าที่/การใช้งาน"
+  },
+  "label.promptTitle": {
+    "message": "ชื่อพรอมต์"
+  },
+  "label.sharePrompt": {
+    "message": "แชร์ไปยังหน้าชุมชน ผู้อื่นสามารถดูและบันทึกได้"
+  },
+  "level.bronze": {
+    "message": "บรอนซ์"
+  },
+  "level.diamond": {
+    "message": "เพชร"
+  },
+  "level.emerald": {
+    "message": "มรกต"
+  },
+  "level.gold": {
+    "message": "ทอง"
+  },
+  "level.newcomer": {
+    "message": "นักสำรวจมือใหม่"
+  },
+  "level.platinum": {
+    "message": "แพลทินัม"
+  },
+  "level.ruby": {
+    "message": "ทับทิม"
+  },
+  "level.sapphire": {
+    "message": "แซฟไฟร์"
+  },
+  "level.silver": {
+    "message": "เงิน"
+  },
+  "level.stardust": {
+    "message": "ฝุ่นดาว"
+  },
+  "link.addprompt": {
+    "message": "สร้างพรอมต์"
+  },
+  "link.communityPrompts": {
+    "message": "พรอมต์ชุมชน"
+  },
+  "link.home": {
+    "message": "หน้าแรก"
+  },
+  "link.myAccount": {
+    "message": "บัญชีของฉัน"
+  },
+  "link.privacy": {
+    "message": "นโยบายความเป็นส่วนตัว"
+  },
+  "link.terms": {
+    "message": "ข้อกำหนดการให้บริการ"
+  },
+  "login.google.button": {
+    "message": "เข้าสู่ระบบด้วย Google"
+  },
+  "login.google.error": {
+    "message": "เกิดข้อผิดพลาดในการเข้าสู่ระบบ Google ({error}) กรุณาลองใหม่ภายหลัง"
+  },
+  "login.google.failed": {
+    "message": "เข้าสู่ระบบ Google ไม่สำเร็จ"
+  },
+  "login.google.redirecting": {
+    "message": "กำลังเปลี่ยนเส้นทางไปยังการเข้าสู่ระบบ Google..."
+  },
+  "login.login.prompt": {
+    "message": "มีบัญชีแล้ว?"
+  },
+  "login.method.code": {
+    "message": "เข้าสู่ระบบแบบไม่ใช้รหัสผ่าน"
+  },
+  "login.method.password": {
+    "message": "เข้าสู่ระบบด้วยรหัสผ่าน"
+  },
+  "login.passwordless.info": {
+    "message": "ลิงก์เข้าสู่ระบบจะถูกส่งไปยังอีเมลของคุณ คลิกเพื่อเข้าสู่ระบบ"
+  },
+  "login.register.prompt": {
+    "message": "ยังไม่มีบัญชี?"
+  },
+  "login.subtitle.forgotPassword": {
+    "message": "ลิงก์รีเซ็ตจะถูกส่งไปยังอีเมลของคุณ"
+  },
+  "login.subtitle.register": {
+    "message": "ค้นพบ แบ่งปัน และสร้างพรอมต์ที่น่าทึ่ง"
+  },
+  "login.subtitle.welcome": {
+    "message": "เข้าสู่ระบบเพื่อสำรวจพรอมต์พรีเมียมเพิ่มเติม"
+  },
+  "login.title.forgotPassword": {
+    "message": "ลืมรหัสผ่าน"
+  },
+  "login.title.register": {
+    "message": "เข้าร่วมชุมชน"
+  },
+  "login.title.welcome": {
+    "message": "ยินดีต้อนรับกลับมา"
+  },
+  "message.addFavorite.error": {
+    "message": "ไม่สามารถเพิ่มในรายการโปรดได้ โปรดลองอีกครั้ง"
+  },
+  "message.addFavorite.success": {
+    "message": "เพิ่มในรายการโปรดแล้ว"
+  },
+  "message.addPrompt.error": {
+    "message": "ไม่สามารถส่งพรอมต์ได้ โปรดลองอีกครั้ง"
+  },
+  "message.addPrompt.success": {
+    "message": "ส่งพรอมต์แล้ว"
+  },
+  "message.cache.cleared": {
+    "message": "ล้างแคชแล้ว รีเฟรชข้อมูลใหม่แล้ว"
+  },
+  "message.cache.clearError": {
+    "message": "ล้างแคชล้มเหลว โปรดลองอีกครั้ง"
+  },
+  "message.cannotFavorOwn": {
+    "message": "ไม่สามารถบันทึกพรอมต์ของตัวเองเป็นรายการโปรดได้"
+  },
+  "message.convertToPrivate.error": {
+    "message": "การแปลงล้มเหลว กรุณาลองอีกครั้งในภายหลัง"
+  },
+  "message.convertToPrivate.favoriteKept": {
+    "message": "สร้างพรอมต์ส่วนตัวแล้ว แต่ไม่สามารถลบรายการโปรดเดิมได้ กรุณาลบด้วยตนเองเพื่อไม่ให้ซ้ำ"
+  },
+  "message.convertToPrivate.success": {
+    "message": "แปลงเป็นพรอมต์ส่วนตัวแล้ว"
+  },
+  "message.copied": {
+    "message": "คัดลอกแล้ว"
+  },
+  "message.deletePrompt.confirm.content": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบพรอมต์นี้?"
+  },
+  "message.deletePrompt.confirm.title": {
+    "message": "ยืนยันการลบ"
+  },
+  "message.deletePrompt.error": {
+    "message": "ไม่สามารถลบพรอมต์ได้ โปรดลองอีกครั้ง"
+  },
+  "message.deletePrompt.success": {
+    "message": "ลบพรอมต์แล้ว"
+  },
+  "message.error": {
+    "message": "เกิดข้อผิดพลาดขณะประมวลผล"
+  },
+  "message.error.forgotPassword": {
+    "message": "ส่งอีเมลรีเซ็ตรหัสผ่านล้มเหลว กรุณาลองอีกครั้ง"
+  },
+  "message.error.passwordChangeFailed": {
+    "message": "เปลี่ยนรหัสผ่านล้มเหลว กรุณาลองอีกครั้ง"
+  },
+  "message.error.passwordlessLink": {
+    "message": "ส่งไม่สำเร็จ กรุณาตรวจสอบอีเมลหรือชื่อผู้ใช้"
+  },
+  "message.export.error": {
+    "message": "ส่งออกล้มเหลว กรุณาลองอีกครั้ง"
+  },
+  "message.export.noPrompts": {
+    "message": "ไม่มีพรอมต์ให้ส่งออก สร้างหรือเพิ่มเป็นรายการโปรดก่อน"
+  },
+  "message.export.success": {
+    "message": "ส่งออกพรอมต์แล้ว"
+  },
+  "message.forgotPassword.info": {
+    "message": "เราจะส่งอีเมลพร้อมลิงก์รีเซ็ตไปยังอีเมลที่ลงทะเบียนของคุณ"
+  },
+  "message.import.failed": {
+    "message": "นำเข้าล้มเหลว"
+  },
+  "message.import.invalid": {
+    "message": "รูปแบบข้อมูลไม่ถูกต้อง"
+  },
+  "message.import.nothing": {
+    "message": "ทุกอย่างในไฟล์มีอยู่แล้ว ไม่มีอะไรต้องนำเข้า"
+  },
+  "message.import.parseError": {
+    "message": "การแยกวิเคราะห์ JSON ล้มเหลว กรุณาตรวจสอบรูปแบบไฟล์"
+  },
+  "message.import.partial": {
+    "message": "พรอมต์บางส่วนได้ถูกนำเข้าแล้ว"
+  },
+  "message.import.success": {
+    "message": "นำเข้าแล้ว"
+  },
+  "message.loadFailed": {
+    "message": "โหลดข้อมูลไม่สำเร็จ โปรดลองอีกครั้ง"
+  },
+  "message.loginRequired": {
+    "message": "กรุณาเข้าสู่ระบบก่อน"
+  },
+  "message.logout.confirm.content": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?"
+  },
+  "message.logout.confirm.title": {
+    "message": "ยืนยันออกจากระบบ"
+  },
+  "message.noComments": {
+    "message": "ยังไม่มีความคิดเห็น เป็นคนแรกที่แสดงความคิดเห็นกันเถอะ"
+  },
+  "message.noFavorites": {
+    "message": "ยังไม่มีรายการโปรด ไปค้นหาพรอมต์ที่ชอบกันเถอะ"
+  },
+  "message.noPrompts": {
+    "message": "ยังไม่มีพรอมต์ ไปสร้างกันเถอะ"
+  },
+  "message.noSpaceItems": {
+    "message": "ยังไม่มีอะไร — สร้างพรอมต์หรือทำเครื่องหมายเป็นรายการโปรด"
+  },
+  "message.orderSaved": {
+    "message": "บันทึกการจัดเรียงแล้ว"
+  },
+  "message.orderSaveFailed": {
+    "message": "บันทึกการจัดเรียงล้มเหลว โปรดลองอีกครั้ง"
+  },
+  "message.postComment.error": {
+    "message": "ส่งความคิดเห็นไม่สำเร็จ โปรดลองอีกครั้งในภายหลัง"
+  },
+  "message.removeFavorite.confirm.content": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการลบพรอมต์นี้ออกจากรายการโปรด?"
+  },
+  "message.removeFavorite.confirm.title": {
+    "message": "ลบรายการโปรด"
+  },
+  "message.removeFavorite.error": {
+    "message": "ไม่สามารถลบออกจากรายการโปรดได้ โปรดลองอีกครั้ง"
+  },
+  "message.removeFavorite.success": {
+    "message": "ลบออกจากรายการโปรดแล้ว"
+  },
+  "message.resetPassword.error": {
+    "message": "รีเซ็ตรหัสผ่านล้มเหลว กรุณาลองอีกครั้ง"
+  },
+  "message.resetPassword.success": {
+    "message": "ตั้งรหัสผ่านใหม่แล้ว"
+  },
+  "message.success.forgotPassword": {
+    "message": "อีเมลรีเซ็ตรหัสผ่านถูกส่งแล้ว"
+  },
+  "message.success.login": {
+    "message": "เข้าสู่ระบบแล้ว"
+  },
+  "message.success.passwordChanged": {
+    "message": "เปลี่ยนรหัสผ่านแล้ว"
+  },
+  "message.success.passwordlessLink": {
+    "message": "ลิงก์เข้าสู่ระบบแบบไม่ใช้รหัสผ่านถูกส่งไปยังอีเมลของคุณแล้ว"
+  },
+  "message.success.register": {
+    "message": "ลงทะเบียนแล้ว"
+  },
+  "message.tagsUpdated": {
+    "message": "อัปเดตแท็กแล้ว"
+  },
+  "message.tagsUpdateFailed": {
+    "message": "อัปเดตแท็กล้มเหลว โปรดลองอีกครั้ง"
+  },
+  "message.updatePrompt.error": {
+    "message": "ไม่สามารถอัปเดตพรอมต์ได้ โปรดลองอีกครั้ง"
+  },
+  "message.updatePrompt.success": {
+    "message": "อัปเดตพรอมต์แล้ว"
+  },
+  "modal.clearCache.title": {
+    "message": "ยืนยันล้างแคช?"
+  },
+  "modal.clearCache.warning": {
+    "message": "หลังจากล้าง ข้อมูลทั้งหมดจะถูกโหลดใหม่"
+  },
+  "modal.editPrompt.title": {
+    "message": "แก้ไขพรอมต์"
+  },
+  "modal.forgotPassword.title": {
+    "message": "ลืมรหัสผ่าน"
+  },
+  "myCollection.header.subtitle": {
+    "message": "จัดการพรอมต์ที่สร้าง รายการโปรด และแท็กที่กำหนดเอง"
+  },
+  "myCollection.header.title": {
+    "message": "คอลเลกชันของฉัน"
+  },
+  "myCollection.stats.favorites": {
+    "message": "รายการโปรด"
+  },
+  "myCollection.stats.prompts": {
+    "message": "พรอมต์ของฉัน"
+  },
+  "myCollection.stats.tags": {
+    "message": "แท็กที่กำหนดเอง"
+  },
+  "myCollection.stats.total": {
+    "message": "รวม"
+  },
+  "myspace.assignTag": {
+    "message": "กำหนดแท็ก"
+  },
+  "myspace.fallbackHint": {
+    "message": "ไม่พบผลลัพธ์ที่ตรงกัน แนะนำสำหรับคุณ:"
+  },
+  "myspace.filter.all": {
+    "message": "ทั้งหมด"
+  },
+  "myspace.filter.favorites": {
+    "message": "รายการโปรด"
+  },
+  "myspace.filter.prompts": {
+    "message": "พรอมต์"
+  },
+  "myspace.manageTags": {
+    "message": "จัดการแท็ก"
+  },
+  "myspace.tagManager.empty": {
+    "message": "ยังไม่มีแท็กที่กำหนดเอง"
+  },
+  "myspace.tagManager.namePlaceholder": {
+    "message": "ชื่อแท็ก"
+  },
+  "myspace.tagManager.title": {
+    "message": "จัดการแท็กที่กำหนดเอง"
+  },
+  "nav.explore": {
+    "message": "สำรวจ"
+  },
+  "nav.myCollection": {
+    "message": "คอลเลกชันของฉัน"
+  },
+  "noResults.description": {
+    "message": "ลองคำสำคัญอื่น หรือล้างตัวกรองแท็ก"
+  },
+  "noResults.title": {
+    "message": "ไม่พบพรอมต์ที่ตรงกัน"
+  },
+  "placeholder.comment": {
+    "message": "พิมพ์ความคิดเห็นที่นี่... รองรับไวยากรณ์ Markdown และ HTML"
+  },
+  "placeholder.confirmPassword": {
+    "message": "ยืนยันรหัสผ่านใหม่"
+  },
+  "placeholder.currentPassword": {
+    "message": "รหัสผ่านปัจจุบัน"
+  },
+  "placeholder.email": {
+    "message": "อีเมล"
+  },
+  "placeholder.newPassword": {
+    "message": "รหัสผ่านใหม่"
+  },
+  "placeholder.password": {
+    "message": "รหัสผ่าน"
+  },
+  "placeholder.promptContent": {
+    "message": "พิมพ์เนื้อหาพรอมต์โดยละเอียดที่นี่..."
+  },
+  "placeholder.promptNotes": {
+    "message": "แหล่งที่มาของพรอมต์, เวอร์ชันภาษาอื่น หรือหมายเหตุเพิ่มเติม (ไม่บังคับ)"
+  },
+  "placeholder.promptRemark": {
+    "message": "อธิบายสั้นๆ เกี่ยวกับหน้าที่ของพรอมต์ (ไม่บังคับ)"
+  },
+  "placeholder.promptTitle": {
+    "message": "ตั้งชื่อให้พรอมต์ของคุณ"
+  },
+  "placeholder.resetPassword.code": {
+    "message": "รหัสรีเซ็ต"
+  },
+  "placeholder.username": {
+    "message": "ชื่อผู้ใช้"
+  },
+  "placeholder.usernameOrEmail": {
+    "message": "ชื่อผู้ใช้/อีเมล"
+  },
+  "prompt.authorNote": {
+    "message": "หมายเหตุของผู้เขียน"
+  },
+  "prompt.charsLabel": {
+    "message": "ตัวอักษร"
+  },
+  "prompt.content": {
+    "message": "เนื้อหาพรอมต์"
+  },
+  "prompt.private": {
+    "message": "ส่วนตัว"
+  },
+  "prompt.source": {
+    "message": "แหล่งที่มา"
+  },
+  "prompt.tokenDanger": {
+    "message": "พรอมต์ยาวมาก อาจไม่สะดวกในการแชร์และนำกลับมาใช้ใหม่ แนะนำให้แบ่ง"
+  },
+  "prompt.tokenWarning": {
+    "message": "พรอมต์ค่อนข้างยาว แนะนำให้ย่อหรือแบ่ง"
+  },
+  "prompt.translation": {
+    "message": "คำแปล"
+  },
+  "search.submit": {
+    "message": "ค้นหา"
+  },
+  "share.copy": {
+    "message": "คัดลอก"
+  },
+  "share.native": {
+    "message": "ระบบ"
+  },
+  "share.shareTo": {
+    "message": "แชร์ไปที่"
+  },
+  "share.shareOn": {
+    "message": "แชร์ไปที่ {channel}"
+  },
+  "showcase.header.button": {
+    "message": "ดูชุมชน"
+  },
+  "showcase.tag.academic.description": {
+    "message": "การวิจัยวิชาการ การออกแบบการสอน การวางแผนหลักสูตร และการสนับสนุนครู"
+  },
+  "showcase.tag.academic.label": {
+    "message": "วิชาการ/ครู"
+  },
+  "showcase.tag.ai.description": {
+    "message": "พรอมต์และสถานการณ์การใช้งานที่เกี่ยวข้องกับ AI"
+  },
+  "showcase.tag.ai.label": {
+    "message": "AI"
+  },
+  "showcase.tag.article.description": {
+    "message": "สร้างนิยาย บทความวิชาการ ข่าวประชาสัมพันธ์ บท และรายงานวิจัย"
+  },
+  "showcase.tag.article.label": {
+    "message": "บทความ/รายงาน"
+  },
+  "showcase.tag.code.description": {
+    "message": "ให้คำแนะนำการเขียนโปรแกรม ตัวอย่างโค้ด โซลูชันการดีบัก และคำแนะนำทางเทคนิค"
+  },
+  "showcase.tag.code.label": {
+    "message": "IT/การเขียนโปรแกรม"
+  },
+  "showcase.tag.comments.description": {
+    "message": "บทวิจารณ์มืออาชีพ การประเมินผลงาน และการวิเคราะห์การชื่นชม"
+  },
+  "showcase.tag.comments.label": {
+    "message": "รีวิว/ประเมิน"
+  },
+  "showcase.tag.company.description": {
+    "message": "การจัดการองค์กร ทรัพยากรบุคคล การตลาด และบทบาทหน้าที่อื่น ๆ"
+  },
+  "showcase.tag.company.label": {
+    "message": "หน้าที่องค์กร"
+  },
+  "showcase.tag.contribute.description": {
+    "message": "พรอมต์พรีเมียมที่แบ่งปันโดยผู้ใช้ชุมชน"
+  },
+  "showcase.tag.contribute.label": {
+    "message": "แบ่งปันโดยผู้ใช้"
+  },
+  "showcase.tag.doctor.description": {
+    "message": "ให้คำปรึกษาสุขภาพ ความรู้เกี่ยวกับโรค และคำแนะนำทางการแพทย์"
+  },
+  "showcase.tag.doctor.label": {
+    "message": "สุขภาพการแพทย์"
+  },
+  "showcase.tag.finance.description": {
+    "message": "การจัดการการลงทุน การวิเคราะห์การเงิน และคำแนะนำการวางแผนการเงิน"
+  },
+  "showcase.tag.finance.label": {
+    "message": "ที่ปรึกษาการเงิน"
+  },
+  "showcase.tag.games.description": {
+    "message": "เกมข้อความ การเล่นบทบาท และความบันเทิงเชิงโต้ตอบ"
+  },
+  "showcase.tag.games.label": {
+    "message": "เกมสนุก"
+  },
+  "showcase.tag.interesting.description": {
+    "message": "เกร็ดความรู้ที่น่าสนใจ เนื้อหาวิทยาศาสตร์ยอดนิยม และถาม-ตอบสนุก"
+  },
+  "showcase.tag.interesting.label": {
+    "message": "ความรู้สนุก"
+  },
+  "showcase.tag.interpreter.description": {
+    "message": "จำลองเทอร์มินัลบรรทัดคำสั่งและล่ามภาษาโปรแกรมต่าง ๆ"
+  },
+  "showcase.tag.interpreter.label": {
+    "message": "เทอร์มินัล/อินเทอร์พรีเตอร์"
+  },
+  "showcase.tag.language.description": {
+    "message": "การแปลหลายภาษา การเรียนภาษา การแปลงข้อความ และการระบุภาษา"
+  },
+  "showcase.tag.language.label": {
+    "message": "ภาษา/การแปล"
+  },
+  "showcase.tag.life.description": {
+    "message": "ความรู้ที่ใช้งานได้จริงและการแก้ปัญหาสำหรับชีวิตประจำวัน"
+  },
+  "showcase.tag.life.label": {
+    "message": "สารานุกรมชีวิต"
+  },
+  "showcase.tag.living.description": {
+    "message": "คำแนะนำการออกกำลังกาย โภชนาการ เคล็ดลับการทำอาหาร และบริการไลฟ์สไตล์อื่น ๆ"
+  },
+  "showcase.tag.living.label": {
+    "message": "คุณภาพชีวิต"
+  },
+  "showcase.tag.mind.description": {
+    "message": "สร้างแรงบันดาลใจความคิดสร้างสรรค์ การคิดเชิงวิพากษ์ และทักษะการใช้เหตุผล"
+  },
+  "showcase.tag.mind.label": {
+    "message": "ฝึกความคิด"
+  },
+  "showcase.tag.music.description": {
+    "message": "การสร้างสรรค์ดนตรี การเรียนทฤษฎีดนตรี และการชื่นชมผลงาน"
+  },
+  "showcase.tag.music.label": {
+    "message": "ดนตรีและศิลปะ"
+  },
+  "showcase.tag.pedagogy.description": {
+    "message": "การติว ช่วยทำการบ้าน เตรียมสอบ และเนื้อหาที่เกี่ยวข้องกับนักเรียน"
+  },
+  "showcase.tag.pedagogy.label": {
+    "message": "การศึกษา/นักเรียน"
+  },
+  "showcase.tag.philosophy.description": {
+    "message": "การคิดเชิงปรัชญา วัฒนธรรมศาสนา และการสำรวจปัญญาชีวิต"
+  },
+  "showcase.tag.philosophy.label": {
+    "message": "ปรัชญา/ศาสนา"
+  },
+  "showcase.tag.professional.description": {
+    "message": "ทนายความ นักบัญชี ที่ปรึกษา และที่ปรึกษาสาขาวิชาชีพอื่น ๆ"
+  },
+  "showcase.tag.professional.label": {
+    "message": "ที่ปรึกษามืออาชีพ"
+  },
+  "showcase.tag.seo.description": {
+    "message": "การเพิ่มประสิทธิภาพเครื่องมือค้นหา การขยายคีย์เวิร์ด และการตลาดเนื้อหา"
+  },
+  "showcase.tag.seo.label": {
+    "message": "SEO"
+  },
+  "showcase.tag.social.description": {
+    "message": "ให้คำปรึกษาด้านจิตวิทยา การวิเคราะห์อารมณ์ ทักษะสังคม และการสื่อสาร"
+  },
+  "showcase.tag.social.label": {
+    "message": "จิตวิทยา/สังคม"
+  },
+  "showcase.tag.speech.description": {
+    "message": "ทักษะการอภิปราย การเขียนสุนทรพจน์ และการฝึกการพูด"
+  },
+  "showcase.tag.speech.label": {
+    "message": "อภิปราย/สุนทรพจน์"
+  },
+  "showcase.tag.text.description": {
+    "message": "การประมวลผลข้อความ การวิเคราะห์คำ และงานที่เกี่ยวข้องกับภาษา"
+  },
+  "showcase.tag.text.label": {
+    "message": "ข้อความ/คำ"
+  },
+  "showcase.tag.tool.description": {
+    "message": "เครื่องมือที่ใช้งานได้จริงเพื่อปรับปรุงประสิทธิภาพการทำงาน"
+  },
+  "showcase.tag.tool.label": {
+    "message": "เครื่องมือประสิทธิภาพ"
+  },
+  "showcase.tag.write.description": {
+    "message": "ปรับปรุงไวยากรณ์บทความ ปรับแต่งรูปแบบการแสดงออก และยกระดับคุณภาพการเขียน"
+  },
+  "showcase.tag.write.label": {
+    "message": "ช่วยเขียน"
+  },
+  "showcase.usersList.noResult": {
+    "message": "ไม่พบผลลัพธ์ ลองใช้คำค้นหาอื่น"
+  },
+  "sidebar.related": {
+    "message": "พรอมต์ที่เกี่ยวข้อง"
+  },
+  "sort.mostUpvoted": {
+    "message": "ถูกใจมากที่สุด"
+  },
+  "sort.newest": {
+    "message": "ล่าสุด"
+  },
+  "theme.admonition.caution": {
+    "message": "ระวัง",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.admonition.danger": {
+    "message": "อันตราย",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "ข้อมูล",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.note": {
+    "message": "หมายเหตุ",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "เคล็ดลับ",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.warning": {
+    "message": "คำเตือน",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "ปิด",
+    "description": "The ARIA label for close button of announcement bar"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "เลื่อนกลับไปด้านบน",
+    "description": "The ARIA label for the back to top button"
+  },
+  "theme.blog.archive.description": {
+    "message": "คลังเก็บ",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "คลังเก็บ",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "ผู้เขียนนี้ยังไม่ได้เขียนโพสต์ใดๆ",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "ผู้เขียน",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "ดูผู้เขียนทั้งหมด",
+    "description": "The label of the link targeting the blog authors page"
+  },
+  "theme.blog.paginator.navAriaLabel": {
+    "message": "การนำทางหน้ารายการบล็อก",
+    "description": "The ARIA label for the blog pagination"
+  },
+  "theme.blog.paginator.newerEntries": {
+    "message": "รายการใหม่กว่า",
+    "description": "The label used to navigate to the newer blog posts page (previous page)"
+  },
+  "theme.blog.paginator.olderEntries": {
+    "message": "รายการเก่ากว่า",
+    "description": "The label used to navigate to the older blog posts page (next page)"
+  },
+  "theme.blog.post.paginator.navAriaLabel": {
+    "message": "การนำทางหน้าโพสต์บล็อก",
+    "description": "The ARIA label for the blog posts pagination"
+  },
+  "theme.blog.post.paginator.newerPost": {
+    "message": "โพสต์ใหม่กว่า",
+    "description": "The blog post button label to navigate to the newer/previous post"
+  },
+  "theme.blog.post.paginator.olderPost": {
+    "message": "โพสต์เก่ากว่า",
+    "description": "The blog post button label to navigate to the older/next post"
+  },
+  "theme.blog.post.plurals": {
+    "message": "1 โพสต์|{count} โพสต์",
+    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "อ่าน 1 นาที|อ่าน {readingTime} นาที",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "อ่านเพิ่มเติม",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "อ่านเพิ่มเติมเกี่ยวกับ {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "การนำทางโพสต์ล่าสุดในบล็อก",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
+  "theme.blog.tagTitle": {
+    "message": "{nPosts} ที่ติดแท็ก \"{tagName}\"",
+    "description": "The title of the page for a blog tag"
+  },
+  "theme.CodeBlock.copied": {
+    "message": "คัดลอกแล้ว",
+    "description": "The copied button label on code blocks"
+  },
+  "theme.CodeBlock.copy": {
+    "message": "คัดลอก",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "คัดลอกโค้ดไปยังคลิปบอร์ด",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "สลับการห่อคำ",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "สลับระหว่างโหมดมืดและสว่าง (ขณะนี้ {mode})",
+    "description": "The ARIA label for the color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "โหมดมืด",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "โหมดสว่าง",
+    "description": "The name for the light color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "โหมดระบบ",
+    "description": "The name for the system color mode"
+  },
+  "theme.common.editThisPage": {
+    "message": "แก้ไขหน้านี้",
+    "description": "The link label to edit the current page"
+  },
+  "theme.common.headingLinkTitle": {
+    "message": "ลิงก์โดยตรงไปยัง {heading}",
+    "description": "Title for link to heading"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "ข้ามไปยังเนื้อหาหลัก",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "หน้านี้เป็นร่าง จะแสดงเฉพาะในสภาพแวดล้อมการพัฒนาและจะถูกแยกออกจากการ build ที่ใช้งานจริง",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "หน้าร่าง",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "หน้านี้ไม่ได้ลงรายการ เครื่องมือค้นหาจะไม่จัดทำดัชนี และเฉพาะผู้ใช้ที่มีลิงก์โดยตรงเท่านั้นที่สามารถเข้าถึงได้",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "หน้าที่ไม่ได้ลงรายการ",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "หน้าแรก",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "เส้นทาง",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 รายการ|{count} รายการ",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "หน้าเอกสาร",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "ถัดไป",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "ก่อนหน้า",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "ปิดแถบนำทาง",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "ยุบแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "ยุบแถบด้านข้าง",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "ขยายแถบด้านข้าง",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "แถบด้านข้างเอกสาร",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "สลับแถบนำทาง",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} ที่ติดแท็ก \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "1 เอกสารถูกติดแท็ก|{count} เอกสารถูกติดแท็ก",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "เวอร์ชัน: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "เวอร์ชันล่าสุด",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "สำหรับเอกสารล่าสุด ดู {latestVersionLink} ({versionLabel})",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "นี่คือเอกสารสำหรับ {siteTitle} {versionLabel} ซึ่งไม่ได้รับการดูแลอีกต่อไป",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "นี่คือเอกสารที่ยังไม่ได้เผยแพร่สำหรับ {siteTitle} เวอร์ชัน {versionLabel}",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "ยุบหมวดหมู่แถบด้านข้าง '{label}'",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "ขยายหมวดหมู่แถบด้านข้าง '{label}'",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "หน้านี้ขัดข้อง",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "ลองอีกครั้ง",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(เปิดในแท็บใหม่)",
+    "description": "The ARIA label for the external link icon"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": "เมื่อ {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": "โดย {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "อัปเดตล่าสุด{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "ยุบดรอปดาวน์",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "ขยายดรอปดาวน์",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "ภาษา",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+    "message": "← กลับไปเมนูหลัก",
+    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+  },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "เวอร์ชัน",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "หลัก",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.NotFound.p1": {
+    "message": "เราไม่พบสิ่งที่คุณกำลังมองหา",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "กรุณาติดต่อเจ้าของเว็บไซต์ที่ลิงก์มายังหน้านี้ แล้วแจ้งทราบว่าลิงก์เสีย",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "ไม่พบหน้า",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "แท็ก:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "ดูแท็กทั้งหมด",
+    "description": "The label of the link targeting the tag list page"
+  },
+  "theme.tags.tagsPageTitle": {
+    "message": "แท็ก",
+    "description": "The title of the tag list page"
+  },
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "ในหน้านี้",
+    "description": "The label used by the button on the collapsible TOC component"
+  },
+  "title.dataManagement": {
+    "message": "การจัดการข้อมูล"
+  },
+  "title.security": {
+    "message": "การตั้งค่าความปลอดภัย"
+  },
+  "title.userInfo": {
+    "message": "ข้อมูลผู้ใช้"
+  },
+  "unavailable.unshared": {
+    "message": "ผู้เขียนต้นฉบับได้ยกเลิกการแชร์"
+  },
+  "unavailable.unsharedNoCache": {
+    "message": "ผู้เขียนต้นฉบับได้ยกเลิกการแชร์และไม่มีแคชในเครื่อง"
+  },
+  "userPage.level.maxReached": {
+    "message": "MAX REACHED"
+  },
+  "userPage.level.sharedSuffix": {
+    "message": "shared"
+  },
+  "userPage.level.specLabel": {
+    "message": "LEVEL"
+  },
+  "userPage.level.toNext": {
+    "message": "ถึง {next}"
+  },
+  "validation.agreement.required": {
+    "message": "คุณต้องยอมรับข้อกำหนดการให้บริการและนโยบายความเป็นส่วนตัวก่อนใช้งาน"
+  },
+  "validation.comment.maxLength": {
+    "message": "เนื้อหาความคิดเห็นไม่ควรเกิน 2000 ตัวอักษร"
+  },
+  "validation.comment.required": {
+    "message": "กรุณากรอกเนื้อหาความคิดเห็น"
+  },
+  "validation.confirmPassword.required": {
+    "message": "กรุณายืนยันรหัสผ่านใหม่"
+  },
+  "validation.currentPassword.required": {
+    "message": "กรุณากรอกรหัสผ่านปัจจุบัน"
+  },
+  "validation.email.invalid": {
+    "message": "กรุณากรอกที่อยู่อีเมลที่ถูกต้อง"
+  },
+  "validation.email.required": {
+    "message": "กรุณากรอกอีเมล"
+  },
+  "validation.password.length": {
+    "message": "รหัสผ่านต้องมีอย่างน้อย 6 ตัวอักษร"
+  },
+  "validation.password.match": {
+    "message": "รหัสผ่านไม่ตรงกัน"
+  },
+  "validation.password.required": {
+    "message": "กรุณากรอกรหัสผ่าน"
+  },
+  "validation.promptContent.required": {
+    "message": "กรุณากรอกเนื้อหาพรอมต์"
+  },
+  "validation.promptTitle.required": {
+    "message": "กรุณากรอกหัวข้อพรอมต์"
+  },
+  "validation.replyRequired": {
+    "message": "กรุณากรอกเนื้อหาตอบกลับ"
+  },
+  "validation.username.required": {
+    "message": "กรุณากรอกชื่อผู้ใช้หรืออีเมลที่ลงทะเบียน"
+  },
+  "vote.downvote.alreadyVoted": {
+    "message": "คุณได้กดไม่ชอบพรอมต์นี้แล้วในเซสชันนี้"
+  },
+  "vote.downvote.failed": {
+    "message": "กดไม่ชอบไม่สำเร็จ กรุณาลองใหม่"
+  },
+  "vote.downvote.success": {
+    "message": "บันทึกการกดไม่ชอบแล้ว"
+  },
+  "vote.loginRequired": {
+    "message": "กรุณาเข้าสู่ระบบเพื่อโหวต"
+  },
+  "vote.upvote.alreadyVoted": {
+    "message": "คุณได้กดชอบพรอมต์นี้แล้วในเซสชันนี้"
+  },
+  "vote.upvote.failed": {
+    "message": "กดชอบไม่สำเร็จ กรุณาลองใหม่"
+  },
+  "vote.upvote.success": {
+    "message": "บันทึกการกดชอบแล้ว"
+  },
+  "auth.callback.title": {
+    "message": "เสร็จสิ้นการเข้าสู่ระบบ"
+  },
+  "auth.callback.working": {
+    "message": "กำลังเข้าสู่ระบบ…"
+  },
+  "auth.callback.workingHint": {
+    "message": "อย่าปิดหน้านี้ ระบบจะพากลับไปหน้าแรกในอีกสักครู่"
+  },
+  "auth.callback.failed": {
+    "message": "เข้าสู่ระบบไม่สำเร็จ"
+  },
+  "auth.callback.failedHint": {
+    "message": "ลิงก์เข้าสู่ระบบอาจหมดอายุหรือถูกใช้ไปแล้ว กลับไปหน้าแรกแล้วเข้าสู่ระบบใหม่"
+  },
+  "auth.callback.idle": {
+    "message": "ไม่มีการเข้าสู่ระบบที่ค้างอยู่ที่นี่"
+  },
+  "auth.callback.idleHint": {
+    "message": "หน้านี้ใช้สำหรับเปลี่ยนเส้นทางตอนเข้าสู่ระบบเท่านั้น ไม่ต้องบุ๊กมาร์ก"
+  },
+  "auth.callback.backHome": {
+    "message": "กลับหน้าแรกเพื่อเข้าสู่ระบบ"
+  },
+  "myspace.tagManager.emptyHint": {
+    "message": "พิมพ์ชื่อด้านบน เลือกสี แล้วแท็กแรกของคุณก็พร้อมใช้งาน"
+  },
+  "validation.username.empty": {
+    "message": "ชื่อผู้ใช้ต้องไม่เว้นว่าง"
+  },
+  "message.username.updated": {
+    "message": "อัปเดตชื่อผู้ใช้แล้ว"
+  },
+  "message.username.updateError": {
+    "message": "อัปเดตชื่อผู้ใช้ไม่สำเร็จ กรุณาลองใหม่อีกครั้ง"
+  },
+  "message.requestTimeout": {
+    "message": "คำขอหมดเวลา กรุณาลองใหม่"
+  },
+  "message.tooManyRequests": {
+    "message": "ทำรายการถี่เกินไป กรุณาลองใหม่อีกครั้ง"
+  },
+  "account.signInRequired": {
+    "message": "เข้าสู่ระบบเพื่อดูบัญชีของคุณ"
+  },
+  "account.signInRequiredHint": {
+    "message": "กำลังพากลับไปหน้าแรก หรือกดปุ่มด้านล่างก็ได้"
+  },
+  "myspace.tagManager.color": {
+    "message": "สีของแท็ก"
+  },
+  "comments.gif.searchPlaceholder": {
+    "message": "ค้นหา GIF"
+  }
+}

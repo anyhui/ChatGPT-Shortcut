@@ -1,31 +1,70 @@
-# শুরু করা
+---
+sidebar_label: শুরু করুন
+title: AI Short শুরুর নির্দেশিকা | ChatGPT/DeepSeek এ প্রম্পট কপি করুন
+description: ৩০ সেকেন্ডে দ্রুত শুরু করুন! ChatGPT, Gemini, DeepSeek এবং অন্যান্য AI মডেলে প্রম্পট কপি করুন, অবিলম্বে কথোপকথনের গুণমান এবং কাজের দক্ষতা উন্নত করুন।
+---
 
-AiShort ব্যবহার করে, নির্দিষ্ট দিক থেকে আউটপুট পেতে আপনাকে শুধুমাত্র নির্বাচিত প্রম্পটটি যেকোনো AI ডায়ালগ মডেলে কপি করতে হবে। এখানে নির্দিষ্ট পদক্ষেপ আছে:
+# শুরু করুন
 
-1. আপনি যে প্রম্পটটি চান তা অনুসন্ধান করুন বা নির্বাচন করুন এবং তারপরে প্রম্পটে অনুলিপি বোতামটি ক্লিক করুন৷
+ভালো প্রম্পট AI আউটপুটের গুণমান নির্ধারণ করে। AiShort প্রচুর সংখ্যক নির্বাচিত প্রম্পট সংকলন করেছে, কপি-পেস্ট করে সরাসরি ব্যবহার করুন।
 
-2. ChatGPT, Gemini বা যেকোনো AI ডায়ালগ মডেলে প্রম্পটটি কপি করুন।
+> 📋 **শুরুর আগে আপনার যা প্রয়োজন**: একটি ব্রাউজার + যেকোনো অ্যাক্সেসযোগ্য AI টুল — ChatGPT/Gemini/Claude-এর মতো চ্যাট পেজ, Cursor-এর মতো কোডিং টুল, অথবা সরাসরি API কল। AiShort ওয়েব সংস্করণের জন্য নিবন্ধনের প্রয়োজন নেই।
 
-3. ডায়ালগ প্রম্পট অনুযায়ী আপনার প্রয়োজনীয়তা লিখুন।
+## মূল ব্যবহার
 
-![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
+1. হোমপেজে আপনার আগ্রহের প্রম্পট খুঁজুন বা ব্রাউজ করুন
+2. উপযুক্ত প্রম্পট খুঁজে পেয়ে "কপি" বাটনে ক্লিক করুন (অথবা প্রথমে কার্ডে ক্লিক করে সম্পূর্ণ বিষয়বস্তু দেখুন)
+3. যেকোনো AI টুলে পেস্ট করুন — চ্যাট পেজ, কোডিং টুল, API কল ইত্যাদি
+4. প্রম্পটের **প্লেসহোল্ডার** (যেমন `[বিষয়বস্তু]`, `[বিষয়]`) অনুযায়ী আপনার নির্দিষ্ট প্রয়োজন পূরণ করুন, AI-কে পাঠান
 
-## Common AI models
+![](/img/docs/how-to-use-aishort.webp)
 
-- ChatGPT：https://chatgpt.com
-- Gemini: https://gemini.google.com/app
-- Claude: https://claude.ai/chats
-- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
-- Kimi：https://kimi.moonshot.cn/
-- 豆包：https://www.doubao.com/chat/
-- 文心一言：https://yiyan.baidu.com
-- 智谱清言：https://chatglm.cn/detail
-- 腾讯元宝：https://yuanbao.tencent.com/chat
-- 讯飞星火：https://xinghuo.xfyun.cn/
-- 百川智能：https://ying.baichuan-ai.com/chat
+> 💡 **টিপস**: বেশিরভাগ প্রম্পটে আপনাকে যা পূরণ করতে হবে তা চিহ্নিত করার জন্য বর্গাকার বন্ধনী `[...]` ব্যবহার করা হয় — বন্ধনীর ভিতরের প্লেসহোল্ডার টেক্সটটি আপনার নির্দিষ্ট বিষয়বস্তু দিয়ে প্রতিস্থাপন করুন।
 
-## Third-party API integration
+## দ্রুত অ্যাক্সেস
 
-- OpenRouter: https://openrouter.ai/chat
-- siliconflow: https://cloud.siliconflow.cn/playground/chat
-- grog: https://groq.com/
+| আমি চাই...                       | কোথায় যেতে হবে                           |
+| -------------------------------- | ----------------------------------------- |
+| প্রম্পট কপি এবং ব্যবহার করুন     | সরাসরি [হোমপেজে](/) খুঁজুন বা ব্রাউজ করুন |
+| AI ডায়ালগ পৃষ্ঠায় যেকোনো সময় কল করুন | [ব্রাউজার এক্সটেনশন](../extension/) |
+| প্রম্পট সংগ্রহ এবং পরিচালনা করুন | [আমার সংগ্রহ](./my-collection)            |
+| আমার নিজস্ব প্রম্পট তৈরি করুন    | [কাস্টম প্রম্পট](./user-prompts)          |
+| নিবন্ধন বা লগইন                  | [অ্যাকাউন্ট ব্যবস্থাপনা](./account)       |
+| কমিউনিটি শেয়ারিং আবিষ্কার করুন  | [কমিউনিটি প্রম্পট](./community)           |
+| অফলাইন/ইন্ট্রানেট স্থাপনা        | [অফলাইন স্থাপনা সংস্করণ](../deploy/offline)       |
+
+## সাধারণ AI মডেল
+
+বাংলাদেশ ও পশ্চিমবঙ্গে এখনও বাংলা ভাষায় বিশেষায়িত কোনো বড় AI মডেল নেই। তবে নিচের আন্তর্জাতিক মডেলগুলি বাংলা ভালোভাবে বোঝে — প্রম্পটের শেষে `respond in Bengali` বা `বাংলায় উত্তর দিন` যোগ করলেই বাংলায় উত্তর পাওয়া যায়।
+
+### আন্তর্জাতিক মডেল (বাংলার জন্য প্রস্তাবিত)
+
+- [ChatGPT](https://chatgpt.com)
+- [Gemini](https://gemini.google.com/app)
+- [Claude](https://claude.ai/chats)
+- [Grok](https://grok.com/)
+
+### চীনা মূল ভূখণ্ডের মডেল
+
+বাংলা সমর্থন সীমিত হতে পারে, মূলত চীনা/ইংরেজি ব্যবহারকারীদের জন্য:
+
+- [DeepSeek](https://chat.deepseek.com)
+- [Tongyi Qianwen](https://www.qianwen.com/)
+- [ERNIE Bot](https://yiyan.baidu.com)
+- [Doubao](https://www.doubao.com/chat/)
+- [Kimi](https://www.kimi.com/)
+- [ChatGLM](https://chatglm.cn/detail)
+- [Spark Desk](https://xinghuo.xfyun.cn/)
+- [Tencent Yuanbao](https://yuanbao.tencent.com/chat)
+
+### API প্ল্যাটফর্ম
+
+- [OpenRouter](https://openrouter.ai/chat)
+- [SiliconFlow](https://cloud.siliconflow.cn/playground/chat)
+- [Groq](https://groq.com/)
+
+## সম্পর্কিত ডকুমেন্টেশন
+
+- [ইন্টারফেস ব্যাখ্যা](./interface) - অনুসন্ধান এবং ফিল্টার ফাংশন
+- [আমার সংগ্রহ](./my-collection) - প্রিয়, ট্যাগ এবং বাছাই
+- [অ্যাকাউন্ট ব্যবস্থাপনা](./account) - লগইন এবং নিবন্ধন

@@ -1,0 +1,62 @@
+{
+  "title": {
+    "message": "AI Short",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "ChatGPT Shortcuts",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.社区提示词": {
+    "message": "社群提示詞",
+    "description": "Navbar item with label 社区提示词"
+  },
+  "item.label.使用说明": {
+    "message": "使用說明",
+    "description": "Navbar item with label 使用说明"
+  },
+  "item.label.应用工具": {
+    "message": "應用工具",
+    "description": "Navbar item with label 应用工具"
+  },
+  "item.label.反馈建议": {
+    "message": "回饋建議",
+    "description": "Navbar item with label 反馈建议"
+  },
+  "item.label.支持": {
+    "message": "支援",
+    "description": "Navbar item with label 支持"
+  },
+  "item.label.Telegram": {
+    "message": "Telegram",
+    "description": "Navbar item with label Telegram"
+  },
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
+  },
+  "item.label.QQ 群": {
+    "message": "QQ 群",
+    "description": "Navbar item with label QQ 群"
+  },
+  "item.label.AI 工具箱": {
+    "message": "AI 工具箱",
+    "description": "Navbar item with label AI 工具箱"
+  },
+  "item.label.AI 绘图提示词": {
+    "message": "AI 繪圖提示詞",
+    "description": "Navbar item with label AI 绘图提示词"
+  },
+  "item.label.浏览器插件": {
+    "message": "瀏覽器擴充功能",
+    "description": "Navbar item with label 浏览器插件"
+  },
+  "item.label.AI 思想家圆桌": {
+    "message": "AI 思想家圓桌",
+    "description": "Navbar item with label AI 思想家圆桌"
+  },
+  "item.label.365 开源项目": {
+    "message": "365 開源項目",
+    "description": "Navbar item with label 365 开源项目"
+  }
+}

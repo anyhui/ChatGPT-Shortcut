@@ -1,37 +1,35 @@
+---
+sidebar_label: Come usare l'estensione
+title: Guida AI Short - Barra laterale e scorciatoie
+description: Padroneggia l'estensione AI Short! Attiva la barra laterale con Alt+Shift+S.
+---
+
 # Come usare l'estensione del browser?
 
-ChatGPT Shortcut supporta 13 lingue principali e la lingua dell'estensione verrà impostata automaticamente in base all'ambiente del tuo browser. Anche la lingua della pagina incorporata di ChatGPT e della barra laterale nell'estensione seguirà questa impostazione. Nota, per evitare di attivare avvisi di autorizzazione di siti Web di terze parti, evita di cambiare direttamente la lingua nelle pagine incorporate.
+AI Short supporta 18 lingue principali. La lingua dell'estensione viene impostata automaticamente in base al browser. Puoi anche cambiarla manualmente nelle impostazioni.
 
-![](https://img.newzone.top/2023-12-23-12-04-29.png?imageMogr2/format/webp)
+![](/img/docs/extension-settings.png)
 
-## Impostazioni di visualizzazione
+## Modalità di visualizzazione
 
-### Barra laterale AiShort
+L'estensione supporta tre modalità di visualizzazione: scegli quella più adatta alle tue abitudini:
 
-Dopo aver abilitato la barra laterale AiShort, vedrai un'icona verde nell'angolo in basso a destra delle pagine Web supportate. Facendo clic su questa icona, puoi attivare o disattivare la barra laterale. Attualmente, l'impostazione predefinita è quella di supportare ChatGPT, Bard, Claude e Wenxin Yiyan. Se scegli "Attiva automaticamente la barra laterale", la barra laterale si aprirà automaticamente quando visiti questi siti supportati.
+- **Modalità barra laterale**: Si apre nella barra laterale del browser — affiancata alla pagina web, ideale per consultare i prompt mentre usi una pagina di conversazione IA
+- **Modalità popup**: Si apre come piccola finestra cliccando sull'icona dell'estensione — consultazione rapida e poi si chiude, senza occupare schermo
+- **Modalità finestra indipendente**: Si apre in una finestra mobile indipendente — puoi trascinarla su uno schermo secondario o posizionarla autonomamente
 
-![](https://img.newzone.top/2023-12-23-04-16-15.gif?imageMogr2/format/webp)
+## Mantieni pannello laterale aperto
 
-Se vuoi usare la barra laterale AiShort su altri siti web, installa lo script [ChatGPT Shortcut Anywhere](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere). Nota che, per evitare sovrapposizioni di funzionalità e potenziali conflitti, lo script ChatGPT Shortcut Anywhere non sarà efficace sui siti web supportati nativamente dall'estensione.
+Se attivato, la barra laterale rimane aperta quando si cambiano le schede del browser.
 
-### Homepage integrata
+## Modalità scura
 
-Dopo aver abilitato la funzionalità della home page integrata, un pulsante per la pagina integrata apparirà nell'angolo in alto a sinistra della versione web di ChatGPT. Facendo clic su di esso, l'interfaccia dell'app ChatGPT verrà sostituita con la pagina AiShort.
+L'estensione supporta la modalità scura. Attiva "Modalità scura" nelle impostazioni per passare l'interfaccia all'aspetto scuro.
 
-![](https://img.newzone.top/ai/2023-12-22-19-40-15.png?imageMogr2/format/webp)
+![](/img/docs/extension-sidebar.webp)
 
-## Modalità finestra separata
+## Scorciatoia da tastiera
 
-Quando la modalità finestra separata è abilitata, l'interfaccia dell'estensione apparirà in modo persistente in una finestra separata, facilitando il multitasking. Puoi impostare i siti Web per l'attivazione automatica nelle impostazioni dell'estensione. Quando il browser visita questi siti, la finestra di AiShort si attiverà automaticamente.
+Usa la scorciatoia `Alt+Shift+S` per attivare direttamente l'estensione (`Control+Shift+S` su macOS); su Firefox, `Alt+Shift+D` mostra o nasconde la barra laterale nativa.
 
-![](https://img.newzone.top/2023-12-23-12-07-09.png?imageMogr2/format/webp)
-
-### Siti Web di attivazione automatica
-
-Nelle impostazioni dell'estensione, puoi specificare quali siti Web attiveranno automaticamente la finestra separata di AiShort.
-
-![](https://img.newzone.top/2023-12-23-12-09-51.png?imageMogr2/format/webp)
-
-### Attivazione tramite tasti di scelta rapida
-
-Il tasto di scelta rapida `Alt+Shift+S` può essere utilizzato per attivare direttamente la finestra AiShort, sia in modalità popup che in modalità finestra separata.
+Le scorciatoie si personalizzano in `chrome://extensions/shortcuts` (su Firefox: `about:addons` → ingranaggio → Gestisci scorciatoie delle estensioni).

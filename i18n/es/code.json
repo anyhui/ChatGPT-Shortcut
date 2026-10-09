@@ -1,476 +1,935 @@
 {
-  "field.id": {
-    "message": "Tiempo de liberación"
+  "action.add": {
+    "message": "Añadir"
   },
-  "field.upvoteDifference": {
-    "message": "grado de apoyo"
+  "action.addPrompt": {
+    "message": "Crear prompt"
   },
-  "order.ascending": {
-    "message": "orden ascendente"
+  "action.backToLogin": {
+    "message": "Volver al inicio de sesión"
   },
-  "order.descending": {
-    "message": "orden descendente"
+  "action.cancel": {
+    "message": "Cancelar"
   },
-  "upvote": {
-    "message": "patrocinar"
+  "action.changePassword": {
+    "message": "Cambiar contraseña"
   },
-  "downvote": {
-    "message": "pedalear (una bicicleta)"
+  "action.clearFilters": {
+    "message": "Limpiar filtros ({count})"
   },
-  "info.communityPrompts": {
-    "message": "Los mensajes que aparecen en esta página son compartidos y subidos por los internautas, por lo que no podemos garantizar la exactitud, calidad o integridad del contenido, y tampoco nos hacemos responsables de cualquier responsabilidad legal derivada del contenido. Si encuentras alguna infracción u otro problema, puedes ponerte en contacto con nosotros para solucionarlo. Nos ocuparemos de ello lo antes posible tras recibir la notificación."
+  "action.close": {
+    "message": "Cerrar"
   },
-  "feedback.title": {
-    "message": "Comentarios y sugerencias"
+  "action.convertToPrivate": {
+    "message": "Convertir a privado"
   },
-  "feedback.description": {
-    "message": "Sus comentarios son importantes para nosotros."
+  "action.copy": {
+    "message": "Copiar"
   },
-  "feedback.welcome": {
-    "message": "Agradecemos sus comentarios.",
-    "description": "The welcome title on the feedback page"
+  "action.copyPrompt": {
+    "message": "Copiar prompt"
   },
-  "feedback.paragraph": {
-    "message": "Agradecemos cualquier sugerencia, idea o comentario para mejorar continuamente ChatGPT Shortcut y aumentar la eficacia y productividad personales. Si necesita hacer comentarios sobre un error, facilite un enlace al lugar donde se produjo el problema y las circunstancias que lo rodearon. En cuanto al contenido, puedes enviarlo en varios idiomas o simplemente describir tu idea. Buscamos ideas que estimulen la mente o que produzcan resultados de alta calidad. Una vez que se publique el tema que envíe, su contribución se añadirá a la página. Puede encontrar la entrada correspondiente buscando el nombre del colaborador (nombre de usuario).",
-    "description": "The main paragraph on the feedback page"
+  "action.delete": {
+    "message": "Eliminar"
   },
-  "toggle_prompt_language": {
-    "message": "Cambiar el idioma de las instrucciones"
+  "action.downvote": {
+    "message": "No me gusta"
   },
-  "showcase.filters.title": {
-    "message": "Filtros"
+  "action.edit": {
+    "message": "Editar"
   },
-  "toggle_prompt_language_description": {
-    "message": "Cambia el idioma en el que se muestran las indicaciones, alternando entre el inglés y el idioma actual de la página."
+  "action.forgotPassword": {
+    "message": "Olvidé mi contraseña"
   },
-  "showcase.searchBar.placeholder": {
-    "message": "Buscar indicaciones..."
+  "action.hideTags": {
+    "message": "Ocultar etiquetas"
   },
-  "showcase.usersList.noResult": {
-    "message": "😒 No se han encontrado resultados, acorta el término de búsqueda"
+  "action.login": {
+    "message": "Iniciar sesión"
   },
-  "showcase.favoritesList.title": {
-    "message": "Nuestros favoritos"
+  "action.loginInstead": {
+    "message": "Iniciar sesión en su lugar"
   },
-  "showcase.usersList.allUsers": {
-    "message": "Todas las preguntas"
+  "action.register": {
+    "message": "Registrarse"
   },
-  "加载更多": {
-    "message": "Más información"
+  "action.registerNow": {
+    "message": "Regístrate ahora"
   },
-  "message.resetPassword.success": {
-    "message": "El restablecimiento de la contraseña se ha realizado correctamente."
+  "action.removeFavorite": {
+    "message": "Quitar de favoritos"
   },
-  "error.resetPassword": {
-    "message": "Error al restablecer la contraseña."
+  "action.reply": {
+    "message": "Responder"
   },
-  "message.resetPassword.error": {
-    "message": "No se ha podido restablecer la contraseña."
+  "action.save": {
+    "message": "Guardar"
   },
-  "input.resetPassword.code": {
-    "message": "Por favor, introduzca su código de reinicio."
+  "action.sendLink": {
+    "message": "Obtener enlace de inicio de sesión"
   },
-  "placeholder.resetPassword.code": {
-    "message": "restablecer código"
+  "action.sendResetEmail": {
+    "message": "Enviar correo de restablecimiento"
   },
-  "input.newPassword": {
-    "message": "Por favor, introduzca una nueva contraseña."
+  "action.share": {
+    "message": "Compartir"
   },
-  "placeholder.newPassword": {
-    "message": "nueva contraseña"
+  "action.showTags": {
+    "message": "Mostrar etiquetas"
   },
-  "input.confirmPassword": {
-    "message": "Confirme la nueva contraseña."
+  "action.updatePrompt": {
+    "message": "Guardar"
   },
-  "placeholder.confirmPassword": {
-    "message": "Confirmar nueva contraseña"
+  "action.upvote": {
+    "message": "Me gusta"
   },
-  "button.resetPassword": {
-    "message": "Restablecer contraseña"
+  "action.viewDetails": {
+    "message": "Ver detalles"
   },
-  "收藏": {
-    "message": "Favoritos"
+  "button.clearAllCache": {
+    "message": "Borrar toda la caché"
   },
-  "showcase.tag.favorite.description": {
-    "message": "Favoritos"
+  "button.clearCache": {
+    "message": "Borrar caché"
   },
-  "写作辅助": {
-    "message": "ayuda para la redacción"
+  "button.confirm": {
+    "message": "Confirmar"
   },
-  "showcase.tag.write.description": {
-    "message": "Los últimos retoques gramaticales y estilísticos para ayudarle en su redacción"
+  "button.confirmClear": {
+    "message": "Confirmar borrado"
   },
-  "文章/报告": {
-    "message": "Artículos/informes"
+  "button.export": {
+    "message": "Exportar datos"
   },
-  "showcase.tag.article.description": {
-    "message": "Ficción, ensayos, noticias, guiones, informes, etc. en algún estilo"
+  "button.exportPrompts": {
+    "message": "Exportar prompts"
   },
-  "IT/编程": {
-    "message": "Informática/Programación"
+  "button.import": {
+    "message": "Importar datos"
   },
-  "showcase.tag.code.description": {
-    "message": "Aunque se dice que es programación, ChatGPT está dando sugerencias de pasos de programación o código de muestra simple según sea necesario, que sólo puede ser utilizado como una prueba y todavía necesita ser modificado por el programador."
-  },
-  "AI": {
-    "message": "AI"
-  },
-  "showcase.tag.ai.description": {
-    "message": "AI"
-  },
-  "生活质量": {
-    "message": "calidad de vida"
-  },
-  "showcase.tag.living.description": {
-    "message": "Fitness, nutrición, chef, maquillaje, estilismo"
-  },
-  "趣味知识": {
-    "message": "Conocimientos interesantes"
-  },
-  "showcase.tag.interesting.description": {
-    "message": "Conocimientos interesantes"
-  },
-  "自助百科": {
-    "message": "Enciclopedia de autoayuda"
-  },
-  "showcase.tag.life.description": {
-    "message": "Conocimientos de enciclopedia de la vida/autoayuda"
-  },
-  "心理/社交": {
-    "message": "Psicológico/social"
-  },
-  "showcase.tag.social.description": {
-    "message": "Psicológico/social"
-  },
-  "哲学/宗教": {
-    "message": "Filosofía/religión"
-  },
-  "showcase.tag.philosophy.description": {
-    "message": "Filosofía/religión"
-  },
-  "发散思维": {
-    "message": "pensamiento divergente"
-  },
-  "showcase.tag.mind.description": {
-    "message": "Cuestionar, pensar, asociar, generalizar"
-  },
-  "教育/学生": {
-    "message": "Educación/Estudiantes"
-  },
-  "showcase.tag.pedagogy.description": {
-    "message": "Contenidos relacionados con la educación de los alumnos"
-  },
-  "学术/教师": {
-    "message": "Académico/profesor"
-  },
-  "showcase.tag.academic.description": {
-    "message": "Personas y cosas relacionadas con el mundo académico o escolar"
-  },
-  "游戏": {
-    "message": "jugar"
-  },
-  "showcase.tag.games.description": {
-    "message": "jugar"
-  },
-  "工具": {
-    "message": "artefacto"
-  },
-  "showcase.tag.tool.description": {
-    "message": "artefacto"
-  },
-  "终端/解释器": {
-    "message": "Terminal/Intérprete"
-  },
-  "showcase.tag.interpreter.description": {
-    "message": "Terminal/Intérprete"
-  },
-  "语言/翻译": {
-    "message": "Idioma/Traducción"
-  },
-  "showcase.tag.language.description": {
-    "message": "Múltiples herramientas de generación, conversión, traducción, reconocimiento de idiomas, etc."
-  },
-  "辩论/演讲": {
-    "message": "Debates/discurso"
-  },
-  "showcase.tag.speech.description": {
-    "message": "Debates/discurso"
-  },
-  "点评/评鉴": {
-    "message": "Comentarios"
-  },
-  "showcase.tag.comments.description": {
-    "message": "Comentarios"
-  },
-  "文本/词语": {
-    "message": "Texto/frases"
-  },
-  "showcase.tag.text.description": {
-    "message": "Texto/frases"
-  },
-  "showcase.tag.company.description": {
-    "message": "Puestos dentro de la empresa general"
-  },
-  "SEO": {
-    "message": "SEO"
-  },
-  "showcase.tag.seo.description": {
-    "message": "Generación de expansiones de texto/palabras clave"
-  },
-  "医生": {
-    "message": "cirujano"
-  },
-  "showcase.tag.doctor.description": {
-    "message": "cirujano"
-  },
-  "金融顾问": {
-    "message": "Asesor financiero"
-  },
-  "showcase.tag.finance.description": {
-    "message": "Cargos en el sector financiero"
-  },
-  "音乐": {
-    "message": "concierto"
-  },
-  "showcase.tag.music.description": {
-    "message": "concierto"
-  },
-  "行业顾问": {
-    "message": "Consultoría industrial"
-  },
-  "showcase.tag.professional.description": {
-    "message": "Abogados, maestros de té y otros puestos que requieran conocimientos especializados"
-  },
-  "投稿": {
-    "message": "aportar algo"
-  },
-  "showcase.tag.contribute.description": {
-    "message": "Las contribuciones de todos ustedes pueden ayudarnos a desarrollar ideas"
-  },
-  "input.rules.username": {
-    "message": "Introduzca su nombre de usuario o dirección de correo electrónico registrada."
-  },
-  "input.rules.password": {
-    "message": "Por favor, introduzca su contraseña."
-  },
-  "input.rules.email": {
-    "message": "Introduzca su dirección de correo electrónico."
-  },
-  "message.error": {
-    "message": "Por favor, inténtelo de nuevo más tarde."
-  },
-  "message.loginSuccess": {
-    "message": "Conéctese correctamente."
-  },
-  "message.registerSuccess": {
-    "message": "La inscripción ha sido un éxito."
-  },
-  "message.forgotPassword.success": {
-    "message": "Se ha enviado el correo electrónico de restablecimiento de contraseña."
-  },
-  "error.forgotPassword": {
-    "message": "Error al enviar el correo de olvido de contraseña."
-  },
-  "message.forgotPassword.error": {
-    "message": "No se ha podido enviar el correo electrónico de restablecimiento de contraseña, inténtalo más tarde."
-  },
-  "input.username": {
-    "message": "Nombre de usuario/Correo electrónico"
-  },
-  "input.password": {
-    "message": "criptográfico"
+  "button.importPrompts": {
+    "message": "Importar prompts"
   },
   "button.login": {
     "message": "Iniciar sesión"
   },
-  "button.forgotPassword": {
-    "message": "¿Ha olvidado su contraseña?"
+  "button.logout": {
+    "message": "Cerrar sesión"
   },
-  "input.register.username": {
-    "message": "ID de usuario"
+  "button.resetPassword": {
+    "message": "Restablecer contraseña"
   },
-  "input.email": {
-    "message": "Introduzca su dirección de correo electrónico."
+  "button.signInFree": {
+    "message": "Iniciar sesión gratis"
   },
-  "agreement.rules": {
-    "message": "Acepte las Condiciones del servicio y la Política de privacidad antes de utilizarlo"
+  "comment.add": {
+    "message": "Enviar comentario"
   },
-  "agreement.text": {
-    "message": "haga clic aquí para aceptar"
+  "comments.aiReplying": {
+    "message": "La IA está respondiendo"
   },
-  "agreement.terms": {
-    "message": "condiciones del servicio"
+  "comments.emoji.label": {
+    "message": "Insertar emoji"
   },
-  "agreement.and": {
-    "message": "responder cantando"
+  "comments.empty": {
+    "message": "Aún no hay comentarios"
   },
-  "agreement.policy": {
-    "message": "política de privacidad"
+  "comments.gif.label": {
+    "message": "Insertar GIF"
   },
-  "button.register": {
-    "message": "inscripción"
+  "comments.heading": {
+    "message": "Discusión"
   },
-  "placeholder.email": {
-    "message": "bandeja de entrada"
+  "common.favorites": {
+    "message": "Favoritos"
   },
-  "button.sendResetEmail": {
-    "message": "Enviar correo electrónico de restablecimiento"
+  "community.backToList": {
+    "message": "Volver a la lista"
   },
-  "tabs.login": {
-    "message": "Iniciar sesión"
+  "community.description": {
+    "message": "Descubre prompts de IA compartidos por la comunidad en AiShort. Explora plantillas, intercambia consejos de optimización y contribuye tus propios prompts."
   },
-  "card.welcome": {
-    "message": "bienvenido"
+  "community.fetchError": {
+    "message": "Error al obtener los datos"
   },
-  "tooltip.switchLang": {
-    "message": "Pulse para cambiar el idioma de visualización"
+  "community.heading": {
+    "message": "Comunidad de prompts de IA"
   },
-  "comments.info": {
-    "message": "Por favor, responda a continuación con sus comentarios, pensamientos o acciones sobre este tema."
-  },
-  "message.changePassword.success": {
-    "message": "¡Contraseña cambiada con éxito!"
-  },
-  "error.changePassword": {
-    "message": "Error al cambiar la contraseña."
-  },
-  "message.changePassword.error": {
-    "message": "Error en el cambio de contraseña, inténtelo más tarde"
-  },
-  "message.loading": {
+  "community.loading": {
     "message": "Cargando..."
   },
-  "label.changePassword": {
-    "message": "cambie su contraseña"
+  "community.notFound": {
+    "message": "Prompt no encontrado"
   },
-  "input.currentPassword": {
-    "message": "Introduzca la contraseña actual."
+  "community.notFoundDesc": {
+    "message": "Este prompt puede haber sido eliminado o configurado como privado"
   },
-  "placeholder.currentPassword": {
-    "message": "contraseña actual"
+  "community.seoSuffix": {
+    "message": "Prompts de la comunidad"
   },
-  "button.changePassword": {
-    "message": "cambie su contraseña"
+  "community.tagline": {
+    "message": "Prompts de IA compartidos por usuarios. Ordena por más recientes o más votados, busca y filtra; tras iniciar sesión, dale «Me gusta» y guárdalos en favoritos."
   },
-  "title.userInfo": {
-    "message": "información para el usuario"
+  "community.title": {
+    "message": "Comunidad de prompts de IA | Descubre y comparte"
   },
-  "userInfo.username": {
-    "message": "Nombre de usuario"
+  "description.clearCache.short": {
+    "message": "Actualizar datos de caché local"
   },
-  "userInfo.email": {
-    "message": "Buzón"
+  "description.exportPrompts.short": {
+    "message": "Exportar como archivo JSON para copia de seguridad"
   },
-  "message.success": {
-    "message": "La entrada se ha enviado correctamente."
+  "description.importPrompts.short": {
+    "message": "Importar prompts y favoritos desde archivo JSON"
   },
-  "message.deletePrompt.confirm.title": {
-    "message": "Confirmar Borrar"
+  "faq.heading": {
+    "message": "Preguntas frecuentes"
+  },
+  "faq.scenario.a": {
+    "message": "Funciona bien para tareas relacionadas con el título y la descripción de esta página. Si el primer intento no es ideal, añade más contexto en el marcador de posición, o agrega restricciones como «responde paso a paso» o «da ejemplos»."
+  },
+  "faq.scenario.q": {
+    "message": "¿Para qué escenarios es adecuado este prompt?"
+  },
+  "faq.tips.a": {
+    "message": "Primero, haz el [marcador de posición] más específico (añade estilo, longitud, dominio). Segundo, responde a salidas insatisfactorias con «hazlo más X». Tercero, compara los resultados entre Claude / ChatGPT / Gemini y otros modelos."
+  },
+  "faq.tips.q": {
+    "message": "¿Cómo puedo mejorar la calidad del resultado?"
+  },
+  "faq.usage.a": {
+    "message": "Copia el prompt, sustituye el marcador de posición entre corchetes con tu propio contenido, y pégalo en ChatGPT, Claude, Gemini, DeepSeek, Qwen o cualquier IA conversacional que entienda lenguaje natural."
+  },
+  "faq.usage.q": {
+    "message": "¿Cómo uso este prompt?"
+  },
+  "feedback.description": {
+    "message": "¡Tus comentarios son importantes para nosotros!"
+  },
+  "feedback.newIssue": {
+    "message": "Nueva incidencia"
+  },
+  "feedback.responseTime": {
+    "message": "Respuesta normalmente en 24 h"
+  },
+  "feedback.spec_label": {
+    "message": "Canal abierto"
+  },
+  "feedback.subtitle": {
+    "message": "Reportes de bugs, solicitudes de funciones, dudas de uso: todas las opiniones son bienvenidas"
+  },
+  "feedback.title": {
+    "message": "Comentarios y sugerencias"
+  },
+  "feedback.type.bug": {
+    "message": "Reportar errores"
+  },
+  "feedback.type.help": {
+    "message": "Ayuda de uso"
+  },
+  "feedback.type.suggestion": {
+    "message": "Sugerencias"
+  },
+  "feedback.welcome": {
+    "message": "Comentarios y sugerencias"
+  },
+  "filter.operator.all.tip": {
+    "message": "Mostrar prompts que coincidan con todas las etiquetas seleccionadas"
+  },
+  "filter.operator.any.tip": {
+    "message": "Mostrar prompts que coincidan con cualquier etiqueta seleccionada"
+  },
+  "hero.supportedAiTools": {
+    "message": "{tools} y más"
+  },
+  "homepage.description": {
+    "message": "Plantillas de prompts de IA para escritura, código y traducción. Copia con un clic en ChatGPT, Claude, Gemini o DeepSeek para resultados precisos."
+  },
+  "homepage.slogan": {
+    "message": "Prompts de IA seleccionados, listos con un clic"
+  },
+  "homepage.title": {
+    "message": "Biblioteca de prompts de IA para ChatGPT, Claude y Gemini"
+  },
+  "howto.step1.name": {
+    "message": "Copia el prompt"
+  },
+  "howto.step1.text": {
+    "message": "Copia la plantilla del prompt al portapapeles."
+  },
+  "howto.step2.name": {
+    "message": "Personaliza los marcadores de posición"
+  },
+  "howto.step2.text": {
+    "message": "Reemplaza las secciones [marcador de posición] con tu contenido específico."
+  },
+  "howto.step3.name": {
+    "message": "Envía a la IA"
+  },
+  "howto.step3.text": {
+    "message": "Pega en ChatGPT, Claude, Gemini, DeepSeek u otra interfaz de IA conversacional y ejecútalo."
+  },
+  "input.newPassword": {
+    "message": "Por favor ingresa una nueva contraseña"
+  },
+  "input.resetPassword.code": {
+    "message": "Por favor ingresa tu código de restablecimiento"
+  },
+  "input.search.placeholder": {
+    "message": "escritura, traducción…"
+  },
+  "label.agree": {
+    "message": "Acepto"
+  },
+  "label.promptContent": {
+    "message": "Contenido del prompt"
+  },
+  "label.promptNotes": {
+    "message": "Notas"
+  },
+  "label.promptRemark": {
+    "message": "Uso"
+  },
+  "label.promptTitle": {
+    "message": "Nombre del prompt"
+  },
+  "label.sharePrompt": {
+    "message": "Compartir en la página de la comunidad: otros podrán verlo y guardarlo"
+  },
+  "level.bronze": {
+    "message": "Bronce"
+  },
+  "level.diamond": {
+    "message": "Diamante"
+  },
+  "level.emerald": {
+    "message": "Esmeralda"
+  },
+  "level.gold": {
+    "message": "Oro"
+  },
+  "level.newcomer": {
+    "message": "Explorador Novato"
+  },
+  "level.platinum": {
+    "message": "Platino"
+  },
+  "level.ruby": {
+    "message": "Rubí"
+  },
+  "level.sapphire": {
+    "message": "Zafiro"
+  },
+  "level.silver": {
+    "message": "Plata"
+  },
+  "level.stardust": {
+    "message": "Polvo Estelar"
+  },
+  "link.addprompt": {
+    "message": "Crear prompt"
+  },
+  "link.communityPrompts": {
+    "message": "Prompts de la comunidad"
+  },
+  "link.home": {
+    "message": "Inicio"
+  },
+  "link.myAccount": {
+    "message": "Mi Cuenta"
+  },
+  "link.privacy": {
+    "message": "Política de privacidad"
+  },
+  "link.terms": {
+    "message": "Términos de servicio"
+  },
+  "login.google.button": {
+    "message": "Iniciar sesión con Google"
+  },
+  "login.google.error": {
+    "message": "Error al iniciar sesión con Google, inténtalo de nuevo más tarde ({error})"
+  },
+  "login.google.failed": {
+    "message": "Error en el inicio de sesión con Google"
+  },
+  "login.google.redirecting": {
+    "message": "Redirigiendo al inicio de sesión de Google..."
+  },
+  "login.login.prompt": {
+    "message": "¿Ya tienes una cuenta?"
+  },
+  "login.method.code": {
+    "message": "Inicio de sesión sin contraseña"
+  },
+  "login.method.password": {
+    "message": "Inicio de sesión con contraseña"
+  },
+  "login.passwordless.info": {
+    "message": "Se enviará un enlace de inicio de sesión a tu correo electrónico, haz clic para iniciar sesión"
+  },
+  "login.register.prompt": {
+    "message": "¿Aún no tienes una cuenta?"
+  },
+  "login.subtitle.forgotPassword": {
+    "message": "Se enviará un enlace de restablecimiento a tu correo electrónico"
+  },
+  "login.subtitle.register": {
+    "message": "Descubre, comparte y crea prompts increíbles"
+  },
+  "login.subtitle.welcome": {
+    "message": "Inicia sesión para explorar más prompts premium"
+  },
+  "login.title.forgotPassword": {
+    "message": "Recuperar contraseña"
+  },
+  "login.title.register": {
+    "message": "Únete a la comunidad"
+  },
+  "login.title.welcome": {
+    "message": "Bienvenido de nuevo"
+  },
+  "message.addFavorite.error": {
+    "message": "Error al añadir a favoritos, por favor inténtalo de nuevo más tarde"
+  },
+  "message.addFavorite.success": {
+    "message": "Añadido a favoritos"
+  },
+  "message.addPrompt.error": {
+    "message": "Error al enviar el prompt, por favor inténtalo de nuevo más tarde"
+  },
+  "message.addPrompt.success": {
+    "message": "Prompt enviado"
+  },
+  "message.cache.cleared": {
+    "message": "Caché borrada"
+  },
+  "message.cache.clearError": {
+    "message": "Error al borrar caché, por favor inténtalo de nuevo más tarde"
+  },
+  "message.cannotFavorOwn": {
+    "message": "No puedes marcar como favorito tu propio prompt"
+  },
+  "message.convertToPrivate.error": {
+    "message": "Error al convertir, inténtalo de nuevo más tarde"
+  },
+  "message.convertToPrivate.favoriteKept": {
+    "message": "Prompt privado creado, pero no se pudo quitar el favorito original. Elimínalo manualmente para evitar duplicados."
+  },
+  "message.convertToPrivate.success": {
+    "message": "Convertido a prompt privado"
+  },
+  "message.copied": {
+    "message": "Copiado"
   },
   "message.deletePrompt.confirm.content": {
-    "message": "¿Seguro que quieres borrar este aviso?"
+    "message": "¿Estás seguro de que quieres eliminar este prompt?"
   },
-  "message.deletePrompt.success": {
-    "message": "Mensaje eliminado con éxito."
+  "message.deletePrompt.confirm.title": {
+    "message": "Confirmar eliminación"
   },
   "message.deletePrompt.error": {
-    "message": "No se ha podido eliminar el mensaje, inténtelo de nuevo más tarde."
+    "message": "Error al eliminar el prompt, por favor inténtalo de nuevo más tarde"
   },
-  "modal.updateprompt.title": {
-    "message": "Actualizar el Prompt actual"
+  "message.deletePrompt.success": {
+    "message": "Prompt eliminado"
   },
-  "message.addprompt.requiredTitle": {
-    "message": "Por favor, introduzca el título del taco."
+  "message.error": {
+    "message": "Ocurrió un error durante el procesamiento"
   },
-  "input.addprompt.title": {
-    "message": "Nombre del taco"
+  "message.error.forgotPassword": {
+    "message": "Error al enviar el correo electrónico de restablecimiento de contraseña, por favor inténtalo de nuevo más tarde"
   },
-  "message.addprompt.requiredDescription": {
-    "message": "Introduzca el contenido de la palabra clave."
+  "message.error.passwordChangeFailed": {
+    "message": "Error al cambiar la contraseña, por favor inténtalo de nuevo más tarde"
   },
-  "input.addprompt.description": {
-    "message": "Contenido de la palabra clave"
+  "message.error.passwordlessLink": {
+    "message": "Error al enviar, por favor verifica tu correo electrónico o nombre de usuario"
   },
-  "input.addprompt.remark": {
-    "message": "Función de la palabra clave (no obligatoria)"
+  "message.export.error": {
+    "message": "Error al exportar, por favor inténtalo de nuevo más tarde"
   },
-  "input.addprompt.notes": {
-    "message": "Observaciones (opcional): Aquí puede proporcionar una descripción de la fuente de la pregunta, así como versiones en otros idiomas de la misma. Además, si tiene alguna idea o necesidad de ampliar la pregunta, indíquelo aquí."
+  "message.export.noPrompts": {
+    "message": "No hay prompts para exportar. Crea o marca algunos como favoritos primero."
   },
-  "message.addprompt.submission": {
-    "message": "¿Le gustaría compartir el mensaje en una página pública?"
+  "message.export.success": {
+    "message": "Prompts exportados"
   },
-  "button.updateprompt": {
-    "message": "Mensaje de actualización"
+  "message.forgotPassword.info": {
+    "message": "Si olvidaste tu contraseña actual, puedes restablecerla por correo electrónico. Enviaremos un correo electrónico con un enlace de restablecimiento a tu dirección de correo electrónico registrada."
   },
-  "message.success1": {
-    "message": "Haga clic en la etiqueta \"Mi aviso\" para ver los avisos personalizados que se han añadido."
+  "message.import.failed": {
+    "message": "Importación fallida"
   },
-  "button.logout": {
-    "message": "cancelar"
+  "message.import.invalid": {
+    "message": "Formato de datos inválido"
   },
-  "input.addprompt.share.checked": {
-    "message": "sea"
+  "message.import.nothing": {
+    "message": "Todo lo del archivo ya está aquí, no hay nada que importar"
   },
-  "input.addprompt.share.unchecked": {
-    "message": "obstruido"
+  "message.import.parseError": {
+    "message": "Error de análisis JSON"
   },
-  "button.addPrompt": {
-    "message": "Añadir pregunta"
+  "message.import.partial": {
+    "message": "Importación parcial"
   },
-  "点击移除收藏": {
-    "message": "Haz clic para eliminar favoritos"
+  "message.import.success": {
+    "message": "Importado"
   },
-  "theme.ErrorPageContent.title": {
-    "message": "Esta página se ha colgado.",
-    "description": "The title of the fallback page when the page crashed"
+  "message.loadFailed": {
+    "message": "Error al cargar los datos, por favor inténtalo de nuevo más tarde"
   },
-  "theme.NotFound.title": {
-    "message": "Página No Encontrada",
-    "description": "The title of the 404 page"
+  "message.loginRequired": {
+    "message": "Por favor, inicia sesión primero"
   },
-  "theme.NotFound.p1": {
-    "message": "No pudimos encontrar lo que buscaba.",
-    "description": "The first paragraph of the 404 page"
+  "message.logout.confirm.content": {
+    "message": "¿Estás seguro de que quieres cerrar sesión?"
   },
-  "theme.NotFound.p2": {
-    "message": "Comuníquese con el dueño del sitio que lo vinculó a la URL original y hágale saber que su vínculo está roto.",
-    "description": "The 2nd paragraph of the 404 page"
+  "message.logout.confirm.title": {
+    "message": "Confirmar cierre de sesión"
   },
-  "theme.admonition.note": {
-    "message": "note",
-    "description": "The default label used for the Note admonition (:::note)"
+  "message.noComments": {
+    "message": "Aún no hay comentarios, sé el primero en comentar"
   },
-  "theme.admonition.tip": {
-    "message": "tip",
-    "description": "The default label used for the Tip admonition (:::tip)"
+  "message.noFavorites": {
+    "message": "Aún no hay favoritos, descubre prompts que te gusten"
+  },
+  "message.noPrompts": {
+    "message": "Aún no hay prompts, crea uno"
+  },
+  "message.noSpaceItems": {
+    "message": "Nada aquí aún — crea un prompt o marca alguno como favorito"
+  },
+  "message.orderSaved": {
+    "message": "Orden guardado"
+  },
+  "message.orderSaveFailed": {
+    "message": "Error al guardar el orden, por favor inténtalo de nuevo más tarde"
+  },
+  "message.postComment.error": {
+    "message": "No se pudo enviar el comentario. Inténtalo de nuevo más tarde."
+  },
+  "message.removeFavorite.confirm.content": {
+    "message": "¿Estás seguro de que quieres eliminar este prompt de favoritos?"
+  },
+  "message.removeFavorite.confirm.title": {
+    "message": "Eliminar favorito"
+  },
+  "message.removeFavorite.error": {
+    "message": "Error al eliminar de favoritos, por favor inténtalo de nuevo más tarde"
+  },
+  "message.removeFavorite.success": {
+    "message": "Eliminado de favoritos"
+  },
+  "message.resetPassword.error": {
+    "message": "Error al restablecer la contraseña, por favor inténtalo de nuevo más tarde"
+  },
+  "message.resetPassword.success": {
+    "message": "Contraseña restablecida"
+  },
+  "message.success.forgotPassword": {
+    "message": "Correo electrónico de restablecimiento de contraseña enviado"
+  },
+  "message.success.login": {
+    "message": "Sesión iniciada"
+  },
+  "message.success.passwordChanged": {
+    "message": "Contraseña cambiada"
+  },
+  "message.success.passwordlessLink": {
+    "message": "Enlace de inicio de sesión sin contraseña enviado a tu correo electrónico"
+  },
+  "message.success.register": {
+    "message": "Cuenta creada"
+  },
+  "message.tagsUpdated": {
+    "message": "Etiquetas actualizadas"
+  },
+  "message.tagsUpdateFailed": {
+    "message": "Error al actualizar etiquetas, por favor inténtalo de nuevo más tarde"
+  },
+  "message.updatePrompt.error": {
+    "message": "Error al actualizar el prompt, por favor inténtalo de nuevo más tarde"
+  },
+  "message.updatePrompt.success": {
+    "message": "Prompt actualizado"
+  },
+  "modal.clearCache.title": {
+    "message": "¿Borrar la caché?"
+  },
+  "modal.clearCache.warning": {
+    "message": "Al borrar se recargarán todos los datos."
+  },
+  "modal.editPrompt.title": {
+    "message": "Editar prompt"
+  },
+  "modal.forgotPassword.title": {
+    "message": "¿Olvidaste tu contraseña?"
+  },
+  "myCollection.header.subtitle": {
+    "message": "Administra tus prompts creados, favoritos y etiquetas personalizadas"
+  },
+  "myCollection.header.title": {
+    "message": "Mi colección"
+  },
+  "myCollection.stats.favorites": {
+    "message": "Favoritos"
+  },
+  "myCollection.stats.prompts": {
+    "message": "Mis prompts"
+  },
+  "myCollection.stats.tags": {
+    "message": "Etiquetas personalizadas"
+  },
+  "myCollection.stats.total": {
+    "message": "Total"
+  },
+  "myspace.assignTag": {
+    "message": "Asignar etiquetas"
+  },
+  "myspace.fallbackHint": {
+    "message": "No se encontraron coincidencias. Recomendado:"
+  },
+  "myspace.filter.all": {
+    "message": "Todo"
+  },
+  "myspace.filter.favorites": {
+    "message": "Favoritos"
+  },
+  "myspace.filter.prompts": {
+    "message": "Prompts"
+  },
+  "myspace.manageTags": {
+    "message": "Administrar etiquetas"
+  },
+  "myspace.tagManager.empty": {
+    "message": "No hay etiquetas personalizadas"
+  },
+  "myspace.tagManager.namePlaceholder": {
+    "message": "Nombre de la etiqueta"
+  },
+  "myspace.tagManager.title": {
+    "message": "Administrar etiquetas personalizadas"
+  },
+  "nav.explore": {
+    "message": "Explorar"
+  },
+  "nav.myCollection": {
+    "message": "Mi colección"
+  },
+  "noResults.description": {
+    "message": "Prueba otra palabra clave o limpia los filtros de etiquetas"
+  },
+  "noResults.title": {
+    "message": "No se encontraron prompts coincidentes"
+  },
+  "placeholder.comment": {
+    "message": "Ingresa el comentario aquí... Se admite Markdown y sintaxis HTML"
+  },
+  "placeholder.confirmPassword": {
+    "message": "Confirmar nueva contraseña"
+  },
+  "placeholder.currentPassword": {
+    "message": "Contraseña actual"
+  },
+  "placeholder.email": {
+    "message": "Correo electrónico"
+  },
+  "placeholder.newPassword": {
+    "message": "Nueva contraseña"
+  },
+  "placeholder.password": {
+    "message": "Contraseña"
+  },
+  "placeholder.promptContent": {
+    "message": "Ingresa el contenido detallado del prompt aquí..."
+  },
+  "placeholder.promptNotes": {
+    "message": "Fuente del prompt, versiones en otros idiomas o notas complementarias (opcional)"
+  },
+  "placeholder.promptRemark": {
+    "message": "Describe brevemente el uso de este prompt (opcional)"
+  },
+  "placeholder.promptTitle": {
+    "message": "Nombra tu prompt"
+  },
+  "placeholder.resetPassword.code": {
+    "message": "Código de restablecimiento"
+  },
+  "placeholder.username": {
+    "message": "Nombre de usuario"
+  },
+  "placeholder.usernameOrEmail": {
+    "message": "Nombre de usuario/Correo electrónico"
+  },
+  "prompt.authorNote": {
+    "message": "Nota del autor"
+  },
+  "prompt.charsLabel": {
+    "message": "caracteres"
+  },
+  "prompt.content": {
+    "message": "Contenido del prompt"
+  },
+  "prompt.private": {
+    "message": "Privado"
+  },
+  "prompt.source": {
+    "message": "Fuente"
+  },
+  "prompt.tokenDanger": {
+    "message": "El prompt es muy largo y puede ser difícil de compartir o reutilizar. Considera dividirlo."
+  },
+  "prompt.tokenWarning": {
+    "message": "El prompt es bastante largo; considera acortarlo o dividirlo."
+  },
+  "prompt.translation": {
+    "message": "Traducción"
+  },
+  "search.submit": {
+    "message": "Buscar"
+  },
+  "share.copy": {
+    "message": "Copiar"
+  },
+  "share.native": {
+    "message": "Sistema"
+  },
+  "share.shareTo": {
+    "message": "Compartir en"
+  },
+  "share.shareOn": {
+    "message": "Compartir en {channel}"
+  },
+  "showcase.header.button": {
+    "message": "Explorar comunidad"
+  },
+  "showcase.tag.academic.description": {
+    "message": "Investigación académica, diseño instruccional, planificación curricular y otro apoyo docente"
+  },
+  "showcase.tag.academic.label": {
+    "message": "Académico/Profesor"
+  },
+  "showcase.tag.ai.description": {
+    "message": "Prompts y escenarios de aplicación relacionados con la inteligencia artificial"
+  },
+  "showcase.tag.ai.label": {
+    "message": "IA"
+  },
+  "showcase.tag.article.description": {
+    "message": "Generar novelas, trabajos, comunicados de prensa, guiones, informes de investigación y otros artículos"
+  },
+  "showcase.tag.article.label": {
+    "message": "Artículo/Informe"
+  },
+  "showcase.tag.code.description": {
+    "message": "Proporcionar sugerencias de programación, ejemplos de código, soluciones de depuración y orientación técnica"
+  },
+  "showcase.tag.code.label": {
+    "message": "TI/Programación"
+  },
+  "showcase.tag.comments.description": {
+    "message": "Reseñas profesionales, evaluación de obras y análisis de apreciación"
+  },
+  "showcase.tag.comments.label": {
+    "message": "Reseña/Evaluación"
+  },
+  "showcase.tag.company.description": {
+    "message": "Gestión corporativa, recursos humanos, marketing y otros roles funcionales"
+  },
+  "showcase.tag.company.label": {
+    "message": "Funciones corporativas"
+  },
+  "showcase.tag.contribute.description": {
+    "message": "Prompts de alta calidad compartidos por usuarios de la comunidad"
+  },
+  "showcase.tag.contribute.label": {
+    "message": "Contribuciones de usuarios"
+  },
+  "showcase.tag.doctor.description": {
+    "message": "Consultas de salud, educación sobre enfermedades y consejos médicos"
+  },
+  "showcase.tag.doctor.label": {
+    "message": "Salud médica"
+  },
+  "showcase.tag.finance.description": {
+    "message": "Gestión de inversiones, análisis financiero y consejos de planificación financiera"
+  },
+  "showcase.tag.finance.label": {
+    "message": "Asesor financiero"
+  },
+  "showcase.tag.games.description": {
+    "message": "Juegos de texto, juegos de rol y entretenimiento interactivo"
+  },
+  "showcase.tag.games.label": {
+    "message": "Juegos divertidos"
+  },
+  "showcase.tag.interesting.description": {
+    "message": "Curiosidades interesantes, contenido de divulgación científica y preguntas y respuestas divertidas"
+  },
+  "showcase.tag.interesting.label": {
+    "message": "Curiosidades"
+  },
+  "showcase.tag.interpreter.description": {
+    "message": "Simular terminales de línea de comandos e intérpretes de varios lenguajes de programación"
+  },
+  "showcase.tag.interpreter.label": {
+    "message": "Terminal/Intérprete"
+  },
+  "showcase.tag.language.description": {
+    "message": "Traducción multilingüe, aprendizaje de idiomas, conversión de texto y reconocimiento de idiomas"
+  },
+  "showcase.tag.language.label": {
+    "message": "Idioma/Traducción"
+  },
+  "showcase.tag.life.description": {
+    "message": "Conocimientos prácticos y soluciones a problemas de la vida cotidiana"
+  },
+  "showcase.tag.life.label": {
+    "message": "Enciclopedia de vida"
+  },
+  "showcase.tag.living.description": {
+    "message": "Guía de fitness, consejos nutricionales, técnicas de cocina, estilismo de maquillaje y otros servicios de vida"
+  },
+  "showcase.tag.living.label": {
+    "message": "Calidad de vida"
+  },
+  "showcase.tag.mind.description": {
+    "message": "Estimular la creatividad, el pensamiento crítico y la capacidad de razonamiento lógico"
+  },
+  "showcase.tag.mind.label": {
+    "message": "Entrenamiento mental"
+  },
+  "showcase.tag.music.description": {
+    "message": "Composición musical, aprendizaje de teoría musical y apreciación de obras"
+  },
+  "showcase.tag.music.label": {
+    "message": "Música y Arte"
+  },
+  "showcase.tag.pedagogy.description": {
+    "message": "Tutoría, ayuda con la tarea, preparación de exámenes y otros contenidos relacionados con estudiantes"
+  },
+  "showcase.tag.pedagogy.label": {
+    "message": "Educación/Estudiantes"
+  },
+  "showcase.tag.philosophy.description": {
+    "message": "Pensamiento filosófico, cultura religiosa y exploración de la sabiduría de la vida"
+  },
+  "showcase.tag.philosophy.label": {
+    "message": "Filosofía/Religión"
+  },
+  "showcase.tag.professional.description": {
+    "message": "Abogados, contadores, consultores y otros asesores de campos profesionales"
+  },
+  "showcase.tag.professional.label": {
+    "message": "Consultor profesional"
+  },
+  "showcase.tag.seo.description": {
+    "message": "Optimización de motores de búsqueda, expansión de palabras clave y marketing de contenidos"
+  },
+  "showcase.tag.seo.label": {
+    "message": "SEO"
+  },
+  "showcase.tag.social.description": {
+    "message": "Asesoramiento psicológico, análisis emocional, habilidades sociales y comunicación interpersonal"
+  },
+  "showcase.tag.social.label": {
+    "message": "Psicología/Social"
+  },
+  "showcase.tag.speech.description": {
+    "message": "Habilidades de debate, redacción de discursos y entrenamiento en retórica"
+  },
+  "showcase.tag.speech.label": {
+    "message": "Debate/Discurso"
+  },
+  "showcase.tag.text.description": {
+    "message": "Procesamiento de texto, análisis de palabras y tareas relacionadas con el lenguaje"
+  },
+  "showcase.tag.text.label": {
+    "message": "Texto/Palabras"
+  },
+  "showcase.tag.tool.description": {
+    "message": "Herramientas prácticas para mejorar la eficiencia laboral"
+  },
+  "showcase.tag.tool.label": {
+    "message": "Herramientas de productividad"
+  },
+  "showcase.tag.write.description": {
+    "message": "Pulir la gramática de artículos, optimizar el estilo de expresión y mejorar la calidad de escritura"
+  },
+  "showcase.tag.write.label": {
+    "message": "Asistente de escritura"
+  },
+  "showcase.usersList.noResult": {
+    "message": "No se encontraron resultados, prueba con otras palabras clave"
+  },
+  "sidebar.related": {
+    "message": "Prompts relacionados"
+  },
+  "sort.mostUpvoted": {
+    "message": "Más votados"
+  },
+  "sort.newest": {
+    "message": "Más recientes"
+  },
+  "theme.admonition.caution": {
+    "message": "precaución",
+    "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "danger",
+    "message": "peligro",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "info",
+    "message": "información",
     "description": "The default label used for the Info admonition (:::info)"
   },
-  "theme.admonition.caution": {
-    "message": "caution",
-    "description": "The default label used for the Caution admonition (:::caution)"
+  "theme.admonition.note": {
+    "message": "nota",
+    "description": "The default label used for the Note admonition (:::note)"
   },
-  "theme.blog.archive.title": {
-    "message": "Archivo",
-    "description": "The page & hero title of the blog archive page"
+  "theme.admonition.tip": {
+    "message": "consejo",
+    "description": "The default label used for the Tip admonition (:::tip)"
   },
-  "theme.blog.archive.description": {
-    "message": "Archivo",
-    "description": "The page & hero description of the blog archive page"
+  "theme.admonition.warning": {
+    "message": "advertencia",
+    "description": "The default label used for the Warning admonition (:::warning)"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Cerrar",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Volver al principio",
     "description": "The ARIA label for the back to top button"
   },
+  "theme.blog.archive.description": {
+    "message": "Archivo",
+    "description": "The page & hero description of the blog archive page"
+  },
+  "theme.blog.archive.title": {
+    "message": "Archivo",
+    "description": "The page & hero title of the blog archive page"
+  },
+  "theme.blog.author.noPosts": {
+    "message": "Este autor aún no ha escrito ninguna publicación.",
+    "description": "The text for authors with 0 blog post"
+  },
+  "theme.blog.author.pageTitle": {
+    "message": "{authorName} - {nPosts}",
+    "description": "The title of the page for a blog author"
+  },
+  "theme.blog.authorsList.pageTitle": {
+    "message": "Autores",
+    "description": "The title of the authors page"
+  },
+  "theme.blog.authorsList.viewAll": {
+    "message": "Ver todos los autores",
+    "description": "The label of the link targeting the blog authors page"
+  },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Navegación por la página de la lista de blogs ",
+    "message": "Navegación por la página de la lista de blogs",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
@@ -497,68 +956,57 @@
     "message": "Una publicación|{count} publicaciones",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
+  "theme.blog.post.readingTime.plurals": {
+    "message": "1 min de lectura|{readingTime} min de lectura",
+    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.blog.post.readMore": {
+    "message": "Leer más",
+    "description": "The label used in blog post item excerpts to link to full blog posts"
+  },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Leer más sobre {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
+  "theme.blog.sidebar.navAriaLabel": {
+    "message": "Navegación de publicaciones recientes del blog",
+    "description": "The ARIA label for recent posts in the blog sidebar"
+  },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} etiquetados con \"{tagName}\"",
+    "message": "{nPosts} etiquetadas con \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
-  "theme.tags.tagsPageLink": {
-    "message": "Ver Todas las Etiquetas",
-    "description": "The label of the link targeting the tag list page"
+  "theme.CodeBlock.copied": {
+    "message": "Copiado",
+    "description": "The copied button label on code blocks"
   },
-  "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "Breadcrumbs",
-    "description": "The ARIA label for the breadcrumbs"
+  "theme.CodeBlock.copy": {
+    "message": "Copiar",
+    "description": "The copy button label on code blocks"
+  },
+  "theme.CodeBlock.copyButtonAriaLabel": {
+    "message": "Copiar código al portapapeles",
+    "description": "The ARIA label for copy code blocks button"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Activar/desactivar ajuste de línea",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "Cambiar entre modo oscuro y claro (actualmente {mode})",
     "description": "The ARIA label for the color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "modo oscuro",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "modo claro",
     "description": "The name for the light color mode"
   },
-  "theme.docs.paginator.navAriaLabel": {
-    "message": "Página del documento",
-    "description": "The ARIA label for the docs pagination"
-  },
-  "theme.docs.paginator.previous": {
-    "message": "Anterior",
-    "description": "The label used to navigate to the previous doc"
-  },
-  "theme.docs.paginator.next": {
-    "message": "Siguiente",
-    "description": "The label used to navigate to the next doc"
-  },
-  "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "Un documento etiquetado|{count} documentos etiquetados",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} con \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
-  },
-  "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
-  },
-  "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "Esta es documentación sin liberar para {siteTitle} {versionLabel} versión.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
-  },
-  "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "Esta es documentación para {siteTitle} {versionLabel}, que ya no se mantiene activamente.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
-  },
-  "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "Para la documentación actualizada, vea {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
-  },
-  "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "última versión",
-    "description": "The label used for the latest version suggestion link label"
+  "theme.colorToggle.ariaLabel.mode.system": {
+    "message": "modo del sistema",
+    "description": "The name for the system color mode"
   },
   "theme.common.editThisPage": {
     "message": "Editar esta página",
@@ -568,318 +1016,331 @@
     "message": "Enlace directo al {heading}",
     "description": "Title for link to heading"
   },
+  "theme.common.skipToMainContent": {
+    "message": "Ir al contenido principal",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.contentVisibility.draftBanner.message": {
+    "message": "Esta página es un borrador. Solo será visible en el entorno de desarrollo y se excluirá de la versión de producción.",
+    "description": "The draft content banner message"
+  },
+  "theme.contentVisibility.draftBanner.title": {
+    "message": "Página en borrador",
+    "description": "The draft content banner title"
+  },
+  "theme.contentVisibility.unlistedBanner.message": {
+    "message": "Esta página no está indexada. Los motores de búsqueda no la indexarán y solo podrán acceder a ella los usuarios que dispongan de un enlace directo.",
+    "description": "The unlisted content banner message"
+  },
+  "theme.contentVisibility.unlistedBanner.title": {
+    "message": "Página no indexada",
+    "description": "The unlisted content banner title"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Página de inicio",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Rastro de navegación",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.docs.DocCard.categoryDescription.plurals": {
+    "message": "1 artículo|{count} artículos",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Página del documento",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Siguiente",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Cerrar barra de navegación",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonAriaLabel": {
+    "message": "Contraer barra lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Contraer barra lateral",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonAriaLabel": {
+    "message": "Expandir barra lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir barra lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Barra lateral de documentación",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Mostrar/ocultar barra de navegación",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
+  },
+  "theme.docs.tagDocListPageTitle": {
+    "message": "{nDocsTagged} etiquetados con \"{tagName}\"",
+    "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.tagDocListPageTitle.nDocsTagged": {
+    "message": "Un documento etiquetado|{count} documentos etiquetados",
+    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Versión: {versionLabel}"
+  },
+  "theme.docs.versions.latestVersionLinkLabel": {
+    "message": "última versión",
+    "description": "The label used for the latest version suggestion link label"
+  },
+  "theme.docs.versions.latestVersionSuggestionLabel": {
+    "message": "Para la documentación actualizada, vea {latestVersionLink} ({versionLabel}).",
+    "description": "The label used to tell the user to check the latest version"
+  },
+  "theme.docs.versions.unmaintainedVersionLabel": {
+    "message": "Esta es la documentación para {siteTitle} {versionLabel}, que ya no se mantiene activamente.",
+    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+  },
+  "theme.docs.versions.unreleasedVersionLabel": {
+    "message": "Esta es la documentación sin publicar para {siteTitle}, versión {versionLabel}.",
+    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+  },
+  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
+    "message": "Contraer la categoría de la barra lateral «{label}»",
+    "description": "The ARIA label to collapse the sidebar category"
+  },
+  "theme.DocSidebarItem.expandCategoryAriaLabel": {
+    "message": "Expandir la categoría de la barra lateral «{label}»",
+    "description": "The ARIA label to expand the sidebar category"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página ha fallado.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.ErrorPageContent.tryAgain": {
+    "message": "Inténtalo de nuevo",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  },
+  "theme.IconExternalLink.ariaLabel": {
+    "message": "(se abre en una nueva pestaña)",
+    "description": "The ARIA label for the external link icon"
+  },
   "theme.lastUpdated.atDate": {
-    "message": " en {date}",
+    "message": "en {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " por {user}",
+    "message": "por {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
     "message": "Última actualización{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versiones",
-    "description": "The label for the navbar versions dropdown on mobile view"
+  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+    "message": "Contraer el menú desplegable",
+    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
   },
-  "theme.tags.tagsListLabel": {
-    "message": "Etiquetas:",
-    "description": "The label alongside a tag list"
-  },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Cerrar",
-    "description": "The ARIA label for close button of announcement bar"
-  },
-  "theme.blog.sidebar.navAriaLabel": {
-    "message": "Navegación de publicaciones recientes",
-    "description": "The ARIA label for recent posts in the blog sidebar"
-  },
-  "theme.CodeBlock.copied": {
-    "message": "Copiado",
-    "description": "The copied button label on code blocks"
-  },
-  "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copiar código al portapapeles",
-    "description": "The ARIA label for copy code blocks button"
-  },
-  "theme.CodeBlock.copy": {
-    "message": "Copiar",
-    "description": "The copy button label on code blocks"
-  },
-  "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
-  },
-  "theme.NavBar.navAriaLabel": {
-    "message": "Main",
-    "description": "The ARIA label for the main navigation"
+  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+    "message": "Expandir el menú desplegable",
+    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Idiomas",
     "description": "The label for the mobile language switcher dropdown"
-  },
-  "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "En esta página",
-    "description": "The label used by the button on the collapsible TOC component"
-  },
-  "theme.blog.post.readMore": {
-    "message": "Leer Más",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
-  },
-  "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
-  },
-  "theme.blog.post.readingTime.plurals": {
-    "message": "Lectura de un minuto|{readingTime} min de lectura",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
-  },
-  "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
-    "description": "The ARIA label for the home page in the breadcrumbs"
-  },
-  "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Colapsar barra lateral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Colapsar barra lateral",
-    "description": "The title attribute for collapse button of doc sidebar"
-  },
-  "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
-    "description": "The ARIA label for the sidebar navigation"
-  },
-  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "Close navigation bar",
-    "description": "The ARIA label for close button of mobile sidebar"
-  },
-  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "Toggle navigation bar",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
     "message": "← Volver al menú principal",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
-  "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expandir barra lateral",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versiones",
+    "description": "The label for the navbar versions dropdown on mobile view"
   },
-  "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expandir barra lateral",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  "theme.NavBar.navAriaLabel": {
+    "message": "Principal",
+    "description": "The ARIA label for the main navigation"
   },
-  "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+  "theme.NotFound.p1": {
+    "message": "No hemos podido encontrar lo que buscabas.",
+    "description": "The first paragraph of the 404 page"
   },
-  "theme.common.skipToMainContent": {
-    "message": "Saltar al contenido principal",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  "theme.NotFound.p2": {
+    "message": "Ponte en contacto con el propietario del sitio web que te ha redirigido a la URL original e infórmale de que su enlace no funciona.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.NotFound.title": {
+    "message": "Página no encontrada",
+    "description": "The title of the 404 page"
+  },
+  "theme.tags.tagsListLabel": {
+    "message": "Etiquetas:",
+    "description": "The label alongside a tag list"
+  },
+  "theme.tags.tagsPageLink": {
+    "message": "Ver todas las etiquetas",
+    "description": "The label of the link targeting the tag list page"
   },
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
   },
-  "link.myfavorite": {
-    "message": "Mis favoritos"
+  "theme.TOCCollapsible.toggleButtonLabel": {
+    "message": "En esta página",
+    "description": "The label used by the button on the collapsible TOC component"
   },
-  "comment.reply": {
-    "message": "Respuesta"
+  "title.dataManagement": {
+    "message": "Gestión de datos"
   },
-  "edit": {
-    "message": "Editar"
+  "title.security": {
+    "message": "Configuración de seguridad"
   },
-  "delete": {
-    "message": "Borrar"
+  "title.userInfo": {
+    "message": "Información del usuario"
   },
-  "cancel": {
-    "message": "Cancelar"
+  "unavailable.unshared": {
+    "message": "El autor ha dejado de compartir"
   },
-  "comment.required": {
-    "message": "Por favor, introduzca su comentario"
+  "unavailable.unsharedNoCache": {
+    "message": "El autor ha dejado de compartir, no hay caché local disponible"
   },
-  "comment.maxLength": {
-    "message": "El comentario no debe superar los 2000 caracteres"
+  "userPage.level.maxReached": {
+    "message": "NIVEL MÁXIMO"
   },
-  "comment.placeholder": {
-    "message": "Escriba aquí su comentario... Soporta sintaxis Markdown y HTML."
+  "userPage.level.sharedSuffix": {
+    "message": "compartidos"
   },
-  "reply.required": {
-    "message": "Por favor, introduzca el contenido de la respuesta"
+  "userPage.level.specLabel": {
+    "message": "NIVEL"
   },
-  "reply.submit": {
-    "message": "Responder Comentario"
+  "userPage.level.toNext": {
+    "message": "hasta {next}"
   },
-  "comment.add": {
-    "message": "Añadir comentario"
+  "validation.agreement.required": {
+    "message": "Debes aceptar los términos de servicio y la política de privacidad para continuar"
   },
-  "comment.comments": {
-    "message": "comentarios"
+  "validation.comment.maxLength": {
+    "message": "El contenido del comentario no debe exceder los 2000 caracteres"
   },
-  "myprompt": {
-    "message": "Mis sugerencias"
+  "validation.comment.required": {
+    "message": "Por favor ingresa el contenido del comentario"
   },
-  "theme.admonition.warning": {
-    "message": "warning",
-    "description": "The default label used for the Warning admonition (:::warning)"
+  "validation.confirmPassword.required": {
+    "message": "Por favor confirma tu nueva contraseña"
   },
-  "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
+  "validation.currentPassword.required": {
+    "message": "Por favor ingresa tu contraseña actual"
   },
-  "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
+  "validation.email.invalid": {
+    "message": "Por favor ingresa una dirección de correo electrónico válida"
   },
-  "企业职能": {
-    "message": "Funciones de empresa"
+  "validation.email.required": {
+    "message": "Por favor ingresa tu correo electrónico"
   },
-  "myprompt.tooltip": {
-    "message": "Prompts que he añadido o hecho que se pueden utilizar para almacenar prompts que no sean AiShort."
+  "validation.password.length": {
+    "message": "La contraseña debe tener al menos 6 caracteres"
   },
-  "myfavorite.tooltip": {
-    "message": "Mi colección de prompts, incluyendo prompts comunitarios."
+  "validation.password.match": {
+    "message": "Las contraseñas no coinciden"
   },
-  "community.tag.tooltip": {
-    "message": "Indicaciones compartidas por la comunidad"
+  "validation.password.required": {
+    "message": "Por favor ingresa la contraseña"
   },
-  "community.tag": {
-    "message": "Comunidad"
+  "validation.promptContent.required": {
+    "message": "Por favor ingresa el contenido del prompt"
   },
-  "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "{count} artículos",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+  "validation.promptTitle.required": {
+    "message": "Por favor ingresa el título del prompt"
   },
-  "message.passwordlessLinkSent": {
-    "message": "¡Enlace de inicio de sesión sin contraseña enviado!"
+  "validation.replyRequired": {
+    "message": "Por favor ingresa el contenido de la respuesta"
   },
-  "message.errorSendingPasswordlessLink": {
-    "message": "No se ha podido enviar. Por favor, compruebe su correo electrónico o nombre de usuario."
+  "validation.username.required": {
+    "message": "Por favor ingresa nombre de usuario o correo electrónico registrado"
   },
-  "button.sendPasswordlessLink": {
-    "message": "Obtener enlace de inicio de sesión sin contraseña"
+  "vote.downvote.alreadyVoted": {
+    "message": "Ya has indicado «No me gusta» en este prompt en esta sesión."
   },
-  "tabs.passwordlessLogin": {
-    "message": "Inicio de sesión sin contraseña"
+  "vote.downvote.failed": {
+    "message": "No se pudo registrar «No me gusta». Inténtalo de nuevo."
   },
-  "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
-    "description": "The title of the page for a blog author"
+  "vote.downvote.success": {
+    "message": "«No me gusta» registrado."
   },
-  "theme.blog.authorsList.pageTitle": {
-    "message": "Authors",
-    "description": "The title of the authors page"
+  "vote.loginRequired": {
+    "message": "Inicia sesión para votar."
   },
-  "theme.blog.authorsList.viewAll": {
-    "message": "View All Authors",
-    "description": "The label of the link targeting the blog authors page"
+  "vote.upvote.alreadyVoted": {
+    "message": "Ya has indicado «Me gusta» en este prompt en esta sesión."
   },
-  "theme.contentVisibility.unlistedBanner.title": {
-    "message": "Página sin clasificar",
-    "description": "The unlisted content banner title"
+  "vote.upvote.failed": {
+    "message": "No se pudo registrar «Me gusta». Inténtalo de nuevo."
   },
-  "theme.contentVisibility.unlistedBanner.message": {
-    "message": "Esta página está sin clasificar. Los motores de búsqueda no la indexaran, y solo los usuarios con el enlace directo podrán acceder a esta.",
-    "description": "The unlisted content banner message"
+  "vote.upvote.success": {
+    "message": "«Me gusta» registrado."
   },
-  "theme.contentVisibility.draftBanner.title": {
-    "message": "Draft page",
-    "description": "The draft content banner title"
+  "auth.callback.title": {
+    "message": "Completar el inicio de sesión"
   },
-  "theme.contentVisibility.draftBanner.message": {
-    "message": "This page is a draft. It will only be visible in dev and be excluded from the production build.",
-    "description": "The draft content banner message"
+  "auth.callback.working": {
+    "message": "Iniciando sesión…"
   },
-  "theme.blog.author.noPosts": {
-    "message": "This author has not written any posts yet.",
-    "description": "The text for authors with 0 blog post"
+  "auth.callback.workingHint": {
+    "message": "No cierres esta página: volverás al inicio en un momento."
   },
-  "link.user": {
-    "message": "Mis Prompts"
+  "auth.callback.failed": {
+    "message": "El inicio de sesión no se completó"
   },
-  "link.myaccount": {
-    "message": "Configuración de cuenta"
+  "auth.callback.failedHint": {
+    "message": "El enlace de inicio de sesión puede haber caducado o ya haberse usado. Vuelve al inicio e inicia sesión de nuevo."
   },
-  "link.addprompt": {
-    "message": "Agregar un prompt"
+  "auth.callback.idle": {
+    "message": "No hay ningún inicio de sesión pendiente aquí"
   },
-  "modal.addprompt.title": {
-    "message": "Compartir prompt (Esto aparecerá en la pestaña 'Mis Prompts')"
+  "auth.callback.idleHint": {
+    "message": "Esta página solo gestiona redirecciones de inicio de sesión; no hace falta guardarla."
   },
-  "showcase.header.button": {
-    "message": "🙏 Comparte tus prompts"
+  "auth.callback.backHome": {
+    "message": "Volver al inicio para iniciar sesión"
   },
-  "label.forgotPassword": {
-    "message": "Olvidé la contraseña"
+  "myspace.tagManager.emptyHint": {
+    "message": "Escribe un nombre arriba, elige un color y tendrás tu primera etiqueta."
   },
-  "link.home": {
-    "message": "Inicio"
+  "validation.username.empty": {
+    "message": "El nombre de usuario no puede estar vacío"
   },
-  "input.password.match": {
-    "message": "¡Las contraseñas no coinciden!"
+  "message.username.updated": {
+    "message": "Nombre de usuario actualizado"
   },
-  "input.password.valid": {
-    "message": "La contraseña debe tener al menos 6 caracteres."
+  "message.username.updateError": {
+    "message": "No se pudo actualizar el nombre de usuario. Inténtalo de nuevo en un momento."
   },
-  "message.forgotPassword.info": {
-    "message": "Se enviará un enlace para restablecer la contraseña a su correo electrónico."
+  "message.requestTimeout": {
+    "message": "La solicitud ha caducado. Inténtalo de nuevo."
   },
-  "input.email.valid": {
-    "message": "¡Por favor ingrese un email válido!"
+  "message.tooManyRequests": {
+    "message": "Demasiados intentos. Inténtalo de nuevo en un momento."
   },
-  "message.passwordlessLogin.info": {
-    "message": "Se enviará un enlace de inicio de sesión a su correo electrónico. Haga clic en él para iniciar sesión sin contraseña."
+  "account.signInRequired": {
+    "message": "Inicia sesión para ver tu cuenta"
   },
-  "message.fetchError": {
-    "message": "No se han podido recuperar los mensajes. Vuelva a intentarlo más tarde."
+  "account.signInRequiredHint": {
+    "message": "Te llevamos al inicio; también puedes usar el botón de abajo."
   },
-  "message.noPrompts": {
-    "message": "Aún no se han enviado mensajes. Por favor, añada sus sugerencias."
+  "myspace.tagManager.color": {
+    "message": "Color de la etiqueta"
   },
-  "message.cache.cleared": {
-    "message": "Se ha borrado la memoria caché."
-  },
-  "tooltip.clearCache": {
-    "message": "Si has actualizado tus favoritos o avisos en otro dispositivo, haz clic para borrar la caché y sincronizar el contenido más reciente."
-  },
-  "button.clearCache": {
-    "message": "Borrar caché"
-  },
-  "hideTags": {
-    "message": "Ocultar etiquetas"
-  },
-  "showTags": {
-    "message": "Mostrar etiquetas"
-  },
-  "theme.colorToggle.ariaLabel.mode.system": {
-    "message": "system mode",
-    "description": "The name for the system color mode"
-  },
-  "theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
-    "message": "Expand the dropdown",
-    "description": "The ARIA label of the button to expand the mobile dropdown navbar item"
-  },
-  "theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
-    "message": "Collapse the dropdown",
-    "description": "The ARIA label of the button to collapse the mobile dropdown navbar item"
-  },
-  "homepage.slogan": {
-    "message": "Domina los Agentes de IA, desata una productividad 10x"
-  },
-  "homepage.title": {
-    "message": "AiShort - Plataforma avanzada de Agentes de IA y Prompts | Crea, comparte y multiplica tu productividad con un solo clic"
-  },
-  "homepage.description": {
-    "message": "AiShort(ChatGPT Shortcut) es una plataforma líder de Agentes de IA y Prompts dedicada a revolucionar tu forma de trabajar y aprender. Aquí, no solo puedes descubrir una vasta biblioteca de prompts de alta calidad, sino que también puedes construir, gestionar y ejecutar potentes agentes de IA sin esfuerzo con un solo clic para automatizar tareas complejas. AiShort es compatible con múltiples idiomas, facilitando una colaboración más efectiva con la IA. ¡Únete a nuestra comunidad de creadores ahora para explorar y compartir el potencial infinito de los agentes de IA y comenzar tu era de súper-producción!"
-  },
-  "community.title": {
-    "message": "Comunidad de Creadores de AiShort - Co-crea y comparte Agentes de IA y Prompts, explora flujos de trabajo futuros"
-  },
-  "community.description": {
-    "message": "¡Bienvenido a la Comunidad de Creadores de AiShort! Este es el punto de encuentro para entusiastas y profesionales de los Agentes de IA y los Prompts. Aquí puedes descubrir, compartir e importar potentes agentes de IA creados por miembros de la comunidad y aplicarlos a tu escritura, programación, análisis de mercado y otros flujos de trabajo con un solo clic. Participa en debates, optimiza soluciones de agentes y colabora con otros creadores para convertir ideas imaginativas en soluciones eficientes y automatizadas. ¡Únete ahora y comparte tu primer Agente de IA!"
+  "comments.gif.searchPlaceholder": {
+    "message": "Buscar GIF"
   }
 }

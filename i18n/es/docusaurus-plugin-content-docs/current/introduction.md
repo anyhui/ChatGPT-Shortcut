@@ -1,28 +1,65 @@
 ---
 slug: /
+sidebar_label: Introducción a AI Short
+title: Biblioteca Curada de Prompts de IA | Copia con un Clic
+description: Biblioteca curada de prompts de IA en español para ChatGPT, Gemini, Claude y DeepSeek. Cópialos al instante — diseñada para profesionales y creadores de España y Latinoamérica, con favoritos, comunidad y soporte multilingüe.
 ---
 
-# Introducción
+# Introducción a AI Short
 
-AiShort proporciona una lista concisa y fácil de usar de instrucciones de IA. Incluso sin entender las solicitudes, puedes encontrar fácilmente las solicitudes adecuadas para diversos escenarios a través de filtrado y búsqueda, mejorando así tu productividad.
+AI Short (ChatGPT Shortcut) es una biblioteca de prompts de IA organizados por escenario, lista para copiar y usar.
 
-🚀 **Solicitudes de un solo clic**: Con solo un clic, puedes obtener una variedad de solicitudes seleccionadas cuidadosamente por expertos. Envíalas a modelos de lenguaje AI como ChatGPT y puedes obtener la salida esperada.
+> **¿Qué es un "prompt"?** Un prompt es la instrucción que le das a la IA, y determina la calidad de su respuesta. Un buen prompt logra respuestas profesionales y precisas; uno vago solo consigue respuestas mediocres. AiShort recopila prompts de calidad para todo tipo de escenarios (escritura, programación, oficina, estudio…), ahorrándote el tiempo de pensar cómo formular tu pregunta.
 
-💻 **Impulsa la productividad**: Al usar solicitudes optimizadas, puedes obtener comentarios más precisos y prácticos, mejorando así de manera efectiva tu eficiencia laboral.
+## Inicio Rápido en 30 Segundos
 
-🌍 **Optimización para idiomas que no son el inglés**: Proporcionamos traducciones para las solicitudes en inglés en 12 de los principales idiomas globales y soportamos respuestas predeterminadas en tu lengua materna, lo que es conveniente para los hablantes de idiomas que no son el inglés para entender y usar.
+1. Abre AI Short
+2. Busca o navega por el prompt que necesitas
+3. Haz clic en "Copiar" y pégalo en cualquier herramienta de IA — páginas de chat como ChatGPT, herramientas de programación como Cursor, llamadas a la API, etc.
 
-💾 **Guarda solicitudes**: Recopila, edita y gestiona convenientemente tus solicitudes favoritas para uso futuro.
+Así de simple. Descubre más usos en la [Guía de Inicio](./guides/getting-started).
 
-🌐 **Compartir solicitudes**: Comparte tus solicitudes favoritas, colabora con otros e inspira más ideas.
+## Funciones Principales
 
-🗳️ **Sistema de votación comunitaria**: Similar a Product Hunt o Reddit, la plataforma es impulsada por la comunidad. Las mejores solicitudes serán promovidas a la página principal.
+🚀 **Prompts curados**: Cubren escritura, programación, oficina y más, listos para copiar.
 
-📦 **Listo para usar**: Simplemente visita https://www.aishort.top/es/ para comenzar a usar.
+🔍 **Etiquetas + búsqueda por palabras clave**: Filtra por escenario o busca directamente por palabra clave.
 
-La fuente de las solicitudes de AiShort incluye selecciones de internet, compartidas por la comunidad, y [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). Actualizaremos regularmente para proporcionarte nuevas solicitudes e inspiración.
+🌍 **18 idiomas**: Interfaz y prompts traducidos por completo, con opción a respuestas en tu idioma.
 
-Te invitamos a unirte a nuestra comunidad en Discord para intercambiar ideas y comentarios.
+📦 **Listo para usar**: No requiere registro, simplemente abre y empieza a usar.
+
+## Funciones Avanzadas (Tras Iniciar Sesión)
+
+📂 **Mi Colección**: Ordenamiento por arrastrar y soltar, clasificación por etiquetas personalizadas.
+
+✏️ **Prompts personalizados**: Crea, edita y gestiona tus propios prompts.
+
+🗳️ **Interacción comunitaria**: Comparte prompts en la comunidad y participa en la votación.
+
+📤 **Exportación de datos**: Exporta todos tus prompts como archivo JSON con un clic.
+
+🔐 **Múltiples métodos de inicio de sesión**: Contraseña, Google y enlaces de correo sin contraseña.
+
+🏆 **Niveles**: Gana niveles (L0–L9) al compartir prompts con la comunidad.
+
+## Versión de Despliegue Offline
+
+La [versión de despliegue offline](./deploy/offline) está diseñada para escenarios sin acceso a internet, como intranets corporativas o redes gubernamentales. No requiere servidor backend ni cuenta, está lista para usar tras el despliegue, conserva las funciones principales de navegación, búsqueda, favoritos y personalización, y comparte el mismo formato de datos con la versión online.
+
+## Fuentes de Prompts
+
+Los prompts provienen de selecciones de internet, contribuciones de la comunidad y [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). Actualizamos continuamente.
+
+> ¿Más preguntas? Consulta las [Preguntas Frecuentes](./guides/faq) — 13 temas sobre gratis/API Key, compatibilidad multi-modelo, uso comercial y privacidad.
+
+## Únete a la Comunidad
+
+Bienvenido a unirte a nuestra comunidad para intercambiar ideas y comentarios:
+
+<a href="https://t.me/aishort_top">
+   <img src="https://img.shields.io/badge/Telegram-Group-blue?logo=telegram&style=for-the-badge" alt="join Telegram group" />
+</a>
 
 <a href="https://discord.gg/PZTQfJ4GjX">
    <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />

@@ -1,17 +1,26 @@
-# Firefox Settings
+---
+sidebar_label: Firefox Extension Settings
+title: AI Short on Firefox - Native Sidebar & Shortcuts
+description: Firefox setup guide for AI Short - aligned with the Chrome build since v4.4.0, a native sidebar that needs no per-site permission, Alt+Shift+D to toggle.
+---
 
-Before using the Firefox plug-in, it is recommended to set it up in the following two steps.
+# Firefox Extension Settings
 
-## 1. Extension Pinning and Access Settings
+Since v4.4.0 the Firefox build matches the Chrome one: the same **side panel, popup and standalone window** display modes, with the prompt library bundled inside the extension.
 
-First, select "Pin ChatGPT Shortcut Extension" in the Firefox toolbar, then enter the extension center. On the ChatGPT Shortcut extension item, select "Options" to enter the extension's settings interface. The specific steps are as shown in the following image:
+The extension only requests the `storage` permission — it neither reads nor modifies the pages you visit, so **no per-site authorization is needed**.
 
-![Firefox settings](https://img.newzone.top/2023-12-25-05-51-47.png?imageMogr2/format/webp)
+> Older builds (v4.3 and earlier) injected the sidebar into the ChatGPT page with a content script, so you had to right-click the icon and choose "Always allow on \*\*\*". That mechanism is gone; after upgrading you can skip this step.
 
-## 2. Authorize Extension Operation
+## Shortcuts
 
-Secondly, to ensure the extension functions normally on websites like ChatGPT and Bard, you need to right-click the extension icon on these websites and select "Always allow on this site." This action grants the extension permission to modify content and add sidebars on designated websites.
+- `Alt + Shift + S` — open the extension in the current display mode
+- `Alt + Shift + D` — toggle the native Firefox sidebar
 
-![Firefox Extension Permission](https://img.newzone.top/2023-12-25-05-59-48.png?imageMogr2/format/webp)
+Customize them under `about:addons` → gear icon → "Manage Extension Shortcuts".
 
-After successful installation, you can view the [plugin usage tutorial](./usage.md).
+## Settings Page
+
+Pin AI Short to the Firefox toolbar, then open its "Options" from the Extensions page to switch language, display mode and dark mode.
+
+See the [usage guide](./usage) for what each setting does.

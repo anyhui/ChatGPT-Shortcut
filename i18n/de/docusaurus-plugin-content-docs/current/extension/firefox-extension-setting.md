@@ -1,17 +1,26 @@
-# Firefox-Einstellungen
+---
+sidebar_label: Firefox-Erweiterungseinstellungen
+title: Firefox Config - Native Seitenleiste & Kürzel
+description: AI Short unter Firefox einrichten. Seit v4.4.0 identisch zur Chrome-Version, mit nativer Seitenleiste ohne Berechtigung pro Website und Alt+Shift+D.
+---
 
-Bevor Sie das Firefox-Plug-in verwenden, wird empfohlen, es in den folgenden zwei Schritten einzurichten.
+# Firefox-Erweiterungseinstellungen
 
-## 1. Einstellungen für das Anheften und Zugreifen auf Erweiterungen
+Seit v4.4.0 entspricht die Firefox-Version der Chrome-Version: dieselben drei Anzeigemodi — **Seitenleiste, Popup und eigenes Fenster** — mit der Prompt-Bibliothek direkt in der Erweiterung.
 
-Wählen Sie zunächst „ChatGPT-Shortcut-Erweiterung anheften“ in der Firefox-Symbolleiste und rufen Sie dann das Erweiterungscenter auf. Wählen Sie im Erweiterungselement „ChatGPT-Shortcut“ „Optionen“, um die Einstellungsoberfläche der Erweiterung aufzurufen. Die spezifischen Schritte sind in der folgenden Abbildung dargestellt:
+Die Erweiterung fordert nur die Berechtigung `storage` an. Sie liest und verändert die von Ihnen besuchten Seiten nicht, daher ist **keine Freigabe pro Website mehr nötig**.
 
-![Firefox-Einstellungen](https://img.newzone.top/2023-12-25-05-51-47.png?imageMogr2/format/webp)
+> Ältere Versionen (v4.3 und früher) haben die Seitenleiste per Content Script in die ChatGPT-Seite eingefügt; dafür musste man mit der rechten Maustaste auf das Symbol klicken und „Auf \*\*\* immer erlauben" wählen. Dieser Mechanismus wurde entfernt — nach dem Update entfällt dieser Schritt.
 
-## 2. Erweiterungsbetrieb autorisieren
+## Tastenkürzel
 
-Zweitens müssen Sie mit der rechten Maustaste auf das Erweiterungssymbol auf diesen Websites klicken und „Auf dieser Site immer zulassen“ auswählen, um sicherzustellen, dass die Erweiterung auf Websites wie ChatGPT und Bard normal funktioniert. Diese Aktion erteilt der Erweiterung die Berechtigung, Inhalte zu ändern und Seitenleisten auf bestimmten Websites hinzuzufügen.
+- `Alt + Shift + S`: öffnet die Erweiterung im aktuellen Anzeigemodus
+- `Alt + Shift + D`: blendet die native Firefox-Seitenleiste ein oder aus
 
-![Firefox-Erweiterungsberechtigung](https://img.newzone.top/2023-12-25-05-59-48.png?imageMogr2/format/webp)
+Anpassen unter `about:addons` → Zahnradsymbol → „Erweiterungs-Tastenkombinationen verwalten".
 
-Nach erfolgreicher Installation können Sie das [Tutorial zur Verwendung des Plugins](./usage.md) ansehen.
+## Einstellungsseite
+
+Heften Sie AI Short an die Firefox-Symbolleiste und öffnen Sie die „Optionen" auf der Erweiterungsseite, um Sprache, Anzeigemodus und Dunkelmodus zu ändern.
+
+Was die einzelnen Optionen bewirken, steht in der [Bedienungsanleitung](./usage).

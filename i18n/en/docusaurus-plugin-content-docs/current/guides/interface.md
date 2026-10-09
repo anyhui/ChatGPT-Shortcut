@@ -1,39 +1,70 @@
-# Interface Description
+---
+sidebar_label: Interface Guide
+title: AI Short Interface Guide | Tag Filtering & Smart Search
+description: Master the AI Short interface! Quickly locate prompts via tag filtering and keyword search, understand card details and collection operations.
+---
 
-AiShort defaults to displaying all the suggested words. The page is divided into three sections: the tag area, the search area, and the suggested words display area.
+# Interface Guide
 
-![](https://img.newzone.top/2023-06-05-20-44-19.png?imageMogr2/format/webp)
+The AiShort homepage has four parts — the **title and entry buttons** at the top, the **tag filters** below them, the **search bar**, and the **prompt cards** that fill the rest of the page. This section covers how to use them together to find the prompt you need.
 
-## 🏷︎ Tag Filtering
+![](/img/docs/interface-home.png)
 
-The tag area is divided based on the domain and functionality of the suggested words, allowing for selection based on different scenarios and needs. It can be used in conjunction with the "Tag Filtering Rule Toggle" button in the upper right corner of the tag area to perform multi-tag filtering. The default state is OR, which selects all the suggested words under the chosen tag. Switching to AND will filter out the suggested words that have multiple selected tags.
+## Top Entry Buttons
 
-![](https://img.newzone.top/2023-06-05-20-50-19.png?imageMogr2/format/webp)
+The buttons under the page title differ slightly before and after you log in:
 
-## 🔍 Keyword Search
+- **Logged out**: "**Sign in free**" + "**Browse Community**"
+- **Logged in**: a view switcher ("**Explore**" ⇄ "**My collection**"), "**Create prompt**", and a settings menu on the right ("My account", "Logout")
 
-The keyword search scope includes the titles, summaries, content, and translations in your native language of the suggested words. After entering a keyword, the suggested words display area will immediately show the filtered content. If tags have been selected, the keyword search will be limited to the scope of the selected tags. On the PC side, after the content in the search box changes, the new search results will be displayed after 800 milliseconds. On mobile devices, it updates instantly.
+> 💡 You can browse, search, and copy every curated prompt without logging in. Logging in just adds collecting, creating, and cross-device sync.
 
-![](https://img.newzone.top/2023-06-05-20-58-07.png?imageMogr2/format/webp)
+## Tag Filtering
 
-After you log in, the search scope will include the prompts you submitted and collected.
+Filter prompts by domain and function. The **OR / AND** switcher in the top right controls how multiple tags are combined:
 
-![](https://img.newzone.top/2024-08-12-20-38-27.png?imageMogr2/format/webp)
+- **OR** (default): Show prompts matching any of the selected tags
+- **AND**: Show only prompts matching all selected tags
 
-## 🔬 Prompt Copy
+Once tags are selected, a "**Clear filters**" button appears to wipe them in one click. On mobile, tags are collapsed by default — tap "**Show Tags**" to expand.
 
-Through tag filtering and keyword search, clicking the "Copy" button in the upper right corner of the card allows you to obtain the suggested words. After pasting them into ChatGPT, you can refer to the suggestions and adjust the text according to your specific needs to obtain a reply in the desired domain. If the native language explanation in the suggested words is not clear, you can click the link in the lower right corner of the suggested words to view the source webpage.
+![](/img/docs/interface-filter.png)
 
-![](https://img.newzone.top/2023-06-11-17-14-07.png?imageMogr2/format/webp)
+## Keyword Search
 
-## 💬 Language Switching
+Searches across prompt titles, descriptions, content, and notes.
 
-By default, the suggested words are displayed in English. If you are using a non-English page and want to view the interpretations in your native language, please click on the suggested words content to switch to a non-English language, and click again to switch back to English. Please note that language switching only works when clicking on the text in the prompt, and clicking in the blank area is ineffective.
+- On desktop, press **`Ctrl + K`** (`⌘ + K` on macOS) to focus the search box; `Esc` to exit
+- Homepage search covers the **curated prompts**. When tags are selected, search is scoped to those tags
+- After logging in, search expands to include your **collections** and **custom prompts**
+- If short keywords return nothing on the homepage, AiShort automatically searches the [Community Prompts](./community) too
 
-![Switching between Chinese and English](http://img.newzone.top/chatgptshortcut_encn.gif)
+![](/img/docs/interface-search.png)
 
-If you want the suggested words to be displayed in your native language by default, you can click the "Switch Prompt Language" button in the upper right corner of the tag area. However, please note that even when switching to native language translations, the copy button only copies the English suggested words.
+## Prompt Cards
 
-## 🔥 Popular Sorting
+Curated prompts are sorted by cumulative copy count, so the most-used content shows first.
 
-The page now displays the frequency of prompt usage, and prompts with higher usage frequency will be marked as "favorite". Additionally, the sorting of prompt tags will be primarily based on the heat value. The heat value will be periodically updated.
+### Card Info
+
+Each card shows the prompt's title, description, content preview, and tags. The flame icon and number in the top-right corner show its cumulative copy count.
+
+### View Details
+
+Click a card to open the details popup — read the full content and notes, then copy in one click.
+
+![](/img/docs/prompt-card.webp)
+
+### Copy Prompt
+
+Click the "**Copy**" button on the card or in the details popup, then paste into any AI tool (chat pages, coding tools, API calls, etc.).
+
+### Collect Prompt
+
+After logging in, a heart button appears on each card — click it to add the prompt to [My Collection](./my-collection).
+
+## Related Documentation
+
+- [Getting Started](./getting-started) - Basic usage
+- [My Collection](./my-collection) - Collection, tags, and sorting
+- [Community Prompts](./community) - Discover and share

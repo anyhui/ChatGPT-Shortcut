@@ -1,0 +1,145 @@
+/* New Card Container Style — B+ design system
+   Card uses hairline border (rgba 0.06) instead of "ghost shadow" for visible definition
+   on the deeper #14171a page background. */
+.showcaseCard {
+  border-radius: 6px;
+  border: 1px solid var(--site-color-hairline);
+  background-color: var(--ifm-background-surface-color);
+  display: flex;
+  flex-direction: column;
+  contain: layout paint;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.12s var(--site-motion-emphasized), box-shadow 0.12s var(--site-motion-emphasized);
+}
+
+/* Top gradient hairline — only on hover. Replaces the old left-edge inset + bloom. */
+.showcaseCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--site-color-tag-selected-text) 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.12s var(--site-motion-emphasized);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.showcaseCard:hover {
+  border-color: rgba(var(--ifm-color-primary-rgb), 0.4);
+  /* 写死的 rgba(0,0,0,.4) 在浅色模式下是一圈过重的黑影；--site-shadow-lg 两个模式各有值 */
+  box-shadow: var(--site-shadow-lg);
+}
+
+.showcaseCard:hover::before {
+  opacity: 0.7;
+}
+
+.showcaseCard:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.showcaseCardBody {
+  line-height: 1.55;
+  color: var(--ifm-color-content-secondary);
+  font-size: 13px;
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .showcaseCardBody {
+    margin-bottom: 5px;
+  }
+}
+
+/* Title link cascade — B+ keeps card hover quiet:
+   - dormant: colorText (white)
+   - card hovered, link not directly hovered: still colorText (no card-wide tint)
+   - link itself hovered: primary-hi + underline */
+.showcaseCardLink {
+  color: var(--ifm-color-content) !important;
+  text-decoration: none;
+  transition: color 0.12s var(--site-motion-emphasized);
+  /* WCAG 2.2 target-size (>=24px): 垂直内边距扩大点击热区，保持 display:inline 避免破坏 line-clamp */
+  padding: 3px 0;
+}
+
+.showcaseCard:hover a.showcaseCardLink:hover {
+  color: var(--site-color-tag-selected-text) !important;
+  text-decoration: underline !important;
+}
+
+.svgIconFavorite {
+  margin-inline-end: 0.5rem;
+  color: var(--site-color-svg-icon-favorite);
+}
+
+/* Card Actions - Expand clickable area */
+.showcaseCard :global(.ant-card-actions) {
+  display: flex;
+  background-color: transparent;
+}
+
+.showcaseCard :global(.ant-card-actions > li) {
+  flex: 1;
+  margin: 0 !important;
+  display: flex;
+  align-items: stretch;
+}
+
+.showcaseCard :global(.ant-card-actions > li > span) {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+}
+
+.showcaseCard :global(.ant-card-actions .ant-btn) {
+  width: 100%;
+  height: 100%;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  transition: background-color 0.12s var(--site-motion-emphasized), color 0.12s var(--site-motion-emphasized);
+}
+
+.showcaseCard :global(.ant-card-actions .ant-btn):hover {
+  background-color: rgba(var(--ifm-color-primary-rgb), 0.08);
+  color: var(--site-color-tag-selected-text);
+}
+
+/* Top-right stats: tabular mono for numbers */
+.showcaseCard :global(.ant-statistic-content) {
+  font-family: var(--site-font-mono);
+  font-variant-numeric: tabular-nums;
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+
+/* Card hover "wake-up": all passive icons in card body — lock, drag handle, website link,
+   stat icons (fire/like) and stat numbers — lift to primary-hi together with the card.
+   Excludes .ant-card-actions buttons which have their own per-button hover.
+   HeartFilled (favorite) inline-colored pink in actions stays pink (not in body). */
+.showcaseCard :global(.ant-card-body .anticon) {
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+
+.showcaseCard:hover :global(.ant-card-body .anticon),
+.showcaseCard:hover :global(.ant-statistic-content) {
+  color: var(--site-color-tag-selected-text) !important;
+}
+
+/* ▼ 在 downvotes === 0 时弱化为 icon-only：opacity 0.6, hover 时恢复 1.
+   与详情页 .comp-sheet-vote-icon-only 同语义。 */
+.cardVoteIconOnly {
+  opacity: 0.6;
+  transition: opacity 0.12s var(--site-motion-emphasized);
+}
+
+.cardVoteIconOnly:hover {
+  opacity: 1;
+}

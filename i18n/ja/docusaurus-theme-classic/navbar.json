@@ -7,52 +7,56 @@
     "message": "ChatGPT Shortcuts",
     "description": "The alt text of navbar logo"
   },
-  "item.label.📘 使用说明": {
-    "message": "📘 使用説明書",
-    "description": "Navbar item with label 📘 使用说明"
+  "item.label.使用说明": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label 使用说明"
   },
-  "item.label.🏘️ 社区提示词": {
-    "message": "🏘️ コミュニティプロンプト",
-    "description": "Navbar item with label 🏘️ 社区提示词"
+  "item.label.社区提示词": {
+    "message": "コミュニティプロンプト",
+    "description": "Navbar item with label 社区提示词"
   },
-  "item.label.🛠️ 应用工具": {
-    "message": "🛠️ ツール",
-    "description": "Navbar item with label 🛠️ 应用工具"
-  },
-  "item.label.IMGPrompt": {
-    "message": "IMGPrompt",
-    "description": "Navbar item with label IMGPrompt"
-  },
-  "item.label.文字处理": {
-    "message": "その他のツール",
-    "description": "Navbar item with label 文字处理"
-  },
-  "item.label.工具收藏": {
-    "message": "ツールコレクション",
-    "description": "Navbar item with label 工具收藏"
-  },
-  "item.label.Find on Product Hunt": {
-    "message": "Product Hunt で見つける",
-    "description": "Navbar item with label Find on Product Hunt"
+  "item.label.应用工具": {
+    "message": "ツール",
+    "description": "Navbar item with label 应用工具"
   },
   "item.label.反馈建议": {
     "message": "フィードバック",
     "description": "Navbar item with label 反馈建议"
   },
-  "item.label.📝 提交反馈": {
-    "message": "📝 フィードバックを送信",
-    "description": "Navbar item with label 📝 提交反馈"
+  "item.label.Telegram": {
+    "message": "Telegram",
+    "description": "Navbar item with label Telegram"
   },
-  "item.label.💬 加入 QQ 群": {
-    "message": "💬 QQ でチャット",
-    "description": "Navbar item with label 💬 加入 QQ 群"
+  "item.label.支持": {
+    "message": "サポート",
+    "description": "Navbar item with label 支持"
   },
-  "item.label.📺 加入 Discord": {
-    "message": "📺 Discord に参加",
-    "description": "Navbar item with label 📺 加入 Discord"
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
   },
-  "item.label.脚本扩展": {
-    "message": "拡張機能",
-    "description": "Navbar item with label 脚本扩展"
+  "item.label.QQ 群": {
+    "message": "QQグループ",
+    "description": "Navbar item with label QQ 群"
+  },
+  "item.label.AI 工具箱": {
+    "message": "AI ツールボックス",
+    "description": "Navbar item with label AI 工具箱"
+  },
+  "item.label.AI 绘图提示词": {
+    "message": "AI 画像プロンプト",
+    "description": "Navbar item with label AI 绘图提示词"
+  },
+  "item.label.浏览器插件": {
+    "message": "ブラウザ拡張機能",
+    "description": "Navbar item with label 浏览器插件"
+  },
+  "item.label.AI 思想家圆桌": {
+    "message": "AI 思想家ラウンドテーブル",
+    "description": "Navbar item with label AI 思想家圆桌"
+  },
+  "item.label.365 开源项目": {
+    "message": "365 OSS プロジェクト",
+    "description": "Navbar item with label 365 开源项目"
   }
 }

@@ -1,99 +1,183 @@
 <h1 align="center">
-⚡️AI Short
+    <a href="https://www.aishort.top/">
+        <img src="static/img/logo.png" alt="AiShort Logo" width="120" height="120" />
+    </a>
+    <br>
+    AiShort (ChatGPT Shortcut) - 简单好用的 AI 提示词管理工具
 </h1>
+
 <p align="center">
-    <a href="./README.md">English</a> | 中文 |
-<a href="./README-lang/README-es.md">Español</a> |
+    <em>5000+ 即用 AI 提示词库——让 ChatGPT、Cursor 等任意 AI 工具的输出从平庸变专业。</em>
+</p>
+
+<p align="center">
+    <a href="https://www.aishort.top/"><b>▶ 在线使用</b></a> ·
+    <a href="https://www.aishort.top/docs/extension/">⬇ 浏览器扩展</a> ·
+    <a href="https://www.aishort.top/docs/guides/getting-started">📖 使用手册</a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/rockbenben/ChatGPT-Shortcut?color=blue&label=License" alt="License" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/stargazers">
+        <img src="https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=social" alt="GitHub Stars" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/releases">
+        <img src="https://img.shields.io/github/v/release/rockbenben/ChatGPT-Shortcut?color=green" alt="Version" />
+    </a>
+    <a href="https://discord.gg/PZTQfJ4GjX">
+        <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=flat" alt="Discord" />
+    </a>
+</p>
+
+<p align="center">
+    <a href="./README.md">English</a> | 简体中文 | <a href="./README-lang/README-zh-hant.md">繁體中文</a> |
 <a href="./README-lang/README-ja.md">日本語</a> |
 <a href="./README-lang/README-ko.md">한국어</a> |
 <a href="./README-lang/README-fr.md">Français</a> |
 <a href="./README-lang/README-de.md">Deutsch</a> |
+<a href="./README-lang/README-es.md">Español</a> |
 <a href="./README-lang/README-it.md">Italiano</a> |
 <a href="./README-lang/README-ru.md">Русский</a> |
 <a href="./README-lang/README-pt.md">Português</a> |
+<a href="./README-lang/README-ind.md">Indonesia</a> |
 <a href="./README-lang/README-ar.md">العربية</a> |
+<a href="./README-lang/README-tr.md">Türkçe</a> |
+<a href="./README-lang/README-vi.md">Tiếng Việt</a> |
+<a href="./README-lang/README-th.md">ภาษาไทย</a> |
 <a href="./README-lang/README-hi.md">हिन्दी</a> |
 <a href="./README-lang/README-bn.md">বাংলা</a>
 </p>
-<p align="center">
-    <em>ChatGPT Shortcut，让生产力加倍的 ChatGPT 快捷指令</em>
-</p>
 
-## Why use AiShort?
+## ⚡ 30 秒快速开始
 
-AiShort 提供一份简洁易用的 AI 指令列表，即使不了解提示词知识，也可以轻松地通过筛选和查询找到适合各种场景的提示词，从而提升你的生产力。
+1. 打开 [aishort.top](https://www.aishort.top/)
+2. 搜索或浏览你需要的提示词
+3. 点击「复制」，粘贴到任意 AI 工具——ChatGPT 等对话页、Cursor 等编程工具、API 调用等场景都适用
 
-🚀 **一键提示词**：只需一键，即可获取由专家精选的各种提示词，发送给 ChatGPT 等 AI 语言模型，即可获得预期输出。
+![AiShort Interface](static/img/docs/zh/interface-home.png)
 
-💻 **提升生产力**：通过使用优化过的提示词，你可以获得更精确、实用的反馈，从而有效提升生产效率。
+就这么简单！更多功能请查看[使用手册](https://www.aishort.top/docs/guides/getting-started)。
 
-🌍 **非英语优化**：为英文提示词提供了 12 种全球主流语言的翻译，并支持默认使用你的母语回复，从而方便非英语母语的用户理解和使用。
+## 💎 为什么选择 AiShort？
 
-💾 **收藏提示词**：方便地收藏、编辑和管理你喜欢的提示词，以便将来使用。
+**会用 AI，和会用好 AI，差的是一段好提示词。**
 
-🌐 **分享提示词**：分享你最喜欢的提示词，与他人协作，激发更多灵感。
+同样的问题，专业的提示词能让 AI 输出从泛泛而谈变得精准专业——但自己写出这种提示词，往往要长期实践与迭代。AiShort 收录 5000+ 条提示词，人工精选 + 社区投稿，覆盖写作、编程、办公、学习、设计、营销等场景。**复制 → 粘贴 → 立刻获得专业级输出。**
 
-🗳️ **社区投票系统**：与 Product Hunt 或 Reddit 类似，平台由社区驱动，最佳提示词将推送至首页。
+无需注册、无需付费、无需安装——打开就用。
 
-📦 **开箱即用**：只需访问 https://www.aishort.top/ ，即可开始使用。
+### 核心功能
 
-AiShort 的提示词来源包括网络精选、社区分享以及 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)。我们会定期更新，为你提供新的提示词和启发。如需了解如何使用 AiShort，请查阅我们的[使用手册](https://www.aishort.top/docs/guides/getting-started)。如需了解本项目的开发背景和初衷，你可以阅读 [AiShort 开发博客](https://newzone.top/posts/2023-02-27-chatgpt_shortcuts.html)。
+🚀 **一键复制** — 卡片上点一下就进剪贴板，粘进任意对话框直接用。
 
-欢迎加入我们的 Discord 和 QQ 群，一起交流想法和反馈。
+🔍 **标签 + 关键词搜索** — 26 个场景标签筛选，或 `Ctrl / ⌘ + K` 直接搜关键词。
 
+🌍 **18 种语言** — 界面与提示词翻译完整，可指定母语回复。
+
+### 高级功能（登录后）
+
+📂 **我的收藏** — 拖拽排序，自定义标签分类。
+
+✏️ **自定义提示词** — 创建、编辑、管理自己的提示词。
+
+🗳️ **社区互动** — 分享提示词到社区，参与投票与评论讨论。
+
+📤 **数据导出** — 所有提示词一键导出为 JSON。
+
+🔐 **多种登录方式** — 账号密码、Google、无密码邮件链接。
+
+🏆 **等级系统** — 分享提示词到社区，解锁 L0–L9 等级。
+
+## 📸 截图预览
+
+<table>
+  <tr>
+    <td width="50%"><img src="static/img/docs/zh/my-collection-view.webp" alt="我的收藏" /></td>
+    <td width="50%"><img src="static/img/docs/extension-sidebar.webp" alt="浏览器扩展" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>我的收藏</strong> — 拖拽、打标签、个性化组织</td>
+    <td align="center"><strong>浏览器扩展</strong> — 内嵌 ChatGPT/Gemini/Claude 侧边栏</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="static/img/docs/prompt-card.webp" alt="提示词卡片" /></td>
+    <td width="50%"><img src="static/img/docs/zh/community-page.png" alt="社区" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>提示词卡片</strong> — 预览 + 一键复制</td>
+    <td align="center"><strong>社区提示词</strong> — 发现 + 投票</td>
+  </tr>
+</table>
+
+## 📚 文档
+
+完整使用手册见 [aishort.top](https://www.aishort.top/docs/)：
+
+- [开始上手](https://www.aishort.top/docs/guides/getting-started) — 30 秒快速上手
+- [界面说明](https://www.aishort.top/docs/guides/interface) — 标签筛选与智能搜索
+- [我的收藏](https://www.aishort.top/docs/guides/my-collection) — 收藏、打标签、拖拽整理
+- [自定义提示词](https://www.aishort.top/docs/guides/user-prompts) — 创建、编辑、导入导出
+- [社区提示词](https://www.aishort.top/docs/guides/community) — 发现、投票、讨论
+- [账户管理](https://www.aishort.top/docs/guides/account) — 登录方式与数据管理
+- [部署指南](https://www.aishort.top/docs/deploy) — 自托管你自己的实例
+
+## 🧩 浏览器扩展
+
+AiShort 扩展让你随时调用提示词库。支持 Chrome、Edge、Firefox，使用 `Alt + Shift + S` 快速唤出侧边栏。
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/aishort/)
+- **GitHub**: [Releases](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+也可使用[油猴脚本](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere) 在任意网站调出 AiShort 侧边栏。
+
+## 🚀 部署
+
+支持通过 Vercel、Cloudflare Pages、Docker 或本地环境部署。详见[部署指南](https://www.aishort.top/docs/deploy)。
+
+[![Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **内网 / 离线部署？** 还有专为企业内网、政务网络等无外网环境打造的[离线部署版](https://www.aishort.top/docs/deploy/offline)——无需后端和账户，数据存浏览器本地，保留浏览、搜索、收藏、自定义等核心功能。
+
+> **提示**：Vercel 一键部署会创建新项目（而非 fork），导致上游更新检测失效。要获得自动同步，请先 fork 仓库，再在 Vercel 导入 fork。详细步骤见[部署指南](https://www.aishort.top/docs/deploy/sync-updates)。
+
+## 🤝 贡献指南
+
+欢迎各种形式的贡献：
+
+- **提交提示词** 或 **报告 bug** → 提一个 [GitHub Issue](https://github.com/rockbenben/ChatGPT-Shortcut/issues/new)
+- **提交 PR** → fork 仓库、创建分支、发起 pull request
+- **新增翻译** 或 **改进文档** → 见 `i18n/` 和 `docs/` 目录
+- **Star ⭐ 并分享** 帮助更多人发现有用的提示词
+
+本地开发环境搭建，参考[部署指南](https://www.aishort.top/docs/deploy)。
+
+## 💬 社群交流
+
+欢迎加入社群交流想法与反馈：
+
+<a href="https://t.me/aishort_top">
+   <img src="https://img.shields.io/badge/Telegram-Group-blue?logo=telegram&style=for-the-badge" alt="Telegram" />
+</a>
 <a href="https://discord.gg/PZTQfJ4GjX">
-   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />
+   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="Discord" />
 </a>
 
-![](https://img.newzone.top/qq736094782.jpg?imageMogr2/thumbnail/300x/format/webp)
+![](https://img.newzone.top/qrcode/qq1092926837.jpg?imageMogr2/thumbnail/300x/format/webp)
 
-## 浏览器扩展
+## 🌟 Star 历史
 
-AiShort（ChatGPT Shortcut）扩展兼容 Chrome、Edge、Firefox 及其他基于 Chromium 的浏览器。这款扩展不仅具备网页版 ChatGPT Shortcut 的功能，还增添了如侧边栏和自动激活窗口等独特特性。该扩展能够随 ChatGPT 或自定义页面自动启动，同时支持通过 `Alt+Shift+S` 快捷键手动激活。以下为下载渠道：
+<a href="https://star-history.dera.page/#rockbenben/ChatGPT-Shortcut">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+ </picture>
+</a>
 
-- **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
-- **国内下载**: [蓝奏云](https://wwva.lanzouq.com/b01lsc9vi),密码:1qow
+---
 
-此外，我们还提供了油猴脚本——[**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere)，该脚本允许用户自定义匹配域名，在任意网站上使用 AiShort 侧边栏。但需注意，由于 ChatGPT 页面的脚本内容注入限制，脚本的侧边栏功能在 ChatGPT 页面上是通过弹窗来激活的。
-
-## Deploy
-
-关于如何通过 Vercel、本地环境、Docker 进行部署，以及项目修改的详细步骤，请参考[ChatGPT Shortcut 部署说明](https://www.aishort.top/docs/deploy)。
-
-## 开启同步更新
-
-如果你在 Vercel 上一键部署了自己的项目，可能会遇到一个问题，即总是提示存在更新。这是因为 Vercel 会默认为你创建一个新项目，而不是 fork 本项目，导致无法正确检测更新。建议按照以下步骤重新部署：
-
-1. 删除原先的仓库；
-2. 使用页面右上角的 fork 按钮，fork 本项目；
-3. 在 [Vercel 新项目页面](https://vercel.com/new) 的 Import Git Repository 处重新选择刚刚 fork 的项目并部署。
-
-### 打开自动更新
-
-> 如果遇到 Upstream Sync 执行错误，请手动执行一次 Sync Fork！
-
-当你 fork 项目之后，由于 GitHub 的限制，需要手动在你 fork 后的项目的 Actions 页面启用 Workflows，并启用 Upstream Sync Action。启用后，每天会自动执行更新：
-
-![自动更新](https://img.newzone.top/2023-05-19-11-57-59.png?imageMogr2/format/webp)
-
-![启用自动更新](https://img.newzone.top/2023-05-19-11-59-26.png?imageMogr2/format/webp)
-
-### 手动更新代码
-
-如果想手动立即更新，可以查看 [GitHub 的文档](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)，了解如何让 fork 的项目与上游代码同步。
-
-你可以给本项目点赞（star）/关注（watch），或者关注作者，以便及时获得新功能更新通知。
-
-## 网站修改
-
-AI Short 是一个开源项目，你可以自由修改网站的名称和说明。
-
-- 要更改页面名称，请编辑 `docusaurus.config.js` 文件。
-- 要修改使用说明，请前往 `docs` 目录。
-- 若要修改提示词，你可以在 `src/data/prompt.json` 中找到它们。如果你只需要修改单个语言，比如中文，可以直接编辑 `src/data/prompt_zh.json`。
-- 目前，用户后端已连接到一个共用后台系统。如果需要，你可以自行建立后端，相关接口位于 `src/api.js` 文件中。
-
-`CodeUpdateHandler.py` 是用于批量处理多语言部署的脚本。完成修改后，执行 `python CodeUpdateHandler.py`，它将根据规则将 `prompt.json` 拆分为多种语言，并同步各语言的主页面代码以及精选提示词的独立页面代码。
+⭐ Star 本项目，获取新功能更新通知！

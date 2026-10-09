@@ -1,29 +1,66 @@
 ---
 slug: /
+sidebar_label: AI Short Einführung
+title: Kuratierte KI Prompt-Bibliothek | Ein-Klick-Kopieren
+description: AI Short - kuratierte Bibliothek mit KI-Prompts für ChatGPT, Gemini, Claude, Mistral Le Chat und weitere Modelle. Ein-Klick-Kopieren, Sammlungsverwaltung und DSGVO-konforme Offline-Variante mit lokaler Datenspeicherung für Unternehmen.
 ---
 
-# Einführung
+# Einführung in AI Short
 
-AiShort bietet eine prägnante und benutzerfreundliche Liste von KI-Anweisungen. Selbst ohne Verständnis für Prompts können Sie durch Filtern und Suchen einfach die für verschiedene Szenarien geeigneten Prompts finden, was Ihre Produktivität verbessert.
+AI Short (ChatGPT Shortcut) ist eine nach Szenarien kategorisierte KI-Prompt-Bibliothek zum sofortigen Kopieren und Verwenden.
 
-🚀 **Prompts mit einem Klick**: Mit nur einem Klick erhalten Sie eine Vielzahl von sorgfältig ausgewählten Prompts von Experten. Senden Sie sie an KI-Sprachmodelle wie ChatGPT und Sie erhalten die erwartete Ausgabe.
+> **Was ist ein „Prompt"?** Ein Prompt ist die Anweisung, die Sie der KI geben — sie bestimmt die Qualität der Ausgabe. Gute Prompts liefern professionelle, präzise Antworten; vage Prompts nur mittelmäßige. AiShort sammelt für Sie hochwertige Prompts für verschiedene Szenarien (Schreiben, Programmieren, Büro, Lernen ...), damit Sie sich nicht selbst überlegen müssen, wie Sie die richtige Frage stellen.
 
-💻 **Produktivität steigern**: Durch die Verwendung optimierter Prompts erhalten Sie genauere und praktischere Rückmeldungen, was Ihre Arbeitseffizienz effektiv erhöht.
+## 30-Sekunden Schnellstart
 
-🌍 **Optimierung für Nicht-Englische Sprachen**: Wir bieten Übersetzungen für englische Prompts in 12 großen globalen Sprachen an und unterstützen Standardantworten in Ihrer Muttersprache, was für Nicht-Englisch-Sprecher praktisch ist, um sie zu verstehen und zu verwenden.
+1. Öffnen Sie AI Short
+2. Suchen oder durchsuchen Sie den benötigten Prompt
+3. Klicken Sie auf "Kopieren" und fügen Sie ihn in ein beliebiges KI-Tool ein — Chat-Seiten wie ChatGPT, Gemini oder Claude, Programmier-Tools wie Cursor, API-Aufrufe oder andere KI-Anwendungen
 
-💾 **Prompts speichern**: Sammeln, bearbeiten und verwalten Sie Ihre Lieblings-Prompts bequem für die zukünftige Verwendung.
+So einfach ist das — weitere Funktionen finden Sie im [Erste-Schritte-Leitfaden](./guides/getting-started).
 
-🌐 **Prompts teilen**: Teilen Sie Ihre Lieblings-Prompts, arbeiten Sie mit anderen zusammen und regen Sie mehr Ideen an.
+## Kernfunktionen
 
-🗳️ **Community-Abstimmungssystem**: Ähnlich wie Product Hunt oder Reddit, wird die Plattform von der Community betrieben. Die besten Prompts werden auf die Startseite geschoben.
+🚀 **Kuratierte Prompts**: Abdeckung von Schreiben, Programmieren, Büro und mehr — sofort einsatzbereit.
 
-📦 **Sofort einsatzbereit**: Besuchen Sie einfach https://www.aishort.top/de/ um zu starten.
+🔍 **Tag- und Stichwortsuche**: Nach Szenario-Tags filtern oder direkt Stichwörter suchen.
 
-Die Quelle der AiShort-Prompts umfasst Internet-Auswahl, Community-Teilungen und [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). Wir werden regelmäßig aktualisieren, um Ihnen neue Prompts und Inspirationen zu bieten.
+🌍 **18 Sprachen**: Vollständige Übersetzung der Oberfläche und Prompts, Antwort in der Muttersprache möglich.
 
-Willkommen in unserer Discord-Community, um Ideen auszutauschen und Feedback zu geben.
+📦 **Sofort einsatzbereit**: Keine Registrierung erforderlich, einfach besuchen und nutzen.
+
+## Erweiterte Funktionen (Nach Anmeldung)
+
+📂 **Meine Sammlung**: Drag-and-Drop-Sortierung, benutzerdefinierte Tag-Klassifizierung.
+
+✏️ **Benutzerdefinierte Prompts**: Erstellen, bearbeiten und verwalten Sie Ihre eigenen Prompts.
+
+🗳️ **Community-Interaktion**: Teilen Sie Prompts in der Community und nehmen Sie an Abstimmungen teil.
+
+📤 **Datenexport**: Exportieren Sie alle Prompts mit einem Klick als JSON.
+
+🔐 **Mehrere Anmeldemethoden**: Konto-Passwort, Google, passwortlose E-Mail-Links.
+
+🏆 **Level**: Verdienen Sie Level (L0–L9), indem Sie Prompts mit der Community teilen.
+
+## Offline-Version
+
+Die [Offline-Version](./deploy/offline) ist speziell für Unternehmens-Intranets, Behördennetzwerke und andere Szenarien ohne Internetzugang konzipiert. Es ist kein Backend-Server und kein Konto erforderlich — nach der Bereitstellung sofort einsatzbereit. Sie behält die Kernfunktionen Browsen, Suchen, Sammeln und Anpassen bei, und das Datenformat ist mit der Online-Version kompatibel.
+
+## Prompt-Quellen
+
+Prompts stammen aus Internet-Auswahlen, Community-Beiträgen und [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) und werden kontinuierlich aktualisiert.
+
+> Noch Fragen? Siehe [FAQ](./guides/faq) — 13 Themen zu Kostenlos/API-Key, Modellkompatibilität, kommerzieller Nutzung und Datenschutz.
+
+## Treten Sie der Community bei
+
+Willkommen in unserer Community, um Ideen und Feedback auszutauschen:
+
+<a href="https://t.me/aishort_top">
+   <img src="https://img.shields.io/badge/Telegram-Group-blue?logo=telegram&style=for-the-badge" alt="join Telegram group" />
+</a>
 
 <a href="https://discord.gg/PZTQfJ4GjX">
-   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="Chat auf Discord" />
+   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />
 </a>

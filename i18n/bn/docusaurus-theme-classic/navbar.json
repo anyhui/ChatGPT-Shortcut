@@ -7,52 +7,56 @@
     "message": "ChatGPT Shortcuts",
     "description": "The alt text of navbar logo"
   },
-  "item.label.📘 使用说明": {
-    "message": "📘 ডকস",
-    "description": "Navbar item with label 📘 使用说明"
+  "item.label.使用说明": {
+    "message": "ডকস",
+    "description": "Navbar item with label 使用说明"
   },
-  "item.label.🏘️ 社区提示词": {
-    "message": "🏘️ কমিউনিটি প্রম্পটস",
-    "description": "Navbar item with label 🏘️ 社区提示词"
+  "item.label.社区提示词": {
+    "message": "কমিউনিটি প্রম্পটস",
+    "description": "Navbar item with label 社区提示词"
   },
-  "item.label.🛠️ 应用工具": {
-    "message": "🛠️ টুলস",
-    "description": "Navbar item with label 🛠️ 应用工具"
-  },
-  "item.label.IMGPrompt": {
-    "message": "IMGPrompt",
-    "description": "Navbar item with label IMGPrompt"
-  },
-  "item.label.文字处理": {
-    "message": "অন্যান্য টুলস",
-    "description": "Navbar item with label 文字处理"
-  },
-  "item.label.工具收藏": {
-    "message": "টুল সংগ্রহ",
-    "description": "Navbar item with label 工具收藏"
-  },
-  "item.label.Find on Product Hunt": {
-    "message": "প্রোডাক্ট হান্টে খুঁজুন",
-    "description": "Navbar item with label Find on Product Hunt"
+  "item.label.应用工具": {
+    "message": "টুলস",
+    "description": "Navbar item with label 应用工具"
   },
   "item.label.反馈建议": {
     "message": "প্রতিক্রিয়া",
     "description": "Navbar item with label 反馈建议"
   },
-  "item.label.📝 提交反馈": {
-    "message": "📝 প্রতিক্রিয়া জমা দিন",
-    "description": "Navbar item with label 📝 提交反馈"
+  "item.label.Telegram": {
+    "message": "Telegram",
+    "description": "Navbar item with label Telegram"
   },
-  "item.label.💬 加入 QQ 群": {
-    "message": "💬 আমাদের সাথে QQ তে চ্যাট করুন",
-    "description": "Navbar item with label 💬 加入 QQ 群"
+  "item.label.支持": {
+    "message": "সহায়তা",
+    "description": "Navbar item with label 支持"
   },
-  "item.label.📺 加入 Discord": {
-    "message": "📺 আমাদের ডিসকোর্ডে যোগ দিন",
-    "description": "Navbar item with label 📺 加入 Discord"
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
   },
-  "item.label.脚本扩展": {
-    "message": "এক্সটেনশনস",
-    "description": "Navbar item with label 脚本扩展"
+  "item.label.QQ 群": {
+    "message": "QQ গ্রুপ",
+    "description": "Navbar item with label QQ 群"
+  },
+  "item.label.AI 工具箱": {
+    "message": "AI টুলবক্স",
+    "description": "Navbar item with label AI 工具箱"
+  },
+  "item.label.AI 绘图提示词": {
+    "message": "AI ইমেজ প্রম্পট",
+    "description": "Navbar item with label AI 绘图提示词"
+  },
+  "item.label.浏览器插件": {
+    "message": "ব্রাউজার এক্সটেনশন",
+    "description": "Navbar item with label 浏览器插件"
+  },
+  "item.label.AI 思想家圆桌": {
+    "message": "AI চিন্তাবিদ গোলটেবিল",
+    "description": "Navbar item with label AI 思想家圆桌"
+  },
+  "item.label.365 开源项目": {
+    "message": "365 ওপেন সোর্স",
+    "description": "Navbar item with label 365 开源项目"
   }
 }

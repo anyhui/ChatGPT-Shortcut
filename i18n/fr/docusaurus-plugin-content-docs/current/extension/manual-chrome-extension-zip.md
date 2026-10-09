@@ -1,14 +1,22 @@
-# Guide d'installation locale du plugin Chrome ZIP
+---
+sidebar_label: Guide d'installation ZIP pour Chrome
+title: Installation Chrome ZIP AI Short | Charger le dossier décompressé
+description: "Installez l'extension AI Short dans Chrome via un fichier ZIP : décompressez puis glissez le dossier dans la page des extensions. Solution alternative quand le CRX n'est pas installable."
+---
 
-## Télécharger le plugin
+# Guide d'installation locale de l'extension ZIP pour Chrome
 
-Téléchargez le package d'installation Zip du plugin ChatGPT Shortcut (ChatGPT_Shortcut-zip-3.x.x.zip) depuis [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest) et décompressez-le. (Le dossier décompressé doit être conservé sur l'ordinateur, pensez donc à le décompresser dans un emplacement permanent)
+> Ce tutoriel suppose que vous avez déjà téléchargé et décompressé le paquet ZIP depuis la [page d'installation](./README.md).
+>
+> ⚠️ **Deux pièges courants** :
+> 1. Le dossier décompressé doit être **conservé durablement** (l'extension lit ce répertoire à l'exécution) — placez-le d'abord dans un emplacement permanent avant de continuer
+> 2. Vous devez glisser **tout le dossier décompressé** (pas le fichier zip lui-même, ni un fichier isolé situé à l'intérieur du dossier)
 
 ## Activer le mode développeur
 
-Ouvrez la page « Gérer les extensions » de Chrome et activez le « Mode développeur ».
+Ouvrez la page "Gérer les extensions" de Chrome et activez le "Mode développeur".
 
-Copiez l'adresse suivante et collez-la dans la barre d'adresse du navigateur, puis appuyez sur Entrée pour l'ouvrir. Activez le « Mode développeur » dans le coin supérieur droit de la page.
+Copiez l'adresse ci-dessous et collez-la dans la barre d'adresse du navigateur, puis appuyez sur Entrée. Activez ensuite le "Mode développeur" en haut à droite de la page.
 
 ```txt
 chrome://extensions
@@ -16,10 +24,10 @@ chrome://extensions
 
 ![](https://img.newzone.top/2024-08-12-22-05-52.png?imageMogr2/format/webp)
 
-## Installer le plugin
+## Installer l'extension
 
-Faites glisser le dossier décompressé dans la page de l'extension pour terminer l'installation.
+Glissez le dossier décompressé dans la page des extensions pour finaliser l'installation.
 
 ![](https://img.newzone.top/2024-08-12-22-27-47.png?imageMogr2/format/webp)
 
-Une fois l'installation réussie, vous pouvez consulter le [Didacticiel d'utilisation du plugin](./usage.md).
+Après une installation réussie, vous pouvez consulter le [Tutoriel d'utilisation de l'extension](./usage).

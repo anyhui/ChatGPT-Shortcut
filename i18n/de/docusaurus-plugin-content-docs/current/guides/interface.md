@@ -1,39 +1,70 @@
-# Schnittstellenbeschreibung
+---
+sidebar_label: Schnittstellen-Leitfaden
+title: AI Short Schnittstellen-Leitfaden | Tag-Filterung und intelligente Suche
+description: Finden Sie schnell den passenden KI-Prompt — mit Tag-Filter (UND/ODER), Stichwortsuche und Kartendetails auf der AI Short-Startseite.
+---
 
-AiShort zeigt standardmäßig alle vorgeschlagenen Wörter an. Die Seite ist in drei Abschnitte unterteilt: den Tag-Bereich, den Suchbereich und den Bereich zur Anzeige der vorgeschlagenen Wörter.
+# Schnittstellen-Leitfaden
 
-![](https://img.newzone.top/2023-06-05-20-44-19.png?imageMogr2/format/webp)
+Die AiShort-Startseite besteht aus vier Bereichen — den **Titel- und Einstiegsschaltflächen** oben, den **Tag-Filtern** darunter, der **Suchleiste** und den **Prompt-Karten**, die den Rest der Seite füllen. Dieser Abschnitt erklärt, wie Sie alle vier zusammen nutzen, um den gewünschten Prompt zu finden.
 
-## 🏷︎ Tag-Filterung
+![](/img/docs/interface-home.png)
 
-Der Tag-Bereich ist nach dem Bereich und der Funktionalität der vorgeschlagenen Wörter unterteilt, um eine Auswahl basierend auf verschiedenen Szenarien und Bedürfnissen zu ermöglichen. Er kann in Verbindung mit dem "Tag-Filterung Regel Umschalter" in der oberen rechten Ecke des Tag-Bereichs verwendet werden, um eine Mehr-Tag-Filterung durchzuführen. Der Standardzustand ist ODER, was alle vorgeschlagenen Wörter unter dem gewählten Tag auswählt. Durch Umschalten auf UND werden die vorgeschlagenen Wörter herausgefiltert, die mehrere ausgewählte Tags haben.
+## Einstiegsschaltflächen oben
 
-![](https://img.newzone.top/2023-06-05-20-50-19.png?imageMogr2/format/webp)
+Die Schaltflächen unter dem Seitentitel unterscheiden sich leicht je nachdem, ob Sie angemeldet sind oder nicht:
 
-## 🔍 Stichwortsuche
+- **Nicht angemeldet**: „**Kostenlos anmelden**" + „**Community erkunden**"
+- **Angemeldet**: ein Ansichts-Umschalter („**Entdecken**" ⇄ „**Meine Sammlung**"), „**Prompt erstellen**" und rechts ein Einstellungsmenü („Mein Konto", „Abmelden")
 
-Der Suchbereich umfasst die Titel, Zusammenfassungen, Inhalte und Übersetzungen in Ihrer Muttersprache der vorgeschlagenen Wörter. Nach Eingabe eines Stichworts wird der Bereich zur Anzeige der vorgeschlagenen Wörter sofort den gefilterten Inhalt anzeigen. Wenn Tags ausgewählt wurden, wird die Stichwortsuche auf den Bereich der ausgewählten Tags beschränkt. Auf der PC-Seite werden nach Änderung des Inhalts im Suchfeld die neuen Suchergebnisse nach 800 Millisekunden angezeigt. Auf mobilen Geräten erfolgt die Aktualisierung sofort.
+> 💡 Sie können jeden kuratierten Prompt ohne Anmeldung durchsuchen, suchen und kopieren. Die Anmeldung ermöglicht zusätzlich das Sammeln, Erstellen und geräteübergreifende Synchronisieren.
 
-![](https://img.newzone.top/2023-06-05-20-58-07.png?imageMogr2/format/webp)
+## Tag-Filterung
 
-Nachdem Sie sich angemeldet haben, umfasst der Suchbereich die Eingabeaufforderungen, die Sie übermittelt und gesammelt haben.
+Filtern Sie Prompts nach Themengebiet und Funktion. Der **OR / AND**-Umschalter oben rechts bestimmt, wie mehrere Tags kombiniert werden:
 
-![](https://img.newzone.top/2024-08-12-20-38-27.png?imageMogr2/format/webp)
+- **OR** (Standard): Zeigt Prompts an, die mindestens einem der Tags entsprechen
+- **AND**: Zeigt nur Prompts an, auf die alle Tags zutreffen
 
-## 🔬 Kopieren der Anfrage
+Sobald Tags ausgewählt sind, erscheint die Schaltfläche „**Filter löschen**", mit der Sie alle Filter mit einem Klick aufheben. Auf Mobilgeräten sind Tags standardmäßig eingeklappt — tippen Sie auf „**Tags anzeigen**", um sie einzublenden.
 
-Durch Tag-Filterung und Stichwortsuche ermöglicht es das Klicken auf die Schaltfläche "Kopieren" in der oberen rechten Ecke der Karte, die vorgeschlagenen Wörter zu erhalten. Nach dem Einfügen in ChatGPT können Sie sich auf die Vorschläge beziehen und den Text entsprechend Ihren spezifischen Bedürfnissen anpassen, um eine Antwort im gewünschten Bereich zu erhalten. Wenn die Erklärung in Ihrer Muttersprache in den vorgeschlagenen Wörtern nicht klar ist, können Sie auf den Link in der unteren rechten Ecke der vorgeschlagenen Wörter klicken, um die Quellwebseite anzuzeigen.
+![](/img/docs/interface-filter.png)
 
-![](https://img.newzone.top/2023-06-11-17-14-07.png?imageMogr2/format/webp)
+## Stichwortsuche
 
-## 💬 Sprachumschaltung
+Durchsucht Titel, Beschreibungen, Inhalte und Anmerkungen der Prompts.
 
-Standardmäßig werden die vorgeschlagenen Wörter in Englisch angezeigt. Wenn Sie eine nicht-englische Seite verwenden und die Interpretationen in Ihrer Muttersprache anzeigen möchten, klicken Sie bitte auf den Inhalt der vorgeschlagenen Wörter, um auf eine nicht-englische Sprache umzuschalten, und klicken Sie erneut, um zu Englisch zurückzukehren. Bitte beachten Sie, dass die Sprachumschaltung nur funktioniert, wenn Sie auf den Text in der Anfrage klicken, und das Klicken im leeren Bereich unwirksam ist.
+- Auf dem Desktop drücken Sie **`Strg + K`** (`⌘ + K` auf macOS), um das Suchfeld zu fokussieren; `Esc` zum Verlassen
+- Die Suche auf der Startseite umfasst die **kuratierten Prompts**. Bei ausgewählten Tags ist der Suchbereich auf diese Tags beschränkt
+- Nach der Anmeldung wird der Suchbereich auf Ihre **Sammlungen** und **benutzerdefinierten Prompts** erweitert
+- Wenn kurze Stichwörter auf der Startseite keine Treffer liefern, durchsucht AiShort automatisch auch die [Community-Prompts](./community)
 
-![Umschalten zwischen Chinesisch und Englisch](http://img.newzone.top/chatgptshortcut_encn.gif)
+![](/img/docs/interface-search.png)
 
-Wenn Sie möchten, dass die vorgeschlagenen Wörter standardmäßig in Ihrer Muttersprache angezeigt werden, können Sie auf die Schaltfläche "Sprache der Anfrage umschalten" in der oberen rechten Ecke des Tag-Bereichs klicken. Bitte beachten Sie jedoch, dass auch bei der Umstellung auf Übersetzungen in der Muttersprache die Kopierschaltfläche nur die englischen vorgeschlagenen Wörter kopiert.
+## Prompt-Karten
 
-## 🔥 Beliebte Sortierung
+Kuratierte Prompts werden nach kumulativer Kopierhäufigkeit sortiert, sodass die am häufigsten genutzten Inhalte zuerst angezeigt werden.
 
-Die Seite zeigt jetzt die Häufigkeit der Verwendung der Anfragen an, und Anfragen mit höherer Nutzungshäufigkeit werden als "Favorit" markiert. Darüber hinaus basiert die Sortierung der Anfrage-Tags hauptsächlich auf dem Heat-Wert. Der Heat-Wert wird regelmäßig aktualisiert.
+### Karteninformationen
+
+Jede Karte zeigt Titel, Beschreibung, Inhaltsvorschau und Tags des Prompts. Das Flammen-Symbol und die Zahl oben rechts geben die kumulative Kopierhäufigkeit an.
+
+### Details ansehen
+
+Klicken Sie auf eine Karte, um das Detail-Popup zu öffnen — lesen Sie den vollständigen Inhalt und die Anmerkungen und kopieren Sie mit einem Klick.
+
+![](/img/docs/prompt-card.webp)
+
+### Prompt kopieren
+
+Klicken Sie auf die Schaltfläche „**Kopieren**" auf der Karte oder im Detail-Popup und fügen Sie den Prompt in ein beliebiges KI-Tool ein (Chat-Oberflächen, Coding-Tools, API-Aufrufe usw.).
+
+### Prompt sammeln
+
+Nach der Anmeldung erscheint auf jeder Karte eine Herz-Schaltfläche — klicken Sie darauf, um den Prompt zu [Meine Sammlung](./my-collection) hinzuzufügen.
+
+## Verwandte Dokumentation
+
+- [Erste Schritte](./getting-started) - Grundlegende Nutzung
+- [Meine Sammlung](./my-collection) - Sammlung, Tags und Sortierung
+- [Community-Prompts](./community) - Entdecken und Teilen

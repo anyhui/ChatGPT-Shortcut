@@ -1,17 +1,26 @@
-# Paramètres de Firefox
+---
+sidebar_label: Paramètres de l'extension Firefox
+title: Configuration Firefox AI Short | Barre latérale native et raccourcis
+description: "Configurez AI Short sur Firefox : depuis la v4.4.0, l'extension est identique à celle de Chrome, avec une barre latérale native sans autorisation par site."
+---
 
-Avant d'utiliser le plug-in Firefox, il est recommandé de le configurer en suivant les deux étapes suivantes.
+# Paramètres de l'extension Firefox
 
-## 1. Épinglage d'extension et paramètres d'accès
+Depuis la v4.4.0, la version Firefox est alignée sur celle de Chrome : les mêmes trois modes d'affichage — **barre latérale, fenêtre contextuelle et fenêtre indépendante** — avec la bibliothèque de prompts embarquée dans l'extension.
 
-Tout d'abord, sélectionnez « Épingler l'extension de raccourci ChatGPT » dans la barre d'outils Firefox, puis accédez au centre d'extensions. Sur l'élément d'extension de raccourci ChatGPT, sélectionnez « Options » pour accéder à l'interface des paramètres de l'extension. Les étapes spécifiques sont les suivantes :
+L'extension ne demande que la permission `storage` : elle ne lit ni ne modifie les pages que vous consultez, donc **aucune autorisation site par site n'est nécessaire**.
 
-![Paramètres de Firefox](https://img.newzone.top/2023-12-25-05-51-47.png?imageMogr2/format/webp)
+> Les anciennes versions (v4.3 et antérieures) injectaient la barre latérale dans la page ChatGPT via un script de contenu, ce qui obligeait à faire un clic droit sur l'icône et à choisir « Toujours autoriser sur \*\*\* ». Ce mécanisme a été supprimé : après mise à jour, vous pouvez ignorer cette étape.
 
-## 2. Autoriser le fonctionnement de l'extension
+## Raccourcis clavier
 
-Deuxièmement, pour garantir que l'extension fonctionne normalement sur des sites Web tels que ChatGPT et Bard, vous devez cliquer avec le bouton droit sur l'icône de l'extension sur ces sites Web et sélectionner « Toujours autoriser sur ce site ». Cette action accorde à l'extension l'autorisation de modifier le contenu et d'ajouter des barres latérales sur les sites Web désignés.
+- `Alt + Shift + S` : ouvre l'extension dans le mode d'affichage courant
+- `Alt + Shift + D` : affiche ou masque la barre latérale native de Firefox
 
-![Autorisation d'extension Firefox](https://img.newzone.top/2023-12-25-05-59-48.png?imageMogr2/format/webp)
+Personnalisez-les dans `about:addons` → icône d'engrenage → « Gérer les raccourcis des extensions ».
 
-Après une installation réussie, vous pouvez consulter le [tutoriel d'utilisation du plugin](./usage.md).
+## Page de paramètres
+
+Épinglez AI Short à la barre d'outils de Firefox, puis ouvrez ses « Options » depuis la page des extensions pour changer la langue, le mode d'affichage et le mode sombre.
+
+Voir le [guide d'utilisation](./usage) pour le détail de chaque option.

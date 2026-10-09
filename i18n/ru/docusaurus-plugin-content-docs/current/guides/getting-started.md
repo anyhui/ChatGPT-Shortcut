@@ -1,31 +1,73 @@
-# Начало работы
+---
+sidebar_label: Быстрый старт
+title: Руководство по началу работы с AI Short | Копируйте промпты в ChatGPT/DeepSeek
+description: Освойте AI Short за 30 секунд! Копируйте промпты в ChatGPT, Gemini, DeepSeek и другие ИИ-модели, чтобы мгновенно улучшить качество диалога и продуктивность.
+---
 
-Используя AiShort, вам нужно только скопировать выбранную подсказку в любую модель диалога ИИ, чтобы получить вывод в указанном направлении. Вот конкретные шаги:
+# Быстрый старт
 
-1. Найдите или выберите нужную подсказку, а затем нажмите кнопку копирования на подсказке.
+Качество ответа ИИ определяется качеством промпта. AiShort собирает большое количество отобранных промптов — копируйте, вставляйте и сразу используйте.
 
-2. Скопируйте подсказку в ChatGPT, Gemini или любую модель диалога ИИ.
+> 📋 **Что нужно перед стартом**: браузер и любой доступный ИИ-инструмент — чат-страницы вроде YandexGPT, GigaChat, ChatGPT, Gemini или Claude, инструменты для разработчиков вроде Cursor, собственные вызовы API и т. д. Веб-версия AiShort не требует регистрации.
 
-3. Введите свои требования в соответствии с подсказкой диалога.
+## Основное использование
 
-![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
+1. На главной странице найдите или просмотрите интересующий вас промпт
+2. Выбрав подходящий, нажмите кнопку «Копировать» (или сначала откройте карточку, чтобы посмотреть полное содержание)
+3. Вставьте промпт в любой ИИ-инструмент — чат-страницы вроде ChatGPT, инструменты для разработчиков вроде Cursor, вызовы API и т. д.
+4. Заполните **плейсхолдеры** в промпте (например, `[содержание]`, `[тема]`) своими данными и отправьте ИИ
 
-## Common AI models
+![](/img/docs/how-to-use-aishort.webp)
 
-- ChatGPT：https://chatgpt.com
-- Gemini: https://gemini.google.com/app
-- Claude: https://claude.ai/chats
-- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
-- Kimi：https://kimi.moonshot.cn/
-- 豆包：https://www.doubao.com/chat/
-- 文心一言：https://yiyan.baidu.com
-- 智谱清言：https://chatglm.cn/detail
-- 腾讯元宝：https://yuanbao.tencent.com/chat
-- 讯飞星火：https://xinghuo.xfyun.cn/
-- 百川智能：https://ying.baichuan-ai.com/chat
+> 💡 **Подсказка**: большинство промптов помечают то, что нужно заполнить, квадратными скобками `[...]` — просто замените текст внутри скобок на ваш конкретный запрос.
 
-## Third-party API integration
+## Быстрый доступ
 
-- OpenRouter: https://openrouter.ai/chat
-- siliconflow: https://cloud.siliconflow.cn/playground/chat
-- grog: https://groq.com/
+| Я хочу...                          | Куда идти                                      |
+| ---------------------------------- | ---------------------------------------------- |
+| Копировать и использовать промпты  | Искать или просматривать прямо на [Главной](/) |
+| Вызывать промпты прямо в ИИ-чате   | [Расширение для браузера](../extension/)       |
+| Собирать и управлять промптами     | [Моя коллекция](./my-collection)               |
+| Создавать свои промпты             | [Свои промпты](./user-prompts)                 |
+| Зарегистрироваться или войти       | [Управление аккаунтом](./account)              |
+| Находить публикации сообщества     | [Промпты сообщества](./community)              |
+| Офлайн-/интранет-развёртывание     | [Офлайн-версия](../deploy/offline)                     |
+
+## Популярные ИИ-модели
+
+### Российские модели
+
+- [YandexGPT](https://ya.ru/alisa_yandexgpt) — модель от Яндекса, хорошо работает с русским языком и доступна без VPN
+- [GigaChat](https://giga.chat/) — модель от Сбера, оптимизирована под русский язык и российские реалии
+
+> 💡 **Для пользователей из России**: ChatGPT, Claude и Gemini могут потребовать VPN. YandexGPT и GigaChat — надёжные альтернативы, доступные напрямую и хорошо понимающие русский язык.
+
+### Международные модели
+
+- [ChatGPT](https://chatgpt.com)
+- [Gemini](https://gemini.google.com/app)
+- [Claude](https://claude.ai/chats)
+- [Grok](https://grok.com/)
+
+### Модели материкового Китая
+
+- [DeepSeek](https://chat.deepseek.com)
+- [Tongyi Qianwen](https://www.qianwen.com/)
+- [Ernie Bot](https://yiyan.baidu.com)
+- [Doubao](https://www.doubao.com/chat/)
+- [Kimi](https://www.kimi.com/)
+- [ChatGLM](https://chatglm.cn/detail)
+- [iFLYTEK Spark](https://xinghuo.xfyun.cn/)
+- [Tencent Yuanbao](https://yuanbao.tencent.com/chat)
+
+### API-платформы
+
+- [OpenRouter](https://openrouter.ai/chat)
+- [SiliconFlow](https://cloud.siliconflow.cn/playground/chat)
+- [Groq](https://groq.com/)
+
+## Связанная документация
+
+- [Руководство по интерфейсу](./interface) — функции поиска и фильтрации
+- [Моя коллекция](./my-collection) — коллекция, теги и сортировка
+- [Управление аккаунтом](./account) — вход и регистрация

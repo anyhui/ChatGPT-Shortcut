@@ -1,57 +1,93 @@
-import React, { useContext, useState, useEffect } from "react";
-import Link from "@docusaurus/Link";
+import React, { useContext, useEffect, useState, useCallback } from "react";
 import Translate, { translate } from "@docusaurus/Translate";
+import Link from "@docusaurus/Link";
 
 import Layout from "@theme/Layout";
-import { Card, Descriptions, Form, Input, Button, message, Tabs, Spin, Space, ConfigProvider, theme, Alert, Row, Col, Typography } from "antd";
-import { HomeOutlined, HeartOutlined, EditOutlined, SaveOutlined, LockOutlined, MailOutlined, UserOutlined } from "@ant-design/icons";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { Card, Input, Button, Spin, Space, Row, Col, Typography, App, Avatar, Flex, Breadcrumb } from "antd";
+import { HomeOutlined, EditOutlined, SaveOutlined, MailOutlined, UserOutlined, CloseOutlined, LoginOutlined } from "@ant-design/icons";
+import { EmptyState } from "@site/src/components/EmptyState";
 
-import { AuthContext, AuthProvider } from "../_components/AuthContext";
-import { changePassword, forgotPassword, updateUsername, updateLocalStorageCache } from "@site/src/api";
-import themeConfig from "@site/src/pages/_components/themeConfig";
+import { AuthContext } from "@site/src/components/AuthContext";
+import { getUserAllInfo } from "@site/src/api/user";
+import { updateUsername, clearUserProfileCache, clearMySpaceCache } from "@site/src/api";
+import LevelSpecCard from "@site/src/components/user/account/LevelSpecCard";
+import SecurityCard from "@site/src/components/user/account/SecurityCard";
+import DataManagementCard from "@site/src/components/user/account/DataManagementCard";
+import { useImportExport } from "@site/src/components/user/account/useImportExport";
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const UserProfile = () => {
-  const { userAuth, refreshUserAuth, isLoading } = useContext(AuthContext);
-  const [messageApi, contextHolder] = message.useMessage();
+  const { userAuth, getUserAuth, refreshUserAuth } = useContext(AuthContext); // 用于获取 userprompts share 信息
+  const { message } = App.useApp();
+  const { i18n } = useDocusaurusContext();
+  const currentLanguage = i18n.currentLocale;
+
+  const [userInfo, setUserInfo] = useState<any>(null);
+  const [userLoading, setUserLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [editUsername, setEditUsername] = useState(false);
   const [newUsername, setNewUsername] = useState("");
 
-  useEffect(() => {
-    if (userAuth?.data?.username) {
-      setNewUsername(userAuth.data.username);
+  const { fileInputRef, importing, handleExportPrompts, handleImportPrompts } = useImportExport({ userAuth, getUserAuth, currentLanguage, refreshUserAuth });
+
+  // Fetch user info from /me endpoint
+  const fetchUserInfo = useCallback(async () => {
+    setUserLoading(true);
+    try {
+      const data = await getUserAllInfo();
+      if (data) {
+        setUserInfo(data.data);
+        setNewUsername(data.data.username);
+      }
+    } catch (error) {
+      console.error("Failed to fetch user info:", error);
+    } finally {
+      setUserLoading(false);
     }
-  }, [userAuth]);
+  }, []);
 
   useEffect(() => {
-    // 如果不是在加载中且没有用户信息，重定向到首页
-    if (!isLoading && !userAuth) {
+    fetchUserInfo();
+  }, [fetchUserInfo]);
+
+  useEffect(() => {
+    if (!userLoading && !userInfo) {
       const timer = setTimeout(() => {
-        window.location.href = "/";
-      }, 1000);
+        const localePrefix = i18n.currentLocale === i18n.defaultLocale ? "" : `/${i18n.currentLocale}`;
+        window.location.href = `${localePrefix}/`;
+      }, 2000);
       return () => clearTimeout(timer);
     }
-  }, [userAuth, isLoading]);
+  }, [userLoading, userInfo, i18n.currentLocale, i18n.defaultLocale]);
+
+  const handleClearCache = useCallback(async () => {
+    try {
+      // 清除所有用户相关缓存
+      clearUserProfileCache(); // USER_PROFILE 缓存
+      clearMySpaceCache(); // MYSPACE 缓存
+      await fetchUserInfo();
+      message.success(<Translate id="message.cache.cleared">缓存已清除，数据已刷新</Translate>);
+    } catch (error) {
+      console.error("Clear cache error:", error);
+      message.error(<Translate id="message.cache.clearError">清除缓存失败，请稍后重试</Translate>);
+    }
+  }, [fetchUserInfo, message]);
 
   const handleEditUsernameClick = () => {
-    setNewUsername(userAuth?.data.username);
+    setNewUsername(userInfo?.username || "");
     setEditUsername(true);
-  };
-
-  const handleUsernameChange = (e) => {
-    setNewUsername(e.target.value);
   };
 
   const submitNewUsername = async () => {
     if (!newUsername.trim()) {
-      messageApi.error("Username cannot be empty");
+      // 不能复用 validation.username.required：那条是登录框的「请输入用户名或注册邮箱」
+      message.error(translate({ id: "validation.username.empty", message: "用户名不能为空" }));
       return;
     }
 
-    if (newUsername === userAuth?.data.username) {
-      messageApi.info("No change in username");
+    if (newUsername === userInfo?.username) {
       setEditUsername(false);
       return;
     }
@@ -59,324 +95,188 @@ const UserProfile = () => {
     setLoading(true);
     try {
       await updateUsername(newUsername);
-      updateLocalStorageCache("username", newUsername);
-      await refreshUserAuth();
-      messageApi.success("Username updated successfully!");
+      await fetchUserInfo();
+      message.success(translate({ id: "message.username.updated", message: "用户名已更新" }));
+      setEditUsername(false);
     } catch (error) {
       console.error("Error updating username:", error);
-      const errorMessage = error?.response?.data?.error?.message || "Unknown error";
-      messageApi.error(`Username update failed: ${errorMessage}`);
-    } finally {
-      setLoading(false);
-      setEditUsername(false);
-    }
-  };
-
-  const onFinishChangePassword = async (values) => {
-    if (values.newPassword !== values.confirmPassword) {
-      messageApi.open({
-        type: "error",
-        content: translate({
-          id: "input.password.match",
-          message: "两次输入的密码不一致！",
-        }),
-        duration: 5,
-      });
-      return;
-    }
-
-    setLoading(true);
-    try {
-      await changePassword(values);
-      messageApi.success(<Translate id="message.changePassword.success">密码修改成功！</Translate>);
-      // Reset form after successful password change
-      const changePasswordForm = document.getElementById("changePasswordForm");
-      if (changePasswordForm) {
-        changePasswordForm.reset();
-      }
-    } catch (error) {
-      console.error(
-        translate({
-          id: "error.changePassword",
-          message: "Error changing password:",
-        }),
-        error
-      );
-      messageApi.error(<Translate id="message.changePassword.error">密码修改失败，请稍后重试</Translate>);
+      const detail = error?.response?.data?.error?.message;
+      message.error(detail || translate({ id: "message.username.updateError", message: "用户名更新失败，请稍后重试" }));
     } finally {
       setLoading(false);
     }
   };
 
-  const onFinishForgotPassword = async (values) => {
-    setLoading(true);
-    try {
-      await forgotPassword(values.email);
-      messageApi.success(<Translate id="message.forgotPassword.success">密码重置邮件已发送！</Translate>);
-      // Reset form after sending reset email
-      const forgotPasswordForm = document.getElementById("forgotPasswordForm");
-      if (forgotPasswordForm) {
-        forgotPasswordForm.reset();
-      }
-    } catch (error) {
-      console.error(
-        translate({
-          id: "error.forgotPassword",
-          message: "Error sending forgot password email:",
-        }),
-        error
-      );
-      messageApi.error(<Translate id="message.forgotPassword.error">发送密码重置邮件失败，请稍后重试</Translate>);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  // Password validation rules
-  const passwordRules = [
-    {
-      required: true,
-      message: translate({ id: "input.newPassword", message: "请输入新密码！" }),
-    },
-    {
-      min: 6,
-      message: translate({
-        id: "input.password.valid",
-        message: "密码长度至少为 6 个字符",
-      }),
-    },
-  ];
-
-  // Loading state when user data is loading or not available
-  if (isLoading || !userAuth) {
+  if (userLoading) {
     return (
-      <Layout title={translate({ id: "title.userInfo", message: "用户信息" })}>
-        <div style={{ maxWidth: 800, margin: "40px auto", padding: "0 20px", textAlign: "center" }}>
-          <Spin 
-            size="large" 
-            tip={<Translate id="message.loading.userStatus">加载登录状态...</Translate>}
-            role="status"
-            aria-label="正在加载用户信息"
-          >
-            <div style={{ height: 300 }}></div>
-          </Spin>
+      <Layout title={translate({ id: "link.myAccount", message: "我的账户" })}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "60vh" }}>
+          <Spin size="large" />
         </div>
       </Layout>
     );
   }
 
-  // User info items
-  const useritems = [
-    {
-      key: "1",
-      label: translate({
-        id: "userInfo.username",
-        message: "用户名",
-      }),
-      children: (
-        <div>
-          {editUsername ? (
-            <Input
-              autoComplete="off"
-              prefix={<UserOutlined />}
-              value={newUsername}
-              onChange={handleUsernameChange}
-              addonAfter={<Button type="link" icon={<SaveOutlined />} onClick={submitNewUsername} loading={loading} />}
-            />
-          ) : (
-            <Space>
-              {userAuth.data.username}
-              <Button type="link" icon={<EditOutlined />} onClick={handleEditUsernameClick} />
-            </Space>
-          )}
-        </div>
-      ),
-    },
-    {
-      key: "2",
-      label: translate({
-        id: "userInfo.email",
-        message: "邮箱",
-      }),
-      children: <div>{userAuth.data.email}</div>,
-    },
-  ];
-
-  // Tab items
-  const items = [
-    {
-      key: "1",
-      label: translate({ id: "label.changePassword", message: "修改密码" }),
-      children: (
-        <Form id="changePasswordForm" onFinish={onFinishChangePassword} layout="vertical" requiredMark={false}>
-          <Form.Item
-            name="currentPassword"
-            label={<Translate id="placeholder.currentPassword">当前密码</Translate>}
-            rules={[
-              {
-                required: true,
-                message: translate({
-                  id: "input.currentPassword",
-                  message: "请输入当前密码！",
-                }),
-              },
-            ]}>
-            <Input.Password
-              autoComplete="current-password"
-              prefix={<LockOutlined />}
-              placeholder={translate({
-                id: "placeholder.currentPassword",
-                message: "当前密码",
-              })}
-            />
-          </Form.Item>
-          <Form.Item name="newPassword" label={<Translate id="placeholder.newPassword">新密码</Translate>} rules={passwordRules} hasFeedback>
-            <Input.Password
-              autoComplete="new-password"
-              prefix={<LockOutlined />}
-              placeholder={translate({
-                id: "placeholder.newPassword",
-                message: "新密码",
-              })}
-            />
-          </Form.Item>
-          <Form.Item
-            name="confirmPassword"
-            label={<Translate id="placeholder.confirmPassword">确认新密码</Translate>}
-            dependencies={["newPassword"]}
-            hasFeedback
-            rules={[
-              {
-                required: true,
-                message: translate({
-                  id: "input.confirmPassword",
-                  message: "请确认新密码！",
-                }),
-              },
-              ({ getFieldValue }) => ({
-                validator(_, value) {
-                  if (!value || getFieldValue("newPassword") === value) {
-                    return Promise.resolve();
-                  }
-                  return Promise.reject(
-                    new Error(
-                      translate({
-                        id: "input.password.match",
-                        message: "两次输入的密码不一致！",
-                      })
-                    )
-                  );
-                },
-              }),
-            ]}>
-            <Input.Password
-              autoComplete="new-password"
-              prefix={<LockOutlined />}
-              placeholder={translate({
-                id: "placeholder.confirmPassword",
-                message: "确认新密码",
-              })}
-            />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit" loading={loading}>
-              <Translate id="button.changePassword">修改密码</Translate>
-            </Button>
-          </Form.Item>
-        </Form>
-      ),
-    },
-    {
-      key: "2",
-      label: translate({ id: "label.forgotPassword", message: "忘记密码" }),
-      children: (
-        <>
-          <Alert message={<Translate id="message.forgotPassword.info">重置密码链接将发送至您的邮箱</Translate>} type="info" showIcon style={{ marginBottom: 16 }} />
-          <Form id="forgotPasswordForm" onFinish={onFinishForgotPassword} layout="vertical" requiredMark={false}>
-            <Form.Item
-              name="email"
-              label={<Translate id="input.email">邮箱</Translate>}
-              rules={[
-                {
-                  required: true,
-                  message: translate({
-                    id: "input.email",
-                    message: "请输入您的邮箱！",
-                  }),
-                },
-                {
-                  type: "email",
-                  message: translate({
-                    id: "input.email.valid",
-                    message: "请输入有效的邮箱地址！",
-                  }),
-                },
-              ]}
-              initialValue={userAuth?.data?.email || ""}>
-              <Input
-                autoComplete="email"
-                prefix={<MailOutlined />}
-                placeholder={translate({
-                  id: "placeholder.email",
-                  message: "邮箱",
-                })}
-              />
-            </Form.Item>
-            <Form.Item>
-              <Button type="primary" htmlType="submit" loading={loading}>
-                <Translate id="button.sendResetEmail">发送重置邮件</Translate>
+  if (!userInfo) {
+    return (
+      <Layout title={translate({ id: "link.myAccount", message: "我的账户" })}>
+        <EmptyState
+          fullPage
+          icon={<UserOutlined />}
+          title={<Translate id="account.signInRequired">登录后查看账户</Translate>}
+          description={<Translate id="account.signInRequiredHint">正在带你回首页，也可以直接点下面的按钮</Translate>}
+          action={
+            <Link to="/">
+              <Button type="primary" icon={<LoginOutlined />}>
+                <Translate id="auth.callback.backHome">返回首页登录</Translate>
               </Button>
-            </Form.Item>
-          </Form>
-        </>
-      ),
-    },
-  ];
+            </Link>
+          }
+        />
+      </Layout>
+    );
+  }
 
-  const isDarkMode = typeof document !== "undefined" && document.documentElement.getAttribute("data-theme") === "dark";
+  const sharedCount = userAuth?.data?.userprompts?.filter((p) => p.share).length || 0;
 
   return (
-    <Layout title={translate({ id: "title.userInfo", message: "用户信息" })}>
-      <ConfigProvider
-        theme={{
-          ...themeConfig,
-          algorithm: isDarkMode ? theme.darkAlgorithm : theme.defaultAlgorithm,
+    <Layout title={translate({ id: "link.myAccount", message: "我的账户" })}>
+      <main
+        style={{
+          minHeight: "calc(100vh - 60px)",
+          padding: "24px 0",
         }}>
-        {contextHolder}
-        <Row justify="center">
-          <Col xs={24} sm={22} md={20} lg={16} xl={14}>
-            <div style={{ padding: "20px" }}>
-              <Space size={"large"} style={{ marginLeft: 8 }}>
-                <Link to="/" className="mainLink">
-                  <HomeOutlined /> <Translate id="link.home">返回首页</Translate>
-                </Link>
-                <Link to="/user/favorite" className="mainLink">
-                  <HeartOutlined /> <Translate id="link.user">个人中心</Translate>
-                </Link>
-              </Space>
+        {/* paddingInline 必须等于下面那个 Row 的 gutter 的一半：antd 的 gutter 是「负 margin +
+            子 Col 正 padding」实现的，父级没有这 12px 去抵消时，内层 Row 会左右各溢出 12px。
+            窄屏下两列都塌成 xs=24 占满，右边那 12px 直接变成整页横向滚动（实测 383px 宽下
+            scrollWidth-clientWidth = 12）。与 PromptPage 是同一处结构、同一个修法。
+            外层容器只有 padding:"24px 0"（纵向），指望不上。 */}
+        <Row justify="center" style={{ paddingInline: 12 }}>
+          <Col xs={24} sm={22} md={20} lg={16} xl={14} className="full-width-col">
+            <Space orientation="vertical" size="large" style={{ width: "100%" }}>
+              {/* Breadcrumb Navigation — plain, no Card wrapper */}
+              <Breadcrumb
+                itemRender={(item, params, items, paths) => {
+                  const isLast = items.indexOf(item) === items.length - 1;
+                  return isLast || !item.path ? (
+                    <span>{item.title}</span>
+                  ) : (
+                    <Link to={item.path} style={{ color: "var(--site-color-tag-selected-text)" }}>
+                      {item.title}
+                    </Link>
+                  );
+                }}
+                items={[
+                  {
+                    path: "/",
+                    title: (
+                      <Flex align="center" gap={4}>
+                        <HomeOutlined />
+                        <span>
+                          <Translate id="link.home">首页</Translate>
+                        </span>
+                      </Flex>
+                    ),
+                  },
+                  {
+                    // 与导航菜单项、Layout title 同名：三处指的都是这一个页面。
+                    // 之前面包屑单独用 link.userCenter「用户中心 / User center」，
+                    // 菜单点进来却写「我的账户」——18 个语言都这么分叉，不是英文独有问题。
+                    // 那个 id 已从本分支各 code.json 移除（每个分支自带一份，互不影响）。
+                    title: <Translate id="link.myAccount">我的账户</Translate>,
+                  },
+                ]}
+              />
 
-              <Card
-                title={
-                  <Title level={4} style={{ marginBottom: 0 }}>
-                    <Translate id="title.userInfo">用户信息</Translate>
-                  </Title>
-                }
-                style={{ marginTop: 16 }}>
-                <Descriptions items={useritems} layout="vertical" />
-                <Tabs type="card" items={items} destroyOnHidden />
-              </Card>
-            </div>
+              <Row gutter={[24, 24]}>
+                {/* Left Column: Profile Info */}
+                <Col xs={24} md={10}>
+                  <Card
+                    style={{
+                      height: "100%",
+                      borderRadius: 12,
+                    }}
+                    title={
+                      <Space>
+                        <UserOutlined />
+                        <Translate id="title.userInfo">用户信息</Translate>
+                      </Space>
+                    }>
+                    <Flex vertical>
+                      {/* Identity row — 紧凑横排，avatar 不再带等级渐变环（等级移到下方 spec card） */}
+                      <Flex align="center" gap={16} style={{ marginBottom: 24 }}>
+                        <Avatar
+                          size={56}
+                          icon={<UserOutlined />}
+                          style={{
+                            backgroundColor: "var(--ifm-background-surface-color)",
+                            color: "var(--ifm-color-content-secondary)",
+                            border: "1px solid var(--site-color-hairline)",
+                            flexShrink: 0,
+                          }}
+                        />
+                        <Flex vertical style={{ flex: 1, minWidth: 0 }}>
+                          {editUsername ? (
+                            <Space.Compact style={{ width: "100%" }}>
+                              <Input value={newUsername} onChange={(e) => setNewUsername(e.target.value)} onPressEnter={submitNewUsername} autoFocus />
+                              <Button type="primary" icon={<SaveOutlined />} onClick={submitNewUsername} loading={loading} aria-label={translate({ id: "action.save", message: "保存" })} />
+                              <Button icon={<CloseOutlined />} onClick={() => setEditUsername(false)} aria-label={translate({ id: "action.cancel", message: "取消" })} />
+                            </Space.Compact>
+                          ) : (
+                            <Flex align="center" gap={4}>
+                              <Title
+                                level={4}
+                                style={{
+                                  margin: 0,
+                                  fontSize: 18,
+                                  fontWeight: 600,
+                                  letterSpacing: "-0.01em",
+                                  lineHeight: 1.2,
+                                  minWidth: 0,
+                                  overflow: "hidden",
+                                  textOverflow: "ellipsis",
+                                  whiteSpace: "nowrap",
+                                }}>
+                                {userInfo.username}
+                              </Title>
+                              <Button type="text" icon={<EditOutlined />} onClick={handleEditUsernameClick} size="small" style={{ color: "var(--site-color-text-tertiary)", flexShrink: 0 }} />
+                            </Flex>
+                          )}
+                          <Text style={{ fontSize: 12, color: "var(--site-color-text-tertiary)", marginTop: 2, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                            <MailOutlined style={{ marginRight: 4 }} />
+                            {userInfo.email}
+                          </Text>
+                        </Flex>
+                      </Flex>
+
+                      <LevelSpecCard sharedCount={sharedCount} />
+                    </Flex>
+                  </Card>
+                </Col>
+
+                {/* Right Column: Security Settings */}
+                <Col xs={24} md={14}>
+                  <SecurityCard userInfo={userInfo} />
+                </Col>
+              </Row>
+
+              {/* Data Management Section */}
+              <DataManagementCard
+                canExport={!!userAuth?.data?.items?.some((item) => item.type === "prompt" || item.type === "favorite")}
+                importing={importing}
+                onExport={handleExportPrompts}
+                onImportClick={() => fileInputRef.current?.click()}
+                onClearCache={handleClearCache}
+              />
+            </Space>
           </Col>
         </Row>
-      </ConfigProvider>
+      </main>
+      <input type="file" ref={fileInputRef} accept=".json" style={{ display: "none" }} onChange={handleImportPrompts} />
     </Layout>
   );
 };
 
-export default function UserPage() {
-  return (
-    <AuthProvider>
-      <UserProfile />
-    </AuthProvider>
-  );
-}
+const UserPage = () => <UserProfile />;
+
+export default UserPage;

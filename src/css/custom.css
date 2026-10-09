@@ -5,32 +5,140 @@
  * LICENSE file in the root directory of this source tree.
  */
 
- :root {
+:root {
   /*
    See css var + hsl color palette technique:
    https://blog.maximeheckel.com/posts/the-power-of-composition-with-css-variables/
     */
-  --site-primary-hue-saturation: 167 68%;
-  --site-primary-hue-saturation-light: 167 56%; /* do we really need this extra one? */
-  --site-color-favorite-background: #f6fdfd;
-  --site-color-tooltip: #fff;
-  --site-color-tooltip-background: #353738;
+  /* Teal-ink 海沉绿明暗双主题（zeroRuntime 静态管线）：accent #397e6a，暗色下选中态/链接提亮 #57c2a3。
+     选择器分层与 main 双主题分支同构（:root 浅色默认 / html[data-theme="dark"] 暗色 token /
+     [data-theme="dark"] 主色阶），方便两分支互相 cherry-pick。
+     本块即浅色态：Docusaurus 未加 data-theme="dark" 时生效，暗色由下面两个块覆盖。 */
+  --site-primary-hue-saturation: 163 38%;
+  --site-primary-hue-saturation-light: 163 55%;
   --site-color-svg-icon-favorite: #e9669e;
-  --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 25%);
-  --site-color-feedback-background: #fff;
-  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
   /* Use a darker color to ensure contrast, ideally we don't need important */
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker) !important;
   --ifm-menu-color-active: var(--ifm-color-primary-darker) !important;
-  --site-color-background: white;
+  --site-motion-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --site-font-mono: ui-monospace, SFMono-Regular, "Menlo", "Cascadia Code", monospace;
+  /* Markdown / docs 链接走品牌绿（默认 Infima 是蓝色 #4a90e2） */
+  --ifm-link-color: var(--site-color-tag-selected-text);
+
+  /* 浅色「纸面索引卡」三层底（与暗色炭黑三层对偶，近中性微暖纸感）：
+     page #f0f1ea < card/surface #f8f9f3 < elevated 纯白——纯白只留给弹层，页面不刷白减少眩光。
+     与 main 同源；此前本分支强制 dark，这里放的是反转 Infima emphasis 色阶的暗色脚手架，
+     改双主题后由 Docusaurus 自己的浅色默认值接管，脚手架整块删除。 */
+  --ifm-background-color: #f0f1ea;
+  --ifm-background-surface-color: #f8f9f3;
+  --site-color-background: #f8f9f3;
+  --site-color-card-background: #f8f9f3;
+  --site-color-card-border: transparent; /* 浅色不描硬边，靠阴影 + 底色区分卡片 */
+  --site-color-feedback-background: #f8f9f3;
+  --site-color-tags-background: #f8f9f3;
+  --site-primary-font: #3e4042;
+  --site-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --site-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --site-shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --site-color-tag-selected-bg: hsl(163deg 38% 92%);
+  --site-color-tag-selected-text: #2d6454;
+  --site-color-error-text: #cf1322;
+  --site-color-warning-text: #ad4e00;
+  --site-color-tag-selected-border: #397e6a;
+  /* 三级文字承载的是信息不是装饰（复制数、字符/token 数、时间、FILTERS 标签、来源图标），
+     11px 下 .45/.40 实测只有 3.32:1 / 3.74:1，AA 小字要 4.5:1。抬到 .56/.50 后
+     两个模式都过线，观感仍明显低于正文与次级文字。 */
+  --site-color-text-tertiary: rgba(0, 0, 0, 0.56);
+  --site-color-hairline: rgba(0, 0, 0, 0.08);
+  --site-color-ghost-border: rgba(0, 0, 0, 0.04);
+  /* 页脚底色。不设的话落回 Infima 的 --ifm-color-emphasis-100：浅色是 #f5f6f7 的冷灰，
+     撞在这套微暖纸底（page #f0f1ea）上就是一条发白发冷的带子，明显不属于同一个色系。
+     此前只写过 .footer--dark，而 docusaurus.config 的 footer 没有 style:"dark"，
+     DOM 里也就从来没有 .footer--dark 这个 class —— 那条规则是死的，两个模式都没被覆盖过。
+     取 surface 一层（与卡片同色），让页脚相对页面有一点抬升又不跳出色系。 */
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
+  /* 等级色（LevelSystem 的 10 级）。原本只有一套为暗底设计的粉彩，浅色主题上线后没回头改：
+     10 级在浅色下是 1.33–2.88:1，等级图标、进度条、10px 序号几乎看不见，于是补了这组
+     浅色变体（保持色相、饱和度收到 42% 上限后压亮度）。
+
+     那次是按 surface #f8f9f3 的纯色底算的，得出「每级 ≥4.6」—— 但徽章真实的底不是它：
+     HomePage 的等级徽章是「accent 文字 + 同色 8% 淡底」，坐在 page #f0f1ea 上，11px。
+     按真实底重测，10 级是 3.87–3.96，全部不到 4.5。而且不是淡底的锅：把叠加降到 0%
+     最差也只有 4.28 —— 是色值本身对近白页面上的 11px 文字太亮。
+     压暗后浏览器实测 4.71–4.76（10 级逐个注入真实徽章元素量的，不是模型算的）。注意底色要取「徽章实际叠出来的那层」：徽章坐的不是
+     page #f0f1ea 而是一层更暗的面板（由实测反解约 #e9eae2），按 page 算会高估 0.3 左右，
+     第一次压暗就是这么压不够的（算得 4.71，实测只有 4.40）。
+     暗色那组不用改，同口径实测 5.99–13.03 全部通过。
+
+     教训写在这儿：改这组值时，底色要取「徽章实际叠出来的那层」，不是 surface 纯色。 */
+  --site-level-0: #536165; /* 萌新 graphite */
+  --site-level-1: #7f5634; /* 青铜 bronze */
+  --site-level-2: #4c6172; /* 白银 silver */
+  --site-level-3: #755a30; /* 黄金 gold */
+  --site-level-4: #3d637c; /* 铂金 platinum */
+  --site-level-5: #6a4ab4; /* 钻石 prism */
+  --site-level-6: #3d5f95; /* 蓝宝石 sapphire */
+  --site-level-7: #9b4053; /* 红宝石 ruby */
+  --site-level-8: #33694f; /* 翡翠 emerald */
+  --site-level-9: #6f5d2d; /* 星辉 starlight */
+
+  /* 中性标记（卡片 tag tick、分类圆点）——彩虹色收敛后的默认态，选中才点亮 accent */
+  --site-color-neutral-marker: rgba(0, 0, 0, 0.2);
+  --site-color-favorite-background: transparent;
+  --site-color-checkbox-checked-bg: hsl(163deg 38% 73% / 25%);
+  --docusaurus-highlighted-code-line-bg: rgb(0 0 0 / 10%);
+  --ifm-link-hover-color: hsl(var(--site-primary-hue-saturation-light) 45%);
 }
 
 html[data-theme="dark"] {
+  /* 暗色 token —— 与 main 的 html[data-theme="dark"] 块同 property 同 dark 值，便于 cherry-pick */
+  --site-primary-hue-saturation: 163 38%;
+  --site-primary-hue-saturation-light: 163 55%;
   --site-color-feedback-background: #f0f8ff;
-  --site-color-favorite-background: #1d1e1e;
-  --site-color-checkbox-checked-bg: hsl(167deg 56% 73% / 10%);
+  --site-color-tags-background: #1a1f24;
+  --site-color-favorite-background: #1a1f24;
+  --site-color-checkbox-checked-bg: hsl(163deg 38% 73% / 10%);
   --docusaurus-highlighted-code-line-bg: rgb(66 66 66 / 35%);
-  --site-color-background: #242526;
+  --site-primary-font: #c5c5c5;
+  --site-color-background: #1d2126;
+  --site-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --site-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --site-shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --site-color-card-background: #272d33;
+  --site-color-tag-selected-bg: rgba(57, 126, 106, 0.1);
+  --site-color-tag-selected-text: #57c2a3;
+  --site-color-error-text: #dc8885;
+  --site-color-warning-text: #fa8c16;
+  --site-color-tag-selected-border: rgba(57, 126, 106, 0.5);
+  --site-color-text-tertiary: rgba(255, 255, 255, 0.5);
+  --site-color-hairline: rgba(255, 255, 255, 0.08);
+  --site-color-ghost-border: rgba(255, 255, 255, 0.04);
+  --ifm-footer-background-color: var(--ifm-background-surface-color);
+  --ifm-link-hover-color: hsl(var(--site-primary-hue-saturation-light) 70%);
+  --ifm-background-color: #14171a;
+  --ifm-background-surface-color: #1d2126;
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+  --ifm-color-content: #ededed;
+  --ifm-color-content-secondary: rgba(255, 255, 255, 0.6);
+  --ifm-code-background: rgba(255, 255, 255, 0.1);
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.07);
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+  /* :root 现在放的是浅色默认值，这两个必须在暗色块覆盖，否则暗底上会拿到浅色值
+     —— neutral-marker 的 rgba(0,0,0,.2) 在深色底上等于隐形 */
+  --site-color-card-border: var(--ifm-color-emphasis-200);
+  --site-color-neutral-marker: rgba(255, 255, 255, 0.22);
+
+  /* 等级色暗色值（原始那套粉彩，为暗底设计） */
+  --site-level-0: #94a3a8;
+  --site-level-1: #c8956b;
+  --site-level-2: #a8b8c5;
+  --site-level-3: #d8a55a;
+  --site-level-4: #b0c8d8;
+  --site-level-5: #cdb8ff;
+  --site-level-6: #6f95d0;
+  --site-level-7: #d97a8e;
+  --site-level-8: #5fb088;
+  --site-level-9: #f0d896;
 }
 
 /*
@@ -38,18 +146,19 @@ html[data-theme="dark"] {
   * other properties here.
   */
 [data-theme="light"] {
-  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 30%);
-  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 26%);
-  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 23%);
-  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 17%);
+  --ifm-color-primary: hsl(var(--site-primary-hue-saturation) 36%);
+  --ifm-color-primary-dark: hsl(var(--site-primary-hue-saturation) 32%);
+  --ifm-color-primary-darker: hsl(var(--site-primary-hue-saturation) 29%);
+  --ifm-color-primary-darkest: hsl(var(--site-primary-hue-saturation) 23%);
 
-  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 39%);
+  --ifm-color-primary-light: hsl(var(--site-primary-hue-saturation-light) 45%);
   --ifm-color-primary-lighter: hsl(
-    var(--site-primary-hue-saturation-light) 47%
+    var(--site-primary-hue-saturation-light) 53%
   );
   --ifm-color-primary-lightest: hsl(
-    var(--site-primary-hue-saturation-light) 58%
+    var(--site-primary-hue-saturation-light) 64%
   );
+  --ifm-color-primary-rgb: 57, 126, 106; /* #397e6a — rgba() companion for --ifm-color-primary */
 }
 
 /*
@@ -69,6 +178,7 @@ html[data-theme="dark"] {
   --ifm-color-primary-lightest: hsl(
     var(--site-primary-hue-saturation-light) 73%
   );
+  --ifm-color-primary-rgb: 71, 158, 134; /* dark-mode primary hsl(163 38% 45%) — rgba() companion */
 }
 
 .header-github-link:hover {
@@ -80,13 +190,13 @@ html[data-theme="dark"] {
   width: 24px;
   height: 24px;
   display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
+  background: url("@site/static/img/icons/github.svg") no-repeat;
+  background-size: contain;
 }
 
 [data-theme="dark"] .header-github-link::before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
+  background: url("@site/static/img/icons/github-dark.svg") no-repeat;
+  background-size: contain;
 }
 
 .header-discord-link:hover {
@@ -98,13 +208,53 @@ html[data-theme="dark"] {
   width: 24px;
   height: 24px;
   display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 640 640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m534.42,126.58a1.57,1.57 0 0 0 -0.79,-0.73a507.33,507.33 0 0 0 -125.19,-38.81a1.9,1.9 0 0 0 -2.01,0.95a352.96,352.96 0 0 0 -15.58,32.01a468.41,468.41 0 0 0 -140.6,0a323.75,323.75 0 0 0 -15.82,-32.01a1.98,1.98 0 0 0 -2.02,-0.95a505.9,505.9 0 0 0 -125.19,38.81a1.79,1.79 0 0 0 -0.82,0.7c-79.73,119.07 -101.57,235.21 -90.86,349.9a2.11,2.11 0 0 0 0.81,1.44a510.06,510.06 0 0 0 153.56,77.6a1.99,1.99 0 0 0 2.15,-0.71a364.19,364.19 0 0 0 31.42,-51.08a1.95,1.95 0 0 0 -1.07,-2.71a335.92,335.92 0 0 1 -47.98,-22.85a1.98,1.98 0 0 1 -0.19,-3.27c3.22,-2.42 6.44,-4.93 9.53,-7.46a1.9,1.9 0 0 1 1.99,-0.27c100.65,45.94 209.61,45.94 309.07,0a1.89,1.89 0 0 1 2.01,0.24c3.09,2.54 6.31,5.07 9.55,7.49a1.97,1.97 0 0 1 -0.17,3.27a315.25,315.25 0 0 1 -48,22.83a1.97,1.97 0 0 0 -1.05,2.73a409.02,409.02 0 0 0 31.4,51.05a1.95,1.95 0 0 0 2.15,0.73a508.37,508.37 0 0 0 153.81,-77.59a1.97,1.97 0 0 0 0.81,-1.41c12.82,-132.61 -21.48,-247.79 -90.93,-349.9zm-315.91,280.03c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.48,61.96 -55.27,61.96zm204.35,0c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.23,61.96 -55.27,61.96z'/%3E%3C/svg%3E")
-    no-repeat;
+  background: url("@site/static/img/icons/discord.svg") no-repeat;
+  background-size: contain;
 }
 
 [data-theme="dark"] .header-discord-link::before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 640 640' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='m534.42,126.58a1.57,1.57 0 0 0 -0.79,-0.73a507.33,507.33 0 0 0 -125.19,-38.81a1.9,1.9 0 0 0 -2.01,0.95a352.96,352.96 0 0 0 -15.58,32.01a468.41,468.41 0 0 0 -140.6,0a323.75,323.75 0 0 0 -15.82,-32.01a1.98,1.98 0 0 0 -2.02,-0.95a505.9,505.9 0 0 0 -125.19,38.81a1.79,1.79 0 0 0 -0.82,0.7c-79.73,119.07 -101.57,235.21 -90.86,349.9a2.11,2.11 0 0 0 0.81,1.44a510.06,510.06 0 0 0 153.56,77.6a1.99,1.99 0 0 0 2.15,-0.71a364.19,364.19 0 0 0 31.42,-51.08a1.95,1.95 0 0 0 -1.07,-2.71a335.92,335.92 0 0 1 -47.98,-22.85a1.98,1.98 0 0 1 -0.19,-3.27c3.22,-2.42 6.44,-4.93 9.53,-7.46a1.9,1.9 0 0 1 1.99,-0.27c100.65,45.94 209.61,45.94 309.07,0a1.89,1.89 0 0 1 2.01,0.24c3.09,2.54 6.31,5.07 9.55,7.49a1.97,1.97 0 0 1 -0.17,3.27a315.25,315.25 0 0 1 -48,22.83a1.97,1.97 0 0 0 -1.05,2.73a409.02,409.02 0 0 0 31.4,51.05a1.95,1.95 0 0 0 2.15,0.73a508.37,508.37 0 0 0 153.81,-77.59a1.97,1.97 0 0 0 0.81,-1.41c12.82,-132.61 -21.48,-247.79 -90.93,-349.9zm-315.91,280.03c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.48,61.96 -55.27,61.96zm204.35,0c-30.3,0 -55.27,-27.81 -55.27,-61.96s24.48,-61.96 55.27,-61.96c31.03,0 55.76,28.05 55.27,61.96c0,34.15 -24.23,61.96 -55.27,61.96z'/%3E%3C/svg%3E")
-    no-repeat;
+  background: url("@site/static/img/icons/discord-dark.svg") no-repeat;
+  background-size: contain;
+}
+
+/* Telegram link in header */
+.header-tg-link:hover {
+  opacity: 0.6;
+}
+
+.header-tg-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("@site/static/img/icons/telegram.svg") no-repeat;
+  background-size: contain;
+}
+
+[data-theme="dark"] .header-tg-link::before {
+  background: url("@site/static/img/icons/telegram-dark.svg") no-repeat;
+  background-size: contain;
+}
+
+/* 让下拉菜单项的图标和文字在同一行 */
+.dropdown__menu .header-qq-link,
+.dropdown__menu .header-discord-link,
+.dropdown__menu .header-tg-link {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown__menu .header-qq-link::before,
+.dropdown__menu .header-discord-link::before,
+.dropdown__menu .header-tg-link::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
 }
 
 .header-qq-link:hover {
@@ -116,17 +266,13 @@ html[data-theme="dark"] {
   width: 24px;
   height: 24px;
   display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M894.2 611c-8.7-19-18.3-36.5-28.2-52.2-8.2-12.9-16.6-24.5-24.9-34.4-15-17.8-29.7-28.9-42.5-34.3 2-16.6 3-35.9 3-54.5 0-42.9-5.7-82.4-15.1-111.3-9.7-144.6-130.2-258.5-277.4-258.5-146.9 0-267.2 114.3-277.5 258.6-9.5 29-15.4 67.9-15.4 111.3 0 19.7 1.2 37 3.4 54.5-12.6 7.1-26.7 21.9-40.9 39.7-9.2 11.5-18.4 25-27.2 39.9-7.5 12.7-14.8 26.5-21.5 41.2-37.2 80.9-45 156.7-17.4 169.4 17.5 8.1 45.1-11.3 72.4-47.2 21.2 45.3 51.6 85.3 88.8 117.8-43.2 14.5-71.9 40-71.9 69.2 0 45.1 68.9 40.1 154 40.1 70.5 0 129.9 3.4 148.2-21.1h4.9c2.4 0 4.8 0 7.2-0.1 18.2 24.6 77.7 21.1 148.2 21.1 85 0 154 5 154-40.1 0-29.5-29.4-55.3-73.6-69.7 38.3-33.6 69.4-75.3 90.5-122.4 28.5 39.1 57.9 60.7 76.2 52.3 27.7-12.5 19.9-88.4-17.3-169.3z' /%3E%3C/svg%3E")
-    no-repeat;
+  background: url("@site/static/img/icons/qq.svg") no-repeat;
+  background-size: contain;
 }
 
 [data-theme="dark"] .header-qq-link::before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M894.2 611c-8.7-19-18.3-36.5-28.2-52.2-8.2-12.9-16.6-24.5-24.9-34.4-15-17.8-29.7-28.9-42.5-34.3 2-16.6 3-35.9 3-54.5 0-42.9-5.7-82.4-15.1-111.3-9.7-144.6-130.2-258.5-277.4-258.5-146.9 0-267.2 114.3-277.5 258.6-9.5 29-15.4 67.9-15.4 111.3 0 19.7 1.2 37 3.4 54.5-12.6 7.1-26.7 21.9-40.9 39.7-9.2 11.5-18.4 25-27.2 39.9-7.5 12.7-14.8 26.5-21.5 41.2-37.2 80.9-45 156.7-17.4 169.4 17.5 8.1 45.1-11.3 72.4-47.2 21.2 45.3 51.6 85.3 88.8 117.8-43.2 14.5-71.9 40-71.9 69.2 0 45.1 68.9 40.1 154 40.1 70.5 0 129.9 3.4 148.2-21.1h4.9c2.4 0 4.8 0 7.2-0.1 18.2 24.6 77.7 21.1 148.2 21.1 85 0 154 5 154-40.1 0-29.5-29.4-55.3-73.6-69.7 38.3-33.6 69.4-75.3 90.5-122.4 28.5 39.1 57.9 60.7 76.2 52.3 27.7-12.5 19.9-88.4-17.3-169.3z'/%3E%3C/svg%3E")
-    no-repeat;
-}
-
-.footer--dark {
-  --ifm-footer-background-color: #2b3137;
+  background: url("@site/static/img/icons/qq-dark.svg") no-repeat;
+  background-size: contain;
 }
 
 .unique-tabs .tabs__item {
@@ -141,41 +287,19 @@ html[data-theme="dark"] {
   background-color: var(--ifm-tabs-color-active);
 }
 
-[data-theme="light"] .themedDocusaurus [fill="#FFFF50"] {
-  fill: greenyellow;
-}
-
-[data-theme="dark"] .themedDocusaurus [fill="#FFFF50"] {
+.themedDocusaurus [fill="#FFFF50"] {
   fill: seagreen;
 }
 
-[data-theme="light"] .DocSearch {
-  /* --docsearch-primary-color: var(--ifm-color-primary); */
-  /* --docsearch-text-color: var(--ifm-font-color-base); */
-  --docsearch-muted-color: var(--ifm-color-emphasis-700);
-  --docsearch-container-background: rgb(94 100 112 / 70%);
-  /* Modal */
-  --docsearch-modal-background: var(--ifm-color-secondary-lighter);
-  /* Search box */
-  --docsearch-searchbox-background: var(--ifm-color-secondary);
-  --docsearch-searchbox-focus-background: var(--ifm-color-white);
-  /* Hit */
-  --docsearch-hit-color: var(--ifm-font-color-base);
-  --docsearch-hit-active-color: var(--ifm-color-white);
-  --docsearch-hit-background: var(--ifm-color-white);
-  /* Footer */
-  --docsearch-footer-background: var(--ifm-color-white);
-}
-
-[data-theme="dark"] .DocSearch {
+.DocSearch {
   --docsearch-text-color: var(--ifm-font-color-base);
   --docsearch-muted-color: var(--ifm-color-secondary-darkest);
-  --docsearch-container-background: rgb(47 55 69 / 70%);
+  --docsearch-container-background: rgb(13 16 18 / 70%);
   /* Modal */
   --docsearch-modal-background: var(--ifm-background-color);
   /* Search box */
   --docsearch-searchbox-background: var(--ifm-background-color);
-  --docsearch-searchbox-focus-background: var(--ifm-color-black);
+  --docsearch-searchbox-focus-background: var(--ifm-background-surface-color);
   /* Hit */
   --docsearch-hit-color: var(--ifm-font-color-base);
   --docsearch-hit-active-color: var(--ifm-color-white);
@@ -219,8 +343,7 @@ div[class^="announcementBar_"] {
   white-space: nowrap;
 }
 
-[data-theme="light"] img[src$="#gh-dark-mode-only"],
-[data-theme="dark"] img[src$="#gh-light-mode-only"] {
+img[src$="#gh-light-mode-only"] {
   display: none;
 }
 
@@ -260,35 +383,594 @@ div[class^="announcementBar_"] {
 }
 
 [data-rmiz-modal-overlay="visible"] {
-  background-color: rgba(255 255 255 / 95%);
-}
-
-[data-theme="dark"] [data-rmiz-modal-overlay="visible"] {
   background-color: rgba(0 0 0 / 95%);
 }
 
 .showOnSmallScreen {
-  display: none;
+  display: none !important;
 }
 
-/* 当屏幕宽度小于768px时应用的样式 */
+/* 当屏幕宽度小于 768px 时应用的样式 */
 @media (max-width: 767px) {
   .hideOnSmallScreen {
-    display: none;
+    display: none !important;
   }
   .showOnSmallScreen {
-    display: block; /* 或 inline-block, flex 等，取决于你的按钮样式需求 */
+    display: block !important;
   }
 }
 
-/* 修复Link css样式丢失问题 */
-.mainLink {
+/* PromptPage 侧栏：桌面 lg+（≥992px，与 Col 的 lg 分栏断点一致）才 sticky。
+   md 及以下侧栏是整行块，sticky 会把它钉在正文和讨论区中间。 */
+@media (min-width: 992px) {
+  .prompt-sidebar-col {
+    position: sticky;
+    top: 72px;
+    align-self: flex-start;
+    z-index: 1;
+  }
+}
+
+/* Style external links */
+.theme-doc-markdown {
+  font-size: 1rem;
+}
+
+/* Markdown 正文里的 <a> — Infima 默认会被 .theme-doc-markdown 容器内的更具体规则染蓝，
+   :root 里改 --ifm-link-color 不够，必须显式选中。Sidebar 的 .menu__link 不受此影响。 */
+.theme-doc-markdown a,
+article.markdown a {
+  color: var(--site-color-tag-selected-text);
+}
+.theme-doc-markdown a:hover,
+article.markdown a:hover {
+  color: hsl(var(--site-primary-hue-saturation-light) 70%);
+  text-decoration: underline;
+}
+
+/* docs/category 自动生成的 DocCard 列表 —— Docusaurus 主题在 .cardContainer_* 里
+   把 --ifm-link-color 改成 emphasis-800，在我们暗色模式下实际值是 #ebedf0（Infima 默认浅灰偏蓝）。
+   标题用 --ifm-color-primary（45% 亮度，比 tag-selected-text 稳重不刺眼），
+   描述用 content-secondary（半透白，无蓝色 cast），保持主次层次。 */
+.theme-doc-card-container .theme-doc-card-heading {
   color: var(--ifm-color-primary);
 }
-.mainLink:hover {
+.theme-doc-card-container:hover .theme-doc-card-heading {
+  color: var(--ifm-color-primary-light);
+}
+.theme-doc-card-container .theme-doc-card-description {
+  color: var(--ifm-color-content-secondary);
+}
+.sidebarLogo_isFc {
+  font-size: 1.1rem;
+}
+
+/* CLS 修复：导航栏预留高度，防止 hydration 时推动内容 */
+.navbar__title {
+  color: var(--site-primary-font);
+  font-size: 1.1rem;
+}
+.fontLink {
+  color: var(--site-primary-font);
+}
+.navbar__link,
+.dropdown__link,
+.menu__link,
+.table-of-contents__link {
+  color: var(--site-primary-font);
+  font-size: 1rem;
+}
+.navbar__title:hover,
+.navbar__link:hover,
+.navbar__link--active,
+.dropdown__link:hover,
+.dropdown__link--active,
+.menu__link:hover,
+.menu__link--active,
+.table-of-contents__link:hover,
+.table-of-contents__link--active,
+.fontLink:hover {
+  color: var(--ifm-color-primary);
+}
+
+.breadcrumbs__link,
+.buttonLink {
+  color: var(--ifm-color-primary);
+}
+
+.pagination-nav__label {
+  color: var(--ifm-color-primary);
+  font-size: 1rem;
+}
+.buttonLink:hover,
+.pagination-nav__label:hover {
   color: var(--site-primary-font);
 }
 
-a.button {
+/* 渐变的排版方向。
+   CSS 渐变没有逻辑属性对应物：`linear-gradient(90deg, …)` 在阿拉伯语（dir=rtl）下
+   仍然从左往右淡出，于是 remark 引用块的着色会从「强调条那一侧起」变成「从末尾起」，
+   跟同一块上已经改成 borderInlineStart 的强调条背道而驰。用一个继承变量把角度也
+   翻过来，调用处（PromptRemark / PromptDetailModal 的内联样式）只写 var()。
+   新增会淡出的渐变一律用它，别再写死 90deg。 */
+:root {
+  --site-fade-dir: 90deg;
+}
+
+html[dir="rtl"] {
+  --site-fade-dir: 270deg;
+}
+
+/* Sticky Footer Fix */
+.app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (min-width: 450px) and (max-width: 575px) {
+  .ant-col-xs-24 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  /* 例外：标记为 full-width-col 的 Col（PromptPage / CommunityPromptPage / user 等页面的内容容器）
+     在窄屏保持 100%，不被上面为卡片网格准备的 50% 规则误伤 */
+  .full-width-col.ant-col-xs-24 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* ========================================================================== */
+/* === Community Prompt — Composition Sheet                                ==
+/*    详情页 polish：仅保留 antd 6 没法 token 表达的视觉节点
+/*    容器/Flex/分隔/loading 等结构性样式都改用 antd 组件 + inline style
+/* ========================================================================== */
+
+/* Hero title — 详情页 hierarchy（覆盖 antd Title 默认 size/weight） */
+.comp-sheet-title.ant-typography {
+  margin: 0 !important;
+  font-size: clamp(22px, 2.4vw, 28px) !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+}
+
+/* Eyebrow caption — mono uppercase tertiary；现在渲染为 <h2> 给 AI 引擎 chunk 入口 */
+.comp-sheet-eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--site-color-text-tertiary);
+  font-family: var(--site-font-mono);
+  display: inline-block;
+  margin: 0;
+}
+
+/* Remark pull-quote — 左竖线引语，antd 没有原生引语组件。
+   pre-line：备注数据含 \n，默认 white-space 会把换行折叠成空格 */
+.comp-sheet-remark {
+  margin: 0;
+  padding: 4px 0 4px 16px;
+  border-left: 3px solid var(--ifm-color-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ifm-color-content-secondary);
+  white-space: pre-line;
+}
+
+/* Prompt body — 上下 hairline，无外框；这种 pattern antd Card/Divider 都不对 */
+.comp-sheet-code {
+  padding: 24px 0;
+  border-top: 1px solid var(--site-color-hairline);
+  border-bottom: 1px solid var(--site-color-hairline);
+  font-family: var(--site-font-mono);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--ifm-color-content);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Vote pill — 三段非对称：▲ 主信号 / hairline 分隔 / ▼ 自适应 icon-only */
+.comp-sheet-vote {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--site-color-hairline);
+  border-radius: 6px;
+  background: var(--site-color-ghost-border);
+  overflow: hidden;
+  transition: border-color 0.12s var(--site-motion-emphasized), background 0.12s var(--site-motion-emphasized);
+}
+.comp-sheet-vote:hover {
+  border-color: rgba(var(--ifm-color-primary-rgb), 0.4);
+  background: rgba(var(--ifm-color-primary-rgb), 0.04);
+}
+.comp-sheet-vote-btn.ant-btn {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  height: auto;
+  padding: 6px 12px !important;
+  gap: 6px;
+  color: var(--site-color-text-tertiary);
+  font-family: var(--site-font-mono);
+  font-size: 13px;
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+.comp-sheet-vote-up.ant-btn { color: var(--ifm-color-content); }
+.comp-sheet-vote-icon-only.ant-btn {
+  padding: 6px 8px !important;
+  min-width: 28px;
+  opacity: 0.7;
+}
+.comp-sheet-vote-icon-only.ant-btn:hover { opacity: 1; }
+.comp-sheet-vote-btn + .comp-sheet-vote-btn {
+  border-left: 1px solid var(--site-color-hairline) !important;
+}
+.comp-sheet-vote-btn.ant-btn:hover,
+.comp-sheet-vote-btn.ant-btn:hover .anticon {
+  color: var(--site-color-tag-selected-text) !important;
+  background: transparent !important;
+}
+.comp-sheet-vote-btn .anticon {
+  transition: color 0.12s var(--site-motion-emphasized), transform 0.12s var(--site-motion-emphasized);
+}
+.comp-sheet-vote-up:active .anticon { transform: translateY(-1px); }
+.comp-sheet-vote-down:active .anticon { transform: translateY(1px); }
+
+/* Favorite — toggle 状态靠 aria-pressed selector 表达，inline style 拿不到 */
+.comp-sheet-fav-btn .anticon {
+  transition: color 0.12s var(--site-motion-emphasized), transform 0.12s var(--site-motion-emphasized);
+}
+.comp-sheet-fav-btn[aria-pressed="true"] .anticon {
+  color: var(--site-color-svg-icon-favorite);
+}
+.comp-sheet-fav-btn:hover .anticon {
+  color: var(--site-color-svg-icon-favorite);
+  transform: scale(1.08);
+}
+
+/* Share — 触发器 hover sage wake-up，跟卡片 .anticon hover 同语言 */
+.comp-sheet-share-btn .anticon {
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+.comp-sheet-share-btn:hover .anticon {
+  color: var(--site-color-tag-selected-text);
+}
+
+/* Mobile — 仅 code body 字号微调，其他 Flex/Card 自适应 */
+@media (max-width: 600px) {
+  .comp-sheet-code { padding: 18px 0; font-size: 13px; }
+}
+
+/* ========================================================================== */
+/* === PromptPage — Sidebar Strip + Tag Link                                ==
+/*    与 Composition Sheet 共用 .comp-sheet-* 容器/字号/eyebrow/code body
+/*    本段仅声明 PromptPage 特有的：tag link 样式 + 侧栏 section 节奏 + related/faq 条目
+/* ========================================================================== */
+
+/* Tag link — hashtag 内核是文字，去 antd Tag box，直接 mono tertiary + sage hover */
+.prompt-tag-link {
+  font-family: var(--site-font-mono);
+  font-size: 12px;
+  color: var(--site-color-text-tertiary);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+.prompt-tag-link:hover {
+  color: var(--site-color-tag-selected-text);
+  text-decoration: none;
+}
+
+/* Sidebar Strip — 不用独立 Card，sections 用 hairline + eyebrow 区分 */
+.prompt-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.prompt-sidebar-section {
+  padding: 16px 0;
+  border-top: 1px solid var(--site-color-hairline);
+}
+.prompt-sidebar-section:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Related items — hover 行 sage 5% tint + title 变 sage tag-selected */
+.prompt-related-item {
+  display: block;
+  padding: 8px 10px;
+  margin: 0 -10px;
+  border-radius: 4px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 0.12s var(--site-motion-emphasized);
+}
+.prompt-related-item + .prompt-related-item {
+  margin-top: 2px;
+}
+.prompt-related-item:hover {
+  background: rgba(var(--ifm-color-primary-rgb), 0.05);
+}
+.prompt-related-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.12s var(--site-motion-emphasized);
+}
+.prompt-related-item:hover .prompt-related-title {
+  color: var(--site-color-tag-selected-text);
+}
+.prompt-related-remark {
+  font-size: 12px;
+  color: var(--ifm-color-content-secondary);
+  margin-top: 2px;
+  line-height: 1.45;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* FAQ items — Q/A 紧凑节奏，条目间 hairline */
+.prompt-faq-item {
+  padding: 10px 0;
+  border-top: 1px solid var(--site-color-hairline);
+}
+.prompt-faq-item:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.prompt-faq-q {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ifm-color-content);
+  line-height: 1.45;
+  margin: 0;
+}
+.prompt-faq-a {
+  font-size: 12px;
+  color: var(--ifm-color-content-secondary);
+  line-height: 1.55;
+  margin-top: 4px;
+}
+
+/* ========================================================================== */
+/* === Comments — polish for B+ refined modern family                       ==
+/*    AI polling strip；空状态走共用的 <EmptyState>，其余在 CommentComponent inline 改完
+/* ========================================================================== */
+
+/* AI polling progress strip — 提交评论后短暂出现，把后台 5 阶段轮询暴露为 first-class UI */
+.comments-polling-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px 0 4px;
+  animation: comments-polling-fade 0.2s var(--site-motion-emphasized);
+}
+.comments-polling-bar {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--ifm-color-primary) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: comments-polling-slide 1.4s ease-in-out infinite;
+}
+.comments-polling-text {
+  font-family: var(--site-font-mono);
+  font-size: 11px;
+  color: var(--site-color-text-tertiary);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.comments-polling-attempt {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.7;
+}
+@keyframes comments-polling-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes comments-polling-slide {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* ========================================================================== */
+/* === Share UI — Stretch URL + Compact Channels + Native First            ==
+/*    去掉 react-share 默认彩色 round 32px icons，用 antd outlined + label
+/*    + Web Share API 优先 + Copy Link 摆在第一位
+/* ========================================================================== */
+
+/* 仅保留 antd 6 没法 inline 表达的：原生 button 的 reset + hover state。
+   容器 / grid / typography / 静态色全部由 ShareButtons.tsx 用 Flex + inline style 承担 */
+
+.share-channel-btn {
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 4px;
+  padding: 8px 4px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  background: transparent !important;
+  color: var(--site-color-text-tertiary) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: color 0.12s var(--site-motion-emphasized), background 0.12s var(--site-motion-emphasized);
+}
+.share-channel-btn:hover {
+  color: var(--site-color-tag-selected-text) !important;
+  background: rgba(var(--ifm-color-primary-rgb), 0.06) !important;
+}
+.share-channel-btn .anticon { font-size: 18px; }
+
+/* Native Share — sage primary 强调；hover bg 必须 CSS（inline 拿不到 :hover） */
+.share-channel-native { color: var(--ifm-color-primary) !important; }
+.share-channel-native:hover {
+  color: var(--ifm-color-primary) !important;
+  background: rgba(var(--ifm-color-primary-rgb), 0.1) !important;
+}
+
+/* ===== UserStatus 登录态首屏占位（防发版冷缓存下已登录用户闪「未登录」CTA） =====
+   配合 docusaurus.config.js 的 auth-boot-flag 内联脚本（水合前给 <html> 打 data-auth-boot=in）
+   与 UserStatus 挂载后设的 data-auth-ready。
+   用 display:contents 包装，两个 wrapper 都不产生布局盒子，零 CLS、零布局回退。
+   - 默认（未登录 / 已水合）：live 正常显示，boot 隐藏。
+   - 已登录且未水合：live 隐藏、boot（骨架）显示 —— 仅这一种状态被改写。 */
+.userstatus-boot { display: none; }
+.userstatus-live { display: contents; }
+html[data-auth-boot="in"]:not([data-auth-ready]) .userstatus-boot { display: contents; }
+html[data-auth-boot="in"]:not([data-auth-ready]) .userstatus-live { display: none; }
+
+/* Pagination — 允许换行。窄屏下 9 个页码（prev + 1..7 + next）总跨度 352px，超出
+   313px 的容器，而 antd 的 .ant-pagination 是 flex-wrap:nowrap + overflow:visible，
+   最后一个按钮直接戳出视口造成横向滚动（实测 360px 溢出 8px、320px 溢出 48px）。
+
+   本该用 `size="small"` / `responsive` 缩小尺寸，但 **antd 6.6.1 自身对不上号**：
+   组件发的是 `.ant-pagination-mini`（Pagination.js:186），它自带的样式表打的却是
+   `.ant-pagination-small`（style/index.js:179）——两个 class 名对不上，所以缩小尺寸
+   这条路在上游修好前完全无效（与本项目的静态提取无关，运行时 CSS-in-JS 同样失效）。
+   改用换行，不依赖上游。居中由各调用处的 antd `align="center"` 负责，这里不写
+   justify-content，免得盖掉 antd 的 -start/-end 变体。 */
+.ant-pagination {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+/* 密码可见性切换的命中区补到 24×24（WCAG 2.2 AA, 2.5.8）。antd 的语义是齐的
+   —— role=button、tabindex、aria-label 都在 —— 缺的只是可点面积：图标本身就 16×16。
+   它嵌在输入框内部，24px 判定圆必然与输入框自身的目标相交，spacing 例外用不上，
+   属实打实不达标。登录 / 改密 / 重置密码共 7 处 Input.Password 走的都是这个类。
+
+   用居中的透明伪元素扩命中区，不参与布局：实测图标 border-box 仍是 16×16，输入框
+   高度 39、suffix 16×24 均未变，elementFromPoint ±11px 四向全部命中，而图标左侧
+   20px 处仍归输入框——没有越界抢点击。
+
+   **不要顺手把 .ant-typography-copy 一起加进来**：它 13×15，看着是同类问题，但四周
+   60px 内没有别的目标，靠 spacing 例外本来就合规。而它嵌在 Typography 段落的最后一行，
+   行高只有 20.15px（13px × 1.55），24px 的命中区无论怎么对齐都会溢出行盒约 3px；
+   一旦外层是 overflow-y:auto 的滚动容器（提示词 modal 的译文段落、正文框都是），
+   这 3px 就让 scrollHeight 超过 clientHeight，两行文字也长出滚动条。加过一次，
+   实测 sh 43 / ch 40，撤掉即回 40。 */
+.ant-input-password-icon {
+  position: relative;
+}
+.ant-input-password-icon::after {
+  content: "";
+  position: absolute;
+  inset: 50%;
+  margin: -12px;
+}
+
+/* 表单校验提示的文字色。antd 的 .ant-form-item-explain-error 取 colorError 本身
+   （不是 colorErrorText），而 colorError 在暗色下被三处用着、需求方向不一致：
+     ① 实心 danger 按钮的【底】（Modal.confirm 的 okButtonProps danger）—— 要更暗，白字才读得出
+     ② 文字/描边型 danger 按钮的【字】—— 要更亮
+     ③ 这里的校验提示【字】—— 要更亮
+   ②③ 同向、只有 ① 相反，单个值无解：实测把暗色种子压到 #f04a4a（派生 #cf4242），
+   ①的白字能到 4.66，但 ②③ 作为文字只剩 2.99。
+
+   ① 维持现状，是明确决定，不要再改：暗色下实心 danger 按钮（Modal.confirm 的
+   okButtonProps danger，用在删除确认等处）白字压在 #dc6966 上只有 3.36:1，这是 antd
+   自身 colorError 与白字的默认关系，不是本项目引入的（浅色 5.57 正常）。要修只能改
+   调用点、把实心换成描边 danger，会让确认弹窗的视觉分量降一档 —— 权衡后选择不动。
+   对比度扫描会一直报这一条，属已知并接受，不必再提。
+
+   也试过按组件覆盖 components.Form.colorError —— 无效：Form 的组件 token 里没有
+   colorError，生成物里那条规则始终引用全局的 var(--ant-color-error)（已验证生成的
+   --ant-form-* 变量清单里没有它）。所以只能在 CSS 这层单独给校验文字上色，按钮不动。
+
+   暗色 #dc8885 实测 elevated #272d33 上 5.24、container #1d2126 上 6.09
+   （原 #dc6966 分别是 4.14 / 4.82，弹窗里的表单不达标）。
+   浅色沿用 #cf1322，本来就过（#ffffff 5.57 / #f8f9f3 5.26），写出来是为了成对，
+   免得哪天只改一边。
+
+   选择器要带 .ant-form-item：antd 真正生效的那条是 `.ant-form-item .ant-form-item-explain-error`
+   （0,2,0），文件里另有一条同名的裸选择器（0,1,0）容易误导 —— 只写裸的压不过去，
+   实测颜色纹丝不动。 */
+.ant-form-item .ant-form-item-explain-error {
+  color: var(--site-color-error-text);
+}
+
+/* 页脚整体优化：精致克制、上下居中、copyright 在上、政策链接在下 */
+.footer {
+  background-color: var(--ifm-footer-background-color);
+  border-top: 1px solid var(--site-color-hairline);
+  padding: 24px 0 20px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.footer__bottom {
+  order: 1;
+  margin: 0;
+}
+
+.footer__copyright {
+  margin-top: 0 !important;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--site-color-text-tertiary);
+  letter-spacing: 0.01em;
+}
+
+.footer__links {
+  order: 2;
+  margin: 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__link-item {
+  font-size: 12px;
+  line-height: 1.5 !important;
+  color: var(--site-color-text-tertiary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.footer__link-item:hover {
   color: var(--ifm-color-primary);
+  text-decoration: underline;
+}
+
+.footer__link-separator {
+  margin: 0 8px;
+  color: var(--site-color-text-tertiary);
+  opacity: 0.4;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 18px 16px 14px;
+  }
+  .footer__copyright {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .footer__link-item,
+  .footer__link-separator {
+    font-size: 11px;
+  }
 }

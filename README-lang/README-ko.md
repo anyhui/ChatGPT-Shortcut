@@ -1,85 +1,181 @@
 <h1 align="center">
-⚡️AI Short
+    <a href="https://www.aishort.top/">
+        <img src="../static/img/logo.png" alt="AiShort Logo" width="120" height="120" />
+    </a>
+    <br>
+    AiShort (ChatGPT Shortcut) - 간편하고 사용하기 쉬운 AI 프롬프트 관리 도구
 </h1>
+
 <p align="center">
-    <a href="/README-en.md">English</a> | <a href="/README.md">中文</a> |
-<a href="./README-es.md">Español</a> |
+    <em>5000개 이상의 바로 쓰는 AI 프롬프트 — ChatGPT, Cursor, 그리고 어떤 AI 도구든 평범한 결과를 전문가급으로 끌어올립니다.</em>
+</p>
+
+<p align="center">
+    <a href="https://www.aishort.top/ko/"><b>▶ 온라인으로 사용하기</b></a> ·
+    <a href="https://www.aishort.top/ko/docs/extension/">⬇ 브라우저 확장 프로그램</a> ·
+    <a href="https://www.aishort.top/ko/docs/guides/getting-started">📖 문서</a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/rockbenben/ChatGPT-Shortcut?color=blue&label=License" alt="License" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/stargazers">
+        <img src="https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=social" alt="GitHub Stars" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/releases">
+        <img src="https://img.shields.io/github/v/release/rockbenben/ChatGPT-Shortcut?color=green" alt="Version" />
+    </a>
+    <a href="https://discord.gg/PZTQfJ4GjX">
+        <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=flat" alt="Discord" />
+    </a>
+</p>
+
+<p align="center">
+    <a href="../README.md">English</a> | <a href="../README-zh.md">简体中文</a> | <a href="./README-zh-hant.md">繁體中文</a> |
 <a href="./README-ja.md">日本語</a> |
 한국어 |
 <a href="./README-fr.md">Français</a> |
 <a href="./README-de.md">Deutsch</a> |
+<a href="./README-es.md">Español</a> |
 <a href="./README-it.md">Italiano</a> |
 <a href="./README-ru.md">Русский</a> |
 <a href="./README-pt.md">Português</a> |
+<a href="./README-ind.md">Indonesia</a> |
 <a href="./README-ar.md">العربية</a> |
+<a href="./README-tr.md">Türkçe</a> |
+<a href="./README-vi.md">Tiếng Việt</a> |
+<a href="./README-th.md">ภาษาไทย</a> |
 <a href="./README-hi.md">हिन्दी</a> |
 <a href="./README-bn.md">বাংলা</a>
 </p>
-<p align="center">
-    <em>ChatGPT Shortcut, Maximize your Efficiency and Productivity</em>
-</p>
 
-## Why use AiShort?
+## ⚡ 빠른 시작
 
-AiShort 는 간결하면서 사용하기 쉬운 AI 명령어 리스트를 제공합니다. 프롬프트에 대한 이해가 없어도, 필터링과 검색을 통해 다양한 상황에 적합한 프롬프트를 쉽게 찾을 수 있어 생산성 향상에 도움이 됩니다.
+1. [aishort.top](https://www.aishort.top/ko/) 방문
+2. 필요한 프롬프트 검색 또는 탐색
+3. "복사"를 클릭하고 어떤 AI 도구에든 붙여넣기 — ChatGPT 같은 채팅 페이지, Cursor 같은 코딩 도구, 나만의 API 호출 등
 
-🚀 **원클릭 프롬프트**: 한 번의 클릭만으로 전문가들이 세심하게 선택한 다양한 프롬프트를 얻을 수 있습니다. 이들을 AI 언어 모델인 ChatGPT 에 보내면 예상한 출력을 얻을 수 있습니다.
+![AiShort Interface](../static/img/docs/interface-home.png)
 
-💻 **생산성 향상**: 최적화된 프롬프트를 사용하면 더 정확하고 실용적인 피드백을 얻을 수 있어, 작업 효율을 효과적으로 향상시킵니다.
+간단하죠! 더 많은 기능은 [사용 가이드](https://www.aishort.top/ko/docs/guides/getting-started)를 확인하세요.
 
-🌍 **비영어권 언어 최적화**: 우리는 12 개의 주요 글로벌 언어로 영어 프롬프트의 번역을 제공하며, 모국어로의 기본 응답을 지원합니다. 이는 비영어권 사용자가 이해하고 사용하는 데 편리합니다.
+## 💎 왜 AiShort인가요?
 
-💾 **프롬프트 저장**: 앞으로 사용할 수 있도록 좋아하는 프롬프트를 편리하게 수집, 편집, 관리할 수 있습니다.
+**AI를 쓰는 것과 AI를 잘 쓰는 것의 차이는 단 하나의 좋은 프롬프트입니다.**
 
-🌐 **프롬프트 공유**: 좋아하는 프롬프트를 공유하고, 다른 사람과 협업하고, 더 많은 아이디어를 불러일으킵니다.
+같은 질문이라도 어떻게 묻느냐에 따라 결과는 완전히 달라집니다. 전문가 수준의 프롬프트를 직접 다듬으려면 수년의 시행착오가 필요합니다. AiShort는 글쓰기, 코딩, 업무, 학습, 디자인, 마케팅 등 다양한 시나리오에서 커뮤니티가 검증한 프롬프트 라이브러리를 제공합니다. **복사 → 붙여넣기 → 즉시 전문가급 결과.**
 
-🗳️ **커뮤니티 투표 시스템**: Product Hunt 이나 Reddit 과 비슷하게, 플랫폼은 커뮤니티 주도입니다. 최고의 프롬프트는 홈페이지로 밀려납니다.
+회원가입 없음, 결제 없음, 설치 없음 — 열어서 바로 사용합니다.
 
-📦 **사용 준비 완료**: 바로 https://www.aishort.top/ko/ 을 방문하여 사용을 시작하세요.
+### 핵심 기능
 
-AiShort 프롬프트의 출처는 인터넷 선택, 커뮤니티 공유, 그리고 [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)를 포함합니다. 우리는 규칙적으로 새로운 프롬프트와 영감을 제공하기 위해 업데이트할 것입니다. AiShort 를 사용하는 방법에 대해 알아보려면, [사용자 매뉴얼](https://www.aishort.top/ko/docs/guides/getting-started)을 참조하십시오.
+🚀 **원클릭 복사** — 카드를 누르면 프롬프트가 클립보드에 담기고, 어떤 채팅창에든 바로 붙여넣기.
 
-아이디어와 피드백을 교환하기 위해 우리의 디스코드 커뮤니티에 참여하십시오.
+🔍 **태그 + 키워드 검색** — 26개 시나리오 태그로 필터링하거나 `Ctrl / ⌘ + K`로 바로 검색.
 
+🌍 **18개 언어 지원** — UI와 프롬프트 번역 완비, 모국어 답변 지정 가능.
+
+### 고급 기능 (로그인 필요)
+
+📂 **내 컬렉션** — 드래그 앤 드롭 정렬, 사용자 정의 태그 분류.
+
+✏️ **사용자 정의 프롬프트** — 나만의 프롬프트 생성, 편집, 관리.
+
+🗳️ **커뮤니티** — 프롬프트를 공유하고, 투표하고, 댓글로 토론하기.
+
+📤 **데이터 내보내기** — 모든 프롬프트를 JSON으로 원클릭 내보내기.
+
+🔐 **다양한 로그인 방식** — 비밀번호, Google, 비밀번호 없는 이메일 링크.
+
+🏆 **레벨** — 커뮤니티에 프롬프트를 공유하면서 레벨(L0–L9)을 획득하세요.
+
+## 📸 스크린샷
+
+<table>
+  <tr>
+    <td width="50%"><img src="../static/img/docs/my-collection-view.webp" alt="내 컬렉션" /></td>
+    <td width="50%"><img src="../static/img/docs/extension-sidebar.webp" alt="브라우저 확장" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>내 컬렉션</strong> — 드래그, 태그, 정리</td>
+    <td align="center"><strong>브라우저 확장</strong> — ChatGPT, Gemini, Claude… 사이드바</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="../static/img/docs/prompt-card.webp" alt="프롬프트 카드" /></td>
+    <td width="50%"><img src="../static/img/docs/community-page.png" alt="커뮤니티" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>프롬프트 카드</strong> — 미리보기 + 원클릭 복사</td>
+    <td align="center"><strong>커뮤니티</strong> — 발견 + 투표</td>
+  </tr>
+</table>
+
+## 📚 문서
+
+전체 가이드는 [aishort.top](https://www.aishort.top/ko/docs/)에서 확인하세요:
+
+- [시작하기](https://www.aishort.top/ko/docs/guides/getting-started) — 30초 만에 기본 사용법 익히기
+- [인터페이스 가이드](https://www.aishort.top/ko/docs/guides/interface) — 태그 필터 및 스마트 검색
+- [내 컬렉션](https://www.aishort.top/ko/docs/guides/my-collection) — 수집, 태그, 드래그로 정리
+- [사용자 정의 프롬프트](https://www.aishort.top/ko/docs/guides/user-prompts) — 생성, 편집, 가져오기/내보내기
+- [커뮤니티 프롬프트](https://www.aishort.top/ko/docs/guides/community) — 발견, 투표, 토론
+- [계정](https://www.aishort.top/ko/docs/guides/account) — 로그인 방법 및 데이터 관리
+- [배포](https://www.aishort.top/ko/docs/deploy) — 나만의 인스턴스 셀프 호스팅
+
+## 🧩 브라우저 확장 프로그램
+
+어디서든 AiShort 프롬프트에 접근. Chrome, Edge, Firefox 지원 — `Alt + Shift + S`로 사이드바 열기.
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/aishort/)
+- **GitHub**: [Releases](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+또는 [ChatGPT Shortcut Anywhere](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere) Tampermonkey 스크립트로 어떤 웹사이트에서든 AiShort 사이드바를 호출할 수 있습니다.
+
+## 🚀 배포
+
+Vercel, Cloudflare Pages, Docker 또는 로컬에서 인스턴스를 배포할 수 있습니다. 자세한 내용은 [배포 가이드](https://www.aishort.top/ko/docs/deploy)를 참조하세요.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **오프라인 / 인트라넷 환경?** 에어갭 기업·공공기관 네트워크용 [오프라인 에디션](https://www.aishort.top/ko/docs/deploy/offline)이 있습니다 — 백엔드나 계정 없이 데이터를 브라우저 로컬에 저장하며, 검색·수집·사용자 정의 프롬프트 등 동일한 기능을 제공합니다.
+
+> **팁**: Vercel의 원클릭 배포는 새 프로젝트를 생성하므로(fork가 아님) 업스트림 업데이트 감지가 작동하지 않습니다. 자동 동기화를 받으려면 먼저 저장소를 fork한 후 Vercel에서 fork를 가져오세요. 자세한 단계는 [배포 가이드](https://www.aishort.top/ko/docs/deploy/sync-updates)를 참조하세요.
+
+## 🤝 기여하기
+
+모든 형태의 기여를 환영합니다:
+
+- **프롬프트 제안** 또는 **버그 신고** → [GitHub Issue](https://github.com/rockbenben/ChatGPT-Shortcut/issues/new) 등록
+- **PR 제출** → 저장소 fork, 브랜치 생성, pull request 발송
+- **번역 추가** 또는 **문서 개선** → `i18n/` 및 `docs/` 디렉터리 참조
+- **Star ⭐ 누르고 공유** 더 많은 사람이 유용한 프롬프트를 발견하도록 도와주세요
+
+로컬 개발 환경 설정은 [배포 가이드](https://www.aishort.top/ko/docs/deploy)를 참조하세요.
+
+## 💬 커뮤니티
+
+토론과 피드백을 위해 참여하세요:
+
+<a href="https://t.me/aishort_top">
+    <img src="https://img.shields.io/badge/Telegram-그룹-blue?logo=telegram&style=for-the-badge" alt="Telegram" />
+</a>
 <a href="https://discord.gg/PZTQfJ4GjX">
-   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />
+    <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="Discord" />
 </a>
 
-## 브라우저 확장 프로그램
+## 🌟 Star 히스토리
 
-AiShort(ChatGPT Shortcut) 는 Chrome, Edge, Firefox 및 기타 Chromium 기반 브라우저와 호환되는 다재다능한 확장 프로그램입니다. 이 확장 프로그램은 ChatGPT Shortcut 웹 버전의 기능을 제공할 뿐만 아니라 사이드바 및 자동 창 활성화와 같은 고유한 기능도 추가합니다. 이 확장 프로그램은 ChatGPT 또는 사용자 지정 페이지로 자동으로 시작할 수 있으며 단축키 `Alt+Shift+S`를 사용하여 수동으로 활성화할 수도 있습니다. 다운로드 채널은 다음과 같습니다.
+<a href="https://star-history.dera.page/#rockbenben/ChatGPT-Shortcut">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+ </picture>
+</a>
 
-- **Chrome**: [Chrome 웹 스토어](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge 애드온](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [Firefox 브라우저 애드온](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [GitHub 릴리스](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+---
 
-또한 Tampermonkey 스크립트인 [**ChatGPT Shortcut 을 제공합니다. Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere)를 사용하면 사용자가 일치하는 도메인 이름을 사용자 지정하고 모든 웹사이트에서 AiShort 사이드바를 사용할 수 있습니다. 그러나 ChatGPT 페이지의 스크립트 콘텐츠 주입 제한으로 인해 스크립트의 사이드바 기능은 ChatGPT 페이지의 팝업을 통해 활성화됩니다.
-
-## 배포
-
-Vercel, 로컬 환경, Docker 를 통한 배포 및 프로젝트 수정에 대한 자세한 단계는 [ChatGPT 바로가기 배포 가이드](https://www.aishort.top/ko/docs/deploy)를 참조하세요.
-
-## 동기화된 업데이트
-
-한 번의 클릭으로 Vercel 에 자체 프로젝트를 배포한 경우 업데이트가 지속적으로 표시되는 문제가 발생할 수 있습니다. 이는 Vercel 이 현재 프로젝트를 포크하는 대신 새 프로젝트를 만드는 기본 동작으로 인해 발생하여 적절한 업데이트 감지를 방해합니다. 재배포를 위해 다음 단계를 따르는 것이 좋습니다.
-
-1. 이전 저장소를 제거합니다.
-2. 페이지의 오른쪽 상단에 있는 "포크" 버튼을 사용하여 현재 프로젝트를 포크합니다.
-3. [Vercel New Project 페이지](https://vercel.com/new)에서 Git 저장소 가져오기 섹션에서 최근에 포크한 프로젝트를 선택하고 배포를 진행합니다.
-
-### 자동 업데이트
-
-> Upstream Sync 를 실행하는 동안 오류가 발생하는 경우 수동으로 단일 Sync Fork 를 수행합니다.
-
-GitHub 제한으로 인해 프로젝트를 포크한 후 포크한 프로젝트의 작업 페이지에서 Workflows 를 수동으로 활성화하고 Upstream Sync 작업을 활성화해야 합니다. 활성화하면 매일 업데이트가 자동으로 실행됩니다.
-
-![자동 업데이트](https://img.newzone.top/2023-05-19-11-57-59.png?imageMogr2/format/webp)
-
-![자동 업데이트 활성화](https://img.newzone.top/2023-05-19-11-59-26.png?imageMogr2/format/webp)
-
-### 수동 업데이트
-
-즉시 수동으로 업데이트하려는 경우 [GitHub 설명서](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)를 참조하여 포크된 프로젝트를 업스트림 코드와 동기화하는 방법을 알아볼 수 있습니다.
-
-별표/팔로우를 주거나 작성자를 팔로우하여 이 프로젝트에 대한 지원을 표시하고 새로운 기능 업데이트에 대한 적시 알림을 받으세요.
+⭐ 스타를 눌러 새로운 기능 알림을 받으세요!

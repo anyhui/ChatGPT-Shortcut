@@ -1,0 +1,78 @@
+---
+sidebar_label: Distribuzione Standard
+title: AI Short Distribuzione Standard | Build locale, Vercel, Cloudflare, Docker
+description: Guida alla distribuzione standard di AI Short, che riutilizza il backend condiviso ufficiale, con supporto per build locale, deploy con un clic su Vercel, Cloudflare Pages e Docker, pronta all'uso.
+---
+
+# Distribuzione Standard
+
+Riutilizza il backend condiviso ufficiale e funziona immediatamente. Prima fai il fork del progetto, poi distribuisci con uno dei metodi seguenti.
+
+**Requisiti**: [Node.js 20.0](https://nodejs.org/) o successivo, su macOS, Windows (incluso WSL) o Linux.
+
+![Topologia di distribuzione standard: dopo il fork, distribuisci tramite build locale, Vercel, Cloudflare Pages o Docker — tutti riutilizzano il backend condiviso ufficiale (accesso, collezioni, community, commenti, sincronizzazione cross-device)](/img/docs/standard-deploy-topology.svg)
+
+## Build Locale
+
+```shell
+# installa le dipendenze
+yarn
+
+# sviluppo locale
+yarn start
+
+# build: compila tutte le 18 lingue a blocchi (un'unica passata esaurisce la memoria); output in build/ — per una sola lingua vedi --locale sotto
+yarn build
+```
+
+> **Build solo per lingue specifiche**: usa `yarn build --locale <locale>` (es. `zh-Hans`, `en`, `ja`… vedi l'elenco completo dei locale in `scripts/i18nLocales.mjs`).
+>
+> ⚠ Indicare un **singolo locale non predefinito** rende quella lingua la radice del sito (l'output finisce direttamente in `build/`, URL senza prefisso `/en/`). Per più lingue in una volta, elenca tutti i locale in **un solo** comando, con il predefinito prima: `yarn build --locale zh-Hans --locale en` (→ `build/` come radice cinese più `build/en/`). Per tutte le 18 lingue usa direttamente `yarn build` (suddivisione automatica + sitemap unito).
+
+## Distribuzione su Vercel
+
+Clicca il pulsante qui sotto per distribuire su Vercel con un clic:
+
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **Nota**: il piano gratuito di Vercel potrebbe fallire a causa dei limiti di memoria. In tal caso distribuisci una sola lingua — vai nelle **Settings → Build & Deployment → Build Command** del progetto, clicca su **Override** e imposta un comando per una singola lingua (`yarn build --locale zh-Hans` per il cinese, `yarn build --locale pt` per il portoghese, ecc.).
+
+## Distribuzione su Cloudflare Pages
+
+Prima 👉 [Fai il fork di questo progetto](https://github.com/rockbenben/ChatGPT-Shortcut/fork), poi distribuisci:
+
+1. Apri la [pagina di creazione di Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/pages) e scegli **Connect to Git**. Se finisci su Create a Worker, l'accesso a Pages è il link **Get started** in fondo
+2. Collega il repository che hai appena forkato
+3. Configura la build:
+   - **Build command**: `yarn build --locale zh-Hans` (sostituisci il locale con la lingua che vuoi distribuire, es. `yarn build --locale pt` per il portoghese)
+   - **Output directory**: `build`
+   - **Environment variables**: `YARN_VERSION` = `1.22.22`
+4. Clicca su **Deploy** e attendi che Cloudflare Pages completi la build
+
+> **`YARN_VERSION` è obbligatoria**: il sistema di build v3 di Cloudflare usa Yarn 4.9.1 come predefinito e non deduce più la versione da `yarn.lock` come faceva v2. Questo repository ha un lockfile v1 di Yarn Classic, quindi senza fissarla subentra Yarn 4. Node non va configurato: v3 usa 22.16.0 come predefinito, già sopra il 20 richiesto dal progetto.
+
+Ogni push successivo attiva automaticamente una build e una distribuzione.
+
+## Distribuzione Docker
+
+Distribuzione con un solo comando:
+
+```bash
+# ghcr.io
+docker run -d -p 3000:3000 --name chatgpt-shortcut ghcr.io/rockbenben/chatgpt-shortcut:latest
+
+# docker hub
+docker run -d -p 3000:3000 --name chatgpt-shortcut rockben/chatgpt-shortcut:latest
+```
+
+Oppure con `docker-compose`:
+
+```yml
+services:
+  chatgpt-shortcut:
+    container_name: chatgpt-shortcut
+    image: ghcr.io/rockbenben/chatgpt-shortcut:latest
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+```

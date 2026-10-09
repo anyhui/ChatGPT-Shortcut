@@ -1,61 +1,104 @@
-import React, { useContext } from "react";
+import React, { Suspense, useState } from "react";
 import Layout from "@theme/Layout";
-import { Card, Typography, ConfigProvider, theme } from "antd";
-import themeConfig from "@site/src/pages/_components/themeConfig";
-import Comments from "@site/src/pages/_components/Comments";
 import Translate, { translate } from "@docusaurus/Translate";
-import { AuthContext, AuthProvider } from "@site/src/pages/_components/AuthContext";
+import { Button, Tag, Typography, Row, Col, Flex, Space, Skeleton } from "antd";
+import { GithubOutlined } from "@ant-design/icons";
+import { lazyWithRetry } from "@site/src/utils/lazyRetry";
 
-const { Title, Paragraph } = Typography;
+// 见 PromptPage 同名注释：静态 import 会把 Pagination + Form + react-markdown
+// 全链拖进 eager common chunk。这里评论就是页面主体，多一次请求换所有其他页面不背这份包。
+const Comments = lazyWithRetry(() => import("@site/src/components/Comments"));
+
+const REPO = "rockbenben/ChatGPT-Shortcut";
+const ISSUES_BASE = `https://github.com/${REPO}/issues`;
+
+// Chips 携带 GitHub label query — 点击 chip 跳到对应 label 已有 issues 列表（浏览历史反馈）
+// 主按钮则跳到 /issues/new（新建反馈），二者语义分离：browse vs create
+const TYPE_CHIPS = [
+  { label: translate({ id: "feedback.type.bug", message: "Bug 反馈" }), labelQuery: "bug" },
+  { label: translate({ id: "feedback.type.suggestion", message: "功能建议" }), labelQuery: "enhancement" },
+  { label: translate({ id: "feedback.type.help", message: "使用问题" }), labelQuery: "question" },
+];
+
+const Dot = () => <span style={{ opacity: 0.5 }}>·</span>;
 
 const FeedbackPage = () => {
-  const { userAuth } = useContext(AuthContext);
-  const isDarkMode = typeof document !== "undefined" && document.documentElement.getAttribute("data-theme") === "dark";
+  // 外层 eyebrow «讨论 · N» — 由内层 Comments 通过 onCountChange 回传
+  const [commentCount, setCommentCount] = useState(0);
+
   return (
-    <ConfigProvider
-      theme={{
-        ...themeConfig,
-        algorithm: isDarkMode ? theme.darkAlgorithm : theme.defaultAlgorithm,
-      }}>
-      <Layout
-        title={translate({ id: "feedback.title", message: "反馈与建议" })}
-        description={translate({
-          id: "feedback.description",
-          message: "您的反馈对我们很重要！",
-        })}>
-        <div style={{ display: "flex", justifyContent: "center", padding: "2rem" }}>
-          <Card
-            style={{
-              width: "80%",
-              boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
-              padding: "2rem",
-              borderRadius: "15px",
-            }}>
-            <Typography>
-              <Title style={{ textAlign: "center" }}>
-                <Translate id="feedback.welcome" description="The welcome title on the feedback page">
-                  欢迎给出反馈
-                </Translate>
-              </Title>
-              <Paragraph>
-                <Translate id="feedback.paragraph" description="The main paragraph on the feedback page">
-                  欢迎给出建议、想法和提示词，以便不断改进 ChatGPT Shortcut，并提高个人效率和生产力。如果您需要反馈
-                  bug，请提供问题发生的链接和相关情况。对于提示词内容，您可以提交多种语言的内容，或简单描述您对提示词的想法。我们期待能够拓展思维或产生高质量输出的提示词。一旦您提交的提示词被发布，您的贡献将会添加到页面上。您可以通过搜索贡献者名称（用户名）来找到对应的词条。
-                </Translate>
-              </Paragraph>
-            </Typography>
-            <Comments pageId={1000} currentUserId={userAuth?.data?.id ?? 0} type="page" />
-          </Card>
-        </div>
-      </Layout>
-    </ConfigProvider>
+    <Layout
+      title={translate({ id: "feedback.title", message: "反馈与建议" })}
+      description={translate({
+        id: "feedback.description",
+        message: "你的反馈对我们很重要！",
+      })}>
+      <main className="margin-vert--md">
+        <section className="margin-top--sm margin-bottom--sm">
+          {/* docusaurus container = 主页同款 ~1320px max；内层 Col xl={18} ≈ 990px 阅读宽度,
+              比详情页 (~880px) 宽一档（discussion 流不应该太窄），又比主页 (1320px) 窄留呼吸 */}
+          <div className="container padding-vert--md">
+            <Row justify="center">
+              <Col xs={24} sm={22} md={20} lg={20} xl={18} className="full-width-col">
+                {/* Hero — eyebrow + title + subtitle + 响应承诺/维护者署名 meta line */}
+                <Flex vertical gap={10} style={{ marginBottom: 20 }}>
+                  <span className="comp-sheet-eyebrow">
+                    FEEDBACK · <Translate id="feedback.spec_label">公开反馈</Translate>
+                  </span>
+                  <Typography.Title level={1} className="comp-sheet-title">
+                    <Translate id="feedback.welcome">反馈与建议</Translate>
+                  </Typography.Title>
+                  <p style={{ margin: 0, fontSize: 14, color: "var(--ifm-color-content-secondary)", lineHeight: 1.6, maxWidth: 640 }}>
+                    <Translate id="feedback.subtitle">Bug 报告、功能建议、使用问题——任何声音都欢迎</Translate>
+                  </p>
+                  {/* Distinctive — 响应时长承诺 + 维护者署名（mono tertiary，跟项目家族 hero meta line 同款） */}
+                  <Space separator={<Dot />} wrap style={{ fontSize: 11.5, color: "var(--site-color-text-tertiary)", fontFamily: "var(--site-font-mono)", marginTop: 4 }}>
+                    <span>
+                      <Translate id="feedback.responseTime">通常 24 小时内回复</Translate>
+                    </span>
+                    <span>
+                      Maintained by{" "}
+                      <a href="https://github.com/rockbenben" target="_blank" rel="noopener noreferrer" style={{ color: "var(--site-color-tag-selected-text)" }}>
+                        @rockbenben
+                      </a>
+                    </span>
+                  </Space>
+                </Flex>
+
+                {/* Chips（浏览已有 label 的 issue）+ 主按钮（新建 issue） — 语义清晰分离 */}
+                <Flex wrap gap={8} align="center">
+                  {TYPE_CHIPS.map(({ label, labelQuery }) => (
+                    <a key={label} href={`${ISSUES_BASE}?q=is%3Aissue+label%3A${labelQuery}`} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                      <Tag style={{ borderRadius: 999, padding: "2px 12px", margin: 0, fontSize: 13, cursor: "pointer" }}>{label}</Tag>
+                    </a>
+                  ))}
+                  <Button type="primary" size="small" icon={<GithubOutlined />} href={`${ISSUES_BASE}/new`} target="_blank" rel="noopener noreferrer" style={{ marginLeft: 4 }}>
+                    <Translate id="feedback.newIssue">新建 Issue</Translate>
+                  </Button>
+                </Flex>
+
+                {/* Comments wrapping — 跟 PromptPage / CommunityPromptPage 同款 hairline + eyebrow + count */}
+                <Flex vertical gap={14} style={{ marginTop: 40, paddingTop: 22, borderTop: "1px solid var(--site-color-hairline)" }}>
+                  <span className="comp-sheet-eyebrow">
+                    <Translate id="comments.heading">讨论</Translate>
+                    {commentCount > 0 && (
+                      <>
+                        {" · "}
+                        <span style={{ fontVariantNumeric: "tabular-nums" }}>{commentCount}</span>
+                      </>
+                    )}
+                  </span>
+                  <Suspense fallback={<Skeleton active paragraph={{ rows: 4 }} />}>
+                    <Comments pageId={1000} type="page" onCountChange={setCommentCount} />
+                  </Suspense>
+                </Flex>
+              </Col>
+            </Row>
+          </div>
+        </section>
+      </main>
+    </Layout>
   );
 };
 
-export default function WrappedFeedbackPage() {
-  return (
-    <AuthProvider>
-      <FeedbackPage />
-    </AuthProvider>
-  );
-}
+export default FeedbackPage;

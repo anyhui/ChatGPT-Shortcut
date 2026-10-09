@@ -1,10 +1,40 @@
-# Instalar extensão
+---
+sidebar_label: Instalar Extensão do Navegador
+title: Extensão AI Short | Barra lateral para ChatGPT/Gemini/Claude · Instalação no Chrome/Edge/Firefox
+description: Use os prompts do AiShort na barra lateral, no pop-up ou em uma janela independente do navegador, ao lado do ChatGPT, Gemini e Claude. Instalação com um clique no Chrome, Edge e Firefox.
+---
 
-AiShort (ChatGPT Shortcut) é uma extensão de navegador compatível com Chrome, Edge, Firefox e outros navegadores baseados em Chromium. Esta extensão não só oferece as funcionalidades da versão web do ChatGPT Shortcut, mas também apresenta elementos exclusivos como uma barra lateral e ativação automática de janela. Ele pode iniciar automaticamente com ChatGPT ou páginas personalizadas e também pode ser ativado manualmente usando a tecla de atalho `Alt+Shift+S`. Abaixo estão os canais de download:
+# Instalar Extensão do Navegador
 
-- **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [ADD-ONS do navegador Firefox](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [Lançamento do GitHub](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+A extensão AI Short (ChatGPT Shortcut) traz mais de 5.000 prompts empacotados dentro da própria extensão e os abre como **barra lateral, pop-up ou janela independente** ao lado do ChatGPT, Gemini, Claude, DeepSeek e outros chats de IA, eliminando a necessidade de voltar ao aishort.top para copiar e colar. Compatível com Chrome, Edge e Firefox, basta pressionar `Alt + Shift + S` para ativá-la rapidamente.
 
-Além disso, oferecemos um script Tampermonkey — [**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere), que permite que os usuários personalizem nomes de domínio correspondentes e usem a barra lateral do AiShort em qualquer site. No entanto, devido às limitações de injeção de conteúdo de script nas páginas do ChatGPT, a função da barra lateral do script é ativada por meio de um pop-up nas páginas do ChatGPT.
+## Instalação
+
+### 1. Lojas de Aplicativos (Recomendado, instalação com um clique)
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/aishort/) (alinhada com a versão Chrome desde a v4.4.0; veja as [diferenças](./firefox-extension-setting))
+
+### 2. A loja não abre? Pacote de instalação local
+
+Baixe por um dos canais abaixo e siga o tutorial correspondente para instalar:
+
+- **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+> 📖 Tutoriais de instalação: [Arquivo CRX](./manual-chrome-extension) · [Arquivo ZIP](./manual-chrome-extension-zip)
+
+## Após Instalar
+
+Pressione `Alt + Shift + S` para ativar, ou clique no ícone da barra de ferramentas. Veja o [tutorial de uso](./usage) para mais detalhes.
+
+## Script Tampermonkey
+
+Além da extensão, também fornecemos o [**Script ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere).
+O Tampermonkey é uma extensão de navegador que permite aos usuários executar scripts personalizados para aprimorar a funcionalidade da página da web.
+
+Com este script, você pode ativar a barra lateral do AiShort em qualquer site. No entanto, observe que, devido às restrições de injeção de script na página oficial do ChatGPT, o script será executado como um **popup** em vez de uma barra lateral nessa página.
+
+Após ativar a barra lateral do AiShort, você verá um ícone verde no canto inferior direito das páginas suportadas. Clique nesse ícone para abrir ou fechar a barra lateral. Atualmente, há suporte padrão para ChatGPT, Gemini, Claude, Doubao e outros.
+
+![](/img/docs/extension-sidebar.webp)

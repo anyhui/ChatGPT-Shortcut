@@ -1,31 +1,70 @@
-# البدء
+---
+sidebar_label: ابدأ
+title: دليل البدء السريع لـ AI Short - انسخ المطالبات إلى ChatGPT/DeepSeek
+description: ابدأ في 30 ثانية! انسخ المطالبات إلى ChatGPT و Gemini و DeepSeek وغيرها من نماذج AI، لتعزيز جودة الحوار والكفاءة فورًا.
+---
 
-باستخدام AiShort، ما عليك سوى نسخ المطالبة المحددة إلى أي نموذج حوار AI للحصول على الناتج في الاتجاه المحدد. فيما يلي الخطوات المحددة:
+# ابدأ
 
-1. ابحث عن المطالبة التي تريدها أو حددها، ثم انقر فوق زر النسخ الموجود على المطالبة.
+المطالبات الجيدة تحدد جودة استجابة الـ AI. يجمع AiShort عددًا كبيرًا من المطالبات المختارة، جاهزة للنسخ واللصق والاستخدام.
 
-2. انسخ المطالبة إلى ChatGPT أو Gemini أو أي نموذج حوار AI.
+> 📋 **ما تحتاجه قبل البدء**: متصفح + أي أداة ذكاء اصطناعي يمكنك الوصول إليها — صفحات الدردشة (ChatGPT، Gemini، Claude، Doubao)، أدوات البرمجة (مثل Cursor)، استدعاءات API، أو أي وكيل ذكاء اصطناعي آخر. النسخة عبر الإنترنت من AiShort لا تتطلب التسجيل.
 
-3. أدخل متطلباتك وفقًا لمطالبة الحوار.
+## الاستخدام الأساسي
 
-![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
+1. ابحث عن أو تصفح المطالبات التي تهمك في الصفحة الرئيسية
+2. عند العثور على مطالبة مناسبة، انقر فوق زر "نسخ" (أو افتح البطاقة لعرض المحتوى الكامل أولًا)
+3. الصقها في أي أداة ذكاء اصطناعي — صفحات الدردشة، أدوات البرمجة مثل Cursor، استدعاءات API، أو أي وكيل ذكاء اصطناعي
+4. أكمل المتطلبات المحددة وفقًا لـ**العناصر النائبة** في المطالبة (مثل `[المحتوى]`، `[الموضوع]`)، ثم أرسلها إلى الـ AI
 
-## نماذج الذكاء الاصطناعي الشائعة
+![](/img/docs/how-to-use-aishort.webp)
 
-- ChatGPT：https://chatgpt.com
-- Gemini: https://gemini.google.com/app
-- Claude: https://claude.ai/chats
-- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
-- Kimi：https://kimi.moonshot.cn/
-- 豆包：https://www.doubao.com/chat/
-- 文心一言：https://yiyan.baidu.com
-- 智谱清言：https://chatglm.cn/detail
-- 腾讯元宝：https://yuanbao.tencent.com/chat
-- 讯飞星火：https://xinghuo.xfyun.cn/
-- 百川智能：https://ying.baichuan-ai.com/chat
+> 💡 **نصيحة**: معظم المطالبات تستخدم الأقواس المربعة `[...]` للإشارة إلى المحتوى الذي يجب أن تكمله — استبدل النص النائب داخل الأقواس بمحتواك الخاص.
 
-## تكامل واجهة برمجة التطبيقات الخاصة بطرف ثالث
+## الوصول السريع
 
-- OpenRouter: https://openrouter.ai/chat
-- siliconflow: https://cloud.siliconflow.cn/playground/chat
-- grog: https://groq.com/
+| أريد...                            | إلى أين أذهب                                   |
+| ---------------------------------- | ---------------------------------------------- |
+| نسخ واستخدام المطالبات             | البحث أو التصفح مباشرة في [الصفحة الرئيسية](/) |
+| استدعاء المطالبات في صفحة حوار AI  | [إضافة المتصفح](../extension/)                 |
+| تفضيل وإدارة المطالبات             | [مجموعتي](./my-collection)                     |
+| إنشاء مطالباتي الخاصة              | [مطالبات مخصصة](./user-prompts)                |
+| التسجيل أو تسجيل الدخول            | [إدارة الحساب](./account)                      |
+| اكتشاف المشاركة المجتمعية          | [مطالبات المجتمع](./community)                 |
+| النشر دون اتصال / الشبكة الداخلية  | [النسخة المحلية للنشر](../deploy/offline)              |
+
+## نماذج AI الشائعة
+
+### النماذج الدولية والإقليمية
+
+- [ChatGPT](https://chatgpt.com)
+- [Gemini](https://gemini.google.com/app)
+- [Claude](https://claude.ai/chats)
+- [Grok](https://grok.com/)
+- [Falcon](https://falconllm.tii.ae/) — من معهد الابتكار التكنولوجي (TII) في الإمارات، يتميّز بأداء قوي على المحتوى العربي
+- [Jais](https://inceptionai.ai/jais/) — من شركة G42 الإماراتية، نموذج عربي‑إنجليزي ثنائي اللغة مصمَّم خصيصًا للمنطقة
+
+### نماذج الصين القارية
+
+> ملاحظة: هذه النماذج طُوِّرت داخل الصين القارية، وقد يحتاج المستخدمون خارج المنطقة إلى تسجيل بأرقام محلية أو يواجهون قيود وصول. يُفضَّل للمستخدمين في منطقة الشرق الأوسط وشمال إفريقيا الاعتماد على النماذج الدولية والإقليمية أعلاه.
+
+- [DeepSeek](https://chat.deepseek.com)
+- [Tongyi Qianwen](https://www.qianwen.com/)
+- [ERNIE Bot](https://yiyan.baidu.com)
+- [Doubao](https://www.doubao.com/chat/)
+- [Kimi](https://www.kimi.com/)
+- [ChatGLM](https://chatglm.cn/detail)
+- [Spark Desk](https://xinghuo.xfyun.cn/)
+- [Tencent Yuanbao](https://yuanbao.tencent.com/chat)
+
+### منصات API
+
+- [OpenRouter](https://openrouter.ai/chat)
+- [SiliconFlow](https://cloud.siliconflow.cn/playground/chat)
+- [Groq](https://groq.com/)
+
+## وثائق ذات صلة
+
+- [شرح الواجهة](./interface) - وظائف البحث والتصفية
+- [مجموعتي](./my-collection) - المفضلة، العلامات والفرز
+- [إدارة الحساب](./account) - تسجيل الدخول والتسجيل

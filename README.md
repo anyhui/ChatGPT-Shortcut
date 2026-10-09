@@ -1,85 +1,181 @@
 <h1 align="center">
-⚡️AI Short
+    <a href="https://www.aishort.top/">
+        <img src="static/img/logo.png" alt="AiShort Logo" width="120" height="120" />
+    </a>
+    <br>
+    AiShort (ChatGPT Shortcut) - AI Prompt Management Tool
 </h1>
+
 <p align="center">
-    English | <a href="./README-zh.md">中文</a> |
-<a href="./README-lang/README-es.md">Español</a> |
+    <em>5000+ ready-to-use AI prompts — turn ChatGPT, Cursor, and any AI tool from mediocre to expert-grade.</em>
+</p>
+
+<p align="center">
+    <a href="https://www.aishort.top/en/"><b>▶ Try it online</b></a> ·
+    <a href="https://www.aishort.top/en/docs/extension/">⬇ Browser extension</a> ·
+    <a href="https://www.aishort.top/en/docs/guides/getting-started">📖 User guide</a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/rockbenben/ChatGPT-Shortcut?color=blue&label=License" alt="License" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/stargazers">
+        <img src="https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=social" alt="GitHub Stars" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/releases">
+        <img src="https://img.shields.io/github/v/release/rockbenben/ChatGPT-Shortcut?color=green" alt="Version" />
+    </a>
+    <a href="https://discord.gg/PZTQfJ4GjX">
+        <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=flat" alt="Discord" />
+    </a>
+</p>
+
+<p align="center">
+    English | <a href="./README-zh.md">简体中文</a> | <a href="./README-lang/README-zh-hant.md">繁體中文</a> |
 <a href="./README-lang/README-ja.md">日本語</a> |
 <a href="./README-lang/README-ko.md">한국어</a> |
 <a href="./README-lang/README-fr.md">Français</a> |
 <a href="./README-lang/README-de.md">Deutsch</a> |
+<a href="./README-lang/README-es.md">Español</a> |
 <a href="./README-lang/README-it.md">Italiano</a> |
 <a href="./README-lang/README-ru.md">Русский</a> |
 <a href="./README-lang/README-pt.md">Português</a> |
+<a href="./README-lang/README-ind.md">Indonesia</a> |
 <a href="./README-lang/README-ar.md">العربية</a> |
+<a href="./README-lang/README-tr.md">Türkçe</a> |
+<a href="./README-lang/README-vi.md">Tiếng Việt</a> |
+<a href="./README-lang/README-th.md">ภาษาไทย</a> |
 <a href="./README-lang/README-hi.md">हिन्दी</a> |
 <a href="./README-lang/README-bn.md">বাংলা</a>
 </p>
-<p align="center">
-    <em>ChatGPT Shortcut, Maximize your Efficiency and Productivity</em>
-</p>
 
-## Why use AiShort?
+## ⚡ Quick Start
 
-AiShort provides a concise and easy-to-use list of AI instructions. Even without understanding of prompts, you can easily find the prompts suitable for various scenarios through filtering and searching, thus improving your productivity.
+1. Visit [aishort.top](https://www.aishort.top/en/)
+2. Search or browse for the prompt you need
+3. Click "Copy" and paste into any AI tool — ChatGPT-style chat pages, coding tools like Cursor, your own API calls, etc.
 
-🚀 **One-click prompts**: With just one click, you can get a variety of prompts carefully selected by experts. Send them to AI language models like ChatGPT and you can get the expected output.
+![AiShort Interface](static/img/docs/interface-home.png)
 
-💻 **Boost productivity**: By using optimized prompts, you can get more accurate and practical feedback, thus effectively enhancing your work efficiency.
+That's it! For more features, check the [User Guide](https://www.aishort.top/en/docs/guides/getting-started).
 
-🌍 **Optimization for Non-English Languages**: We provide translations for English prompts in 12 major global languages, and support default responses in your mother tongue, which is convenient for non-English speakers to understand and use.
+## 💎 Why AiShort?
 
-💾 **Save prompts**: Conveniently collect, edit, and manage your favorite prompts for future use.
+**The gap between using AI and using AI well is one good prompt.**
 
-🌐 **Share prompts**: Share your favorite prompts, collaborate with others, and inspire more ideas.
+Same question, different prompts — and AI output goes from generic to genuinely useful. Writing expert-level prompts yourself takes years of iteration. AiShort gives you 5000+ prompts — hand-picked plus community-contributed — across writing, coding, office work, learning, design, marketing, and more. Copy → paste → expert-grade output, instantly.
 
-🗳️ **Community voting system**: Similar to Product Hunt or Reddit, the platform is community-driven. The best prompts will be pushed to the homepage.
+No signup. No paywall. No install. Open and use.
 
-📦 **Ready to use**: Just visit https://www.aishort.top/en/ to start using.
+### Core Features
 
-The source of AiShort prompts includes internet selections, community shares, and [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). We will regularly update to provide you with new prompts and inspiration. To understand how to use AiShort, please refer to [user manual](https://www.aishort.top/en/docs/guides/getting-started).
+🚀 **One-click copy** — Tap a card and the prompt is on your clipboard, ready to paste into any chat box.
 
-Welcome to join our Discord community to exchange ideas and feedback.
+🔍 **Tag + keyword search** — Filter by 26 scenario tags, or hit `Ctrl / ⌘ + K` to search.
 
+🌍 **18 Languages** — Full UI and prompt translation, with replies in your native language.
+
+### Advanced Features (After Login)
+
+📂 **My Collection** — Drag-and-drop sorting, custom tag classification.
+
+✏️ **Custom Prompts** — Create, edit, and manage your own prompts.
+
+🗳️ **Community** — Share prompts to the community, vote, and discuss in comments.
+
+📤 **Data Export** — One-click export of all prompts as JSON.
+
+🔐 **Multiple Login Methods** — Password, Google, or passwordless email link.
+
+🏆 **Levels** — Earn levels (L0–L9) as you share prompts with the community.
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td width="50%"><img src="static/img/docs/my-collection-view.webp" alt="My Collection" /></td>
+    <td width="50%"><img src="static/img/docs/extension-sidebar.webp" alt="Browser Extension" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>My Collection</strong> — drag, tag, organize</td>
+    <td align="center"><strong>Browser Extension</strong> — sidebar in ChatGPT, Gemini, Claude…</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="static/img/docs/prompt-card.webp" alt="Prompt Card" /></td>
+    <td width="50%"><img src="static/img/docs/community-page.png" alt="Community" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Prompt Card</strong> — preview & one-click copy</td>
+    <td align="center"><strong>Community</strong> — discover & vote</td>
+  </tr>
+</table>
+
+## 📚 Documentation
+
+Full guides on [aishort.top](https://www.aishort.top/en/docs/):
+
+- [Getting Started](https://www.aishort.top/en/docs/guides/getting-started) — basic usage in 30 seconds
+- [Interface Guide](https://www.aishort.top/en/docs/guides/interface) — tag filters & smart search
+- [My Collection](https://www.aishort.top/en/docs/guides/my-collection) — collect, tag, drag-to-organize
+- [Custom Prompts](https://www.aishort.top/en/docs/guides/user-prompts) — create, edit, import/export
+- [Community Prompts](https://www.aishort.top/en/docs/guides/community) — discover, vote, discuss
+- [Account](https://www.aishort.top/en/docs/guides/account) — login methods & data management
+- [Deployment](https://www.aishort.top/en/docs/deploy) — self-host your own instance
+
+## 🧩 Browser Extension
+
+Access AiShort prompts anywhere with our browser extension. Supports Chrome, Edge, and Firefox — open the sidebar with `Alt + Shift + S`.
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/aishort/)
+- **GitHub**: [Releases](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+Or use the [ChatGPT Shortcut Anywhere](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere) Tampermonkey script to summon the AiShort sidebar on any website.
+
+## 🚀 Deploy
+
+Deploy your own instance via Vercel, Cloudflare Pages, Docker, or locally. See the [Deployment Guide](https://www.aishort.top/en/docs/deploy) for full details.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **Offline / intranet?** There's an [Offline Edition](https://www.aishort.top/en/docs/deploy/offline) built for air-gapped enterprise or government networks — no backend or account needed, data stored locally in the browser, with the same browse/search/collect/custom-prompt features.
+
+> **Tip**: Vercel's one-click deploy creates a new project (not a fork), so the upstream-update check won't work. To get auto-sync, fork the repo first, then import the fork in Vercel — full instructions in the [deploy guide](https://www.aishort.top/en/docs/deploy/sync-updates).
+
+## 🤝 Contributing
+
+Contributions of all kinds are welcome:
+
+- **Suggest a prompt** or **report a bug** → open a [GitHub Issue](https://github.com/rockbenben/ChatGPT-Shortcut/issues/new)
+- **Submit a PR** → fork the repo, create a branch, send a pull request
+- **Add a translation** or **improve docs** → see the `i18n/` and `docs/` directories
+- **Star ⭐ and share** to help others discover useful prompts
+
+For local development setup, see the [Deployment Guide](https://www.aishort.top/en/docs/deploy).
+
+## 💬 Community
+
+Join us for discussions and feedback:
+
+<a href="https://t.me/aishort_top">
+    <img src="https://img.shields.io/badge/Telegram-Group-blue?logo=telegram&style=for-the-badge" alt="Telegram" />
+</a>
 <a href="https://discord.gg/PZTQfJ4GjX">
-   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />
+    <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="Discord" />
 </a>
 
-## Browser Extension
+## 🌟 Star History
 
-AiShort (ChatGPT Shortcut) is a versatile extension compatible with Chrome, Edge, Firefox, and other Chromium-based browsers. This extension not only features the functionality of the web version of ChatGPT Shortcut but also adds unique features such as a sidebar and automatic window activation. The extension can automatically start with ChatGPT or custom pages and can also be manually activated using the shortcut `Alt+Shift+S`. Here are the download channels:
+<a href="https://star-history.dera.page/#rockbenben/ChatGPT-Shortcut">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+ </picture>
+</a>
 
-- **Chrome**: [Chrome Web Store](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+---
 
-In addition, we offer the Tampermonkey script - [**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere), allowing users to customize matching domain names and use the AiShort sidebar on any website. However, due to script content injection restrictions on the ChatGPT page, the script's sidebar functionality is activated via a popup on the ChatGPT page.
-
-## Deploy
-
-For detailed steps on deploying through Vercel, local environment, Docker, and modifying the project, please refer to the [ChatGPT Shortcut Deployment Guide](https://www.aishort.top/en/docs/deploy).
-
-## Synchronized Updates
-
-If you have deployed your own project on Vercel with a single click, you might encounter an issue where updates are consistently indicated. This arises from Vercel's default behavior of creating a new project for you instead of forking the current project, thereby impeding proper update detection. It is recommended to follow the subsequent steps for re-deployment:
-
-1. Remove the previous repository.
-2. Utilize the "fork" button located in the upper right corner of the page to fork the current project.
-3. On the [Vercel New Project page](https://vercel.com/new), select the recently forked project from the Import Git Repository section and proceed with deployment.
-
-### Automatic Updates
-
-> In the event of encountering an error during the execution of Upstream Sync, manually perform a single Sync Fork.
-
-Once you have forked the project, due to GitHub restrictions, it is necessary to manually enable Workflows on the Actions page of your forked project and activate the Upstream Sync Action. Upon activation, updates will be automatically executed on a daily basis.
-
-![Automatic Updates](https://img.newzone.top/2023-05-19-11-57-59.png?imageMogr2/format/webp)
-
-![Enabling Automatic Updates](https://img.newzone.top/2023-05-19-11-59-26.png?imageMogr2/format/webp)
-
-### Manual Updates
-
-If you wish to manually update immediately, you can refer to [GitHub's documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize the forked project with the upstream code.
-
-Feel free to show support for this project by giving it a star/follow, or by following the author, to stay informed about timely notifications regarding new feature updates.
+⭐ Star this project to stay updated on new features!

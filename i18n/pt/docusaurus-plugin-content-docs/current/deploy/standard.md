@@ -1,0 +1,78 @@
+---
+sidebar_label: Implantação Padrão
+title: Implantação Padrão do AI Short | Build Local, Vercel, Cloudflare, Docker
+description: Tutorial de implantação padrão do AI Short, reutilizando o backend compartilhado oficial, com suporte a build local, deploy com um clique na Vercel, Cloudflare Pages e Docker, pronto para usar.
+---
+
+# Implantação Padrão
+
+Reutiliza o backend compartilhado oficial e funciona imediatamente. Primeiro faça o fork do projeto e, em seguida, implante com um dos métodos abaixo.
+
+**Requisitos**: [Node.js 20.0](https://nodejs.org/) ou superior, no macOS, Windows (incluindo WSL) ou Linux.
+
+![Topologia de implantação padrão: após o fork, implante via build local, Vercel, Cloudflare Pages ou Docker — todos reutilizam o backend compartilhado oficial (login, favoritos, comunidade, comentários, sincronização entre dispositivos).](/img/docs/standard-deploy-topology.svg)
+
+## Build Local
+
+```shell
+# instalar dependências
+yarn
+
+# desenvolvimento local
+yarn start
+
+# build: compila os 18 idiomas em blocos (uma única passagem esgota a memória); saída em build/ — para um só idioma, veja --locale abaixo
+yarn build
+```
+
+> **Build apenas de idiomas específicos**: use `yarn build --locale <locale>` (ex.: `zh-Hans`, `en`, `ja`… veja a lista completa de locales em `scripts/i18nLocales.mjs`).
+>
+> ⚠ Informar um **único locale não padrão** torna esse idioma a raiz do site (a saída vai direto para `build/`, URLs sem prefixo `/en/`). Para vários idiomas de uma vez, liste todos os locales em **um único** comando, começando pelo padrão: `yarn build --locale zh-Hans --locale en` (→ `build/` como raiz em chinês mais `build/en/`). Para os 18 idiomas, use simplesmente `yarn build` (divisão automática + sitemap mesclado).
+
+## Implantação Vercel
+
+Clique no botão abaixo para implantar na Vercel com um clique:
+
+[![Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **Nota**: O plano gratuito da Vercel pode falhar devido a limites de memória. Implante um único idioma — acesse **Settings → Build & Deployment → Build Command** no projeto, clique em **Override** e defina um comando de idioma único (`yarn build --locale zh-Hans` para Chinês, `yarn build --locale pt` para Português, etc.).
+
+## Implantação Cloudflare Pages
+
+Primeiro 👉 [Faça um fork deste projeto](https://github.com/rockbenben/ChatGPT-Shortcut/fork) e depois implante:
+
+1. Abra a [página de criação do Pages](https://dash.cloudflare.com/?to=/:account/workers-and-pages/create/pages) e selecione **Connect to Git**. Se cair em Create a Worker, a entrada do Pages é o link **Get started** no rodapé
+2. Conecte o repositório que você acabou de fazer o fork
+3. Configure o build:
+   - **Build command**: `yarn build --locale zh-Hans` (troque o locale pelo idioma que deseja implantar, ex.: `yarn build --locale pt` para Português)
+   - **Output directory**: `build`
+   - **Environment variables**: `YARN_VERSION` = `1.22.22`
+4. Clique em **Deploy** e aguarde o Cloudflare Pages concluir o build
+
+> **`YARN_VERSION` é obrigatória**: o sistema de build v3 do Cloudflare usa Yarn 4.9.1 por padrão e já não deduz a versão do `yarn.lock` como o v2 fazia. Este repositório tem um lockfile v1 do Yarn Classic, então sem fixá-la o Yarn 4 assume. O Node não precisa ser configurado: o v3 usa 22.16.0 por padrão, já acima do 20 exigido pelo projeto.
+
+Cada push posterior aciona automaticamente um novo build e implantação.
+
+## Implantação Docker
+
+Implantação em uma linha:
+
+```bash
+# ghcr.io
+docker run -d -p 3000:3000 --name chatgpt-shortcut ghcr.io/rockbenben/chatgpt-shortcut:latest
+
+# docker hub
+docker run -d -p 3000:3000 --name chatgpt-shortcut rockben/chatgpt-shortcut:latest
+```
+
+Ou com `docker-compose`:
+
+```yml
+services:
+  chatgpt-shortcut:
+    container_name: chatgpt-shortcut
+    image: ghcr.io/rockbenben/chatgpt-shortcut:latest
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+```

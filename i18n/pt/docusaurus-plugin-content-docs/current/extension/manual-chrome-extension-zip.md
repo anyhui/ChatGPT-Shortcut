@@ -1,14 +1,22 @@
-# Guia de instalação local do plugin ZIP do Chrome
+---
+sidebar_label: Guia de Instalação ZIP para Chrome
+title: Instalação AI Short Chrome ZIP | Carregar Extensão da Pasta Descompactada
+description: Instale a extensão AI Short no Chrome via arquivo ZIP, basta descompactar e arrastar para a página de extensões. Útil quando não é possível instalar o CRX.
+---
 
-## Baixar plugin
+# Guia de Instalação Local de Extensão ZIP para Chrome
 
-Baixe o pacote de instalação do plugin ChatGPT Shortcut Zip (ChatGPT_Shortcut-zip-3.x.x.zip) do [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest) e descompacte-o. (A pasta descompactada precisa ser mantida no computador, então lembre-se de descompactá-la em um local permanente)
+> Este tutorial assume que você já baixou e descompactou o pacote ZIP a partir da [página de instalação](./README.md).
+>
+> ⚠️ **Dois erros comuns**:
+> 1. A pasta descompactada precisa ser **mantida permanentemente** (a extensão lê esse diretório em tempo de execução) — coloque-a em um local permanente antes de continuar
+> 2. Você deve arrastar a **pasta descompactada inteira** (não o arquivo zip em si, nem arquivos individuais dentro da pasta)
 
-## Habilitar modo de desenvolvedor
+## Ativar Modo de Desenvolvedor
 
-Abra a página "Gerenciar extensões" do Chrome e habilite o "Modo de desenvolvedor".
+Abra a página "Gerenciar Extensões" do Chrome e ative o "Modo de desenvolvedor".
 
-Copie o seguinte endereço e cole-o na barra de endereços do navegador e pressione Enter para abri-lo. Habilite o "Modo de desenvolvedor" no canto superior direito da página.
+Copie o endereço abaixo e cole na barra de endereços do navegador, pressione Enter para abrir. Ative o "Modo de desenvolvedor" no canto superior direito da página.
 
 ```txt
 chrome://extensions
@@ -16,10 +24,10 @@ chrome://extensions
 
 ![](https://img.newzone.top/2024-08-12-22-05-52.png?imageMogr2/format/webp)
 
-## Instale o plugin
+## Instalar Extensão
 
-Arraste a pasta descompactada para a página da extensão para concluir a instalação.
+Arraste a pasta descompactada para a página de extensões para completar a instalação.
 
 ![](https://img.newzone.top/2024-08-12-22-27-47.png?imageMogr2/format/webp)
 
-Após a instalação bem-sucedida, você pode visualizar o [Tutorial de uso do plugin](./usage.md).
+Após a instalação bem-sucedida, você pode ver o [Tutorial de Uso da Extensão](./usage).

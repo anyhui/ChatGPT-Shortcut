@@ -1,28 +1,65 @@
 ---
 slug: /
+sidebar_label: Introduction
+title: Curated AI Prompt Library | Copy & Boost Productivity
+description: AI Short is a curated library of AI prompts for ChatGPT, Claude, Gemini, and other major models. Built for professionals and students — copy prompts instantly, translate across 18 languages, organize your personal collection, and share with the community.
 ---
 
-# Introduction
+# Introduction to AI Short
 
-AiShort provides a concise and easy-to-use list of AI instructions. Even without understanding of prompts, you can easily find the prompts suitable for various scenarios through filtering and searching, thus improving your productivity.
+AI Short (ChatGPT Shortcut) is a scenario-based AI prompt library — copy and use.
 
-🚀 **One-click prompts**: With just one click, you can get a variety of prompts carefully selected by experts. Send them to AI language models like ChatGPT and you can get the expected output.
+> **What is a "prompt"?** A prompt is the instruction you give to an AI, and it determines the quality of what comes back. A good prompt yields professional, precise answers; a vague one only earns a mediocre reply. AiShort organizes high-quality prompts for every scenario (writing, coding, office work, learning, and more) so you don't have to spend time figuring out how to ask.
 
-💻 **Boost productivity**: By using optimized prompts, you can get more accurate and practical feedback, thus effectively enhancing your work efficiency.
+## 30-Second Quick Start
 
-🌍 **Optimization for Non-English Languages**: We provide translations for English prompts in 12 major global languages, and support default responses in your mother tongue, which is convenient for non-English speakers to understand and use.
+1. Open AI Short
+2. Search or browse for the prompt you need
+3. Click "Copy" and paste into any AI tool — ChatGPT-style chat pages, coding tools like Cursor, your own API calls, etc.
 
-💾 **Save prompts**: Conveniently collect, edit, and manage your favorite prompts for future use.
+That's it — for more, see the [Getting Started guide](./guides/getting-started).
 
-🌐 **Share prompts**: Share your favorite prompts, collaborate with others, and inspire more ideas.
+## Core Features
 
-🗳️ **Community voting system**: Similar to Product Hunt or Reddit, the platform is community-driven. The best prompts will be pushed to the homepage.
+🚀 **Curated Prompts**: Covering writing, coding, office work, and more — ready to copy and use.
 
-📦 **Ready to use**: Just visit https://www.aishort.top/en/ to start using.
+🔍 **Tag + Keyword Search**: Filter by scenario tags, or search by keyword.
 
-The source of AiShort prompts includes internet selections, community shares, and [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). We will regularly update to provide you with new prompts and inspiration.
+🌍 **18 Languages**: Full UI and prompt translation, with replies in your native language.
 
-Welcome to join our Discord community to exchange ideas and feedback.
+📦 **Ready to Use**: No registration required — just open and go.
+
+## Advanced Features (After Login)
+
+📂 **My collection**: Drag-and-drop sorting and custom tag classification.
+
+✏️ **Custom Prompts**: Create, edit, and manage your own prompts.
+
+🗳️ **Community**: Share prompts to the community and participate in voting.
+
+📤 **Data Export**: One-click export of all prompts as JSON.
+
+🔐 **Multiple Login Methods**: Username & password, Google, and passwordless email links.
+
+🏆 **Levels**: Earn levels (L0–L9) as you share prompts with the community.
+
+## Offline Edition
+
+The [offline edition](./deploy/offline) is designed for corporate intranets, government networks, and other environments without internet access. It requires no backend server or account, works out of the box after deployment, and retains core features like browsing, searching, favorites, and custom prompts. The data format is compatible with the online version.
+
+## Prompt Sources
+
+Prompts are sourced from curated picks, community shares, and [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) — continuously updated.
+
+> Got more questions? See the [FAQ](./guides/faq) — 13 topics covering free / API Key, cross-model compat, commercial use, and data privacy.
+
+## Join the Community
+
+Welcome to join our community to exchange ideas and feedback:
+
+<a href="https://t.me/aishort_top">
+   <img src="https://img.shields.io/badge/Telegram-Group-blue?logo=telegram&style=for-the-badge" alt="join Telegram group" />
+</a>
 
 <a href="https://discord.gg/PZTQfJ4GjX">
    <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="chat on Discord" />

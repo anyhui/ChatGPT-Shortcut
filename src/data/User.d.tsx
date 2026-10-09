@@ -17,7 +17,6 @@ export type User = {
 };
 
 export type TagType =
-  | "favorite"
   | "write"
   | "article"
   | "code"
@@ -48,5 +47,4 @@ export type TagType =
 export type Tag = {
   label: string;
   description: string;
-  color: string;
 };

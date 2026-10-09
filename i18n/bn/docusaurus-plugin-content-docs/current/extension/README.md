@@ -1,10 +1,41 @@
-# এক্সটেনশন ইনস্টল করুন
+---
+sidebar_label: ব্রাউজার এক্সটেনশন ইনস্টল করুন
+title: AI Short এক্সটেনশন | ChatGPT/Gemini/Claude সাইডবার · Chrome/Edge/Firefox ইনস্টলেশন
+description: ব্রাউজারের সাইডবার, পপআপ বা আলাদা উইন্ডো থেকে AiShort প্রম্পট ব্যবহার করুন—ChatGPT, Gemini, Claude-এর ঠিক পাশে। Chrome, Edge, Firefox-এ এক ক্লিকে ইনস্টল।
+---
 
-AiShort (ChatGPT শর্টকাট) একটি ব্রাউজার এক্সটেনশন যা Chrome, Edge, Firefox এবং অন্যান্য Chromium-ভিত্তিক ব্রাউজারগুলির সাথে সামঞ্জস্যপূর্ণ। এই এক্সটেনশনটি শুধুমাত্র চ্যাটজিপিটি শর্টকাটের ওয়েব সংস্করণের কার্যকারিতাই অফার করে না বরং এটি একটি সাইডবার এবং স্বয়ংক্রিয় উইন্ডো অ্যাক্টিভেশনের মতো অনন্য উপাদানগুলিও বৈশিষ্ট্যযুক্ত করে। এটি স্বয়ংক্রিয়ভাবে ChatGPT বা কাস্টম পৃষ্ঠাগুলির সাথে শুরু হতে পারে এবং `Alt+Shift+S` শর্টকাট কী ব্যবহার করে ম্যানুয়ালি সক্রিয় করা যেতে পারে। নীচে ডাউনলোড চ্যানেলগুলি রয়েছে:
+# ব্রাউজার এক্সটেনশন ইনস্টল করুন
 
-- **Chrome**: [Chrome ওয়েব স্টোর](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [GitHub রিলিজ](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+AI Short (ChatGPT Shortcut) এক্সটেনশন ৫,০০০+ প্রম্পট এক্সটেনশনের ভেতরেই বান্ডল করে রাখে এবং সেগুলো **সাইডবার, পপআপ বা আলাদা উইন্ডো** হিসেবে ChatGPT, Gemini, Claude, DeepSeek প্রভৃতি AI চ্যাটের পাশে খোলে, ফলে কপি-পেস্ট করার জন্য আর aishort.top-এ ফিরে যেতে হয় না। Chrome, Edge এবং Firefox সমর্থিত; দ্রুত আনতে চাপুন `Alt + Shift + S`।
 
-উপরন্তু, আমরা একটি Tampermonkey স্ক্রিপ্ট অফার করি — [**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere), যা ব্যবহারকারীদের মিলে ডোমেন নাম কাস্টমাইজ করতে এবং AiShort সাইডবার ব্যবহার করতে দেয় যেকোনো ওয়েবসাইটে। যাইহোক, ChatGPT পৃষ্ঠাগুলিতে স্ক্রিপ্ট সামগ্রী ইনজেকশনের সীমাবদ্ধতার কারণে, স্ক্রিপ্টের সাইডবার ফাংশনটি ChatGPT পৃষ্ঠাগুলিতে একটি পপআপের মাধ্যমে সক্রিয় করা হয়।
+## ইনস্টলেশন পদ্ধতি
+
+### ১. অ্যাপ স্টোর (প্রস্তাবিত, এক-ক্লিকে ইনস্টল)
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Browser ADD-ONS](https://addons.mozilla.org/firefox/addon/aishort/) (v4.4.0 থেকে Chrome সংস্করণের সমান; পার্থক্য দেখুন [Firefox এক্সটেনশন সেটিংস](./firefox-extension-setting))
+
+### ২. স্টোর খুলছে না? লোকাল ইনস্টলেশন প্যাকেজ
+
+নিচের যেকোনো চ্যানেল থেকে ডাউনলোড করুন, এরপর সংশ্লিষ্ট গাইড অনুসরণ করে ইনস্টল করুন:
+
+- **GitHub**: [GitHub Release](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+> 📖 ইনস্টলেশন গাইড: [CRX ফাইল](./manual-chrome-extension) · [ZIP ফাইল](./manual-chrome-extension-zip)
+
+## ইনস্টলের পরে
+
+চাপুন `Alt + Shift + S`, অথবা টুলবার আইকনে ক্লিক করুন। বিস্তারিত ব্যবহারের জন্য দেখুন [ব্যবহার নির্দেশিকা](./usage)।
+
+## ট্যাম্পারমাঙ্কি স্ক্রিপ্ট (Tampermonkey Script)
+
+এক্সটেনশন ফর্ম ছাড়াও, আমরা [**ChatGPT Shortcut Anywhere Script**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere) ও প্রদান করি।
+ট্যাম্পারমাঙ্কি একটি ব্রাউজার এক্সটেনশন যা ব্যবহারকারীদের ওয়েব পৃষ্ঠার কার্যকারিতা বাড়াতে কাস্টম স্ক্রিপ্ট চালানোর অনুমতি দেয়।
+
+এই স্ক্রিপ্টের মাধ্যমে, আপনি যেকোনো ওয়েবসাইটে AiShort সাইডবার আনতে পারেন।
+যাইহোক, দয়া করে মনে রাখবেন যে অফিসিয়াল ChatGPT পৃষ্ঠায় স্ক্রিপ্ট ইনজেকশন বিধিনিষেধের কারণে, সেই পৃষ্ঠায় স্ক্রিপ্টটি সাইডবারের পরিবর্তে **পপআপ** হিসেবে চলবে।
+
+AiShort সাইডবার চালু করার পর, সমর্থিত ওয়েবপৃষ্ঠার নিচের ডান কোণে আপনি একটি সবুজ আইকন সুইচ দেখতে পাবেন। এই আইকনে ক্লিক করে সাইডবার চালু বা বন্ধ করা যাবে। বর্তমানে ChatGPT, Gemini, Claude, Doubao প্রভৃতি ডিফল্টভাবে সমর্থিত।
+
+![](/img/docs/extension-sidebar.webp)

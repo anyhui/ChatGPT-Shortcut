@@ -1,85 +1,181 @@
 <h1 align="center">
-⚡️AI Short
+    <a href="https://www.aishort.top/">
+        <img src="../static/img/logo.png" alt="AiShort Logo" width="120" height="120" />
+    </a>
+    <br>
+    AiShort (ChatGPT Shortcut) - Простой и удобный инструмент управления промптами ИИ
 </h1>
+
 <p align="center">
-    <a href="/README-en.md">English</a> | <a href="/README.md">中文</a> |
-<a href="./README-es.md">Español</a> |
+    <em>5000+ готовых к использованию ИИ-промптов — превратите ChatGPT, Cursor и любой ИИ-инструмент из посредственного в экспертный.</em>
+</p>
+
+<p align="center">
+    <a href="https://www.aishort.top/ru/"><b>▶ Попробовать онлайн</b></a> ·
+    <a href="https://www.aishort.top/ru/docs/extension/">⬇ Браузерное расширение</a> ·
+    <a href="https://www.aishort.top/ru/docs/guides/getting-started">📖 Документация</a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/blob/main/LICENSE">
+        <img src="https://img.shields.io/github/license/rockbenben/ChatGPT-Shortcut?color=blue&label=License" alt="License" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/stargazers">
+        <img src="https://img.shields.io/github/stars/rockbenben/ChatGPT-Shortcut?style=social" alt="GitHub Stars" />
+    </a>
+    <a href="https://github.com/rockbenben/ChatGPT-Shortcut/releases">
+        <img src="https://img.shields.io/github/v/release/rockbenben/ChatGPT-Shortcut?color=green" alt="Version" />
+    </a>
+    <a href="https://discord.gg/PZTQfJ4GjX">
+        <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=flat" alt="Discord" />
+    </a>
+</p>
+
+<p align="center">
+    <a href="../README.md">English</a> | <a href="../README-zh.md">简体中文</a> | <a href="./README-zh-hant.md">繁體中文</a> |
 <a href="./README-ja.md">日本語</a> |
 <a href="./README-ko.md">한국어</a> |
 <a href="./README-fr.md">Français</a> |
 <a href="./README-de.md">Deutsch</a> |
+<a href="./README-es.md">Español</a> |
 <a href="./README-it.md">Italiano</a> |
 Русский |
 <a href="./README-pt.md">Português</a> |
+<a href="./README-ind.md">Indonesia</a> |
 <a href="./README-ar.md">العربية</a> |
+<a href="./README-tr.md">Türkçe</a> |
+<a href="./README-vi.md">Tiếng Việt</a> |
+<a href="./README-th.md">ภาษาไทย</a> |
 <a href="./README-hi.md">हिन्दी</a> |
 <a href="./README-bn.md">বাংলা</a>
 </p>
-<p align="center">
-    <em>ChatGPT Shortcut, Maximize your Efficiency and Productivity</em>
-</p>
 
-## Почему использовать AiShort?
+## ⚡ Быстрый старт
 
-AiShort предоставляет сжатый и простой в использовании список инструкций AI. Даже без понимания подсказок, вы легко найдете подходящие для различных сценариев подсказки, фильтруя и искать, тем самым повышая свою продуктивность.
+1. Посетите [aishort.top](https://www.aishort.top/ru/)
+2. Найдите или просмотрите нужный промпт
+3. Нажмите «Копировать» и вставьте в любой ИИ-инструмент — чат-страницы вроде ChatGPT, инструменты для разработчиков вроде Cursor, вызовы API и т. д.
 
-🚀 **Подсказки в один клик**: С помощью одного клика вы можете получить множество подсказок, тщательно отобранных экспертами. Отправьте их в AI языковые модели, например, ChatGPT, и вы получите ожидаемый вывод.
+![AiShort Interface](../static/img/docs/interface-home.png)
 
-💻 **Повышение продуктивности**: Используя оптимизированные подсказки, вы можете получить более точную и практичную обратную связь, тем самым эффективно улучшая вашу работоспособность.
+Вот и всё! Подробнее в [Руководстве пользователя](https://www.aishort.top/ru/docs/guides/getting-started).
 
-🌍 **Оптимизация для неанглоязычных языков**: Мы предлагаем переводы английских подсказок на 12 главных мировых языков и поддерживаем ответы по умолчанию на вашем родном языке, что удобно для носителей неанглийских языков для понимания и использования.
+## 💎 Почему AiShort?
 
-💾 **Сохранить подсказки**: Удобно собирать, редактировать и управлять своими любимыми подсказками для будущего использования.
+**Разница между «использовать ИИ» и «использовать ИИ хорошо» — это один хороший промпт.**
 
-🌐 **Поделиться подсказками**: Поделитесь своими любимыми подсказками, сотрудничайте с другими и вдохновляйте больше идей.
+Один и тот же вопрос с разными формулировками даёт совершенно разный результат: посредственный шаблон или экспертный анализ. На отточенные промпты у профессионалов уходят годы проб и ошибок. AiShort даёт вам библиотеку, проверенную сообществом — для написания текстов, программирования, офисных задач, обучения, дизайна, маркетинга и многого другого. Скопируйте → вставьте → получите экспертный результат, мгновенно.
 
-🗳️ **Система голосования сообщества**: Подобно Product Hunt или Reddit, платформа управляется сообществом. Лучшие подсказки будут выдвинуты на главную страницу.
+Без регистрации. Без подписки. Без установки. Открыли и работаете.
 
-📦 **Готов к использованию**: Просто посетите https://www.aishort.top/ru/ для начала использования.
+### Основные функции
 
-Источники подсказок AiShort включают выборки из интернета, общие поделки сообщества, и [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts). Мы будем регулярно обновляться, чтобы предоставить вам новые подсказки и вдохновение. Чтобы понять, как использовать AiShort, пожалуйста, обратитесь к [руководству пользователя](https://www.aishort.top/ru/docs/guides/getting-started).
+🚀 **Копирование в один клик** — Нажмите на карточку, и промпт окажется в буфере обмена — вставляйте в любой чат.
 
-Приглашаем вас присоединиться к нашему сообществу Discord для обмена идеями и отзывами.
+🔍 **Поиск по тегам и ключевым словам** — Фильтрация по 26 тематическим тегам или поиск по `Ctrl / ⌘ + K`.
 
+🌍 **18 языков** — Полный перевод интерфейса и промптов, ответы на родном языке.
+
+### Расширенные функции (требуется вход)
+
+📂 **Моя коллекция** — Сортировка перетаскиванием, классификация по пользовательским тегам.
+
+✏️ **Свои промпты** — Создавайте, редактируйте и управляйте собственными промптами.
+
+🗳️ **Сообщество** — Делитесь промптами с сообществом, голосуйте и обсуждайте в комментариях.
+
+📤 **Экспорт данных** — Выгрузка всех промптов одним кликом в формате JSON.
+
+🔐 **Несколько способов входа** — Пароль, Google или ссылка по email.
+
+🏆 **Уровни** — Получайте уровни (L0–L9) по мере того, как делитесь промптами с сообществом.
+
+## 📸 Скриншоты
+
+<table>
+  <tr>
+    <td width="50%"><img src="../static/img/docs/my-collection-view.webp" alt="Моя коллекция" /></td>
+    <td width="50%"><img src="../static/img/docs/extension-sidebar.webp" alt="Браузерное расширение" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Моя коллекция</strong> — перетаскивайте, тегируйте, упорядочивайте</td>
+    <td align="center"><strong>Браузерное расширение</strong> — боковая панель в ChatGPT, Gemini, Claude…</td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="../static/img/docs/prompt-card.webp" alt="Карточка промпта" /></td>
+    <td width="50%"><img src="../static/img/docs/community-page.png" alt="Сообщество" /></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Карточка промпта</strong> — предпросмотр и копирование в один клик</td>
+    <td align="center"><strong>Сообщество</strong> — открывайте и голосуйте</td>
+  </tr>
+</table>
+
+## 📚 Документация
+
+Полные руководства на [aishort.top](https://www.aishort.top/ru/docs/):
+
+- [Начало работы](https://www.aishort.top/ru/docs/guides/getting-started) — основы за 30 секунд
+- [Руководство по интерфейсу](https://www.aishort.top/ru/docs/guides/interface) — теговые фильтры и умный поиск
+- [Моя коллекция](https://www.aishort.top/ru/docs/guides/my-collection) — собирайте, тегируйте, сортируйте перетаскиванием
+- [Свои промпты](https://www.aishort.top/ru/docs/guides/user-prompts) — создание, редактирование, импорт/экспорт
+- [Промпты сообщества](https://www.aishort.top/ru/docs/guides/community) — открывайте, голосуйте, обсуждайте
+- [Аккаунт](https://www.aishort.top/ru/docs/guides/account) — способы входа и управление данными
+- [Развёртывание](https://www.aishort.top/ru/docs/deploy) — самостоятельный хостинг
+
+## 🧩 Браузерное расширение
+
+Доступ к промптам AiShort в любом месте с помощью нашего браузерного расширения. Поддержка Chrome, Edge и Firefox — открывайте боковую панель сочетанием `Alt + Shift + S`.
+
+- **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/ai-short-ai-prompt-shortc/blcgeoojgdpodnmnhfpohphdhfncblnj)
+- **Edge**: [Microsoft Edge Addons](https://microsoftedge.microsoft.com/addons/detail/ai-short-ai-prompt-shor/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
+- **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/aishort/)
+- **GitHub**: [Releases](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+
+Или воспользуйтесь скриптом Tampermonkey [ChatGPT Shortcut Anywhere](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere), чтобы вызвать боковую панель AiShort на любом сайте.
+
+## 🚀 Развёртывание
+
+Разверните свой экземпляр через Vercel, Cloudflare Pages, Docker или локально. Смотрите [Руководство по развёртыванию](https://www.aishort.top/ru/docs/deploy).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frockbenben%2FChatGPT-Shortcut%2Ftree%2Fmain)
+
+> **Офлайн / интранет?** Существует [Офлайн-редакция](https://www.aishort.top/ru/docs/deploy/offline) для изолированных корпоративных или государственных сетей — не требует бэкенда и учётной записи, данные хранятся локально в браузере, с теми же функциями просмотра, поиска, коллекции и собственных промптов.
+
+> **Совет**: Развёртывание Vercel в один клик создаёт новый проект (не форк), поэтому проверка обновлений из upstream не сработает. Чтобы получать автоматическую синхронизацию, сначала сделайте форк репозитория, а затем импортируйте этот форк в Vercel — полная инструкция в [Руководстве по развёртыванию](https://www.aishort.top/ru/docs/deploy/sync-updates).
+
+## 🤝 Вклад
+
+Приветствуются любые виды вклада:
+
+- **Предложите промпт** или **сообщите об ошибке** → откройте [GitHub Issue](https://github.com/rockbenben/ChatGPT-Shortcut/issues/new)
+- **Отправьте PR** → сделайте форк репозитория, создайте ветку, отправьте pull request
+- **Добавьте перевод** или **улучшите документацию** → смотрите каталоги `i18n/` и `docs/`
+- **Поставьте звезду ⭐ и поделитесь**, чтобы другие тоже нашли полезные промпты
+
+Инструкции по локальной настройке разработки смотрите в [Руководстве по развёртыванию](https://www.aishort.top/ru/docs/deploy).
+
+## 💬 Сообщество
+
+Присоединяйтесь для обсуждений и обратной связи:
+
+<a href="https://t.me/aishort_top">
+    <img src="https://img.shields.io/badge/Telegram-Группа-blue?logo=telegram&style=for-the-badge" alt="Telegram" />
+</a>
 <a href="https://discord.gg/PZTQfJ4GjX">
-   <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="чат в Discord" />
+    <img src="https://img.shields.io/discord/1048780149899939881?color=%2385c8c8&label=Discord&logo=discord&style=for-the-badge" alt="Discord" />
 </a>
 
-## Расширение браузера
+## 🌟 История Star
 
-AiShort (ChatGPT Shortcut) — это универсальное расширение, совместимое с Chrome, Edge, Firefox и другими браузерами на базе Chromium. Это расширение не только обладает функциональностью веб-версии ChatGPT Shortcut, но и добавляет уникальные функции, такие как боковая панель и автоматическая активация окна. Расширение может автоматически запускаться с ChatGPT или пользовательскими страницами, а также может быть активировано вручную с помощью сочетания клавиш `Alt+Shift+S`. Вот каналы загрузки:
+<a href="https://star-history.dera.page/#rockbenben/ChatGPT-Shortcut">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=rockbenben/ChatGPT-Shortcut" />
+ </picture>
+</a>
 
-- **Chrome**: [Интернет-магазин Chrome](https://chrome.google.com/webstore/detail/chatgpt-shortcut/blcgeoojgdpodnmnhfpohphdhfncblnj)
-- **Edge**: [Дополнения Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/chatgpt-shortcut/hnggpalhfjmdhhmgfjpmhlfilnbmjoin)
-- **Firefox**: [ДОПОЛНЕНИЯ для браузера Firefox](https://addons.mozilla.org/addon/chatgpt-shortcut/)
-- **GitHub**: [Выпуск GitHub](https://github.com/rockbenben/ChatGPT-Shortcut/releases/latest)
+---
 
-Кроме того, мы предлагаем Скрипт Tampermonkey - [**ChatGPT Shortcut Anywhere**](https://greasyfork.org/scripts/482907-chatgpt-shortcut-anywhere), позволяющий пользователям настраивать соответствующие доменные имена и использовать боковую панель AiShort на любом веб-сайте. Однако из-за ограничений на внедрение содержимого скрипта на странице ChatGPT функциональность боковой панели скрипта активируется через всплывающее окно на странице ChatGPT.
-
-## Развертывание
-
-Подробные инструкции по развертыванию через Vercel, локальную среду, Docker и изменению проекта см. в [Руководстве по развертыванию ярлыка ChatGPT](https://www.aishort.top/ru/docs/deploy).
-
-## Синхронизированные обновления
-
-Если вы развернули свой собственный проект на Vercel одним щелчком мыши, вы можете столкнуться с проблемой, когда обновления постоянно отображаются. Это возникает из-за поведения Vercel по умолчанию, когда он создает новый проект вместо ответвления текущего проекта, тем самым препятствуя правильному обнаружению обновлений. Рекомендуется выполнить следующие шаги для повторного развертывания:
-
-1. Удалите предыдущий репозиторий.
-2. Используйте кнопку «fork», расположенную в правом верхнем углу страницы, чтобы создать ответвление текущего проекта.
-3. На странице [Vercel New Project](https://vercel.com/new) выберите недавно созданный ответвлением проект из раздела Import Git Repository и приступайте к развертыванию.
-
-### Автоматические обновления
-
-> В случае возникновения ошибки во время выполнения Upstream Sync вручную выполните один Sync Fork.
-
-После создания ответвления проекта из-за ограничений GitHub необходимо вручную включить Workflows на странице Actions вашего форкнутого проекта и активировать действие Upstream Sync. После активации обновления будут автоматически выполняться ежедневно.
-
-![Автоматические обновления](https://img.newzone.top/2023-05-19-11-57-59.png?imageMogr2/format/webp)
-
-![Включение автоматических обновлений](https://img.newzone.top/2023-05-19-11-59-26.png?imageMogr2/format/webp)
-
-### Ручные обновления
-
-Если вы хотите выполнить обновление вручную немедленно, вы можете обратиться к [документации GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork), чтобы узнать, как синхронизировать разветвленный проект с исходным кодом.
-
-Не стесняйтесь оказать поддержку этому проекту, поставив ему звезду/подписавшись или подписавшись на автора, чтобы быть в курсе своевременных уведомлений о новых обновлениях функций.
+⭐ Поставьте звезду, чтобы быть в курсе новых функций!

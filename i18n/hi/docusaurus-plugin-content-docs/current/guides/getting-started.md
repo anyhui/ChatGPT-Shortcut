@@ -1,31 +1,74 @@
-# आरंभ करना
+---
+sidebar_label: शुरुआत करें
+title: AI Short शुरुआत गाइड | ChatGPT/DeepSeek में प्रॉम्प्ट कॉपी करें
+description: 30 सेकंड में जल्दी शुरुआत करें! ChatGPT, Gemini, DeepSeek जैसे AI मॉडल में प्रॉम्प्ट कॉपी करें और तुरंत संवाद की गुणवत्ता और कार्य कुशलता बढ़ाएँ।
+---
 
-AiShort का उपयोग करते हुए, आपको निर्दिष्ट दिशा में आउटपुट प्राप्त करने के लिए केवल चयनित प्रॉम्प्ट को किसी भी AI संवाद मॉडल में कॉपी करना होगा। यहाँ विशिष्ट चरण दिए गए हैं:
+# शुरुआत करें
 
-1. अपने इच्छित प्रॉम्प्ट को खोजें या चुनें, और फिर प्रॉम्प्ट पर कॉपी बटन पर क्लिक करें।
+अच्छे प्रॉम्प्ट AI के आउटपुट की गुणवत्ता तय करते हैं। AiShort में बड़ी संख्या में चयनित प्रॉम्प्ट संकलित हैं, जिन्हें कॉपी-पेस्ट करके तुरंत उपयोग किया जा सकता है।
 
-2. प्रॉम्प्ट को ChatGPT, Gemini या किसी भी AI संवाद मॉडल में कॉपी करें।
+> 📋 **शुरू करने से पहले आपको चाहिए**: एक ब्राउज़र + कोई भी AI टूल जिसे आप एक्सेस कर सकते हैं (ChatGPT/Gemini/Claude जैसे चैट पेज, Cursor जैसे कोडिंग टूल, API कॉल, एजेंट आदि)। AiShort वेब संस्करण को पंजीकरण की आवश्यकता नहीं है।
 
-3. संवाद प्रॉम्प्ट के अनुसार अपनी आवश्यकताएँ दर्ज करें।
+## मूल उपयोग
 
-![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
+1. होमपेज पर अपनी रुचि के प्रॉम्प्ट को खोजें या ब्राउज़ करें
+2. पसंदीदा प्रॉम्प्ट मिलने पर "कॉपी" बटन पर क्लिक करें (या पूरी सामग्री देखने के लिए पहले कार्ड खोलें)
+3. किसी भी AI टूल में पेस्ट करें — ChatGPT जैसे चैट पेज, Cursor जैसे कोडिंग टूल, API कॉल, एजेंट आदि
+4. प्रॉम्प्ट में दिए गए **प्लेसहोल्डर** (जैसे `[सामग्री]`, `[विषय]`) के अनुसार अपनी विशिष्ट आवश्यकताओं को पूरा करें और AI को भेजें
 
-## Common AI models
+![](/img/docs/how-to-use-aishort.webp)
 
-- ChatGPT：https://chatgpt.com
-- Gemini: https://gemini.google.com/app
-- Claude: https://claude.ai/chats
-- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
-- Kimi：https://kimi.moonshot.cn/
-- 豆包：https://www.doubao.com/chat/
-- 文心一言：https://yiyan.baidu.com
-- 智谱清言：https://chatglm.cn/detail
-- 腾讯元宝：https://yuanbao.tencent.com/chat
-- 讯飞星火：https://xinghuo.xfyun.cn/
-- 百川智能：https://ying.baichuan-ai.com/chat
+> 💡 **सुझाव**: अधिकांश प्रॉम्प्ट वर्ग कोष्ठक `[...]` का उपयोग उस सामग्री को चिह्नित करने के लिए करते हैं जिसे आपको भरना है — बस वर्ग कोष्ठक के अंदर के प्लेसहोल्डर टेक्स्ट को अपनी विशिष्ट सामग्री से बदल दें।
 
-## Third-party API integration
+## त्वरित पहुंच
 
-- OpenRouter: https://openrouter.ai/chat
-- siliconflow: https://cloud.siliconflow.cn/playground/chat
-- grog: https://groq.com/
+| मुझे चाहिए...                              | कहाँ जाना है                              |
+| ------------------------------------------ | ----------------------------------------- |
+| प्रॉम्प्ट कॉपी और उपयोग करें               | सीधे [होमपेज](/) पर खोजें या ब्राउज़ करें |
+| किसी भी AI टूल में कभी भी कॉल करें         | [ब्राउज़र एक्सटेंशन](../extension/)       |
+| प्रॉम्प्ट पसंदीदा और प्रबंधित करें         | [मेरा संग्रह](./my-collection)            |
+| अपने स्वयं के प्रॉम्प्ट बनाएं              | [कस्टम प्रॉम्प्ट](./user-prompts)         |
+| रजिस्टर या लॉगिन                           | [खाता प्रबंधन](./account)                 |
+| सामुदायिक साझाकरण खोजें                    | [समुदाय प्रॉम्प्ट](./community)           |
+| ऑफ़लाइन/इंट्रानेट परिनियोजन                | [ऑफ़लाइन परिनियोजन संस्करण](../deploy/offline)    |
+
+## सामान्य AI मॉडल
+
+### अंतर्राष्ट्रीय मॉडल
+
+- [ChatGPT](https://chatgpt.com)
+- [Gemini](https://gemini.google.com/app)
+- [Claude](https://claude.ai/chats)
+- [Grok](https://grok.com/)
+
+### भारतीय मॉडल
+
+भारतीय भाषाओं (हिंदी और अन्य Indic भाषाओं) पर विशेष रूप से प्रशिक्षित मॉडल, जो स्थानीय संदर्भ और लिपियों को बेहतर ढंग से समझते हैं:
+
+- [Sarvam AI](https://www.sarvam.ai/) — Indic भाषाओं के लिए विकसित ओपन-सोर्स मॉडल
+- [Krutrim](https://chat.olakrutrim.com/) — Ola द्वारा निर्मित, 22 भारतीय भाषाओं में सक्षम
+- [Bhashini](https://bhashini.gov.in/) — भारत सरकार की NLP पहल, अनुवाद और भाषण सेवाएँ
+
+### मेनलैंड चीन के मॉडल
+
+- [DeepSeek](https://chat.deepseek.com)
+- [Tongyi Qianwen](https://www.qianwen.com/)
+- [ERNIE Bot](https://yiyan.baidu.com)
+- [Doubao](https://www.doubao.com/chat/)
+- [Kimi](https://www.kimi.com/)
+- [ChatGLM](https://chatglm.cn/detail)
+- [Spark Desk](https://xinghuo.xfyun.cn/)
+- [Tencent Yuanbao](https://yuanbao.tencent.com/chat)
+
+### API प्लेटफ़ॉर्म
+
+- [OpenRouter](https://openrouter.ai/chat)
+- [SiliconFlow](https://cloud.siliconflow.cn/playground/chat)
+- [Groq](https://groq.com/)
+
+## संबंधित दस्तावेज़
+
+- [इंटरफ़ेस गाइड](./interface) - खोज और फ़िल्टर फ़ंक्शन
+- [मेरा संग्रह](./my-collection) - पसंदीदा, टैग और छँटाई
+- [खाता प्रबंधन](./account) - लॉगिन और पंजीकरण

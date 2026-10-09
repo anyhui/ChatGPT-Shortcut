@@ -1,31 +1,69 @@
-# Per iniziare
+---
+sidebar_label: Avvio Rapido
+title: Guida introduttiva AI Short | Copia prompt in ChatGPT/DeepSeek
+description: Avvio rapido in 30 secondi! Copia prompt in ChatGPT, Gemini, DeepSeek e altri modelli IA per migliorare immediatamente la qualità delle conversazioni e l'efficienza lavorativa.
+---
 
-Utilizzando AiShort, devi solo copiare il prompt selezionato in qualsiasi modello di dialogo AI per ottenere l'output nella direzione specificata. Ecco i passaggi specifici:
+# Avvio Rapido
 
-1. Cerca o seleziona il prompt desiderato, quindi fai clic sul pulsante Copia sul prompt.
+Buoni prompt determinano la qualità delle risposte dell'IA. AiShort raccoglie un gran numero di prompt curati, pronti per essere copiati e incollati.
 
-2. Copia il prompt in ChatGPT, Gemini o qualsiasi modello di dialogo AI.
+> 📋 **Cosa ti serve prima di iniziare**: un browser + uno strumento IA accessibile — pagine di chat (ChatGPT, Gemini, Claude, ecc.), strumenti di programmazione (Cursor, Copilot), chiamate API o qualsiasi altro. La versione web di AiShort non richiede registrazione.
 
-3. Inserisci i tuoi requisiti in base al prompt di dialogo.
+## Uso Base
 
-![](https://img.newzone.top/gif/how-to-use-aishort.gif?imageMogr2/format/webp)
+1. Cerca o sfoglia i prompt che ti interessano nella home page
+2. Trova un prompt adatto e clicca sul pulsante "Copia" (oppure clicca prima sulla scheda per vedere il contenuto completo)
+3. Incolla in qualsiasi strumento IA — pagine di chat come ChatGPT, strumenti di programmazione come Cursor, chiamate API, ecc.
+4. Completa con le tue esigenze specifiche dove indicato dai **segnaposto** del prompt (come `[contenuto]`, `[argomento]`) e invia all'IA
 
-## Common AI models
+![](/img/docs/how-to-use-aishort.webp)
 
-- ChatGPT：https://chatgpt.com
-- Gemini: https://gemini.google.com/app
-- Claude: https://claude.ai/chats
-- 阿里通义千问：https://tongyi.aliyun.com/qianwen/
-- Kimi：https://kimi.moonshot.cn/
-- 豆包：https://www.doubao.com/chat/
-- 文心一言：https://yiyan.baidu.com
-- 智谱清言：https://chatglm.cn/detail
-- 腾讯元宝：https://yuanbao.tencent.com/chat
-- 讯飞星火：https://xinghuo.xfyun.cn/
-- 百川智能：https://ying.baichuan-ai.com/chat
+> 💡 **Suggerimento**: La maggior parte dei prompt usa parentesi quadre `[...]` per segnare i contenuti che devi completare — sostituisci semplicemente il testo segnaposto tra parentesi con il tuo contenuto specifico.
 
-## Third-party API integration
+## Accesso Rapido
 
-- OpenRouter: https://openrouter.ai/chat
-- siliconflow: https://cloud.siliconflow.cn/playground/chat
-- grog: https://groq.com/
+| Voglio...                             | Dove andare                               |
+| ------------------------------------- | ----------------------------------------- |
+| Copiare e usare prompt                | Cerca o sfoglia direttamente su [Home](/) |
+| Usare l'IA dalla pagina di chat       | [Estensioni Browser](../extension/)       |
+| Collezionare e gestire prompt         | [La Mia Collezione](./my-collection)      |
+| Creare i miei prompt                  | [Prompt Personalizzati](./user-prompts)   |
+| Registrare o Accedere                 | [Gestione Account](./account)             |
+| Scoprire condivisioni della community | [Prompt della Community](./community)     |
+| Deploy offline/intranet               | [Versione Deploy Offline](../deploy/offline)      |
+
+## Modelli IA Comuni
+
+### Modelli Internazionali
+
+- [ChatGPT](https://chatgpt.com)
+- [Gemini](https://gemini.google.com/app)
+- [Claude](https://claude.ai/chats)
+- [Grok](https://grok.com/)
+- [Mistral Le Chat](https://chat.mistral.ai/) — modello francese/UE, spesso preferito in Italia per la conformità al GDPR
+
+> 💡 ChatGPT, Gemini e Claude gestiscono molto bene l'italiano: basta aggiungere `rispondi in italiano` alla fine del prompt per ottenere risposte nella tua lingua.
+
+### Modelli della Cina continentale
+
+- [DeepSeek](https://chat.deepseek.com)
+- [Tongyi Qianwen](https://www.qianwen.com/)
+- [Ernie Bot](https://yiyan.baidu.com)
+- [Doubao](https://www.doubao.com/chat/)
+- [Kimi](https://www.kimi.com/)
+- [ChatGLM](https://chatglm.cn/detail)
+- [iFLYTEK Spark](https://xinghuo.xfyun.cn/)
+- [Tencent Yuanbao](https://yuanbao.tencent.com/chat)
+
+### Piattaforme API
+
+- [OpenRouter](https://openrouter.ai/chat)
+- [SiliconFlow](https://cloud.siliconflow.cn/playground/chat)
+- [Groq](https://groq.com/)
+
+## Documentazione Correlata
+
+- [Guida Interfaccia](./interface) - Funzioni di ricerca e filtro
+- [La Mia Collezione](./my-collection) - Collezione, tag e ordinamento
+- [Gestione Account](./account) - Accesso e registrazione

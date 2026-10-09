@@ -7,52 +7,56 @@
     "message": "ChatGPT Shortcuts",
     "description": "The alt text of navbar logo"
   },
-  "item.label.📘 使用说明": {
-    "message": "📘 Docs",
-    "description": "Navbar item with label 📘 使用说明"
+  "item.label.使用说明": {
+    "message": "Docs",
+    "description": "Navbar item with label 使用说明"
   },
-  "item.label.🏘️ 社区提示词": {
-    "message": "🏘️ Community Prompts",
-    "description": "Navbar item with label 🏘️ 社区提示词"
+  "item.label.社区提示词": {
+    "message": "Community Prompts",
+    "description": "Navbar item with label 社区提示词"
   },
-  "item.label.🛠️ 应用工具": {
-    "message": "🛠️ Tools",
-    "description": "Navbar item with label 🛠️ 应用工具"
-  },
-  "item.label.IMGPrompt": {
-    "message": "IMGPrompt",
-    "description": "Navbar item with label IMGPrompt"
-  },
-  "item.label.文字处理": {
-    "message": "Other Tools",
-    "description": "Navbar item with label 文字处理"
-  },
-  "item.label.工具收藏": {
-    "message": "Tool collection",
-    "description": "Navbar item with label 工具收藏"
-  },
-  "item.label.Find on Product Hunt": {
-    "message": "Find on Product Hunt",
-    "description": "Navbar item with label Find on Product Hunt"
+  "item.label.应用工具": {
+    "message": "Tools",
+    "description": "Navbar item with label 应用工具"
   },
   "item.label.反馈建议": {
     "message": "Feedback",
     "description": "Navbar item with label 反馈建议"
   },
-  "item.label.📝 提交反馈": {
-    "message": "📝 Submit Feedback",
-    "description": "Navbar item with label 📝 提交反馈"
+  "item.label.Telegram": {
+    "message": "Telegram",
+    "description": "Navbar item with label Telegram"
   },
-  "item.label.💬 加入 QQ 群": {
-    "message": "💬 Chat us on QQ",
-    "description": "Navbar item with label 💬 加入 QQ 群"
+  "item.label.支持": {
+    "message": "Support",
+    "description": "Navbar item with label 支持"
   },
-  "item.label.📺 加入 Discord": {
-    "message": "📺 Join our Discord",
-    "description": "Navbar item with label 📺 加入 Discord"
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
   },
-  "item.label.脚本扩展": {
-    "message": "Extensions",
-    "description": "Navbar item with label 脚本扩展"
+  "item.label.QQ 群": {
+    "message": "QQ Group",
+    "description": "Navbar item with label QQ 群"
+  },
+  "item.label.AI 工具箱": {
+    "message": "AI Toolbox",
+    "description": "Navbar item with label AI 工具箱"
+  },
+  "item.label.AI 绘图提示词": {
+    "message": "AI Image Prompts",
+    "description": "Navbar item with label AI 绘图提示词"
+  },
+  "item.label.浏览器插件": {
+    "message": "Browser Extension",
+    "description": "Navbar item with label 浏览器插件"
+  },
+  "item.label.AI 思想家圆桌": {
+    "message": "AI Thinkers’ Roundtable",
+    "description": "Navbar item with label AI 思想家圆桌"
+  },
+  "item.label.365 开源项目": {
+    "message": "365 Open Source",
+    "description": "Navbar item with label 365 开源项目"
   }
 }

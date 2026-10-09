@@ -1,27 +1,117 @@
+---
+sidebar_label: Perguntas Frequentes
+title: AI Short FAQ | Uso, Otimização, Uso Comercial e Privacidade
+description: AiShort é gratuito? Os prompts são multi-modelo? Uso comercial permitido? Este guia responde 13 dúvidas sobre uso, otimização, uso comercial e privacidade.
+---
+
 # Perguntas Frequentes
 
-## Por que as palavras sugeridas estão em inglês?
+## AiShort é um gerador de prompts de IA?
 
-O AiShort foi criado para facilitar o uso do ChatGPT por falantes não nativos de inglês. No entanto, todas as palavras sugeridas estão em inglês. Isso ocorre porque o ChatGPT tem uma compreensão melhor do inglês em comparação com outros idiomas. Mesmo o MOSS, o primeiro modelo de linguagem de diálogo em chinês em grande escala, reconhece que suas respostas em inglês são superiores às respostas em chinês. Portanto, é recomendado usar palavras sugeridas em inglês. (O MOSS não está mais disponível)
+Não. AiShort é uma biblioteca de prompts **selecionados e organizados manualmente** por cenário, e não uma ferramenta que usa LLMs para gerar prompts automaticamente. Cada prompt é filtrado e classificado por tags, pronto para copiar e colar em qualquer ferramenta de conversa com IA — ChatGPT, Claude, Gemini, DeepSeek, entre outras. Se você procura ferramentas do tipo "gerar prompt automaticamente a partir de um requisito", PromptPerfect e ChatGPT prompt generator são uma categoria diferente de produto.
 
-Embora o uso de palavras sugeridas em outros idiomas possa resultar em bons resultados, os resultados podem variar significativamente quando você insere as mesmas sugestões em outro idioma novamente. Como a compreensão do ChatGPT em relação a sugestões em outros idiomas varia a cada vez, é aconselhável usar sugestões em inglês para sugestões orientadas à produtividade, a fim de garantir a saída desejada. Além disso, as respostas geradas por sugestões em inglês provavelmente estarão em inglês. Você pode especificar o idioma de resposta como chinês adicionando "responder em chinês" ao final da sugestão. Se seu idioma nativo for diferente, substitua "chinês" pelo seu próprio idioma nativo.
+## AiShort é gratuito? Precisa de API Key?
 
-## Preciso inserir a sugestão toda vez?
+Totalmente gratuito, **sem necessidade de API Key e sem cadastro**. Navegar, pesquisar e copiar prompts não exige nenhuma conta.
 
-Na API, você pode definir a sugestão como "sugestão do sistema", para que você não precise inserir a sugestão cada vez. O ChatGPT seguirá as instruções com base na sugestão do sistema.
+Após o cadastro, você desbloqueia funcionalidades adicionais — favoritos com ordenação por arrastar e soltar, tags personalizadas, criação e gerenciamento de prompts privados, compartilhamento e votação na comunidade, exportação de dados em JSON, sincronização entre dispositivos —, e continua tudo gratuito. Todo o código é open source no [GitHub](https://github.com/rockbenben/ChatGPT-Shortcut).
 
-Na versão web do ChatGPT, se você não tiver alterado a sugestão principal, basta colocar o conteúdo da resposta subsequente entre aspas, eliminando a necessidade de inserir a sugestão a cada vez. Quando a resposta gerada não estiver de acordo com os requisitos da sugestão, significa que o ChatGPT esqueceu da sugestão e, nesses casos, você precisará inserir novamente a sugestão para realinhá-lo. Além disso, cada link de conversa é único e você pode salvar as conversas frequentemente usadas como favoritos para uso futuro.
+Observação: o AiShort fornece apenas os prompts. **O custo de uso do modelo de IA em si depende do serviço de IA que você utiliza** (por exemplo, ChatGPT versão gratuita/paga, cobrança por API, etc.).
 
-## Atraso na pesquisa do método de entrada
+## Quantos prompts existem? Quais cenários são cobertos?
 
-A função de pesquisa é baseada na vitrine do Docusaurus e apresenta um problema com a perda de foco do método de entrada no lado do PC. Após relatar o problema ao Docusaurus, eles mencionaram que tentariam corrigi-lo, mas até o momento o problema continua sem solução, com o comentário "FWIW, você não deveria usar chinês de qualquer forma, já que a vitrine não é localizada". Portanto, categorizei o componente de pesquisa em dois tipos: móvel e PC. A lógica de pesquisa para dispositivos móveis permanece inalterada, enquanto para navegação em PC com uma largura de tela acima de 768 pixels, introduzi a função "debounce" para resolver o problema do método de entrada. No entanto, isso introduz dois problemas no lado do PC: a entrada não em inglês precisa ser concluída dentro de 800 milissegundos e a atualização da pesquisa no PC passa de instantânea para um atraso de 800 milissegundos. Se você tiver uma solução melhor, por favor, forneça feedback.
+AiShort hospeda **5000+ prompts no total**, organizados em duas bibliotecas:
 
-## Emissão de informações falsas
+- **Biblioteca curada** —— selecionados manualmente, classificados por 25+ tags de cenários, totalmente traduzidos para 18 idiomas. Tags: assistência de escrita, IT/programação, artigos/relatórios, SEO/marketing, funções empresariais, acadêmicos/professores, educação/estudantes, idioma/tradução, psicologia/social, treinamento mental, ferramentas de produtividade, terminal/interpretador, debate/discurso, crítica/avaliação, ciência divertida, enciclopédia da vida, saúde médica, conselheiro financeiro, música/arte, filosofia/religião, texto/palavras, jogos divertidos, conselheiro profissional, etc.
+- **[Biblioteca da comunidade](./community)** —— a grande maioria, contribuída continuamente pelos usuários, ordenável por popularidade ou data com busca completa; cobre cenários mais finos e amplos que a curada.
 
-Embora o ChatGPT seja muito poderoso, ele não é infalível. Às vezes, pode fornecer informações falsas. Por exemplo, quando precisei inserir centenas de informações no AiShort, usei o ChatGPT para converter os dados em um formato específico. No entanto, durante o processo de conversão, percebi que o ChatGPT havia escrito algumas informações de forma imprecisa. Por exemplo, um rótulo no texto era "crítico de cinema", mas o ChatGPT o alterou para "crítico de filmes". Embora isso possa não ter impacto no texto em si, pode causar um erro ao ser usado no código. Portanto, ao usar o ChatGPT, é essencial revisar sua saída.
+Se não encontrar o que procura na curada, busque na comunidade.
 
-## Os prompts são ineficazes?
+## Quais modelos de IA são suportados? Os prompts são compatíveis entre modelos?
 
-Se você estiver envolvido na tarefa de resumir, poderá utilizar o GPT para refinar e aprimorar suas respostas iniciais, elevando assim a precisão de suas respostas. Além disso, os prompts não são benéficos apenas para a produção de trabalho; mais importante ainda, eles servem como catalisadores para a estimulação intelectual. Eles ajudam a ampliar sua perspectiva, permitindo que você contemple questões de vários ângulos e aborde possíveis erros que geralmente ocorrem durante o processo de pensamento.
+Os prompts do AiShort são universais e **funcionam em qualquer cenário em que você possa inserir um prompt** — não só páginas de chat, mas também ferramentas de programação como Cursor, chamadas de API, agentes de IA, etc. Abaixo, os modelos de conversa mais comuns:
 
-Todos os prompts utilizados pelo AI Short são obtidos da Internet e estão sujeitos a atualizações regulares em nosso repositório de prompts. Embora cada prompt seja submetido a testes extensivos, sua eficácia pode variar de acordo com as necessidades individuais do usuário. Se você encontrar alguma imprecisão, conceber ideias inovadoras ou se deparar com prompts úteis, é recomendável que nos informe por meio de [feedback](/feedback) ou compartilhe suas descobertas em nossa comunidade.
+- Internacionais: ChatGPT, Gemini, Claude, Grok
+- China continental: DeepSeek, Tongyi Qianwen, ERNIE Bot, Doubao, Kimi, ChatGLM, Spark Desk, Tencent Yuanbao
+- Plataformas de API: OpenRouter, SiliconFlow, Groq
+
+Veja a lista completa em [Início Rápido → Modelos de IA Comuns](./getting-started#modelos-de-ia-comuns).
+
+**Compatibilidade entre modelos**: a grande maioria dos prompts de texto é compatível entre modelos — tarefas gerais como escrita, tradução, programação e perguntas e respostas produzem resultados úteis com o mesmo prompt nos principais LLMs, e por padrão nenhum prompt do AiShort está atrelado a um modelo específico. A única exceção são os prompts de geração de imagem (Midjourney / Stable Diffusion / DALL·E), que precisam ser ajustados à sintaxe de cada ferramenta.
+
+## Por que os prompts estão em inglês?
+
+Os modelos de IA entendem melhor o inglês e produzem saídas mais estáveis. Prompts em português também funcionam, mas, ao executar o mesmo prompt em português várias vezes, os resultados podem variar bastante. Para cenários importantes, recomenda-se o uso de prompts em inglês.
+
+> 💡 Quer a resposta em português? Adicione ao final do prompt: `respond in Portuguese` ou, equivalentemente, `responda em português brasileiro`.
+
+## Preciso digitar o prompt toda vez?
+
+**Uso de API**: defina o prompt como `system prompt` e ele será aplicado automaticamente nas conversas subsequentes.
+
+**Versão Web**: se você não trocar de conversa, o ChatGPT lembrará o prompt atual. Quando a resposta começar a se desviar, significa que ele "esqueceu" o prompt — basta colar novamente.
+
+**Dica**: salve as conversas mais usadas como favoritos do navegador para abrir diretamente da próxima vez.
+
+## Como escolher o prompt certo?
+
+Procure de trás para frente, a partir do que você quer obter: para escrever artigos, use as tags [`write`](/?tags=write) ou [`article`](/?tags=article); para código, [`code`](/?tags=code) ou [`interpreter`](/?tags=interpreter); para tradução, [`language`](/?tags=language); para interpretação de papéis, [`games`](/?tags=games); se não estiver familiarizado com as tags, faça uma busca direta por palavras-chave. Cada cartão de prompt exibe a popularidade (número de cópias) — prompts mais copiados tendem a ter qualidade mais consistente.
+
+## Por que não encontro um prompt relacionado?
+
+A pesquisa na página inicial é limitada à **biblioteca de prompts selecionados** (incluindo seus prompts pessoais após o login) e **não inclui** prompts compartilhados pela comunidade.
+
+Se palavras-chave curtas não retornam resultados na página inicial, pesquise novamente na página [Prompts da Comunidade](./community) — lá há muito mais conteúdo compartilhado por usuários.
+
+## O que fazer se a IA gerar informações falsas?
+
+A IA às vezes produz "alucinações", gerando informações que parecem plausíveis mas estão factualmente incorretas. Sugestões:
+
+1. **Verifique informações-chave**: especialmente dados, citações, código, etc.
+2. **Otimização em várias rodadas**: peça à IA para revisar e otimizar a resposta novamente
+3. **Validação cruzada**: use prompts ou modelos diferentes para verificar conclusões importantes
+
+Prompts adequados ajudam a reduzir as alucinações da IA.
+
+## O prompt não está funcionando bem — como ajustar?
+
+Não troque o prompt de imediato. Antes, ajuste por estes ângulos:
+
+1. **Torne os `[placeholders]` entre colchetes mais específicos** — acrescente detalhes como estilo, comprimento, área de atuação, perfil do público, etc.
+2. **Peça otimizações à IA**: para respostas insatisfatórias, peça "refaça mais X" ou "reescreva no estilo Y"; em geral, uma ou duas rodadas de iteração já aproximam a saída do que você quer. Você também pode pedir à IA para autoavaliar a própria resposta e melhorá-la
+3. **Compare modelos**: experimente o mesmo prompt em outro modelo (Claude / ChatGPT / Gemini / DeepSeek, etc.); cada modelo tem seus pontos fortes e os resultados podem variar bastante
+4. **Experimente a comunidade**: em [Prompts da Comunidade](./community) pode haver uma versão mais adequada — você também é bem-vindo para compartilhar seus bons prompts lá
+5. **Envie feedback**: encontrou problemas ou tem sugestões? Compartilhe pelo [Feedback](/feedback)
+
+## Como faço backup dos meus prompts?
+
+1. Vá para "Minha Conta" → encontre a seção "Gerenciamento de Dados → Exportar Prompts"
+2. Clique no botão "Exportar Dados"
+3. O sistema gera automaticamente um arquivo JSON para download
+
+Recomenda-se fazer backups regulares para evitar perda de dados.
+
+## Posso usar os prompts do AiShort em projetos comerciais?
+
+Sim, mas o licenciamento depende da origem do conteúdo:
+
+1. Conteúdo proveniente de [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) está em **domínio público sob CC0**, sem restrições
+2. Conteúdo próprio do AiShort e contribuições da comunidade são, por padrão, licenciados sob **CC BY-SA 4.0** — uso comercial, redistribuição e adaptação são permitidos, desde que o crédito ao AiShort / autor original seja mantido e os derivados sejam disponibilizados sob a mesma licença aberta
+3. O **conteúdo gerado pela IA a partir do prompt** segue os termos de uso do provedor de IA escolhido (OpenAI, Anthropic, Google, etc.); na maioria dos casos, a titularidade fica com você
+4. As poucas entradas explicitamente marcadas como "somente uso pessoal" na descrição do cartão de prompt são exceção
+
+## Copiar um prompt expõe meus dados?
+
+Não. Os prompts do AiShort são empacotados como JSON estático no próprio site, e **a operação de cópia acontece localmente, na área de transferência do seu navegador**.
+
+O **conteúdo que você preenche nos placeholders e a resposta que a IA devolve** trafegam diretamente entre você e a plataforma de IA escolhida (ChatGPT, Claude, Gemini, DeepSeek, etc.); o AiShort não tem acesso a isso.
+
+Um esclarecimento: ao copiar, um **evento anônimo de contagem** é enviado ao backend (POST `/cards/<id>/copy`), usado apenas para estatísticas de popularidade de cada prompt (o "número de cópias" exibido no cartão). **Apenas o ID do cartão é enviado — não inclui** o conteúdo que você preencheu, não inclui dados pessoais e não é vinculado à sua identidade.
+
+**Após fazer login**, sua lista de favoritos, prompts personalizados e contribuições à comunidade são sincronizados com o backend para uso entre dispositivos, com suporte para exportação em JSON a qualquer momento.
+
+## Documentação Relacionada
+
+- [Início Rápido](./getting-started) - Uso básico
+- [Minha Coleção](./my-collection) - Gerenciamento de favoritos e tags
+- [Prompts da Comunidade](./community) - Descoberta e compartilhamento
